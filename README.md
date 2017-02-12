@@ -1,6 +1,16 @@
 ## Motion Book  iOS(UI/UX Animation Book)
-* Will be available at AppStore soon
+[![Platform](http://img.shields.io/badge/platform-ios-green.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+)](http://mit-license.org)
+* Will be available at Appstore soon
 
 ### Used Library 
 * `SnapKit`
+
 ---
+
+
+##Author
+
+**[Seungyoun Yi](https://younatics.github.io)** - iOS developer in Republic of Korea.
