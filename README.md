@@ -11,6 +11,8 @@
 - Git: https://github.com/Flipboard/FLAnimatedImage
 - Gif Url: 
 
+![Flipboaying multiple GIFs](https://github.com/Flipboard/FLAnimatedImage/raw/master/images/flanimatedimage-demo-player.gif)
+
 ---
 
 
