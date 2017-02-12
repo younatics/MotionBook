@@ -30,9 +30,31 @@
 - Available Library: False
 - Type: Transition
 
+### `Pull-to-Refresh.Rentals-iOS`
+- Author: Yalantis
+- Git: https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS
+- Gif Url: https://github.com/younatics/motion-book-ios/blob/master/motion-book/Pull-to-Refresh.Rentals-iOS/Pull-to-Refresh.Rentals-iOS.gif
+- Detail: This project aims to provide a simple and customizable pull to refresh implementation.
+- License: Apache
+- Cocoapods: Available
+- Carthage: Not Available
+- Swift Project: False
+- Available Library: False
+- Type: Tableview
+
+### `expanding-collection`
+- Author: Ramotion
+- Git: https://github.com/Ramotion/expanding-collection
+- Gif Url: https://github.com/younatics/motion-book-ios/blob/master/motion-book/expanding-collection/expanding-collection.gif
+- Detail: This project aims to provide a simple and customizable pull to refresh implementation.
+- License: MIT
+- Cocoapods: Available
+- Carthage: Available
+- Swift Project: True
+- Available Library: False
+- Type: Collectionview
 
 ---
-
 
 ##Author
 
