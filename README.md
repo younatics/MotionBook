@@ -9,9 +9,27 @@
 ### `FLAnimatedImage`
 - Author: Flipboard
 - Git: https://github.com/Flipboard/FLAnimatedImage
-- Gif Url: 
+- Gif Url: https://github.com/younatics/motion-book-ios/FLAnimatedImage/FLAnimatedImage.gif
+- Detail: FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do
+- License: MIT
+- Cocoapods: Available
+- Carthage: Not Available
+- Swift Project: False
+- Available Library: False
+- Type: Animation
 
-![Flipboaying multiple GIFs](https://github.com/Flipboard/FLAnimatedImage/raw/master/images/flanimatedimage-demo-player.gif)
+### `AnimatedTransitionGallery`
+- Author: shu223
+- Git: https://github.com/shu223/AnimatedTransitionGallery
+- Gif Url: https://github.com/younatics/motion-book-ios/AnimatedTransitionGallery/AnimatedTransitionGallery.gif
+- Detail: Collection of custom animated transitions for iOS using UIViewControllerAnimatedTransitioning protocol.
+- License: MIT
+- Cocoapods: Not Available
+- Carthage: Not Available
+- Swift Project: False
+- Available Library: False
+- Type: Transition
+
 
 ---
 
