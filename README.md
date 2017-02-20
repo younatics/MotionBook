@@ -67,6 +67,18 @@
 - Available Library: true
 - Type: Indicator
 
+### `CRToast`
+- Author: cruffenach
+- Git: https://github.com/cruffenach/CRToast
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/CRToast/CRToast.gif
+- Detail: CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project:false
+- Available Library: true
+- Type: Alert
+
 ---
 
 ##Author
