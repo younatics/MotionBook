@@ -75,7 +75,7 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project:false
+- Swift Project: false
 - Available Library: true
 - Type: Alert
 
