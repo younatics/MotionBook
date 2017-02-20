@@ -55,6 +55,18 @@
 - Available Library: false
 - Type: Collectionview
 
+### `NVActivityIndicatorView`
+- Author: ninjaprox
+- Git: https://github.com/ninjaprox/NVActivityIndicatorView
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/NVActivityIndicatorView/NVActivityIndicatorView.gif
+- Detail: NVActivityIndicatorView is a collection of awesome loading animations.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: true
+- Type: Indicator
+
 ---
 
 ##Author
