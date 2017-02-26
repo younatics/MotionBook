@@ -7,6 +7,18 @@
 * Will be available at Appstore soon
 
 ## Used Library 
+### `YNDropDownMenu`
+- Author: younatics
+- Git: https://github.com/younatics/YNDropDownMenu
+- Gif Url: https://raw.githubusercontent.com/younatics/YNDropDownMenu/master/Images/YNDropDownMenu.gif
+- Detail: The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Menu
+
 ### `FLAnimatedImage`
 - Author: Flipboard
 - Git: https://github.com/Flipboard/FLAnimatedImage
