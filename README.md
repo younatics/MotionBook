@@ -64,7 +64,7 @@
 - Cocoapods: true
 - Carthage: true
 - Swift Project: true
-- Available Library: false
+- Available Library: true
 - Type: Collectionview
 
 ### `NVActivityIndicatorView`
