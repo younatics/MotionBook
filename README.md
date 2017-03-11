@@ -1,4 +1,4 @@
-# 📖Motion Book  iOS(UI/UX Animation Book)
+# 📖 Motion Book  iOS(UI/UX Animation Book)
 [![Platform](http://img.shields.io/badge/platform-ios-green.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
 ![Language](https://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat)
@@ -135,4 +135,4 @@
 
 ##Author
 
-**[Seungyoun Yi](https://younatics.github.io)** - iOS developer in Republic of Korea.
+**[younatics 🇰🇷](https://younatics.github.io)**
