@@ -98,7 +98,7 @@
 ### `Hero`
 - Author: lkzhao
 - Git: https://github.com/lkzhao/Hero
-- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Hero/Hero.svg
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Hero/Hero.png
 - Detail: Hero is a library for building iOS view controller transitions. It provides a layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers.
 - License: MIT
 - Cocoapods: true
