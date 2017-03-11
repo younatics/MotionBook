@@ -1,10 +1,14 @@
-# Motion Book  iOS(UI/UX Animation Book)
+# 📖Motion Book  iOS(UI/UX Animation Book)
 [![Platform](http://img.shields.io/badge/platform-ios-green.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
 ![Language](https://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
 * Will be available at Appstore soon
+
+## Introduction
+#### This open source is database for Motion Book application. If you want to add your open source to this application, send me pull request :)
+
 
 ## Used Library 
 ### `YNDropDownMenu`
