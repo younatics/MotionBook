@@ -143,6 +143,42 @@
 - Available Library: false
 - Type: Menu
 
+### `GuillotineMenu`
+- Author: Yalantis
+- Git: https://github.com/Yalantis/GuillotineMenu
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/GuillotineMenu/GuillotineMenu.gif
+- Detail: Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine.
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Menu
+
+### `SideMenu`
+- Author: jonkykong
+- Git: https://github.com/jonkykong/SideMenu
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SideMenu/SideMenu.gif
+- Detail: Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Menu
+
+### `SlideMenuControllerSwift`
+- Author: dekatotoro
+- Git: https://github.com/dekatotoro/SlideMenuControllerSwift
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SlideMenuControllerSwift/SlideMenuControllerSwift.gif
+- Detail: iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Menu
+
 ---
 
 ##Author
