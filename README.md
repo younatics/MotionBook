@@ -119,6 +119,18 @@
 - Available Library: false
 - Type: Menu
 
+### `YLGIFImage`
+- Author: liyong03
+- Git: https://github.com/liyong03/YLGIFImage
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/YLGIFImage/YLGIFImage.gif
+- Detail: Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory.
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: false
+- Available Library: false
+- Type: Animation
+
 ---
 
 ##Author
