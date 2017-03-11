@@ -7,7 +7,7 @@
 * Will be available at Appstore soon
 
 ## Introduction
-#### This open source is database for Motion Book application. If you want to add your open source to this application, send me pull request :)
+* Will be update soon
 
 
 ## Used Library 
