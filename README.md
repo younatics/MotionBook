@@ -107,6 +107,18 @@
 - Available Library: false
 - Type: Transition
 
+### `Side-Menu.iOS`
+- Author: Yalantis
+- Git: https://github.com/Yalantis/Side-Menu.iOS
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Side-Menu.iOS/Side-Menu.gif
+- Detail: Animated side menu with customizable UI. Made in Yalantis.
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Menu
+
 ---
 
 ##Author
