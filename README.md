@@ -131,6 +131,18 @@
 - Available Library: false
 - Type: Animation
 
+### `circle-menu`
+- Author: Ramotion
+- Git: https://github.com/Ramotion/circle-menu
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/circle-menu/circle-menu.gif
+- Detail: This project is maintained by Ramotion, Inc. We specialize in the designing and coding of custom UI for Mobile Apps and Websites.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Menu
+
 ---
 
 ##Author
