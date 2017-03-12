@@ -179,6 +179,42 @@
 - Available Library: false
 - Type: Menu
 
+### `IBAnimatable`
+- Author: IBAnimatable
+- Git: https://github.com/IBAnimatable/IBAnimatable
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/IBAnimatable/IBAnimatable.gif
+- Detail: Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Interface Builder with IBAnimatable.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Animation
+
+### `Stellar`
+- Author: AugustRushStellar
+- Git: https://github.com/AugustRush/Stellar
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Stellar/Stellar.gif
+- Detail: A fantastic Physical animation library for swift(Not Just Spring !!!), it is base on UIDynamic and extension to it, friendly APIs make you use it or custom your own animation very easily!
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Animation
+
+### `animated-tab-bar`
+- Author: Ramotion
+- Git: https://github.com/Ramotion/animated-tab-bar
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/animated-tab-bar/animated-tab-bar.gif
+- Detail: RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Menu
+
 ---
 
 ##Author
