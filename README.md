@@ -251,6 +251,78 @@
 - Available Library: false
 - Type: Animation
 
+### `PinterestSwift`
+- Author: demonnico
+- Git: https://github.com/demonnico/PinterestSwift
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/PinterestSwift/PinterestSwift.gif
+- Detail: This is a Swift based demo project to show how to make the transition Pinterest liked.
+- License: MIT
+- Cocoapods: false
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Transition
+
+### `JTMaterialTransition`
+- Author: jonathantribouharet
+- Git: https://github.com/jonathantribouharet/JTMaterialTransition
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/JTMaterialTransition/JTMaterialTransition.gif
+- Detail: An iOS transition for controllers based on material design.
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Transition
+
+### `TKSubmitTransition`
+- Author: entotsu
+- Git: https://github.com/entotsu/TKSubmitTransition
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/TKSubmitTransition/TKSubmitTransition.gif
+- Detail: Animated UIButton of Loading Animation and Transition Animation.
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Transition
+
+### `AnimatedCollectionViewLayout`
+- Author: KelvinJin
+- Git: https://github.com/KelvinJin/AnimatedCollectionViewLayout
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.gif
+- Detail: Animated UIButton of Loading Animation and Transition Animation.
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Transition
+
+### `preview-transition`
+- Author: Ramotion
+- Git: https://github.com/Ramotion/preview-transition
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/preview-transition/preview-transition.gif
+- Detail: PreviewTransition is a simple preview gallery controller
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Transition
+
+### `CKWaveCollectionViewTransition`
+- Author: CezaryKopacz
+- Git: https://github.com/CezaryKopacz/CKWaveCollectionViewTransition
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/CKWaveCollectionViewTransition/CKWaveCollectionViewTransition.gif
+- Detail: Cool wave like transition between two or more UICollectionView
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Transition
+
 ---
 
 ##Author
