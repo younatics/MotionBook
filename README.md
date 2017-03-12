@@ -192,7 +192,7 @@
 - Type: Animation
 
 ### `Stellar`
-- Author: AugustRushStellar
+- Author: AugustRush
 - Git: https://github.com/AugustRush/Stellar
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Stellar/Stellar.gif
 - Detail: A fantastic Physical animation library for swift(Not Just Spring !!!), it is base on UIDynamic and extension to it, friendly APIs make you use it or custom your own animation very easily!
