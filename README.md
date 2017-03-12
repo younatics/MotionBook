@@ -239,6 +239,18 @@
 - Available Library: false
 - Type: Animation
 
+### `Segmentio`
+- Author: Yalantis
+- Git: https://github.com/Yalantis/Segmentio
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Segmentio/Segmentio.gif
+- Detail: Animated top/bottom segmented control written in Swift.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Animation
+
 ---
 
 ##Author
