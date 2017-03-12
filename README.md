@@ -215,6 +215,30 @@
 - Available Library: false
 - Type: Menu
 
+### `StarWars.iOS`
+- Author: Yalantis
+- Git: https://github.com/Yalantis/StarWars.iOS
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/StarWars.iOS/StarWars.gif
+- Detail: This component implements transition animation to crumble view-controller into tiny pieces.
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Animation
+
+### `Macaw`
+- Author: exyte
+- Git: https://github.com/exyte/Macaw
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Macaw/Macaw.gif
+- Detail: Powerful and easy-to-use vector graphics Swift library with SVG support
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Animation
+
 ---
 
 ##Author
