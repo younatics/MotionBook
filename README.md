@@ -323,6 +323,90 @@
 - Available Library: false
 - Type: Transition
 
+### `SwipeCellKit`
+- Author: jerkoch
+- Git: https://github.com/jerkoch/SwipeCellKit
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SwipeCellKit/SwipeCellKit.gif
+- Detail: Swipeable UITableViewCell based on the stock Mail.app, implemented in Swift.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Tableview
+
+### `folding-cell`
+- Author: Ramotion
+- Git: https://github.com/Ramotion/folding-cell
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/folding-cell/folding-cell.gif
+- Detail: FoldingCell is an expanding content cell inspired by folding paper material
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Tableview
+
+### `elongation-preview`
+- Author: Ramotion
+- Git: https://github.com/Ramotion/elongation-preview
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/elongation-preview/elongation-preview.gif
+- Detail: ElongationPreview is an elegant push-pop style view controller
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Tableview
+
+### `Koloda`
+- Author: Yalantis
+- Git: https://github.com/Yalantis/Koloda
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Koloda/Koloda.gif
+- Detail: KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Collectionview
+
+### `MMCardView`
+- Author: MillmanY
+- Git: https://github.com/MillmanY/MMCardView
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/MMCardView/MMCardView.gif
+- Detail: Custom CollectionView like Wallet App
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Collectionview
+
+### `TKRubberIndicator`
+- Author: TBXark
+- Git: https://github.com/TBXark/TKRubberIndicator
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/TKRubberIndicator/TKRubberIndicator.gif
+- Detail: A rubber animation pagecontrol
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: true
+- Type: Indicator
+
+### `SpringIndicator`
+- Author: KyoheiG3
+- Git: https://github.com/KyoheiG3/SpringIndicator
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SpringIndicator/SpringIndicator.gif
+- Detail: SpringIndicator is indicator and PullToRefresh. Inspired by Material design components.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: true
+- Type: Indicator
+
 ---
 
 ##Author
