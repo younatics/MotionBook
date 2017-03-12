@@ -392,7 +392,7 @@
 - Cocoapods: true
 - Carthage: true
 - Swift Project: true
-- Available Library: true
+- Available Library: false
 - Type: Indicator
 
 ### `SpringIndicator`
@@ -404,8 +404,92 @@
 - Cocoapods: true
 - Carthage: true
 - Swift Project: true
-- Available Library: true
+- Available Library: false
 - Type: Indicator
+
+### `SDCAlertView`
+- Author: sberrevoets
+- Git: https://github.com/sberrevoets/SDCAlertView
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SDCAlertView/SDCAlertView.gif
+- Detail: SDCAlertView started out as an alert that looked identical to UIAlertView, but had support for a custom content view. With the introduction of UIAlertController in iOS 8, the project was updated to the more modern API that UIAlertController brought.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Alert
+
+### `CDAlertView`
+- Author: candostdagdeviren
+- Git: https://github.com/candostdagdeviren/CDAlertView
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/CDAlertView/CDAlertView.gif
+- Detail: CDAlertView is highly customizable alert popup written in Swift 3. Usage is similar to UIAlertController.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Alert
+
+### `PopupDialog`
+- Author: Orderella
+- Git: https://github.com/Orderella/PopupDialog
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/PopupDialog/PopupDialog.gif
+- Detail: A simple, customizable popup dialog for iOS written in Swift. Replaces UIAlertController alert style.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Alert
+
+### `SweetAlert-iOS`
+- Author: codestergit
+- Git: https://github.com/codestergit/SweetAlert-iOS
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SweetAlert-iOS/SweetAlert-iOS.gif
+- Detail: Beautiful Animated custom Alert View inspired from javascript library SweetAlert. Written in Swift this SweetAlertView can be used in Swift and Objective-C projects. SweetAlertView provides live intutive experience to user actions.It can be used in place of UIAlertView and UIAlertController
+- License: MIT
+- Cocoapods: false
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Alert
+
+### `TKSwarmAlert`
+- Author: entotsu
+- Git: https://github.com/entotsu/TKSwarmAlert
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/TKSwarmAlert/TKSwarmAlert.gif
+- Detail: Animated alert library like Swarm app.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Alert
+
+### `MIBlurPopup`
+- Author: MarioIannotta
+- Git: https://github.com/MarioIannotta/MIBlurPopup
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/MIBlurPopup/MIBlurPopup.gif
+- Detail: MIBlurPopup lets you create amazing popups with a blurred background
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Alert
+
+### `GoogleWearAlert`
+- Author: AshRobinson
+- Git: https://github.com/AshRobinson/GoogleWearAlert
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/GoogleWearAlert/GoogleWearAlert.gif
+- Detail: An Android Wear style confirmation view for iOS
+- License: MIT
+- Cocoapods: false
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Alert
 
 ---
 
