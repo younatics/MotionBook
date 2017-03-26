@@ -491,6 +491,18 @@
 - Available Library: false
 - Type: Alert
 
+### `YNExpandableCell`
+- Author: younatics
+- Git: https://github.com/younatics/YNExpandableCell
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/YNExpandableCell/YNExpandableCell.gif
+- Detail: Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell?
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: Tableview
+
 ---
 
 ## Author
