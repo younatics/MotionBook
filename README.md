@@ -97,7 +97,7 @@
 - Available Library: false
 - Type: Menu
 
-### Animation
+#### Animation
 #### `FLAnimatedImage`
 - Author: Flipboard
 - Git: https://github.com/Flipboard/FLAnimatedImage
