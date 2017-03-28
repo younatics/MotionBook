@@ -98,6 +98,7 @@
 - Type: Menu
 
 #### Animation
+*Here you can find a list of snippets and libs for your Swift projects.* 
 #### `FLAnimatedImage`
 - Author: Flipboard
 - Git: https://github.com/Flipboard/FLAnimatedImage
