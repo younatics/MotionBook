@@ -10,8 +10,15 @@
 * This application will show popular open sources with demo files. You can freely make pull request for this project. 
 
 ## Used Library 
+### Categories
 - [Menu](#menu)
+- [Indicator](#indicator)
+- [Collectionview](#collectionview)
+- [Tableview](#tableview)
+- [Transition](#transition)
+- [Alert](#alert)
 - [Animation](#animation)
+---
 ### Menu
 #### `YNDropDownMenu`
 - Author: younatics
@@ -98,7 +105,6 @@
 - Type: Menu
 
 #### Animation
-*Here you can find a list of snippets and libs for your Swift projects.* 
 #### `FLAnimatedImage`
 - Author: Flipboard
 - Git: https://github.com/Flipboard/FLAnimatedImage
@@ -511,7 +517,6 @@
 - Swift Project: true
 - Available Library: false
 - Type: Alert
-
 
 ---
 
