@@ -34,7 +34,7 @@
 - Type: Menu
 
 #### `Side-Menu.iOS`
-![demo](motion-book/Side-Menu.iOS/Side-Menu.iOS.gif)
+![demo](motion-book/Side-Menu.iOS/Side-Menu.gif)
 - Author: Yalantis
 - Git: https://github.com/Yalantis/Side-Menu.iOS
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Side-Menu.iOS/Side-Menu.gif
