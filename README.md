@@ -165,7 +165,7 @@
 - Type: Animation
 
 #### `StarWars.iOS`
-![demo](motion-book/StarWars.iOS/StarWars.iOS.gif)
+![demo](motion-book/StarWars.iOS/StarWars.gif)
 - Author: Yalantis
 - Git: https://github.com/Yalantis/StarWars.iOS
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/StarWars.iOS/StarWars.gif
