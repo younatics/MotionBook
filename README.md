@@ -164,11 +164,11 @@
 - Available Library: false
 - Type: Animation
 
-#### `StarWars.iOS`
+#### `StarWars`
 ![demo](motion-book/StarWars.iOS/StarWars.gif)
 - Author: Yalantis
 - Git: https://github.com/Yalantis/StarWars.iOS
-- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/StarWars.iOS/StarWars.gif
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/StarWars/StarWars.gif
 - Detail: This component implements transition animation to crumble view-controller into tiny pieces.
 - License: MIT
 - Cocoapods: true
