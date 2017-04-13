@@ -93,7 +93,6 @@
 - Type: Menu
 
 #### `animated-tab-bar`
-![demo](motion-book/animated-tab-bar/animated-tab-bar.gif)
 - Author: Ramotion
 - Git: https://github.com/Ramotion/animated-tab-bar
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/animated-tab-bar/animated-tab-bar.gif
