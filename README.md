@@ -21,7 +21,6 @@
 ---
 ### Menu
 #### `YNDropDownMenu`
-![demo](motion-book/YNDropDownMenu/YNDropDownMenu.gif)
 - Author: younatics
 - Git: https://github.com/younatics/YNDropDownMenu
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/YNDropDownMenu/YNDropDownMenu.gif
@@ -34,7 +33,6 @@
 - Type: Menu
 
 #### `Side-Menu.iOS`
-![demo](motion-book/Side-Menu.iOS/Side-Menu.gif)
 - Author: Yalantis
 - Git: https://github.com/Yalantis/Side-Menu.iOS
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Side-Menu.iOS/Side-Menu.gif
@@ -47,7 +45,6 @@
 - Type: Menu
 
 #### `circle-menu`
-![demo](motion-book/circle-menu/circle-menu.gif)
 - Author: Ramotion
 - Git: https://github.com/Ramotion/circle-menu
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/circle-menu/circle-menu.gif
@@ -60,7 +57,6 @@
 - Type: Menu
 
 #### `GuillotineMenu`
-![demo](motion-book/GuillotineMenu/GuillotineMenu.gif)
 - Author: Yalantis
 - Git: https://github.com/Yalantis/GuillotineMenu
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/GuillotineMenu/GuillotineMenu.gif
@@ -73,7 +69,6 @@
 - Type: Menu
 
 #### `SideMenu`
-![demo](motion-book/SideMenu/SideMenu.gif)
 - Author: jonkykong
 - Git: https://github.com/jonkykong/SideMenu
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SideMenu/SideMenu.gif
@@ -86,7 +81,6 @@
 - Type: Menu
 
 #### `SlideMenuControllerSwift`
-![demo](motion-book/SlideMenuControllerSwift/SlideMenuControllerSwift.gif)
 - Author: dekatotoro
 - Git: https://github.com/dekatotoro/SlideMenuControllerSwift
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SlideMenuControllerSwift/SlideMenuControllerSwift.gif
@@ -113,7 +107,6 @@
 
 #### Animation
 #### `FLAnimatedImage`
-![demo](motion-book/FLAnimatedImage/FLAnimatedImage.gif)
 - Author: Flipboard
 - Git: https://github.com/Flipboard/FLAnimatedImage
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/FLAnimatedImage/FLAnimatedImage.gif
@@ -126,7 +119,6 @@
 - Type: Animation
 
 #### `YLGIFImage`
-![demo](motion-book/YLGIFImage/YLGIFImage.gif)
 - Author: liyong03
 - Git: https://github.com/liyong03/YLGIFImage
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/YLGIFImage/YLGIFImage.gif
@@ -139,7 +131,6 @@
 - Type: Animation
 
 #### `IBAnimatable`
-![demo](motion-book/IBAnimatable/IBAnimatable.gif)
 - Author: IBAnimatable
 - Git: https://github.com/IBAnimatable/IBAnimatable
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/IBAnimatable/IBAnimatable.gif
@@ -152,7 +143,6 @@
 - Type: Animation
 
 #### `Stellar`
-![demo](motion-book/Stellar/Stellar.gif)
 - Author: AugustRush
 - Git: https://github.com/AugustRush/Stellar
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Stellar/Stellar.gif
@@ -164,11 +154,10 @@
 - Available Library: false
 - Type: Animation
 
-#### `StarWars`
-![demo](motion-book/StarWars.iOS/StarWars.gif)
+#### `StarWars.iOS`
 - Author: Yalantis
 - Git: https://github.com/Yalantis/StarWars.iOS
-- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/StarWars/StarWars.gif
+- Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/StarWars.iOS/StarWars.iOS.gif
 - Detail: This component implements transition animation to crumble view-controller into tiny pieces.
 - License: MIT
 - Cocoapods: true
@@ -178,7 +167,6 @@
 - Type: Animation
 
 #### `Macaw`
-![demo](motion-book/Macaw/Macaw.gif)
 - Author: exyte
 - Git: https://github.com/exyte/Macaw
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Macaw/Macaw.gif
@@ -191,7 +179,6 @@
 - Type: Animation
 
 #### `Segmentio`
-![demo](motion-book/Segmentio/Segmentio.gif)
 - Author: Yalantis
 - Git: https://github.com/Yalantis/Segmentio
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Segmentio/Segmentio.gif
@@ -205,7 +192,6 @@
 
 ### Transition
 #### `AnimatedTransitionGallery`
-![demo](motion-book/AnimatedTransitionGallery/AnimatedTransitionGallery.gif)
 - Author: shu223
 - Git: https://github.com/shu223/AnimatedTransitionGallery
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/AnimatedTransitionGallery/AnimatedTransitionGallery.gif
@@ -218,7 +204,6 @@
 - Type: Transition
 
 #### `Hero`
-![demo](motion-book/Hero/Hero.gif)
 - Author: lkzhao
 - Git: https://github.com/lkzhao/Hero
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Hero/Hero.gif
@@ -231,7 +216,6 @@
 - Type: Transition
 
 #### `PinterestSwift`
-![demo](motion-book/PinterestSwift/PinterestSwift.gif)
 - Author: demonnico
 - Git: https://github.com/demonnico/PinterestSwift
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/PinterestSwift/PinterestSwift.gif
@@ -244,7 +228,6 @@
 - Type: Transition
 
 #### `JTMaterialTransition`
-![demo](motion-book/JTMaterialTransition/JTMaterialTransition.gif)
 - Author: jonathantribouharet
 - Git: https://github.com/jonathantribouharet/JTMaterialTransition
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/JTMaterialTransition/JTMaterialTransition.gif
@@ -257,7 +240,6 @@
 - Type: Transition
 
 #### `TKSubmitTransition`
-![demo](motion-book/TKSubmitTransition/TKSubmitTransition.gif)
 - Author: entotsu
 - Git: https://github.com/entotsu/TKSubmitTransition
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/TKSubmitTransition/TKSubmitTransition.gif
@@ -270,7 +252,6 @@
 - Type: Transition
 
 #### `AnimatedCollectionViewLayout`
-![demo](motion-book/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.gif)
 - Author: KelvinJin
 - Git: https://github.com/KelvinJin/AnimatedCollectionViewLayout
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.gif
@@ -283,7 +264,6 @@
 - Type: Transition
 
 #### `preview-transition`
-![demo](motion-book/preview-transition/preview-transition.gif)
 - Author: Ramotion
 - Git: https://github.com/Ramotion/preview-transition
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/preview-transition/preview-transition.gif
@@ -296,7 +276,6 @@
 - Type: Transition
 
 #### `CKWaveCollectionViewTransition`
-![demo](motion-book/CKWaveCollectionViewTransition/CKWaveCollectionViewTransition.gif)
 - Author: CezaryKopacz
 - Git: https://github.com/CezaryKopacz/CKWaveCollectionViewTransition
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/CKWaveCollectionViewTransition/CKWaveCollectionViewTransition.gif
@@ -310,7 +289,6 @@
 
 ### Tableview
 #### `YNExpandableCell`
-![demo](motion-book/YNExpandableCell/YNExpandableCell.gif)
 - Author: younatics
 - Git: https://github.com/younatics/YNExpandableCell
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/YNExpandableCell/YNExpandableCell.gif
@@ -323,7 +301,6 @@
 - Type: Tableview
 
 #### `Pull-to-Refresh.Rentals-iOS`
-![demo](motion-book/Pull-to-Refresh.Rentals-iOS/Pull-to-Refresh.Rentals-iOS.gif)
 - Author: Yalantis
 - Git: https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Pull-to-Refresh.Rentals-iOS/Pull-to-Refresh.Rentals-iOS.gif
@@ -336,7 +313,6 @@
 - Type: Tableview
 
 #### `SwipeCellKit`
-![demo](motion-book/SwipeCellKit/SwipeCellKit.gif)
 - Author: jerkoch
 - Git: https://github.com/jerkoch/SwipeCellKit
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SwipeCellKit/SwipeCellKit.gif
@@ -349,7 +325,6 @@
 - Type: Tableview
 
 #### `folding-cell`
-![demo](motion-book/folding-cell/folding-cell.gif)
 - Author: Ramotion
 - Git: https://github.com/Ramotion/folding-cell
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/folding-cell/folding-cell.gif
@@ -362,7 +337,6 @@
 - Type: Tableview
 
 #### `elongation-preview`
-![demo](motion-book/elongation-preview/elongation-preview.gif)
 - Author: Ramotion
 - Git: https://github.com/Ramotion/elongation-preview
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/elongation-preview/elongation-preview.gif
@@ -376,7 +350,6 @@
 
 ### Collectionview
 #### `expanding-collection`
-![demo](motion-book/expanding-collection/expanding-collection.gif)
 - Author: Ramotion
 - Git: https://github.com/Ramotion/expanding-collection
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/expanding-collection/expanding-collection.gif
@@ -389,7 +362,6 @@
 - Type: Collectionview
 
 #### `Koloda`
-![demo](motion-book/Koloda/Koloda.gif)
 - Author: Yalantis
 - Git: https://github.com/Yalantis/Koloda
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/Koloda/Koloda.gif
@@ -402,7 +374,6 @@
 - Type: Collectionview
 
 #### `MMCardView`
-![demo](motion-book/MMCardView/MMCardView.gif)
 - Author: MillmanY
 - Git: https://github.com/MillmanY/MMCardView
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/MMCardView/MMCardView.gif
@@ -416,7 +387,6 @@
 
 ### Indicator
 #### `NVActivityIndicatorView`
-![demo](motion-book/NVActivityIndicatorView/NVActivityIndicatorView.gif)
 - Author: ninjaprox
 - Git: https://github.com/ninjaprox/NVActivityIndicatorView
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/NVActivityIndicatorView/NVActivityIndicatorView.gif
@@ -429,7 +399,6 @@
 - Type: Indicator
 
 #### `TKRubberIndicator`
-![demo](motion-book/TKRubberIndicator/TKRubberIndicator.gif)
 - Author: TBXark
 - Git: https://github.com/TBXark/TKRubberIndicator
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/TKRubberIndicator/TKRubberIndicator.gif
@@ -442,7 +411,6 @@
 - Type: Indicator
 
 #### `SpringIndicator`
-![demo](motion-book/SpringIndicator/SpringIndicator.gif)
 - Author: KyoheiG3
 - Git: https://github.com/KyoheiG3/SpringIndicator
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SpringIndicator/SpringIndicator.gif
@@ -456,7 +424,6 @@
 
 ### Alert
 #### `CRToast`
-![demo](motion-book/CRToast/CRToast.gif)
 - Author: cruffenach
 - Git: https://github.com/cruffenach/CRToast
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/CRToast/CRToast.gif
@@ -469,7 +436,6 @@
 - Type: Alert
 
 #### `SDCAlertView`
-![demo](motion-book/SDCAlertView/SDCAlertView.gif)
 - Author: sberrevoets
 - Git: https://github.com/sberrevoets/SDCAlertView
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SDCAlertView/SDCAlertView.gif
@@ -482,7 +448,6 @@
 - Type: Alert
 
 #### `CDAlertView`
-![demo](motion-book/CDAlertView/CDAlertView.gif)
 - Author: candostdagdeviren
 - Git: https://github.com/candostdagdeviren/CDAlertView
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/CDAlertView/CDAlertView.gif
@@ -495,7 +460,6 @@
 - Type: Alert
 
 #### `PopupDialog`
-![demo](motion-book/PopupDialog/PopupDialog.gif)
 - Author: Orderella
 - Git: https://github.com/Orderella/PopupDialog
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/PopupDialog/PopupDialog.gif
@@ -508,7 +472,6 @@
 - Type: Alert
 
 #### `SweetAlert-iOS`
-![demo](motion-book/SweetAlert-iOS/SweetAlert-iOS.gif)
 - Author: codestergit
 - Git: https://github.com/codestergit/SweetAlert-iOS
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/SweetAlert-iOS/SweetAlert-iOS.gif
@@ -521,7 +484,6 @@
 - Type: Alert
 
 #### `TKSwarmAlert`
-![demo](motion-book/TKSwarmAlert/TKSwarmAlert.gif)
 - Author: entotsu
 - Git: https://github.com/entotsu/TKSwarmAlert
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/TKSwarmAlert/TKSwarmAlert.gif
@@ -534,7 +496,6 @@
 - Type: Alert
 
 #### `MIBlurPopup`
-![demo](motion-book/MIBlurPopup/MIBlurPopup.gif)
 - Author: MarioIannotta
 - Git: https://github.com/MarioIannotta/MIBlurPopup
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/MIBlurPopup/MIBlurPopup.gif
@@ -547,7 +508,6 @@
 - Type: Alert
 
 #### `GoogleWearAlert`
-![demo](motion-book/GoogleWearAlert/GoogleWearAlert.gif)
 - Author: AshRobinson
 - Git: https://github.com/AshRobinson/GoogleWearAlert
 - Gif Url: https://raw.githubusercontent.com/younatics/motion-book-ios/master/motion-book/GoogleWearAlert/GoogleWearAlert.gif
