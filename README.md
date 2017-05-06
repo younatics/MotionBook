@@ -91,7 +91,7 @@
 - Type: Menu
 
 ---
-#### Animation
+### Animation
 #### `FLAnimatedImage`
 - Author: Flipboard
 - Detail: FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do
