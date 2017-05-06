@@ -324,6 +324,7 @@
 - Available Library: false
 - Type: Tableview
 
+---
 ### Collectionview
 #### `expanding-collection`
 - Author: Ramotion
