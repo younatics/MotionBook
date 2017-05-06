@@ -22,6 +22,7 @@
 ### Menu
 #### `YNDropDownMenu`
 - Author: younatics
+- Git: https://github.com/younatics/YNDropDownMenu
 - Detail: The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)
 - License: MIT
 - Cocoapods: true
@@ -32,6 +33,7 @@
 
 #### `Side-Menu.iOS`
 - Author: Yalantis
+- Git: https://github.com/Yalantis/Side-Menu.iOS
 - Detail: Animated side menu with customizable UI. Made in Yalantis.
 - License: MIT
 - Cocoapods: true
@@ -42,6 +44,7 @@
 
 #### `circle-menu`
 - Author: Ramotion
+- Git: https://github.com/Ramotion/circle-menu
 - Detail: This project is maintained by Ramotion, Inc. We specialize in the designing and coding of custom UI for Mobile Apps and Websites.
 - License: MIT
 - Cocoapods: true
@@ -52,6 +55,7 @@
 
 #### `GuillotineMenu`
 - Author: Yalantis
+- Git: https://github.com/Yalantis/GuillotineMenu
 - Detail: Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine.
 - License: MIT
 - Cocoapods: true
@@ -62,6 +66,7 @@
 
 #### `SideMenu`
 - Author: jonkykong
+- Git: https://github.com/jonkykong/SideMenu
 - Detail: Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+.
 - License: MIT
 - Cocoapods: true
@@ -72,6 +77,7 @@
 
 #### `SlideMenuControllerSwift`
 - Author: dekatotoro
+- Git: https://github.com/dekatotoro/SlideMenuControllerSwift
 - Detail: iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift.
 - License: MIT
 - Cocoapods: true
@@ -82,6 +88,7 @@
 
 #### `animated-tab-bar`
 - Author: Ramotion
+- Git: https://github.com/Ramotion/animated-tab-bar
 - Detail: RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items.
 - License: MIT
 - Cocoapods: true
@@ -104,6 +111,7 @@
 
 #### `YLGIFImage`
 - Author: liyong03
+- Git: https://github.com/liyong03/YLGIFImage
 - Detail: Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory.
 - License: MIT
 - Cocoapods: true
@@ -114,6 +122,7 @@
 
 #### `IBAnimatable`
 - Author: IBAnimatable
+- Git: https://github.com/IBAnimatable/IBAnimatable
 - Detail: Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Interface Builder with IBAnimatable.
 - License: MIT
 - Cocoapods: true
@@ -134,6 +143,7 @@
 
 #### `StarWars.iOS`
 - Author: Yalantis
+- Git: https://github.com/Yalantis/StarWars.iOS
 - Detail: This component implements transition animation to crumble view-controller into tiny pieces.
 - License: MIT
 - Cocoapods: true
@@ -144,6 +154,7 @@
 
 #### `Macaw`
 - Author: exyte
+- Git: https://github.com/exyte/Macaw
 - Detail: Powerful and easy-to-use vector graphics Swift library with SVG support
 - License: MIT
 - Cocoapods: true
@@ -154,6 +165,7 @@
 
 #### `Segmentio`
 - Author: Yalantis
+- Git: https://github.com/Yalantis/Segmentio
 - Detail: Animated top/bottom segmented control written in Swift.
 - License: MIT
 - Cocoapods: true
@@ -176,6 +188,7 @@
 
 #### `Hero`
 - Author: lkzhao
+- Git: https://github.com/lkzhao/Hero
 - Detail: Hero is a library for building iOS view controller transitions. It provides a layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers.
 - License: MIT
 - Cocoapods: true
@@ -186,6 +199,7 @@
 
 #### `PinterestSwift`
 - Author: demonnico
+- Git: https://github.com/demonnico/PinterestSwift
 - Detail: This is a Swift based demo project to show how to make the transition Pinterest liked.
 - License: MIT
 - Cocoapods: false
@@ -196,6 +210,7 @@
 
 #### `JTMaterialTransition`
 - Author: jonathantribouharet
+- Git: https://github.com/jonathantribouharet/JTMaterialTransition
 - Detail: An iOS transition for controllers based on material design.
 - License: MIT
 - Cocoapods: true
@@ -206,6 +221,7 @@
 
 #### `TKSubmitTransition`
 - Author: entotsu
+- Git: https://github.com/entotsu/TKSubmitTransition
 - Detail: Animated UIButton of Loading Animation and Transition Animation.
 - License: MIT
 - Cocoapods: true
@@ -216,6 +232,7 @@
 
 #### `AnimatedCollectionViewLayout`
 - Author: KelvinJin
+- Git: https://github.com/KelvinJin/AnimatedCollectionViewLayout
 - Detail: Animated UIButton of Loading Animation and Transition Animation.
 - License: MIT
 - Cocoapods: true
@@ -226,6 +243,7 @@
 
 #### `preview-transition`
 - Author: Ramotion
+- Git: https://github.com/Ramotion/preview-transition
 - Detail: PreviewTransition is a simple preview gallery controller
 - License: MIT
 - Cocoapods: true
@@ -236,6 +254,7 @@
 
 #### `CKWaveCollectionViewTransition`
 - Author: CezaryKopacz
+- Git: https://github.com/CezaryKopacz/CKWaveCollectionViewTransition
 - Detail: Cool wave like transition between two or more UICollectionView
 - License: MIT
 - Cocoapods: true
@@ -258,6 +277,7 @@
 
 #### `Pull-to-Refresh.Rentals-iOS`
 - Author: Yalantis
+- Git: https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS
 - Detail: This project aims to provide a simple and customizable pull to refresh implementation.
 - License: Apache
 - Cocoapods: true
@@ -268,6 +288,7 @@
 
 #### `SwipeCellKit`
 - Author: jerkoch
+- Git: https://github.com/jerkoch/SwipeCellKit
 - Detail: Swipeable UITableViewCell based on the stock Mail.app, implemented in Swift.
 - License: MIT
 - Cocoapods: true
@@ -278,6 +299,7 @@
 
 #### `folding-cell`
 - Author: Ramotion
+- Git: https://github.com/Ramotion/folding-cell
 - Detail: FoldingCell is an expanding content cell inspired by folding paper material
 - License: MIT
 - Cocoapods: true
@@ -288,6 +310,7 @@
 
 #### `elongation-preview`
 - Author: Ramotion
+- Git: https://github.com/Ramotion/elongation-preview
 - Detail: ElongationPreview is an elegant push-pop style view controller
 - License: MIT
 - Cocoapods: true
@@ -296,10 +319,10 @@
 - Available Library: false
 - Type: Tableview
 
----
 ### Collectionview
 #### `expanding-collection`
 - Author: Ramotion
+- Git: https://github.com/Ramotion/expanding-collection
 - Detail: This project aims to provide a simple and customizable pull to refresh implementation.
 - License: MIT
 - Cocoapods: true
@@ -310,6 +333,7 @@
 
 #### `Koloda`
 - Author: Yalantis
+- Git: https://github.com/Yalantis/Koloda
 - Detail: KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS.
 - License: MIT
 - Cocoapods: true
@@ -320,6 +344,7 @@
 
 #### `MMCardView`
 - Author: MillmanY
+- Git: https://github.com/MillmanY/MMCardView
 - Detail: Custom CollectionView like Wallet App
 - License: MIT
 - Cocoapods: true
@@ -328,10 +353,10 @@
 - Available Library: false
 - Type: Collectionview
 
----
 ### Indicator
 #### `NVActivityIndicatorView`
 - Author: ninjaprox
+- Git: https://github.com/ninjaprox/NVActivityIndicatorView
 - Detail: NVActivityIndicatorView is a collection of awesome loading animations.
 - License: MIT
 - Cocoapods: true
@@ -342,6 +367,7 @@
 
 #### `TKRubberIndicator`
 - Author: TBXark
+- Git: https://github.com/TBXark/TKRubberIndicator
 - Detail: A rubber animation pagecontrol
 - License: MIT
 - Cocoapods: true
@@ -352,6 +378,7 @@
 
 #### `SpringIndicator`
 - Author: KyoheiG3
+- Git: https://github.com/KyoheiG3/SpringIndicator
 - Detail: SpringIndicator is indicator and PullToRefresh. Inspired by Material design components.
 - License: MIT
 - Cocoapods: true
@@ -363,6 +390,7 @@
 ### Alert
 #### `CRToast`
 - Author: cruffenach
+- Git: https://github.com/cruffenach/CRToast
 - Detail: CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar.
 - License: MIT
 - Cocoapods: true
@@ -383,6 +411,7 @@
 
 #### `CDAlertView`
 - Author: candostdagdeviren
+- Git: https://github.com/candostdagdeviren/CDAlertView
 - Detail: CDAlertView is highly customizable alert popup written in Swift 3. Usage is similar to UIAlertController.
 - License: MIT
 - Cocoapods: true
@@ -393,6 +422,7 @@
 
 #### `PopupDialog`
 - Author: Orderella
+- Git: https://github.com/Orderella/PopupDialog
 - Detail: A simple, customizable popup dialog for iOS written in Swift. Replaces UIAlertController alert style.
 - License: MIT
 - Cocoapods: true
@@ -403,6 +433,7 @@
 
 #### `SweetAlert-iOS`
 - Author: codestergit
+- Git: https://github.com/codestergit/SweetAlert-iOS
 - Detail: Beautiful Animated custom Alert View inspired from javascript library SweetAlert. Written in Swift this SweetAlertView can be used in Swift and Objective-C projects. SweetAlertView provides live intutive experience to user actions.It can be used in place of UIAlertView and UIAlertController
 - License: MIT
 - Cocoapods: false
@@ -413,6 +444,7 @@
 
 #### `TKSwarmAlert`
 - Author: entotsu
+- Git: https://github.com/entotsu/TKSwarmAlert
 - Detail: Animated alert library like Swarm app.
 - License: MIT
 - Cocoapods: true
@@ -423,6 +455,7 @@
 
 #### `MIBlurPopup`
 - Author: MarioIannotta
+- Git: https://github.com/MarioIannotta/MIBlurPopup
 - Detail: MIBlurPopup lets you create amazing popups with a blurred background
 - License: MIT
 - Cocoapods: true
@@ -433,6 +466,7 @@
 
 #### `GoogleWearAlert`
 - Author: AshRobinson
+- Git: https://github.com/AshRobinson/GoogleWearAlert
 - Detail: An Android Wear style confirmation view for iOS
 - License: MIT
 - Cocoapods: false
