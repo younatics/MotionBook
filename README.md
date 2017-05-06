@@ -18,6 +18,7 @@
 - [Transition](#transition)
 - [Alert](#alert)
 - [Animation](#animation)
+
 ---
 ### Menu
 #### `YNDropDownMenu`
@@ -101,6 +102,7 @@
 ### Animation
 #### `FLAnimatedImage`
 - Author: Flipboard
+- Git: https://github.com/Flipboard/FLAnimatedImage
 - Detail: FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do
 - License: MIT
 - Cocoapods: true
@@ -133,6 +135,7 @@
 
 #### `Stellar`
 - Author: AugustRush
+- Git: https://github.com/AugustRush/Stellar
 - Detail: A fantastic Physical animation library for swift(Not Just Spring !!!), it is base on UIDynamic and extension to it, friendly APIs make you use it or custom your own animation very easily!
 - License: MIT
 - Cocoapods: true
@@ -178,6 +181,7 @@
 ### Transition
 #### `AnimatedTransitionGallery`
 - Author: shu223
+- Git: https://github.com/shu223/AnimatedTransitionGallery
 - Detail: Collection of custom animated transitions for iOS using UIViewControllerAnimatedTransitioning protocol.
 - License: MIT
 - Cocoapods: false
@@ -267,6 +271,7 @@
 ### Tableview
 #### `YNExpandableCell`
 - Author: younatics
+- Git: https://github.com/younatics/YNExpandableCell
 - Detail: Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell?
 - License: MIT
 - Cocoapods: true
@@ -353,6 +358,7 @@
 - Available Library: false
 - Type: Collectionview
 
+---
 ### Indicator
 #### `NVActivityIndicatorView`
 - Author: ninjaprox
@@ -401,6 +407,7 @@
 
 #### `SDCAlertView`
 - Author: sberrevoets
+- Git: https://github.com/sberrevoets/SDCAlertView
 - Detail: SDCAlertView started out as an alert that looked identical to UIAlertView, but had support for a custom content view. With the introduction of UIAlertController in iOS 8, the project was updated to the more modern API that UIAlertController brought.
 - License: MIT
 - Cocoapods: true
