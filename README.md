@@ -156,6 +156,17 @@
 - Available Library: false
 - Type: Animation
 
+#### `Pastel`
+- Author: cruisediary
+- Git: https://github.com/cruisediary/Pastel
+- Detail: Powerful and easy-to-use vector graphics Swift library with SVG support
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Animation
+
 ---
 ### Transition
 #### `AnimatedTransitionGallery`
