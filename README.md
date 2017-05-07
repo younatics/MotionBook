@@ -18,6 +18,7 @@
 - [Transition](#transition)
 - [Alert](#alert)
 - [Animation](#animation)
+- [UI](#ui)
 
 ---
 ### Menu
@@ -100,6 +101,17 @@
 
 ---
 ### Animation
+#### `Highlighter`
+- Author: younatics
+- Git: https://github.com/younatics/Highlighter
+- Detail: Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: Animation
+
 #### `FLAnimatedImage`
 - Author: Flipboard
 - Git: https://github.com/Flipboard/FLAnimatedImage
@@ -122,17 +134,6 @@
 - Available Library: false
 - Type: Animation
 
-#### `IBAnimatable`
-- Author: IBAnimatable
-- Git: https://github.com/IBAnimatable/IBAnimatable
-- Detail: Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Interface Builder with IBAnimatable.
-- License: MIT
-- Cocoapods: true
-- Carthage: true
-- Swift Project: true
-- Available Library: false
-- Type: Animation
-
 #### `Stellar`
 - Author: AugustRush
 - Git: https://github.com/AugustRush/Stellar
@@ -144,32 +145,10 @@
 - Available Library: false
 - Type: Animation
 
-#### `StarWars.iOS`
-- Author: Yalantis
-- Git: https://github.com/Yalantis/StarWars.iOS
-- Detail: This component implements transition animation to crumble view-controller into tiny pieces.
-- License: MIT
-- Cocoapods: true
-- Carthage: false
-- Swift Project: true
-- Available Library: false
-- Type: Animation
-
 #### `Macaw`
 - Author: exyte
 - Git: https://github.com/exyte/Macaw
 - Detail: Powerful and easy-to-use vector graphics Swift library with SVG support
-- License: MIT
-- Cocoapods: true
-- Carthage: true
-- Swift Project: true
-- Available Library: false
-- Type: Animation
-
-#### `Segmentio`
-- Author: Yalantis
-- Git: https://github.com/Yalantis/Segmentio
-- Detail: Animated top/bottom segmented control written in Swift.
 - License: MIT
 - Cocoapods: true
 - Carthage: true
@@ -482,6 +461,52 @@
 - Swift Project: true
 - Available Library: false
 - Type: Alert
+
+---
+### UI
+#### `YNSearch`
+- Author: younatics
+- Git: https://github.com/younatics/YNSearch
+- Detail: Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm!
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: UI
+
+#### `IBAnimatable`
+- Author: IBAnimatable
+- Git: https://github.com/IBAnimatable/IBAnimatable
+- Detail: Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Interface Builder with IBAnimatable.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: UI
+
+#### `StarWars.iOS`
+- Author: Yalantis
+- Git: https://github.com/Yalantis/StarWars.iOS
+- Detail: This component implements transition animation to crumble view-controller into tiny pieces.
+- License: MIT
+- Cocoapods: true
+- Carthage: false
+- Swift Project: true
+- Available Library: false
+- Type: UI
+
+#### `Segmentio`
+- Author: Yalantis
+- Git: https://github.com/Yalantis/Segmentio
+- Detail: Animated top/bottom segmented control written in Swift.
+- License: MIT
+- Cocoapods: true
+- Carthage: true
+- Swift Project: true
+- Available Library: false
+- Type: UI
 
 ---
 
