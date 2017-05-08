@@ -29,7 +29,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Menu
 
 #### `Side-Menu.iOS`
@@ -39,7 +38,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Menu
 
 #### `circle-menu`
@@ -49,7 +47,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Menu
 
 #### `GuillotineMenu`
@@ -59,7 +56,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Menu
 
 #### `SideMenu`
@@ -69,7 +65,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Menu
 
 #### `SlideMenuControllerSwift`
@@ -79,7 +74,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Menu
 
 #### `animated-tab-bar`
@@ -89,7 +83,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Menu
 
 ---
@@ -101,7 +94,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Animation
 
 #### `FLAnimatedImage`
@@ -111,7 +103,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Animation
 
 #### `YLGIFImage`
@@ -121,7 +112,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Animation
 
 #### `Stellar`
@@ -131,7 +121,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Animation
 
 #### `Macaw`
@@ -141,7 +130,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Animation
 
 #### `Pastel`
@@ -151,7 +139,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Animation
 
 ---
@@ -163,7 +150,6 @@
 - License: MIT
 - Cocoapods: false
 - Carthage: false
-- Available Library: false
 - Type: Transition
 
 #### `Hero`
@@ -173,7 +159,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Transition
 
 #### `PinterestSwift`
@@ -183,7 +168,6 @@
 - License: MIT
 - Cocoapods: false
 - Carthage: false
-- Available Library: false
 - Type: Transition
 
 #### `JTMaterialTransition`
@@ -193,7 +177,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Transition
 
 #### `TKSubmitTransition`
@@ -203,7 +186,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Transition
 
 #### `AnimatedCollectionViewLayout`
@@ -213,7 +195,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Transition
 
 #### `preview-transition`
@@ -223,7 +204,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Transition
 
 #### `CKWaveCollectionViewTransition`
@@ -233,7 +213,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Transition
 
 ---
@@ -245,7 +224,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Tableview
 
 #### `Pull-to-Refresh.Rentals-iOS`
@@ -255,7 +233,6 @@
 - License: Apache
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Tableview
 
 #### `SwipeCellKit`
@@ -265,7 +242,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Tableview
 
 #### `folding-cell`
@@ -275,7 +251,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Tableview
 
 #### `elongation-preview`
@@ -285,7 +260,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Tableview
 
 ---
@@ -297,7 +271,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: true
 - Type: Collectionview
 
 #### `Koloda`
@@ -307,7 +280,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Collectionview
 
 #### `MMCardView`
@@ -317,7 +289,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Collectionview
 
 ---
@@ -329,7 +300,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: true
 - Type: Indicator
 
 #### `TKRubberIndicator`
@@ -339,7 +309,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Indicator
 
 #### `SpringIndicator`
@@ -349,7 +318,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Indicator
 
 ### Alert
@@ -360,7 +328,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: true
 - Type: Alert
 
 #### `SDCAlertView`
@@ -370,7 +337,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Alert
 
 #### `CDAlertView`
@@ -380,7 +346,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Alert
 
 #### `PopupDialog`
@@ -390,7 +355,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Alert
 
 #### `SweetAlert-iOS`
@@ -400,7 +364,6 @@
 - License: MIT
 - Cocoapods: false
 - Carthage: false
-- Available Library: false
 - Type: Alert
 
 #### `TKSwarmAlert`
@@ -410,7 +373,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: Alert
 
 #### `MIBlurPopup`
@@ -420,7 +382,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: Alert
 
 #### `GoogleWearAlert`
@@ -430,7 +391,6 @@
 - License: MIT
 - Cocoapods: false
 - Carthage: false
-- Available Library: false
 - Type: Alert
 
 ---
@@ -442,7 +402,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: UI
 
 #### `IBAnimatable`
@@ -452,7 +411,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: UI
 
 #### `StarWars.iOS`
@@ -462,7 +420,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Available Library: false
 - Type: UI
 
 #### `Segmentio`
@@ -472,7 +429,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Available Library: false
 - Type: UI
 
 ---
