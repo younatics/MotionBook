@@ -29,7 +29,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Menu
 
@@ -40,7 +39,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Menu
 
@@ -51,7 +49,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Menu
 
@@ -62,7 +59,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Menu
 
@@ -73,7 +69,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Menu
 
@@ -84,7 +79,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Menu
 
@@ -95,7 +89,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Menu
 
@@ -108,7 +101,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Animation
 
@@ -119,7 +111,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: false
 - Available Library: false
 - Type: Animation
 
@@ -130,7 +121,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: false
 - Available Library: false
 - Type: Animation
 
@@ -141,7 +131,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Animation
 
@@ -152,7 +141,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Animation
 
@@ -163,7 +151,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Animation
 
@@ -176,7 +163,6 @@
 - License: MIT
 - Cocoapods: false
 - Carthage: false
-- Swift Project: false
 - Available Library: false
 - Type: Transition
 
@@ -187,7 +173,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Transition
 
@@ -198,7 +183,6 @@
 - License: MIT
 - Cocoapods: false
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Transition
 
@@ -209,7 +193,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Transition
 
@@ -220,7 +203,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Transition
 
@@ -231,7 +213,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Transition
 
@@ -242,7 +223,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Transition
 
@@ -253,7 +233,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Transition
 
@@ -266,7 +245,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Tableview
 
@@ -277,7 +255,6 @@
 - License: Apache
 - Cocoapods: true
 - Carthage: false
-- Swift Project: false
 - Available Library: false
 - Type: Tableview
 
@@ -288,7 +265,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Tableview
 
@@ -299,7 +275,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Tableview
 
@@ -310,7 +285,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Tableview
 
@@ -323,7 +297,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: true
 - Type: Collectionview
 
@@ -334,7 +307,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Collectionview
 
@@ -345,7 +317,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Collectionview
 
@@ -358,7 +329,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: true
 - Type: Indicator
 
@@ -369,7 +339,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Indicator
 
@@ -380,7 +349,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Indicator
 
@@ -392,7 +360,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: false
 - Available Library: true
 - Type: Alert
 
@@ -403,7 +370,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Alert
 
@@ -414,7 +380,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Alert
 
@@ -425,7 +390,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Alert
 
@@ -436,7 +400,6 @@
 - License: MIT
 - Cocoapods: false
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Alert
 
@@ -447,7 +410,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: Alert
 
@@ -458,7 +420,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Alert
 
@@ -469,7 +430,6 @@
 - License: MIT
 - Cocoapods: false
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: Alert
 
@@ -482,7 +442,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: UI
 
@@ -493,7 +452,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: UI
 
@@ -504,7 +462,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: false
-- Swift Project: true
 - Available Library: false
 - Type: UI
 
@@ -515,7 +472,6 @@
 - License: MIT
 - Cocoapods: true
 - Carthage: true
-- Swift Project: true
 - Available Library: false
 - Type: UI
 
