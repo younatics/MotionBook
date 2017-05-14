@@ -262,6 +262,14 @@
 - Carthage: false
 - Type: Collectionview
 
+#### `CSStickyHeaderFlowLayout`
+- Author: CSStickyHeaderFlowLayout
+- Git: https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout
+- Detail: UICollectionView replacement of UITableView. Do even more like Parallax Header, Sticky Section Header. Made for iOS 7.
+- Cocoapods: true
+- Carthage: false
+- Type: Collectionview
+
 ---
 ### Indicator
 #### `NVActivityIndicatorView`
