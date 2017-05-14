@@ -267,7 +267,15 @@
 - Git: https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout
 - Detail: UICollectionView replacement of UITableView. Do even more like Parallax Header, Sticky Section Header. Made for iOS 7.
 - Cocoapods: true
-- Carthage: false
+- Carthage: true
+- Type: Collectionview
+
+#### `GSKStretchyHeaderView`
+- Author: gskbyte
+- Git: https://github.com/gskbyte/GSKStretchyHeaderView
+- Detail: GSKStretchyHeaderView is an implementation of the stretchy header paradigm as seen on many apps, like Twitter, Spotify or airbnb.
+- Cocoapods: true
+- Carthage: true
 - Type: Collectionview
 
 ---
