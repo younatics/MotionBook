@@ -125,7 +125,7 @@
 - Git: https://github.com/cruisediary/Pastel
 - Detail: Powerful and easy-to-use vector graphics Swift library with SVG support
 - Cocoapods: true
-- Carthage: false
+- Carthage: true
 - Type: Animation
 
 ---
