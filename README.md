@@ -83,9 +83,9 @@
 #### `Highlighter`
 - Author: younatics
 - Git: https://github.com/younatics/Highlighter
-- Detail: Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.
+- Detail: 🖍 Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.
 - Cocoapods: true
-- Carthage: false
+- Carthage: true
 - Type: Animation
 
 #### `FLAnimatedImage`
@@ -123,9 +123,9 @@
 #### `Pastel`
 - Author: cruisediary
 - Git: https://github.com/cruisediary/Pastel
-- Detail: Powerful and easy-to-use vector graphics Swift library with SVG support
+- Detail: 🎨 Gradient animation effect like Instagram
 - Cocoapods: true
-- Carthage: false
+- Carthage: true
 - Type: Animation
 
 ---
