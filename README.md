@@ -5,6 +5,7 @@
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
 * Will be available at Appstore soon
+### Testflight is available now. please send your e-mail address if you want to test.
 
 ## Introduction
 * This application will show popular open sources with demo files. You can freely make pull request for this project. 
