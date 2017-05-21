@@ -26,7 +26,7 @@
 #### `YNDropDownMenu`
 - Author: younatics
 - Git: https://github.com/younatics/YNDropDownMenu
-- Detail: The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)
+- Detail: ✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)
 - Cocoapods: true
 - Carthage: true
 - Type: Menu
@@ -200,7 +200,7 @@
 #### `YNExpandableCell`
 - Author: younatics
 - Git: https://github.com/younatics/YNExpandableCell
-- Detail: Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell?
+- Detail: ✨Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell?
 - Cocoapods: true
 - Carthage: true
 - Type: Tableview
@@ -375,7 +375,7 @@
 #### `YNSearch`
 - Author: younatics
 - Git: https://github.com/younatics/YNSearch
-- Detail: Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm!
+- Detail:✨ Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm!
 - Cocoapods: true
 - Carthage: true
 - Type: UI
