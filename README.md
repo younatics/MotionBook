@@ -84,7 +84,7 @@
 #### `Highlighter`
 - Author: younatics
 - Git: https://github.com/younatics/Highlighter
-- Detail: 🖍 Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.
+- Detail: 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.
 - Cocoapods: true
 - Carthage: true
 - Type: Animation
@@ -124,7 +124,7 @@
 #### `Pastel`
 - Author: cruisediary
 - Git: https://github.com/cruisediary/Pastel
-- Detail: 🎨 Gradient animation effect like Instagram
+- Detail: 🎨Gradient animation effect like Instagram
 - Cocoapods: true
 - Carthage: true
 - Type: Animation
@@ -375,7 +375,7 @@
 #### `YNSearch`
 - Author: younatics
 - Git: https://github.com/younatics/YNSearch
-- Detail:✨ Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm!
+- Detail: ✨Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm!
 - Cocoapods: true
 - Carthage: true
 - Type: UI
