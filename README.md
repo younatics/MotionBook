@@ -4,7 +4,7 @@
 ![Language](https://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MFQUUX7ER3LTC)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PAKBM2K9YU6QN)
 * Will be available at Appstore soon
 ### Testflight is available now. please send your e-mail address if you want to test. (younatics@gmail.com)
 
