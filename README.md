@@ -9,7 +9,7 @@
 ### Testflight is available now. please send your e-mail address if you want to test. (younatics@gmail.com)
 
 ## Introduction
-* `Motion Book` will show below libraries with examples. You can search and bookmark what you want. 
+* `Motion Book` will show below libraries with examples. You can search and bookmark whatever you want. 
 
 ## Used Library 
 ### Categories
