@@ -90,6 +90,14 @@
 - Carthage: true
 - Type: Animation
 
+#### `Spring`
+- Author: MengTo
+- Git: https://github.com/MengTo/Spring
+- Detail: A library to simplify iOS animations in Swift.
+- Cocoapods: true
+- Carthage: false
+- Type: Animation
+
 #### `FLAnimatedImage`
 - Author: Flipboard
 - Git: https://github.com/Flipboard/FLAnimatedImage
