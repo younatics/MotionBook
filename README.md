@@ -405,6 +405,14 @@
 - Carthage: true
 - Type: UI
 
+#### `Presentation`
+- Author: hyperoslo
+- Git: https://github.com/hyperoslo/Presentation
+- Detail: Looking for the easiest way of presenting something in your iOS app? Then you are in the right place. Presentation will help you make your tutorials, release notes and any kind of animated pages with the minimum amount of effort.
+- Cocoapods: true
+- Carthage: true
+- Type: UI
+
 ---
 
 ### Author
