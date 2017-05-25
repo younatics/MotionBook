@@ -98,6 +98,14 @@
 - Carthage: false
 - Type: Animation
 
+#### `RQShineLabel`
+- Author: zipme
+- Git: https://github.com/zipme/RQShineLabel
+- Detail: A UILabel subclass that lets you animate text similar to Secret app.
+- Cocoapods: true
+- Carthage: false
+- Type: Animation
+
 #### `FLAnimatedImage`
 - Author: Flipboard
 - Git: https://github.com/Flipboard/FLAnimatedImage
