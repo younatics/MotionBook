@@ -6,7 +6,11 @@
 )](http://mit-license.org)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PAKBM2K9YU6QN)
 
-### Testflight is available now. please send your e-mail address if you want to test. (younatics@gmail.com)
+![appstore1](Images/appstore_1.png)
+![appstore2](Images/appstore_2.png)
+![appstore3](Images/appstore_3.png)
+![appstore4](Images/appstore_4.png)
+![appstore5](Images/appstore_5.png)
 
 ## Introduction
 * `Motion Book` will show below libraries with examples. You can search and bookmark whatever you want. 
