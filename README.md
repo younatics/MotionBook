@@ -6,7 +6,7 @@
 )](http://mit-license.org)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PAKBM2K9YU6QN)
 
-#### Will be in Appstore soon
+### Will be in Appstore soon
 ![appstore1](Images/appstore_1.png)
 ![appstore2](Images/appstore_2.png)
 ![appstore3](Images/appstore_3.png)
