@@ -13,7 +13,6 @@ In order to contribute to this repository you need to **fork** it, then you can 
 - Have at least 200 stars on (GitHub project)
 - Add GIF files(less than 5mb) to `motion-book` directory with library name and gif (e.g. `motion-book/YNDropDownMenu/YNDropDownMenu.gif`)
 - Edit `Readme.md` like below example
-
 ```
 Author: younatics
 Git: https://github.com/younatics/YNDropDownMenu
@@ -26,6 +25,6 @@ Type: Menu
 
 ### Optional
 - Great sample files to add example in MotionBook
-- Add another type if it is not exist. 
+- Add another Type if it is not exist. 
 
 Thank you for your pull request! :)
