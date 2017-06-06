@@ -18,7 +18,7 @@ In order to contribute to this repository you need to **fork** it, then you can 
 ```
 Author: younatics
 Git: https://github.com/younatics/YNDropDownMenu
-Detail: ✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)
+Detail: ✨The eligible dropdown menu, written in Swift 3
 Cocoapods: true
 Carthage: true
 Type: Menu
