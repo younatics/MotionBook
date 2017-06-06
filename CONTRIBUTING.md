@@ -14,7 +14,6 @@ In order to contribute to this repository you need to **fork** it, then you can 
 - Add GIF files(less than 5mb) to `motion-book` directory with library name and gif (e.g. `motion-book/YNDropDownMenu/YNDropDownMenu.gif`)
 - Edit `Readme.md` like below example
 
-#### Please be careful to make a single space " " after ":". Pull request will directly synchronized to MotionBook.
 ```
 Author: younatics
 Git: https://github.com/younatics/YNDropDownMenu
@@ -23,6 +22,7 @@ Cocoapods: true
 Carthage: true
 Type: Menu
 ```
+#### Please be careful to make a single space " " after ":". Pull request will directly synchronized to MotionBook.
 
 ### Optional
 - Great sample files to add example in MotionBook
