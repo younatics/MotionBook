@@ -14,7 +14,7 @@
 ![appstore4](Images/appstore_4.png)
 ![appstore5](Images/appstore_5.png)
 
-MotionBook will show below libraries with examples. You can search and bookmark whatever you want. Also, MotionBook will automatically refresh according to below datas. 
+MotionBook will show below libraries with examples. You can search and bookmark whatever you want. Also, MotionBook will automatically refresh according to below datas. Appstore intro support English, Korean, Chinease.
 
 ## Contribution 
 Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
