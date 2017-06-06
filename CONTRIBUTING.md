@@ -6,7 +6,7 @@ In order to contribute to this repository you need to **fork** it, then you can 
 - To remove from the list: Open an issue
 
 ### Required
-- Actively maintained over a month
+- Actively maintained
 - Performs a beautiful UI/UX
 - Used by the community
 - Well documented
