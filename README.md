@@ -15,7 +15,10 @@
 ![appstore5](Images/appstore_5.png)
 
 ## Introduction
-* `Motion Book` will show below libraries with examples. You can search and bookmark whatever you want. 
+`MotionBook` will show below libraries with examples. You can search and bookmark whatever you want. Also, `MotionBook` will automatically refresh according to below datas. 
+
+## Contribution 
+Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 ## Used Library 
 ### Categories
