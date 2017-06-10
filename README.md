@@ -395,7 +395,15 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: false
 - Type: Alert
 
+#### `NotificationBanner`
+- Author: Daltron
+- Git: https://github.com/Daltron/NotificationBanner
+- Detail: NotificationBanner is an extremely customizable and lightweight library that makes the task of displaying in app notification banners and drop down alerts an absolute breeze in iOS.
+- Cocoapods: true
+- Carthage: true
+- Type: Alert
 ---
+
 ### UI
 #### `YNSearch`
 - Author: younatics
