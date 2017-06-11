@@ -445,6 +445,13 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: UI
 
+#### `LTMorphingLabel`
+- Author: lexrus
+- Git: https://github.com/lexrus/LTMorphingLabel
+- Detail: A morphing UILabel subclass written in Swift. The .Scale effect mimicked Apple's QuickType animation of iOS 8 in WWDC 2014. New morphing effects are available as Swift extensions.
+- Cocoapods: true
+- Carthage: true
+- Type: UI
 ---
 
 ### Author
