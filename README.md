@@ -154,6 +154,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Animation
 
+#### `Gecco`
+- Author: yukiasai
+- Git: https://github.com/yukiasai/Gecco
+- Detail: Simply highlight items for your tutorial walkthrough, written in Swift. Gecco means Moonlight in Japanese.
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
 ---
 ### Transition
 #### `AnimatedTransitionGallery`
@@ -218,6 +226,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Detail: Cool wave like transition between two or more UICollectionView
 - Cocoapods: true
 - Carthage: false
+- Type: Transition
+
+#### `BWWalkthrough`
+- Author: ariok
+- Git: https://github.com/ariok/BWWalkthrough
+- Detail: BWWalkthrough (BWWT) is a class that helps you create Walkthroughs for your iOS Apps. It differs from other similar classes in that there is no rigid template; BWWT is just a layer placed over your controllers that gives you complete freedom on the design of your views.
+- Cocoapods: true
+- Carthage: true
 - Type: Transition
 
 ---
@@ -326,6 +342,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Author: KyoheiG3
 - Git: https://github.com/KyoheiG3/SpringIndicator
 - Detail: SpringIndicator is indicator and PullToRefresh. Inspired by Material design components.
+- Cocoapods: true
+- Carthage: true
+- Type: Indicator
+
+#### `BusyNavigationBar`
+- Author: gmertk
+- Git: https://github.com/gmertk/BusyNavigationBar
+- Detail: A UINavigationBar extension to show loading effects above navigation bar's background.
 - Cocoapods: true
 - Carthage: true
 - Type: Indicator
@@ -452,6 +476,15 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Cocoapods: true
 - Carthage: true
 - Type: UI
+
+#### `AIFlatSwitch`
+- Author: cocoatoucher
+- Git: https://github.com/cocoatoucher/AIFlatSwitch
+- Detail: A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used instead of UISwitch. Inspired by Creativedash's Dribbble post
+- Cocoapods: true
+- Carthage: false
+- Type: UI
+
 ---
 
 ### Author
