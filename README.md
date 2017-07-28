@@ -162,6 +162,38 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Animation
 
+#### `ScrollableGraphView`
+- Author: philackm
+- Git: https://github.com/philackm/ScrollableGraphView
+- Detail: An adaptive scrollable graph view for iOS to visualise simple discrete datasets. Written in Swift.
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
+#### `GlitchLabel`
+- Author: kciter
+- Git: https://github.com/kciter/GlitchLabel
+- Detail: G..lit...c...hing UILa..bel fo..r iO...S
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
+#### `RevealingSplashView`
+- Author: PiXeL16
+- Git: https://github.com/PiXeL16/RevealingSplashView
+- Detail: A Splash view that animates and reveals its content, inspired by Twitter splash
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
+#### `paper-switch`
+- Author: Ramotion
+- Git: https://github.com/Ramotion/paper-switch
+- Detail: RAMPaperSwitch is a Swift material design UI module which paints over the parent view when the switch is turned on.
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
 ---
 ### Transition
 #### `AnimatedTransitionGallery`
@@ -232,6 +264,22 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Author: ariok
 - Git: https://github.com/ariok/BWWalkthrough
 - Detail: BWWalkthrough (BWWT) is a class that helps you create Walkthroughs for your iOS Apps. It differs from other similar classes in that there is no rigid template; BWWT is just a layer placed over your controllers that gives you complete freedom on the design of your views.
+- Cocoapods: true
+- Carthage: true
+- Type: Transition
+
+#### `Gemini`
+- Author: shoheiyokoyama
+- Git: https://github.com/shoheiyokoyama/Gemini
+- Detail: BGemini is rich scroll based animation framework for iOS, written in Swift.
+- Cocoapods: true
+- Carthage: true
+- Type: Transition
+
+#### `AMWaveTransition`
+- Author: andreamazz
+- Git: https://github.com/andreamazz/AMWaveTransition
+- Detail: Custom transition between viewcontrollers holding tableviews. Each cell is animated to simulate a 'wave effect'.
 - Cocoapods: true
 - Carthage: true
 - Type: Transition
@@ -481,6 +529,30 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Author: cocoatoucher
 - Git: https://github.com/cocoatoucher/AIFlatSwitch
 - Detail: A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used instead of UISwitch. Inspired by Creativedash's Dribbble post
+- Cocoapods: true
+- Carthage: false
+- Type: UI
+
+#### `MarkdownView`
+- Author: keitaoouchi
+- Git: https://github.com/keitaoouchi/MarkdownView
+- Detail: MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it.
+- Cocoapods: true
+- Carthage: true
+- Type: UI
+
+#### `DKNightVersion`
+- Author: Draveness
+- Git: https://github.com/Draveness/DKNightVersion
+- Detail: Manage Colors, Integrate Night/Multiple Themes
+- Cocoapods: true
+- Carthage: true
+- Type: UI
+
+#### `PARTagPicker`
+- Author: paulrolfe
+- Git: https://github.com/paulrolfe/PARTagPicker
+- Detail: This pod provides a view controller for choosing and creating tags in the style of wordpress or tumblr. This tag picker was originally used in the Intrepid Pursuits app, Slate.
 - Cocoapods: true
 - Carthage: false
 - Type: UI
