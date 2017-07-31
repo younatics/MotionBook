@@ -284,6 +284,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Transition
 
+#### `XLPagerTabStrip`
+- Author: xmartlabs
+- Git: https://github.com/xmartlabs/XLPagerTabStrip
+- Detail: XLPagerTabStrip is a Container View Controller that allows us to switch easily among a collection of view controllers. Pan gesture can be used to move on to next or previous view controller. It shows a interactive indicator of the current, previous, next child view controllers.
+- Cocoapods: true
+- Carthage: true
+- Type: Transition
+
 ---
 ### Tableview
 #### `YNExpandableCell`
