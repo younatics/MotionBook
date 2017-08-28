@@ -308,6 +308,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Transition
 
+#### `ElasticTransition`
+- Author: lkzhao
+- Git: https://github.com/lkzhao/ElasticTransition
+- Detail: A UIKit custom transition that simulates an elastic drag. Written in Swift.
+- Cocoapods: true
+- Carthage: false
+- Type: Transition
+
 ---
 ### Tableview
 #### `YNExpandableCell`
