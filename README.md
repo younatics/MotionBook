@@ -442,6 +442,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Indicator
 
+#### `PKHUD`
+- Author: pkluz
+- Git: https://github.com/pkluz/PKHUD
+- Detail: A Swift based reimplementation of the Apple HUD (Volume, Ringer, Rotation,…) for iOS 8.
+- Cocoapods: true
+- Carthage: true
+- Type: Indicator
+
 ### Alert
 #### `CRToast`
 - Author: cruffenach
