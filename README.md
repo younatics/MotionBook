@@ -194,6 +194,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Animation
 
+#### `URWeatherView`
+- Author: jegumhon
+- Git: https://github.com/jegumhon/URWeatherView
+- Detail: Show the weather effects onto view written in Swift3
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
 ---
 ### Transition
 #### `AnimatedTransitionGallery`
