@@ -400,6 +400,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Collectionview
 
+#### `SwiftSpreadsheet`
+- Author: stuffrabbit
+- Git: https://github.com/stuffrabbit/SwiftSpreadsheet
+- Detail: Spreadsheet CollectionViewLayout in Swift. Fully customizable.
+- Cocoapods: true
+- Carthage: false
+- Type: Collectionview
+
 ---
 ### Indicator
 #### `NVActivityIndicatorView`
