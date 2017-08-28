@@ -300,6 +300,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Transition
 
+#### `BubbleTransition`
+- Author: andreamazz
+- Git: https://github.com/andreamazz/BubbleTransition
+- Detail: A custom modal transition that presents and dismiss a controller inside an expanding and shrinking bubble.
+- Cocoapods: true
+- Carthage: true
+- Type: Transition
+
 ---
 ### Tableview
 #### `YNExpandableCell`
