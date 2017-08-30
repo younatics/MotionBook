@@ -274,7 +274,7 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 #### `Gemini`
 - Author: shoheiyokoyama
 - Git: https://github.com/shoheiyokoyama/Gemini
-- Detail: BGemini is rich scroll based animation framework for iOS, written in Swift.
+- Detail: Gemini is rich scroll based animation framework for iOS, written in Swift.
 - Cocoapods: true
 - Carthage: true
 - Type: Transition
