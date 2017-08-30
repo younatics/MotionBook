@@ -1,10 +1,13 @@
 # 📖 Motion Book  iOS(UI/UX Animation Book)
+
 [![Platform](http://img.shields.io/badge/platform-ios-green.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
 ![Language](https://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PAKBM2K9YU6QN)
+
+## MotionBook is now open source. Please see [MotionBook-Source](https://github.com/younatics/MotionBook-Source)
 
 <a href="https://appsto.re/kr/8yv1hb.i" > <img src="https://raw.githubusercontent.com/younatics/MotionBook/master/Images/appstore.png" width="170" height="58"></a>
 
@@ -14,7 +17,6 @@
 ![appstore4](Images/appstore_4.png)
 ![appstore5](Images/appstore_5.png)
 
-## MotionBook is now open source. Please see [MotionBook-Source](https://github.com/younatics/MotionBook-Source)
 MotionBook will show below libraries with examples. You can search and bookmark whatever you want. Also, MotionBook will automatically refresh according to below datas. Appstore intro support English, Korean, Chinease.
 
 ## Contribution 
