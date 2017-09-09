@@ -572,4 +572,4 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 ### Author
 
-**[younatics 🇰🇷](https://younatics.github.io)**
+**[younatics 🇰🇷](https://twitter.com/younatics)**
