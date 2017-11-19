@@ -568,6 +568,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: false
 - Type: UI
 
+#### `MediaBrowser`
+- Author: younatics
+- Git: https://github.com/younatics/MediaBrowser
+- Detail: 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view.
+- Cocoapods: true
+- Carthage: true
+- Type: UI
+
 ---
 
 ### Author
