@@ -197,6 +197,22 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Animation
 
+#### `SkeletonView`
+- Author: Juanpe
+- Git: https://github.com/Juanpe/SkeletonView
+- Detail: Today almost all apps have async processes, such as Api requests, long running processes, etc. And while the processes are working, usually developers place a loading view to show users that something is going on.SkeletonView has been conceived to address this need, an elegant way to show users that something is happening and also prepare them to which contents he is waiting.
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
+#### `Windless`
+- Author: Interactive-Studio
+- Git: https://github.com/Interactive-Studio/Windless
+- Detail: Windless makes it easy to implement invisible layout loading view.
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
 ---
 ### Transition
 #### `AnimatedTransitionGallery`
@@ -574,6 +590,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Detail: 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view.
 - Cocoapods: true
 - Carthage: true
+- Type: UI
+
+#### `Cards`
+- Author: PaoloCuscela
+- Git: https://github.com/PaoloCuscela/Cards
+- Detail: Awesome iOS 11 appstore cards in swift 4.
+- Cocoapods: true
+- Carthage: false
 - Type: UI
 
 ---
