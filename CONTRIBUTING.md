@@ -11,7 +11,6 @@ In order to contribute to this repository you need to **fork** it, then you can 
 - Used by the community
 - Well documented
 - Have at least 200 stars on (GitHub project)
-- Add GIF files(less than 5mb) to `motion-book` directory with library name and gif (e.g. `motion-book/YNDropDownMenu/YNDropDownMenu.gif`)
 - Edit `Readme.md` like below example
 ```
 Author: younatics
