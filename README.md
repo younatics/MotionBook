@@ -611,7 +611,7 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 #### `fluid-slider`
 - Author: Ramotion
 - Git: https://github.com/Ramotion/fluid-slider
-- Detail: :octocat: A slider widget with a popup bubble displaying the precise value selected.
+- Detail: A slider widget with a popup bubble displaying the precise value selected.
 - Cocoapods: true
 - Carthage: true
 - Type: UI
