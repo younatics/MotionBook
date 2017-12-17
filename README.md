@@ -1,10 +1,13 @@
 # 📖 Motion Book  iOS(UI/UX Animation Book)
+### MotionBook is now open source. Please see [MotionBook-Source](https://github.com/younatics/MotionBook-Source)
+
 [![Platform](http://img.shields.io/badge/platform-ios-green.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
 ![Language](https://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PAKBM2K9YU6QN)
+
 
 <a href="https://appsto.re/kr/8yv1hb.i" > <img src="https://raw.githubusercontent.com/younatics/MotionBook/master/Images/appstore.png" width="170" height="58"></a>
 
@@ -194,6 +197,30 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Animation
 
+#### `SkeletonView`
+- Author: Juanpe
+- Git: https://github.com/Juanpe/SkeletonView
+- Detail: Today almost all apps have async processes, such as Api requests, long running processes, etc. And while the processes are working, usually developers place a loading view to show users that something is going on.SkeletonView has been conceived to address this need, an elegant way to show users that something is happening and also prepare them to which contents he is waiting.
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
+#### `Windless`
+- Author: Interactive-Studio
+- Git: https://github.com/Interactive-Studio/Windless
+- Detail: Windless makes it easy to implement invisible layout loading view.
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
+#### `Ease`
+- Author: roberthein
+- Git: https://github.com/roberthein/Ease
+- Detail: Ease is a event driven animation system that combines the observer pattern with custom spring animations as observers.
+- Cocoapods: true
+- Carthage: false
+- Type: Animation
+
 #### `URWeatherView`
 - Author: jegumhon
 - Git: https://github.com/jegumhon/URWeatherView
@@ -279,7 +306,7 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 #### `Gemini`
 - Author: shoheiyokoyama
 - Git: https://github.com/shoheiyokoyama/Gemini
-- Detail: BGemini is rich scroll based animation framework for iOS, written in Swift.
+- Detail: Gemini is rich scroll based animation framework for iOS, written in Swift.
 - Cocoapods: true
 - Carthage: true
 - Type: Transition
@@ -605,8 +632,33 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: false
 - Type: UI
 
+#### `MediaBrowser`
+- Author: younatics
+- Git: https://github.com/younatics/MediaBrowser
+- Detail: 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view.
+- Cocoapods: true
+- Carthage: true
+- Type: UI
+
+#### `Cards`
+- Author: PaoloCuscela
+- Git: https://github.com/PaoloCuscela/Cards
+- Detail: Awesome iOS 11 appstore cards in swift 4.
+- Cocoapods: true
+- Carthage: false
+- Type: UI
+
+#### `fluid-slider`
+- Author: Ramotion
+- Git: https://github.com/Ramotion/fluid-slider
+- Detail: A slider widget with a popup bubble displaying the precise value selected.
+- Cocoapods: true
+- Carthage: true
+- Type: UI
+
 ---
 
 ### Author
 
-**[younatics 🇰🇷](https://younatics.github.io)**
+[younatics](https://twitter.com/younatics)
+<a href="http://twitter.com/younatics" target="_blank"><img alt="Twitter" src="https://img.shields.io/twitter/follow/younatics.svg?style=social&label=Follow"></a>
