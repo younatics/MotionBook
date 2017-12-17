@@ -213,6 +213,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Animation
 
+#### `Ease`
+- Author: roberthein
+- Git: https://github.com/roberthein/Ease
+- Detail: Ease is a event driven animation system that combines the observer pattern with custom spring animations as observers.
+- Cocoapods: true
+- Carthage: false
+- Type: Animation
+
 ---
 ### Transition
 #### `AnimatedTransitionGallery`
