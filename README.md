@@ -229,6 +229,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Carthage: true
 - Type: Animation
 
+#### `AnimatedMaskLabel`
+- Author: imjog
+- Git: https://github.com/imjog/AnimatedMaskLabel
+- Detail: Nice gradient animated label that enable an easy way to add a shimmering effect
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
 ---
 ### Transition
 #### `AnimatedTransitionGallery`
