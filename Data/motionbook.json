@@ -1,0 +1,119 @@
+[
+	{
+		"title": "YNDropDownMenu",
+		"description": "✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)",
+		"author": "younatics",
+		"url": "https://github.com/younatics/YNDropDownMenu",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Side-Menu.iOS",
+		"description": "Animated side menu with customizable UI. Made in Yalantis.",
+		"author": "Yalantis",
+		"url": "https://github.com/Yalantis/Side-Menu.iOS",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "circle-menu",
+		"description": "This project is maintained by Ramotion, Inc. We specialize in the designing and coding of custom UI for Mobile Apps and Websites.",
+		"author": "Ramotion",
+		"url": "https://github.com/Ramotion/circle-menu",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "GuillotineMenu",
+		"description": "Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine.",
+		"author": "Yalantis",
+		"url": "https://github.com/Yalantis/GuillotineMenu",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "SideMenu",
+		"description": "Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+.",
+		"author": "jonkykong",
+		"url": "https://github.com/jonkykong/SideMenu",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "SlideMenuControllerSwift",
+		"description": "iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift.",
+		"author": "dekatotoro",
+		"url": "https://github.com/dekatotoro/SlideMenuControllerSwift",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "animated-tab-bar",
+		"description": "RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items.",
+		"author": "Ramotion",
+		"url": "https://github.com/Ramotion/animated-tab-bar",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Highlighter",
+		"description": "🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.",
+		"author": "younatics",
+		"url": "https://github.com/younatics/Highlighter",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Spring",
+		"description": "A library to simplify iOS animations in Swift.",
+		"author": "MengTo",
+		"url": "https://github.com/MengTo/Spring",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "RQShineLabel",
+		"description": "A UILabel subclass that lets you animate text similar to Secret app.",
+		"author": "zipme",
+		"url": "https://github.com/zipme/RQShineLabel",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "FLAnimatedImage",
+		"description": "FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do",
+		"author": "Flipboard",
+		"url": "https://github.com/Flipboard/FLAnimatedImage",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "YLGIFImage",
+		"description": "Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory.",
+		"author": "liyong03",
+		"url": "https://github.com/liyong03/YLGIFImage",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "YLGIFImage",
+		"description": "Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory.",
+		"author": "liyong03",
+		"url": "https://github.com/liyong03/YLGIFImage",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": false
+	}
+]
