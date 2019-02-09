@@ -1,0 +1,227 @@
+[
+	{
+		"title": "YNDropDownMenu",
+		"description": "✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)",
+		"author": "younatics",
+		"url": "https://github.com/younatics/YNDropDownMenu",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Side-Menu.iOS",
+		"description": "Animated side menu with customizable UI. Made in Yalantis.",
+		"author": "Yalantis",
+		"url": "https://github.com/Yalantis/Side-Menu.iOS",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "circle-menu",
+		"description": "This project is maintained by Ramotion, Inc. We specialize in the designing and coding of custom UI for Mobile Apps and Websites.",
+		"author": "Ramotion",
+		"url": "https://github.com/Ramotion/circle-menu",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "GuillotineMenu",
+		"description": "Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine.",
+		"author": "Yalantis",
+		"url": "https://github.com/Yalantis/GuillotineMenu",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "SideMenu",
+		"description": "Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+.",
+		"author": "jonkykong",
+		"url": "https://github.com/jonkykong/SideMenu",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "SlideMenuControllerSwift",
+		"description": "iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift.",
+		"author": "dekatotoro",
+		"url": "https://github.com/dekatotoro/SlideMenuControllerSwift",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "animated-tab-bar",
+		"description": "RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items.",
+		"author": "Ramotion",
+		"url": "https://github.com/Ramotion/animated-tab-bar",
+		"type": "menu",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Highlighter",
+		"description": "🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.",
+		"author": "younatics",
+		"url": "https://github.com/younatics/Highlighter",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Spring",
+		"description": "A library to simplify iOS animations in Swift.",
+		"author": "MengTo",
+		"url": "https://github.com/MengTo/Spring",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "RQShineLabel",
+		"description": "A UILabel subclass that lets you animate text similar to Secret app.",
+		"author": "zipme",
+		"url": "https://github.com/zipme/RQShineLabel",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "FLAnimatedImage",
+		"description": "FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do",
+		"author": "Flipboard",
+		"url": "https://github.com/Flipboard/FLAnimatedImage",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "YLGIFImage",
+		"description": "Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory.",
+		"author": "liyong03",
+		"url": "https://github.com/liyong03/YLGIFImage",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "Macaw",
+		"description": "Powerful and easy-to-use vector graphics Swift library with SVG support",
+		"author": "exyte",
+		"url": "https://github.com/exyte/Macaw",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Stellar",
+		"description": "A fantastic Physical animation library for swift(Not Just Spring !!!), it is base on UIDynamic and extension to it, friendly APIs make you use it or custom your own animation very easily!",
+		"author": "AugustRush",
+		"url": "https://github.com/AugustRush/Stellar",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Pastel",
+		"description": "🎨Gradient animation effect like Instagram",
+		"author": "cruisediary",
+		"url": "https://github.com/cruisediary/Pastel",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Gecco",
+		"description": "Simply highlight items for your tutorial walkthrough, written in Swift. Gecco means Moonlight in Japanese.",
+		"author": "yukiasai",
+		"url": "https://github.com/yukiasai/Gecco",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "ScrollableGraphView",
+		"description": "An adaptive scrollable graph view for iOS to visualise simple discrete datasets. Written in Swift.",
+		"author": "philackm",
+		"url": "https://github.com/philackm/ScrollableGraphView",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "GlitchLabel",
+		"description": "G..lit...c...hing UILa..bel fo..r iO...S",
+		"author": "kciter",
+		"url": "https://github.com/kciter/GlitchLabel",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "RevealingSplashView",
+		"description": "A Splash view that animates and reveals its content, inspired by Twitter splash",
+		"author": "PiXeL16",
+		"url": "https://github.com/PiXeL16/RevealingSplashView",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "paper-switch",
+		"description": "RAMPaperSwitch is a Swift material design UI module which paints over the parent view when the switch is turned on.",
+		"author": "Ramotion",
+		"url": "https://github.com/Ramotion/paper-switch",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "SkeletonView",
+		"description": "Today almost all apps have async processes, such as Api requests, long running processes, etc. And while the processes are working, usually developers place a loading view to show users that something is going on.SkeletonView has been conceived to address this need, an elegant way to show users that something is happening and also prepare them to which contents he is waiting.",
+		"author": "Juanpe",
+		"url": "https://github.com/Juanpe/SkeletonView",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Windless",
+		"description": "Windless makes it easy to implement invisible layout loading view.",
+		"author": "Interactive-Studio",
+		"url": "https://github.com/Interactive-Studio/Windless",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "Ease",
+		"description": "Ease is a event driven animation system that combines the observer pattern with custom spring animations as observers.",
+		"author": "roberthein",
+		"url": "https://github.com/roberthein/Ease",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": false
+	},
+	{
+		"title": "URWeatherView",
+		"description": "Show the weather effects onto view written in Swift3",
+		"author": "jegumhon",
+		"url": "https://github.com/jegumhon/URWeatherView",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	},
+	{
+		"title": "AnimatedMaskLabel",
+		"description": "Nice gradient animated label that enable an easy way to add a shimmering effect",
+		"author": "imjog",
+		"url": "https://github.com/imjog/AnimatedMaskLabel",
+		"type": "animation",
+		"cocoapods": true,
+		"carthage": true
+	}
+]

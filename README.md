@@ -1,4 +1,4 @@
-# 📖 Motion Book  iOS(UI/UX Animation Book)
+# 📖 MotionBook (UI/UX Animation Book)
 ### MotionBook is now open source. Please see [MotionBook-Source](https://github.com/younatics/MotionBook-Source)
 
 [![Platform](http://img.shields.io/badge/platform-ios-green.svg?style=flat
@@ -225,6 +225,14 @@ Please see [CONTRIBUTING.md](/CONTRIBUTING.md)
 - Author: jegumhon
 - Git: https://github.com/jegumhon/URWeatherView
 - Detail: Show the weather effects onto view written in Swift3
+- Cocoapods: true
+- Carthage: true
+- Type: Animation
+
+#### `AnimatedMaskLabel`
+- Author: imjog
+- Git: https://github.com/imjog/AnimatedMaskLabel
+- Detail: Nice gradient animated label that enable an easy way to add a shimmering effect
 - Cocoapods: true
 - Carthage: true
 - Type: Animation
