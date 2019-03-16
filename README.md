@@ -1,5 +1,4 @@
 # 📖 MotionBook (UI/UX Animation Book)
-### MotionBook is now open source. Please see [MotionBook-Source](https://github.com/younatics/MotionBook-Source)
 
 [![Platform](http://img.shields.io/badge/platform-ios-green.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
