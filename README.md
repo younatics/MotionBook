@@ -1,4 +1,4 @@
-# 📖 MotionBook (UI/UX Animation Book)
+# 📖 textBook (UI/UX Animation Book)
 
 [![Platform](http://img.shields.io/badge/platform-ios-green.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
