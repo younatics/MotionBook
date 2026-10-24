@@ -1,9 +1,9 @@
 <!-- Thanks for contributing to MotionBook -->
 
-- Library Name:
-- Library URL:
-- Library Description:
-- Why this library should be in MotionBook:
+- Library: owner/repo
+- Why it belongs in MotionBook (one or two sentences):
 
-- [ ] Add GIF files(less than 5mb) to `motion-book` directory with library name and gif (e.g. `motion-book/YNDropDownMenu.gif`)
-- [ ] At least 200 stars
+- [ ] Added through `python3 scripts/refresh_catalog.py --add owner/repo --category … --tags …` (or edited `catalog.json` directly)
+- [ ] Ran `python3 scripts/render.py` and `python3 scripts/render.py --check` passes
+- [ ] Maintained (push in the last two years, not archived), builds on the current Xcode, 200+ stars or a reason above
+- [ ] Optional: preview GIF under `motion-book/<title>.gif` (less than 5 MB)

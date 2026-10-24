@@ -1,0 +1,30 @@
+name: refresh
+on:
+  schedule:
+    - cron: "17 0 * * 1"   # Mondays 00:17 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refresh GitHub numbers and regenerate README / llms.txt / docs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/refresh_catalog.py
+          python3 scripts/render.py
+          python3 scripts/render.py --check
+      - name: Commit when something changed
+        run: |
+          git config user.name "motionbook-bot"
+          git config user.email "motionbook-bot@users.noreply.github.com"
+          if git diff --quiet; then echo "no changes"; exit 0; fi
+          git add catalog.json README.md llms.txt docs/index.html
+          git commit -m "catalog: weekly refresh ($(date -u +%Y-%m-%d))"
+          git push
