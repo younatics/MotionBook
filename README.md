@@ -46,7 +46,7 @@ Airbnb · ★ 27K · ⟳ 2026-10 · Apache-2.0 · tag `4.6.1`
 
 Render After Effects animations natively and keep product motion consistent across screens.
 
-`▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/airbnb/lottie-ios", from: "4.6.1")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/Lottie.gif) · `.package(url: "https://github.com/airbnb/lottie-ios", from: "4.6.1")`
 
 #### [Pop](https://github.com/facebookarchive/pop)
 Facebook · ★ 20K · ⟳ 2020-01 · BSD-3-Clause · tag `1.0.11`
@@ -81,7 +81,7 @@ Marcos Griselli · ★ 7.3K · ⟳ 2024-03 · MIT · tag `3.1.0`
 
 Animate collection and table view content with concise, reusable item animations.
 
-`▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/marcosgriselli/ViewAnimator", from: "3.1.0")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/ViewAnimator.gif) · `.package(url: "https://github.com/marcosgriselli/ViewAnimator", from: "3.1.0")`
 
 #### [Macaw](https://github.com/exyte/Macaw)
 exyte · ★ 6.0K · ⟳ 2024-02 · MIT · tag `0.9.10`
@@ -109,7 +109,7 @@ EmergeTools · ★ 4.4K · ⟳ 2026-04 · MIT · tag `1.0.5`
 
 Delightful SwiftUI effects for your app
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/EmergeTools/Pow", from: "1.0.5")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Pow.gif) · `.package(url: "https://github.com/EmergeTools/Pow", from: "1.0.5")`
 
 #### [Pastel](https://github.com/cruisediary/Pastel)
 cruisediary · ★ 3.5K · ⟳ 2026-03 · MIT · tag `1.0.0`
@@ -137,14 +137,14 @@ simibac · ★ 2.5K · ⟳ 2026-01 · MIT · tag `3.0.0`
 
 SwiftUI Package for Configurable Confetti Animation 🎉
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/simibac/ConfettiSwiftUI", from: "3.0.0")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/ConfettiSwiftUI.gif) · `.package(url: "https://github.com/simibac/ConfettiSwiftUI", from: "3.0.0")`
 
 #### [Wave](https://github.com/jtrivedi/Wave)
 jtrivedi · ★ 2.4K · ⟳ 2026-03 · MIT · tag `0.3.3`
 
 Wave is a spring-based animation engine for iOS and macOS that makes it easy to create fluid, interruptible animations that feel great.
 
-`▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/jtrivedi/Wave", from: "0.3.3")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/Wave.gif) · `.package(url: "https://github.com/jtrivedi/Wave", from: "0.3.3")`
 
 #### [RQShineLabel](https://github.com/zipme/RQShineLabel)
 zipme · ★ 1.9K · ⟳ 2023-12 · MIT · tag `1.0.0`
@@ -172,14 +172,14 @@ twostraws · ★ 1.6K · ⟳ 2026-04 · MIT · tag `1.0.4`
 
 High-performance particle effects for SwiftUI.
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/twostraws/Vortex", from: "1.0.4")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Vortex.gif) · `.package(url: "https://github.com/twostraws/Vortex", from: "1.0.4")`
 
 #### [Motion (b3ll)](https://github.com/b3ll/Motion)
 b3ll · ★ 1.5K · ⟳ 2024-10 · BSD-2-Clause · tag `v0.1.5`
 
 Animation engine for gesturally-driven user interfaces, animations, and interactions on iOS, macOS, and tvOS.
 
-`▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/b3ll/Motion", from: "0.1.5")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/Motion-b3ll.gif) · `.package(url: "https://github.com/b3ll/Motion", from: "0.1.5")`
 
 #### [Ease](https://github.com/roberthein/Ease)
 roberthein · ★ 1.3K · ⟳ 2020-07 · MIT · tag `3.2.0`
@@ -221,14 +221,14 @@ maustinstar · ★ 856 · ⟳ 2024-08 · MIT · tag `v0.0.2`
 
 Create a playful backsplash in SwiftUI.
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/maustinstar/liquid", from: "0.0.2")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Liquid.gif) · `.package(url: "https://github.com/maustinstar/liquid", from: "0.0.2")`
 
 #### [rive-ios](https://github.com/rive-app/rive-ios)
 rive-app · ★ 851 · ⟳ 2026-10 · MIT · tag `6.28.1`
 
 iOS runtime for Rive
 
-`▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/rive-app/rive-ios", from: "6.28.1")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/rive-ios.gif) · `.package(url: "https://github.com/rive-app/rive-ios", from: "6.28.1")`
 
 #### [URWeatherView](https://github.com/Urtaq/URWeatherView)
 jegumhon · ★ 447 · ⟳ 2019-01 · MIT · tag `0.7.0`
@@ -242,7 +242,7 @@ jasudev · ★ 432 · ⟳ 2024-02 · MIT · tag `0.5.0`
 
 This library for animating text. Developed with SwiftUI. This library supports iOS/macOS.
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/jasudev/AnimateText", from: "0.5.0")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/AnimateText.gif) · `.package(url: "https://github.com/jasudev/AnimateText", from: "0.5.0")`
 
 #### [Gecco](https://github.com/xai3/Gecco)
 yukiasai · ★ 19 · ⟳ 2020-09 · MIT · tag `2.0.0`
@@ -356,7 +356,7 @@ nathantannar4 · ★ 1.2K · ⟳ 2026-10 · BSD-2-Clause · tag `3.0.0`
 
 Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more.
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/nathantannar4/Transmission", from: "3.0.0")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Transmission.gif) · `.package(url: "https://github.com/nathantannar4/Transmission", from: "3.0.0")`
 
 #### [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition)
 jonathantribouharet · ★ 949 · ⟳ 2019-01 · MIT · tag `2.0.3`
@@ -421,7 +421,7 @@ twostraws · ★ 2.9K · ⟳ 2026-05 · MIT · tag `1.1.0`
 
 Metal shaders for SwiftUI.
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/twostraws/Inferno", from: "1.1.0")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Inferno.gif) · `.package(url: "https://github.com/twostraws/Inferno", from: "1.1.0")`
 
 #### [Segmentio](https://github.com/Yalantis/Segmentio)
 Yalantis · ★ 2.5K · ⟳ 2024-08 · MIT · tag `3.0`
@@ -442,7 +442,7 @@ joogps · ★ 2.1K · ⟳ 2026-10 · MIT · tag `2.1`
 
 A library for progressive blurs in SwiftUI.
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/joogps/Glur", from: "2.1")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Glur.gif) · `.package(url: "https://github.com/joogps/Glur", from: "2.1")`
 
 #### [fluid-slider](https://github.com/Ramotion/fluid-slider)
 Ramotion · ★ 2.0K · ⟳ 2022-06 · MIT · tag `1.1.0`
@@ -456,14 +456,14 @@ markiv · ★ 1.7K · ⟳ 2024-08 · MIT · tag `1.5.1`
 
 Shimmer is a super-light modifier that adds a shimmering effect to any SwiftUI View, for example, to show that an operation is in progress. It works well on light and dark modes, and across iOS, macOS, tvOS, watchOS and visionOS.
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/markiv/SwiftUI-Shimmer", from: "1.5.1")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/SwiftUI-Shimmer.gif) · `.package(url: "https://github.com/markiv/SwiftUI-Shimmer", from: "1.5.1")`
 
 #### [ScalingHeaderScrollView](https://github.com/exyte/ScalingHeaderScrollView)
 exyte · ★ 1.5K · ⟳ 2026-10 · MIT · tag `3.1.0`
 
 A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI.
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/exyte/ScalingHeaderScrollView", from: "3.1.0")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/ScalingHeaderScrollView.gif) · `.package(url: "https://github.com/exyte/ScalingHeaderScrollView", from: "3.1.0")`
 
 #### [YNSearch](https://github.com/younatics/YNSearch)
 younatics · ★ 1.2K · ⟳ 2026-10 · MIT · tag `3.1.0`
@@ -477,7 +477,7 @@ maustinstar · ★ 1.1K · ⟳ 2024-07 · MIT · tag `v0.0.1`
 
 Shiny uses your gyroscope to simulate lighting and motion effects on colors. Works on almost every SwiftUI View.
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/maustinstar/shiny", from: "0.0.1")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Shiny.gif) · `.package(url: "https://github.com/maustinstar/shiny", from: "0.0.1")`
 
 #### [AIFlatSwitch](https://github.com/cocoatoucher/AIFlatSwitch)
 cocoatoucher · ★ 963 · ⟳ 2022-06 · MIT · tag `1.0.8`
@@ -498,7 +498,7 @@ Cindori · ★ 439 · ⟳ 2024-03 · MIT · tag `1.0.0`
 
 A fluid, animated gradient implemented with CoreAnimation and SwiftUI.
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/Cindori/FluidGradient", from: "1.0.0")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/FluidGradient.gif) · `.package(url: "https://github.com/Cindori/FluidGradient", from: "1.0.0")`
 
 #### [PARTagPicker](https://github.com/paulrolfe/PARTagPicker)
 paulrolfe · ★ 365 · ⟳ 2019-06 · MIT · tag `1.4.0`
@@ -586,7 +586,7 @@ exyte · ★ 4.1K · ⟳ 2026-10 · MIT · tag `5.0.8`
 
 Toasts and popups library written with SwiftUI
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/exyte/PopupView", from: "5.0.8")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/PopupView.gif) · `.package(url: "https://github.com/exyte/PopupView", from: "5.0.8")`
 
 #### [PopupDialog](https://github.com/Orderella/PopupDialog)
 Orderella · ★ 4.0K · ⟳ 2024-02 · MIT · tag `1.1.1`
@@ -600,7 +600,7 @@ aheze · ★ 2.2K · ⟳ 2025-02 · MIT · tag `1.3.2`
 
 A library to present popovers. Simple, modern, and highly customizable. Not boring!
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/aheze/Popovers", from: "1.3.2")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Popovers.gif) · `.package(url: "https://github.com/aheze/Popovers", from: "1.3.2")`
 
 #### [SweetAlert-iOS](https://github.com/codestergit/SweetAlert-iOS)
 codestergit · ★ 2.0K · ⟳ 2020-03 · MIT · tag `v0.9`
@@ -672,7 +672,7 @@ exyte · ★ 2.1K · ⟳ 2026-09 · MIT · tag `1.5.0`
 
 The most powerful Grid container missed in SwiftUI
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/exyte/Grid", from: "1.5.0")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Grid-exyte.gif) · `.package(url: "https://github.com/exyte/Grid", from: "1.5.0")`
 
 #### [GSKStretchyHeaderView](https://github.com/gskbyte/GSKStretchyHeaderView)
 gskbyte · ★ 1.7K · ⟳ 2024-08 · MIT · tag `1.0.4`
@@ -753,7 +753,7 @@ exyte · ★ 1.7K · ⟳ 2026-09 · MIT · tag `2.0.2`
 
 A number of preset loading indicators created with SwiftUI
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/exyte/ActivityIndicatorView", from: "2.0.2")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/ActivityIndicatorView.gif) · `.package(url: "https://github.com/exyte/ActivityIndicatorView", from: "2.0.2")`
 
 #### [TKRubberIndicator](https://github.com/tbxark/TKRubberIndicator)
 TBXark · ★ 1.5K · ⟳ 2026-09 · MIT · tag `2.0.0`

@@ -82,7 +82,7 @@
     "json"
    ],
    "featured": true,
-   "gif": null,
+   "gif": "motion-book/Lottie.gif",
    "stars": 26917,
    "pushed": "2026-10-06",
    "license": "Apache-2.0",
@@ -417,7 +417,7 @@
     "stagger"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/ViewAnimator.gif",
    "stars": 7303,
    "pushed": "2024-03-31",
    "license": "MIT",
@@ -750,7 +750,7 @@
     "transitions"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Pow.gif",
    "stars": 4420,
    "pushed": "2026-04-13",
    "license": "MIT",
@@ -833,7 +833,7 @@
     "popup"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/PopupView.gif",
    "stars": 4061,
    "pushed": "2026-10-06",
    "license": "MIT",
@@ -1169,7 +1169,7 @@
     "shaders"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Inferno.gif",
    "stars": 2932,
    "pushed": "2026-05-17",
    "license": "MIT",
@@ -1344,7 +1344,7 @@
     "particles"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/ConfettiSwiftUI.gif",
    "stars": 2469,
    "pushed": "2026-01-05",
    "license": "MIT",
@@ -1376,7 +1376,7 @@
     "engine"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Wave.gif",
    "stars": 2402,
    "pushed": "2026-03-25",
    "license": "MIT",
@@ -1454,7 +1454,7 @@
     "menu"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Popovers.gif",
    "stars": 2211,
    "pushed": "2025-02-19",
    "license": "MIT",
@@ -1537,7 +1537,7 @@
     "layout"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Grid-exyte.gif",
    "stars": 2119,
    "pushed": "2026-09-15",
    "license": "MIT",
@@ -1597,7 +1597,7 @@
     "progressive"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Glur.gif",
    "stars": 2086,
    "pushed": "2026-10-18",
    "license": "MIT",
@@ -1883,7 +1883,7 @@
     "loading"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/SwiftUI-Shimmer.gif",
    "stars": 1697,
    "pushed": "2024-08-14",
    "license": "MIT",
@@ -1915,7 +1915,7 @@
     "indicator"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/ActivityIndicatorView.gif",
    "stars": 1675,
    "pushed": "2026-09-10",
    "license": "MIT",
@@ -1970,7 +1970,7 @@
     "effects"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Vortex.gif",
    "stars": 1589,
    "pushed": "2026-04-03",
    "license": "MIT",
@@ -2002,7 +2002,7 @@
     "scroll"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/ScalingHeaderScrollView.gif",
    "stars": 1547,
    "pushed": "2026-10-20",
    "license": "MIT",
@@ -2034,7 +2034,7 @@
     "engine"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Motion-b3ll.gif",
    "stars": 1491,
    "pushed": "2024-10-19",
    "license": "BSD-2-Clause",
@@ -2173,7 +2173,7 @@
     "transition"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Transmission.gif",
    "stars": 1190,
    "pushed": "2026-10-24",
    "license": "BSD-2-Clause",
@@ -2256,7 +2256,7 @@
     "shine"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Shiny.gif",
    "stars": 1090,
    "pushed": "2024-07-12",
    "license": "MIT",
@@ -2459,7 +2459,7 @@
     "backsplash"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Liquid.gif",
    "stars": 856,
    "pushed": "2024-08-19",
    "license": "MIT",
@@ -2491,7 +2491,7 @@
     "vector"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/rive-ios.gif",
    "stars": 851,
    "pushed": "2026-10-24",
    "license": "MIT",
@@ -2726,7 +2726,7 @@
     "background"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/FluidGradient.gif",
    "stars": 439,
    "pushed": "2024-03-14",
    "license": "MIT",
@@ -2758,7 +2758,7 @@
     "animation"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/AnimateText.gif",
    "stars": 432,
    "pushed": "2024-02-13",
    "license": "MIT",
