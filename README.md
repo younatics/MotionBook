@@ -12,7 +12,7 @@
 
 - **People**: browse the list below or the [web catalog](https://younatics.github.io/MotionBook/) with previews.
 - **Agents and tools**: read [`catalog.json`](catalog.json) (schema: [`schema/catalog.schema.json`](schema/catalog.schema.json)) or [`llms.txt`](llms.txt). Everything on this page is generated from that file by `scripts/render.py`.
-- **Freshness**: GitHub numbers refreshed `2026-10-24` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 33 marked inactive (no push since 2021) or archived.
+- **Freshness**: GitHub numbers refreshed `2026-10-25` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 33 marked inactive (no push since 2021) or archived.
 
 ## Use it from an agent
 
@@ -210,7 +210,7 @@ Windless makes it easy to implement invisible layout loading view.
 `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/Windless.gif) · `.package(url: "https://github.com/ParkGwangBeom/Windless", from: "0.1.5")`
 
 #### [Highlighter](https://github.com/younatics/Highlighter)
-younatics · ★ 921 · ⟳ 2026-09 · MIT · tag `2.1.0`
+younatics · ★ 921 · ⟳ 2026-10 · MIT · tag `2.1.0`
 
 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.
 
@@ -224,7 +224,7 @@ Create a playful backsplash in SwiftUI.
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/maustinstar/liquid", from: "0.0.2")`
 
 #### [rive-ios](https://github.com/rive-app/rive-ios)
-rive-app · ★ 850 · ⟳ 2026-10 · MIT · tag `6.28.1`
+rive-app · ★ 851 · ⟳ 2026-10 · MIT · tag `6.28.1`
 
 iOS runtime for Rive
 
@@ -466,7 +466,7 @@ A scroll view with a sticky header which shrinks as you scroll. Written with Swi
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/exyte/ScalingHeaderScrollView", from: "3.1.0")`
 
 #### [YNSearch](https://github.com/younatics/YNSearch)
-younatics · ★ 1.2K · ⟳ 2026-09 · MIT · tag `3.1.0`
+younatics · ★ 1.2K · ⟳ 2026-10 · MIT · tag `3.1.0`
 
 ✨Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm!
 
@@ -487,7 +487,7 @@ A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used 
 `SPM` · `CocoaPods` · [preview GIF](motion-book/AIFlatSwitch.gif) · `.package(url: "https://github.com/cocoatoucher/AIFlatSwitch", from: "1.0.8")`
 
 #### [MediaBrowser](https://github.com/younatics/MediaBrowser)
-younatics · ★ 646 · ⟳ 2026-09 · MIT · tag `3.1.0`
+younatics · ★ 646 · ⟳ 2026-10 · MIT · tag `3.1.0`
 
 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view.
 
@@ -552,7 +552,7 @@ Animated side menu with customizable UI. Made in Yalantis.
 `CocoaPods` · `Inactive since 2020` · [preview GIF](motion-book/Side-Menu.iOS.gif)
 
 #### [YNDropDownMenu](https://github.com/younatics/YNDropDownMenu)
-younatics · ★ 1.3K · ⟳ 2026-09 · MIT · tag `4.1.0`
+younatics · ★ 1.3K · ⟳ 2026-10 · MIT · tag `4.1.0`
 
 ✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)
 

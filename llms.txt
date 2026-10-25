@@ -1,6 +1,6 @@
 # MotionBook
 
-> Catalog of 103 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 59 of them live. Stats as of 2026-10-24.
+> Catalog of 103 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 59 of them live. Stats as of 2026-10-25.
 
 Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with.
 
@@ -40,9 +40,9 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 - [RevealingSplashView](https://github.com/PiXeL16/RevealingSplashView): A Splash view that animates and reveals its content, inspired by Twitter splash (1.2K stars, pushed 2025-03-30; live demo, SPM, CocoaPods, Carthage)
 - [GlitchLabel](https://github.com/kciter/GlitchLabel): G..lit...c...hing UILa..bel fo..r iO...S (1.0K stars, pushed 2022-12-23; SPM, CocoaPods, Carthage)
 - [Windless](https://github.com/ParkGwangBeom/Windless): Windless makes it easy to implement invisible layout loading view. (947 stars, pushed 2022-07-14; SPM, CocoaPods, Carthage)
-- [Highlighter](https://github.com/younatics/Highlighter): 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class. (921 stars, pushed 2026-09-13; live demo, SPM, CocoaPods, Carthage)
+- [Highlighter](https://github.com/younatics/Highlighter): 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class. (921 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
 - [Liquid](https://github.com/maustinstar/liquid): Create a playful backsplash in SwiftUI. (856 stars, pushed 2024-08-19; live demo, SwiftUI, SPM)
-- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (850 stars, pushed 2026-10-24; live demo, SPM)
+- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (851 stars, pushed 2026-10-24; live demo, SPM)
 - [URWeatherView](https://github.com/Urtaq/URWeatherView): Show the weather effects onto view written in Swift3 (447 stars, pushed 2019-01-07; CocoaPods, Carthage, inactive)
 - [AnimateText](https://github.com/jasudev/AnimateText): This library for animating text. Developed with SwiftUI. This library supports iOS/macOS. (432 stars, pushed 2024-02-13; live demo, SwiftUI, SPM)
 - [Gecco](https://github.com/xai3/Gecco): Simply highlight items for your tutorial walkthrough, written in Swift. Gecco means Moonlight in Japanese. (19 stars, pushed 2020-09-16; CocoaPods, Carthage, inactive)
@@ -63,7 +63,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 - [PinterestSwift](https://github.com/demonnico/PinterestSwift): This is a Swift based demo project to show how to make the transition Pinterest liked. (1.9K stars, pushed 2020-06-15; inactive)
 - [CKWaveCollectionViewTransition](https://github.com/CezaryKopacz/CKWaveCollectionViewTransition): Cool wave like transition between two or more UICollectionView (1.8K stars, pushed 2019-10-13; CocoaPods, inactive)
 - [Motion](https://github.com/CosmicMind/Motion): A Material-inspired motion engine for transitions, transforms, and interactive presentation work. (1.8K stars, pushed 2020-01-28; SPM, inactive)
-- [Transmission](https://github.com/nathantannar4/Transmission): Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more. (1.2K stars, pushed 2026-10-23; live demo, SwiftUI, SPM)
+- [Transmission](https://github.com/nathantannar4/Transmission): Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more. (1.2K stars, pushed 2026-10-24; live demo, SwiftUI, SPM)
 - [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition): An iOS transition for controllers based on material design. (949 stars, pushed 2019-01-17; live demo, SPM, CocoaPods, inactive)
 
 ### UI
@@ -82,10 +82,10 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 - [fluid-slider](https://github.com/Ramotion/fluid-slider): A slider widget with a popup bubble displaying the precise value selected. (2.0K stars, pushed 2022-06-01; SPM, CocoaPods, Carthage)
 - [SwiftUI-Shimmer](https://github.com/markiv/SwiftUI-Shimmer): Shimmer is a super-light modifier that adds a shimmering effect to any SwiftUI View, for example, to show that an operation is in progress. It works well on light and dark modes, and across iOS, macOS, tvOS, watchOS and visionOS. (1.7K stars, pushed 2024-08-14; live demo, SwiftUI, SPM)
 - [ScalingHeaderScrollView](https://github.com/exyte/ScalingHeaderScrollView): A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI. (1.5K stars, pushed 2026-10-20; live demo, SwiftUI, SPM)
-- [YNSearch](https://github.com/younatics/YNSearch): ✨Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm! (1.2K stars, pushed 2026-09-13; live demo, SPM, CocoaPods, Carthage)
+- [YNSearch](https://github.com/younatics/YNSearch): ✨Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm! (1.2K stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
 - [Shiny](https://github.com/maustinstar/shiny): Shiny uses your gyroscope to simulate lighting and motion effects on colors. Works on almost every SwiftUI View. (1.1K stars, pushed 2024-07-12; live demo, SwiftUI, SPM)
 - [AIFlatSwitch](https://github.com/cocoatoucher/AIFlatSwitch): A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used instead of UISwitch. Inspired by Creativedash's Dribbble post (963 stars, pushed 2022-06-06; SPM, CocoaPods)
-- [MediaBrowser](https://github.com/younatics/MediaBrowser): 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view. (646 stars, pushed 2026-09-13; live demo, SPM, CocoaPods, Carthage)
+- [MediaBrowser](https://github.com/younatics/MediaBrowser): 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view. (646 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
 - [FluidGradient](https://github.com/Cindori/FluidGradient): A fluid, animated gradient implemented with CoreAnimation and SwiftUI. (439 stars, pushed 2024-03-14; live demo, SwiftUI, SPM)
 - [PARTagPicker](https://github.com/paulrolfe/PARTagPicker): This pod provides a view controller for choosing and creating tags in the style of wordpress or tumblr. This tag picker was originally used in the Intrepid Pursuits app, Slate. (365 stars, pushed 2019-06-28; CocoaPods, inactive)
 
@@ -97,7 +97,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 - [SlideMenuControllerSwift](https://github.com/dekatotoro/SlideMenuControllerSwift): iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift. (3.4K stars, pushed 2023-09-07; CocoaPods, Carthage)
 - [GuillotineMenu](https://github.com/Yalantis/GuillotineMenu): Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine. (2.9K stars, pushed 2020-04-13; CocoaPods, inactive)
 - [Side-Menu.iOS](https://github.com/Yalantis/Side-Menu.iOS): Animated side menu with customizable UI. Made in Yalantis. (2.7K stars, pushed 2020-04-13; CocoaPods, inactive)
-- [YNDropDownMenu](https://github.com/younatics/YNDropDownMenu): ✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc) (1.3K stars, pushed 2026-09-13; live demo, SPM, CocoaPods, Carthage)
+- [YNDropDownMenu](https://github.com/younatics/YNDropDownMenu): ✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc) (1.3K stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
 - [AnimatedTabBar (exyte)](https://github.com/exyte/AnimatedTabBar): A tabbar with a number of preset animations written in pure SwiftUI (557 stars, pushed 2026-07-08; SwiftUI, SPM)
 
 ### Alert
