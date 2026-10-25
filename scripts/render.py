@@ -249,6 +249,8 @@ def render_llms(doc: dict) -> str:
             summary = (e["summary"].strip() or "no description").replace("\n", " ")
             lines.append(f"- [{e['title']}]({e['url']}): {summary} ({stars(e)} stars, pushed {e.get('pushed') or 'unknown'}; {', '.join(flags) or 'manual install'})")
             if e.get("usage"):
+                if e.get("usage_note"):
+                    lines.append(f"  {e['usage_note']}")
                 lines.append(f"  ```{e.get('usage_language', 'swift')}")
                 lines += ["  " + l if l.strip() else "" for l in e["usage"].rstrip().splitlines()]
                 lines.append("  ```")
@@ -264,7 +266,8 @@ def render_site(doc: dict) -> str:
         spm = e.get("install", {}).get("spm_package")
         install = f'<code>{html.escape(spm)}</code>' if spm else ""
         if e.get("usage"):
-            install += f'<details><summary>Usage</summary><pre>{html.escape(e["usage"].rstrip())}</pre></details>'
+            note = f'<p>{html.escape(e["usage_note"])}</p>' if e.get("usage_note") else ""
+            install += f'<details><summary>Usage</summary>{note}<pre>{html.escape(e["usage"].rstrip())}</pre></details>'
         cards.append(
             f'<article class="card" data-category="{html.escape(e["category"])}" data-live="{str(bool(e.get("live_demo"))).lower()}" '
             f'data-swiftui="{str("swiftui" in e.get("tags", [])).lower()}" data-inactive="{str(is_inactive(e)).lower()}">'

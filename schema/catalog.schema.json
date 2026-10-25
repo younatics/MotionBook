@@ -201,6 +201,10 @@
               "objc"
             ],
             "description": "Language of `usage` (the three 2017 Objective-C demos mark Objective-C)."
+          },
+          "usage_note": {
+            "type": "string",
+            "description": "One sentence on what the usage snippet shows."
           }
         }
       }

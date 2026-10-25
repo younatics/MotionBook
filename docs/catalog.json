@@ -107,7 +107,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "private let animationView = LottieAnimationView()\n\nanimationView.animation = LottieAnimation.named(\"LottieLogo1\", bundle: .module)\nanimationView.loopMode = .loop\nanimationView.play()\n\nanimationView.play(fromProgress: toggled ? 0 : 0.5, toProgress: toggled ? 0.5 : 1, loopMode: .playOnce)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "LottieAnimationView plays an exported JSON animation; set loop mode or play a progress range."
   },
   {
    "title": "Hero",
@@ -141,7 +142,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "cell.heroModifiers = [.fade, .translate(x:-100)]\ncell.imageView!.heroID = \"image_\\(indexPath.item)\"\ncell.imageView!.heroModifiers = [.arc]\n\nhero_replaceViewController(with: next)\n\nfunc heroWillStartAnimatingTo(viewController: UIViewController) {\n  if let _ = viewController as? GridCollectionViewController {\n    tableView.heroModifiers = [.ignoreSubviewModifiers]\n  } else if viewController is ImageViewController {\n  } else {\n    tableView.heroModifiers = [.cascade]\n  }\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Give matching views the same heroID, add heroModifiers, and replace or push view controllers with Hero enabled."
   },
   {
    "title": "Pop",
@@ -202,7 +204,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "ballView.animate()\n\nballView.force = selectedForce\nballView.duration = selectedDuration\nballView.delay = selectedDelay\n\nballView.animation = animations[selectedRow].rawValue\nballView.curve = animationCurves[selectedEasing].rawValue",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "SpringView (from the storyboard) animates with the animation, curve, force, duration and delay you set."
   },
   {
    "title": "SkeletonView",
@@ -232,7 +235,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "stack.isSkeletonable = true\n\nstack.showAnimatedGradientSkeleton(usingGradient: SkeletonGradient(baseColor: DemoSupport.hairline), transition: .crossDissolve(0.25))\nDispatchQueue.main.asyncAfter(deadline: .now() + 4) { [weak self] in\n    self?.stack.hideSkeleton(transition: .crossDissolve(0.4))\n}\n\ntitle.isSkeletonable = true\ntitle.linesCornerRadius = 6",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Mark views skeletonable, show an animated gradient skeleton while loading, then hide it with a transition."
   },
   {
    "title": "animated-tab-bar",
@@ -262,7 +266,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "@IBAction func showBadgeHandelr(_ sender: AnyObject) {\n    index += 1\n    self.tabBarItem.badgeValue = \"\\(index)\"\n}\n\n@IBAction func hideBadgeHandler(_ sender: AnyObject) {\n    self.tabBarItem.badgeValue = nil\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Set up RAMAnimatedTabBarController in the storyboard with RAMAnimatedTabBarItem items; badges work as usual."
   },
   {
    "title": "NVActivityIndicatorView",
@@ -296,7 +301,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let activityIndicatorView = NVActivityIndicatorView(frame: frame,\n                                                    type: types[$0])\n\nactivityIndicatorView.padding = 20\n\nactivityIndicatorView.startAnimating()\n\nlet types = NVActivityIndicatorType.allCases.filter { $0 != .blank }\nstartAnimating(size, message: \"Loading...\", type: types[sender.tag])",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Create an indicator with a frame and type and start it; startAnimating shows a full-screen HUD."
   },
   {
    "title": "folding-cell",
@@ -330,7 +336,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "if cellHeights[(indexPath as NSIndexPath).row] == kCloseCellHeight {\n  cell.unfold(false, animated: false, completion:nil)\n} else {\n  cell.unfold(true, animated: false, completion: nil)\n}\n\nlet cell = tableView.cellForRow(at: indexPath) as! FoldingCell\n\nif cellHeights[(indexPath as NSIndexPath).row] == kCloseCellHeight { // open cell\n    cellHeights[(indexPath as NSIndexPath).row] = kOpenCellHeight\n    cell.unfold(true, animated: true, completion: nil)\n    duration = 0.5\n} else {// close cell\n    cellHeights[(indexPath as NSIndexPath).row] = kCloseCellHeight\n    cell.unfold(false, animated: true, completion: nil)\n    duration = 0.8\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "FoldingCell subclasses unfold with unfold(_:animated:completion:); keep the open/closed heights per row."
   },
   {
    "title": "IBAnimatable",
@@ -364,7 +371,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "private let box = AnimatableView()\nprivate let label = AnimatableLabel()\n\nprivate func runChain() {\n    box.animate(.squeezeFade(way: .in, direction: .down))\n        .then(.pop(repeatCount: 1))\n        .then(.shake(repeatCount: 1))\n        .then(.flip(along: .x))\n    label.animate(.slideFade(way: .in, direction: .left)).then(.swing(repeatCount: 1))\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Animatable views and labels chain animations with .animate(...).then(...)."
   },
   {
    "title": "LTMorphingLabel",
@@ -398,7 +406,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "private let label = LTMorphingLabel()\n\nlabel.morphingDuration = 0.9\nlabel.morphingEffect = .sparkle\nlabel.text = words[0]\n\nlabel.text = words[index]",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Set morphingEffect and duration, then assign new text and the label morphs from the old one."
   },
   {
    "title": "FLAnimatedImage",
@@ -428,7 +437,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "private let imageView = FLAnimatedImageView()\n\nlet image = FLAnimatedImage(animatedGIFData: data)\n\nimageView.animatedImage = image",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "FLAnimatedImage decodes GIF data; FLAnimatedImageView plays it frame by frame with flat memory use."
   },
   {
    "title": "ViewAnimator",
@@ -462,7 +472,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let animations: [Animation]\nswitch picker.selectedSegmentIndex {\ncase 1: animations = [AnimationType.zoom(scale: 0.3)]\ncase 2: animations = [AnimationType.rotate(angle: .pi / 4), AnimationType.zoom(scale: 0.6)]\ncase 3: animations = [AnimationType.from(direction: .left, offset: 60)]\ndefault: animations = [AnimationType.from(direction: .bottom, offset: 40), AnimationType.zoom(scale: 0.8)]\n}\nlet cells = collectionView.visibleCells.sorted { lhs, rhs in\n    (collectionView.indexPath(for: lhs) ?? IndexPath(item: 0, section: 0)) < (collectionView.indexPath(for: rhs) ?? IndexPath(item: 0, section: 0))\n}\nUIView.animate(views: cells, animations: animations, duration: 0.6)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Animate a list of views at once with direction, zoom and rotation animations and staggered timing."
   },
   {
    "title": "CYLTabBarController",
@@ -518,7 +529,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "settings.style.buttonBarBackgroundColor = .systemBackground\nsettings.style.buttonBarItemBackgroundColor = .systemBackground\nsettings.style.selectedBarBackgroundColor = DemoSupport.accent\nsettings.style.selectedBarHeight = 3\nsettings.style.buttonBarItemFont = .systemFont(ofSize: 15, weight: .semibold)\nsettings.style.buttonBarItemTitleColor = DemoSupport.title\nsettings.style.buttonBarItemsShouldFillAvailableWidth = true\nsettings.style.buttonBarMinimumLineSpacing = 0\nsettings.style.buttonBarLeftContentInset = 0\nsettings.style.buttonBarRightContentInset = 0\n\noverride func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {\n    [\n        PagerChildViewController(title: \"Transitions\", symbol: \"arrow.left.arrow.right\", color: DemoSupport.accent),\n        PagerChildViewController(title: \"Menus\", symbol: \"line.3.horizontal\", color: .systemIndigo),\n        PagerChildViewController(title: \"Loaders\", symbol: \"circle.dotted\", color: .systemTeal),\n    ]\n}\n\nfunc indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {\n    IndicatorInfo(title: tabTitle)\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Subclass ButtonBarPagerTabStripViewController, style the button bar, return child controllers that provide IndicatorInfo."
   },
   {
    "title": "SwipeCellKit",
@@ -548,7 +560,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "tableView.register(SwipeTableViewCell.self, forCellReuseIdentifier: \"cell\")\n\ncell.delegate = self\n\nfunc tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {\n    if orientation == .right {\n        let delete = SwipeAction(style: .destructive, title: \"Delete\") { [weak self] _, indexPath in\n            self?.items.remove(at: indexPath.row)\n        }\n        delete.image = UIImage(systemName: \"trash\")\n        let flag = SwipeAction(style: .default, title: \"Flag\") { _, _ in }\n        flag.image = UIImage(systemName: \"flag\")\n        flag.backgroundColor = .systemOrange\n        return [delete, flag]\n    }\n    let read = SwipeAction(style: .default, title: \"Read\") { _, _ in }\n    read.image = UIImage(systemName: \"envelope.open\")\n    read.backgroundColor = DemoSupport.accent\n    return [read]\n}\n\nfunc tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeOptions {\n    var options = SwipeOptions()\n    options.expansionStyle = orientation == .left ? .selection : .destructive\n    options.transitionStyle = .border\n    return options\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Register SwipeTableViewCell, set its delegate, and return SwipeActions and SwipeOptions per orientation."
   },
   {
    "title": "Macaw",
@@ -578,7 +591,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "macawView = MacawView(node: makeScene(side: side), frame: CGRect(x: 0, y: 0, width: side, height: side))\n\nanimations.forEach { $0.play() }\n\nlet center = side / 2\nlet accent = Color(val: 0xEE165B)\nlet ring = Shape(form: Circle(cx: center, cy: center, r: 110), fill: nil, stroke: Stroke(fill: Color(val: 0xE1E4E8), width: 10))\nlet square = Shape(form: Rect(x: center - 44, y: center - 44, w: 88, h: 88), fill: Color(val: 0x5C6774))\nlet ball = Shape(form: Circle(cx: center + 110, cy: center, r: 22), fill: accent)\nlet dot = Shape(form: Circle(cx: center, cy: center - 110, r: 12), fill: Color(val: 0x4ECDC4))\nanimations = [\n    ball.placeVar.animation(angle: .pi * 2, x: center, y: center, during: 3).cycle(),\n    dot.placeVar.animation(angle: -.pi * 2, x: center, y: center, during: 5).cycle(),\n    square.placeVar.animation(to: Transform.identity.rotate(angle: .pi / 2, x: center, y: center), during: 2).autoreversed().cycle(),\n    square.opacityVar.animation(to: 0.35, during: 1.5).autoreversed().cycle(),\n    ball.fillVar.animation(to: Color(val: 0x8E44AD), during: 1.5).autoreversed().cycle(),\n]\nreturn Group(contents: [ring, square, ball, dot])",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Build a scene graph of shapes, animate their placeVar, opacityVar and fillVar, and play the animations."
   },
   {
    "title": "TextFieldEffects",
@@ -612,7 +626,8 @@
     "via": "MotionBook app 3.7 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let hoshi = HoshiTextField()                    // underline grows, placeholder floats up\nhoshi.placeholder = \"Hoshi — name\"\nhoshi.borderInactiveColor = DemoSupport.hairline\nhoshi.borderActiveColor = DemoSupport.accent\nhoshi.placeholderColor = .secondaryLabel\n\nlet kaede = KaedeTextField()                    // placeholder slides right, field slides in\nkaede.placeholder = \"Kaede — email\"\nkaede.placeholderColor = DemoSupport.accent\nkaede.foregroundColor = .secondarySystemBackground\n\nlet yoko = YokoTextField()                      // 3D flip reveals the field\nyoko.placeholder = \"Yoko — city\"\nyoko.placeholderColor = .white\nyoko.foregroundColor = DemoSupport.accent\n\nlet jiro = JiroTextField()                      // the border fills from the bottom\njiro.placeholder = \"Jiro — note\"\njiro.borderColor = DemoSupport.accent\njiro.placeholderColor = .secondaryLabel",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Drop-in UITextField subclasses; set placeholder and the effect's colours, the animation plays on focus."
   },
   {
    "title": "SideMenu",
@@ -642,7 +657,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "SideMenuManager.default.menuEnableSwipeGestures = true\n// Define the menus\nSideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: \"LeftMenuNavigationController\") as? UISideMenuNavigationController\nSideMenuManager.default.menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: \"RightMenuNavigationController\") as? UISideMenuNavigationController\n\n// Enable gestures. The left and/or right menus must be set up above for these to work.\n// Note that these continue to work on the Navigation Controller independent of the View Controller it displays!\nSideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)\nSideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)\n\nSideMenuManager.default.menuPresentMode = .viewSlideOut\n\nlet modes:[SideMenuManager.MenuPresentMode] = [.menuSlideIn, .viewSlideOut, .viewSlideInOut, .menuDissolveIn]\nSideMenuManager.default.menuPresentMode = modes[segmentControl.selectedSegmentIndex]",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Configure SideMenuManager with the menu navigation controllers, gestures and presentation mode."
   },
   {
    "title": "expanding-collection",
@@ -672,7 +688,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "itemSize = CGSize(width: 256, height: 335)\n\n// double swipe Up transition\nif cell.isOpened == true && sender.direction == .up {\n    pushToViewController(getViewController())",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Subclass ExpandingViewController, set itemSize, and push the detail with pushToViewController."
   },
   {
    "title": "Koloda",
@@ -702,7 +719,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "kolodaView.dataSource = self\nkolodaView.delegate = self\n\n@IBAction func leftButtonTapped() {\n    kolodaView?.swipe(.left)\n}\n\n@IBAction func rightButtonTapped() {\n    kolodaView?.swipe(.right)\n}\n\nfunc kolodaNumberOfCards(_ koloda: KolodaView) -> Int {\n    return dataSource.count\n}\n\nfunc kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {\n    return .default\n}\n\nfunc koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {\n    return UIImageView(image: dataSource[Int(index)])\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "KolodaView takes a data source and delegate for cards; swipe programmatically or revert the last action."
   },
   {
    "title": "ScrollableGraphView",
@@ -804,7 +822,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let banner = NotificationBanner(title: \"Basic Success Notification\",\n                                subtitle: \"Extremely Customizable!\",\n                                style: .success)\n\nbanner.show(queuePosition: selectedQueuePosition())\n\nlet banner = StatusBarNotificationBanner(title: \"Success Status Bar Notification\", style: .success)\nbanner.show(queuePosition: selectedQueuePosition())",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Create a NotificationBanner or StatusBarNotificationBanner with a style and show it, optionally at a queue position."
   },
   {
    "title": "AnimatedCollectionViewLayout",
@@ -838,7 +857,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "if let layout = collectionView?.collectionViewLayout as? AnimatedCollectionViewLayout {\n    layout.scrollDirection = direction\n    layout.animator = animator?.0\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Set the layout's animator and scrollDirection; items animate as they scroll into view."
   },
   {
    "title": "Advance",
@@ -899,7 +919,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": ".changeEffect(.spray(origin: .center) { Image(systemName: \"heart.fill\").foregroundColor(.red) }, value: likes, isEnabled: isLiked)\n\n.changeEffect(.jump(height: 24), value: taps)\n\n.changeEffect(.spin, value: taps)\n\n    .conditionalEffect(.smoke, condition: isSmoking)\nText(\"Repeat\").demoChip()\n\n    .conditionalEffect(.repeat(.jump(height: 12), every: 1.2), condition: true)\nText(\"Push down\").demoChip()",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Change effects fire when a value changes, transitions animate insertion and removal, conditional effects run while a condition holds."
   },
   {
    "title": "MarqueeLabel",
@@ -933,7 +954,8 @@
     "via": "MotionBook app 3.7 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let marquee = MarqueeLabel(frame: .zero, rate: 60, fadeLength: 12)   // 60 points per second, 12 pt fade at both edges\nmarquee.type = .continuous           // .leftRight, .rightLeft, .continuousReverse\nmarquee.animationDelay = 1           // seconds before each pass\nmarquee.trailingBuffer = 24          // gap between repeats\nmarquee.text = \"Text wider than the label scrolls; shorter text sits still like a normal UILabel.\"",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "MarqueeLabel(frame:rate:fadeLength:) scrolls text that does not fit; type, delay and buffers tune the marquee."
   },
   {
    "title": "Cards",
@@ -986,7 +1008,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "    [CRToastManager showNotificationWithOptions:[self options]\n                                 apperanceBlock:^(void) {\n//                                     NSLog(@\"Appeared\");\n                                 }\n                                completionBlock:^(void) {\n//                                    NSLog(@\"Completed\");\n                                }];\n\n[CRToastManager dismissNotification:YES];\n\nNSMutableDictionary *options = [@{kCRToastNotificationTypeKey               : self.coverNavBarSwitch.on ? @(CRToastTypeNavigationBar) : @(CRToastTypeStatusBar),\n                                  kCRToastNotificationPresentationTypeKey   : self.slideOverSwitch.on ? @(CRToastPresentationTypeCover) : @(CRToastPresentationTypePush),\n                                  kCRToastUnderStatusBarKey                 : @(self.slideUnderSwitch.on),\n                                  kCRToastTextKey                           : self.txtNotificationMessage.text,\n                                  kCRToastTextAlignmentKey                  : @(self.textAlignment),\n                                  kCRToastTimeIntervalKey                   : @(self.sliderDuration.value),\n                                  kCRToastAnimationInTypeKey                : @(CRToastAnimationTypeFromSegmentedControl(_inAnimationTypeSegmentedControl)),\n                                  kCRToastAnimationOutTypeKey               : @(CRToastAnimationTypeFromSegmentedControl(_outAnimationTypeSegmentedControl)),\n                                  kCRToastAnimationInDirectionKey           : @(self.segFromDirection.selectedSegmentIndex),\n                                  kCRToastAnimationOutDirectionKey          : @(self.segToDirection.selectedSegmentIndex),\n                                  kCRToastNotificationPreferredPaddingKey   : @(self.sliderPadding.value)} mutableCopy];",
-   "usage_language": "objc"
+   "usage_language": "objc",
+   "usage_note": "Build an options dictionary with the kCRToast keys and show it through CRToastManager."
   },
   {
    "title": "PopupView",
@@ -1020,7 +1043,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": ".popup(isPresented: $showFloater) {\n    PopupCard(icon: \"bell.fill\", title: \"Floater\", message: \"Slides in from the top and hides after 5 s.\")\n} customize: {\n    $0.type(.floater()).position(.top).animation(.spring()).autohideIn(5).displayMode(.overlay)\n}\n\n} customize: {\n    $0.type(.toast).position(.bottom).dragToDismiss(true).closeOnTapOutside(true).backgroundColor(.black.opacity(0.4)).displayMode(.overlay)\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Attach .popup to any view; the customize closure picks type, position, animation, auto-hide and display mode."
   },
   {
    "title": "PopupDialog",
@@ -1050,7 +1074,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let popup = PopupDialog(title: title, message: message, image: image)\n\n// Create first button\nlet buttonOne = CancelButton(title: \"CANCEL\") {\n    self.label.text = \"You canceled the car dialog.\"\n}\n\n// Create second button\nlet buttonTwo = DefaultButton(title: \"ADMIRE CAR\") {\n    self.label.text = \"What a beauty!\"\n}\n\n// Create third button\nlet buttonThree = DefaultButton(title: \"BUY CAR\") {\n    self.label.text = \"Ah, maybe next time :)\"\n}\n\n// Add buttons to dialog\npopup.addButtons([buttonOne, buttonTwo, buttonThree])\n\n// Present dialog\nself.present(popup, animated: animated, completion: nil)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "PopupDialog with title, message and image; add CancelButton/DefaultButton actions and present it."
   },
   {
    "title": "PKHUD",
@@ -1080,7 +1105,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "PKHUD.sharedHUD.dimsBackground = true\n\nmakeButton(\"Success\") { HUD.flash(.success, delay: 1.0) },\nmakeButton(\"Error\") { HUD.flash(.error, delay: 1.0) },\n\nHUD.show(.labeledProgress(title: \"Loading\", subtitle: \"fetching stars\"))\nDispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { HUD.flash(.labeledSuccess(title: \"Done\", subtitle: \"103 libraries\"), delay: 1.0) }\n\nHUD.show(.labeledProgress(title: \"Loading\", subtitle: \"PKHUD\"), onView: view)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "HUD.show / HUD.flash with built-in content types; onView keeps it inside a view instead of the whole window."
   },
   {
    "title": "StarWars.iOS",
@@ -1137,7 +1163,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let pastelView = PastelView(frame: view.bounds)\npastelView.animationDuration = 3.0\n\npastelView.setColors([UIColor(red: 156/255, green: 39/255, blue: 176/255, alpha: 1.0),\n                      UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1.0),\n                      UIColor(red: 123/255, green: 31/255, blue: 162/255, alpha: 1.0),\n                      UIColor(red: 32/255, green: 76/255, blue: 255/255, alpha: 1.0),\n                      UIColor(red: 32/255, green: 158/255, blue: 255/255, alpha: 1.0),\n                      UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1.0),\n                      UIColor(red: 58/255, green: 255/255, blue: 217/255, alpha: 1.0)])\n\npastelView.startAnimation()\nview.insertSubview(pastelView, at: 0)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "PastelView animates a gradient between the given colours; insert it behind your content and start."
   },
   {
    "title": "DKNightVersion",
@@ -1190,7 +1217,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "button.delegate = self\n\nfunc circleMenu(_ circleMenu: CircleMenu, willDisplay button: UIButton, atIndex: Int) {\n    button.backgroundColor = items[atIndex].color\n\n    button.setImage(UIImage(named: items[atIndex].icon, in: .module, compatibleWith: nil), for: .normal)\n\n    let highlightedImage  = UIImage(named: items[atIndex].icon, in: .module, compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)\n    button.setImage(highlightedImage, for: .highlighted)\n    button.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "CircleMenu is a UIButton subclass; the delegate configures each item as it is displayed."
   },
   {
    "title": "SlideMenuControllerSwift",
@@ -1370,7 +1398,8 @@
     "via": "MotionBook app 3.7 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "ProgressHUD.colorAnimation = DemoSupport.accent     // tint of the animation and the progress ring\nProgressHUD.animationType = .circleStrokeSpin        // one of ~20 built-in animations\n\nProgressHUD.animate(\"Loading…\", .circleStrokeSpin)           // text is optional; interaction stays enabled\nafter(1.2) { ProgressHUD.progress(\"Downloading\", 0.35) }    // 0...1 on a ring\nafter(2.0) { ProgressHUD.progress(\"Downloading\", 0.8) }\nafter(2.8) { ProgressHUD.succeed(\"Done\", delay: 1.2) }       // checkmark, then hides itself",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Static calls: animate, progress, succeed, failed, symbol, banner; colours and animation type are global settings."
   },
   {
    "title": "Stellar",
@@ -1427,7 +1456,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "(\"circles\", .circles()),\n(\"pixellate\", .pixellate()),\n(\"genie\", .genie()),\n\nTimelineView(.animation) { timeline in\n    let time = timeline.date.timeIntervalSince(start) // seconds since the view appeared: shaders take a Float\n\nImage(systemName: \"figure.run.circle.fill\")\n    .font(.system(size: 96))\n    .rainbowNoise(time: time)\n\n.distortionEffect(\n    InfernoShaderLibrary.water(.float2(300, 80), .float(time), .float(3), .float(3), .float(10)),\n    maxSampleOffset: CGSize(width: 12, height: 12)\n)\n\n.colorEffect(InfernoShaderLibrary.animatedGradientFill(.float2(320, 70), .float(time)))",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Metal shaders as SwiftUI modifiers: colour effects, distortions, generated fills and shader-driven transitions, driven by a TimelineView clock."
   },
   {
    "title": "paper-switch",
@@ -1530,7 +1560,8 @@
     "via": "MotionBook app 3.7 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "transitionDelegate.customHeight = height          // nil = the default, almost full-height card\ntransitionDelegate.showIndicator = true            // grab indicator at the top\ntransitionDelegate.swipeToDismissEnabled = true\ntransitionDelegate.tapAroundToDismissEnabled = true\ncontroller.transitioningDelegate = transitionDelegate   // keep the delegate alive: it is a weak reference\ncontroller.modalPresentationStyle = .custom\ncontroller.modalPresentationCapturesStatusBarAppearance = true\npresent(controller, animated: true)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Set the controller's transitioningDelegate to an SPStorkTransitioningDelegate and present with .custom style."
   },
   {
    "title": "Side-Menu.iOS",
@@ -1610,7 +1641,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let items = zip(titles, symbols).map { SegmentioItem(title: $0, image: UIImage(systemName: $1)) }\nlet states = SegmentioStates(\n    defaultState: SegmentioState(backgroundColor: .clear, titleFont: .systemFont(ofSize: 12), titleTextColor: .secondaryLabel),\n    selectedState: SegmentioState(backgroundColor: .clear, titleFont: .systemFont(ofSize: 12, weight: .semibold), titleTextColor: DemoSupport.accent),\n    highlightedState: SegmentioState(backgroundColor: .systemGray5, titleFont: .systemFont(ofSize: 12), titleTextColor: .label)\n)\nlet options = SegmentioOptions(\n    backgroundColor: .systemBackground,\n    segmentPosition: .fixed(maxVisibleItems: 5),\n    scrollEnabled: false,\n    indicatorOptions: SegmentioIndicatorOptions(type: .bottom, ratio: 1, height: 4, color: DemoSupport.accent),\n    horizontalSeparatorOptions: SegmentioHorizontalSeparatorOptions(type: .bottom, height: 1, color: DemoSupport.hairline),\n    verticalSeparatorOptions: SegmentioVerticalSeparatorOptions(ratio: 0.5, color: DemoSupport.hairline),\n    imageContentMode: .center,\n    labelTextAlignment: .center,\n    labelTextNumberOfLines: 1,\n    segmentStates: states,\n    animationDuration: 0.3\n)\nsegmentio.setup(content: items, style: .imageOverLabel, options: options)\nsegmentio.selectedSegmentioIndex = 0\nsegmentio.valueDidChange = { [weak self] _, index in\n    guard let self else { return }\n    detail.text = \"Selected: \\(titles[index])\"\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Build items, states and options, then setup the control and observe valueDidChange."
   },
   {
    "title": "AnimatedTransitionGallery",
@@ -1667,7 +1699,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "Button { cannon += 1 } label: { Text(\"🎉  Cannon\").font(.title2.bold()) }\n    .confettiCannon(trigger: $cannon, num: 60, confettiSize: 12, rainHeight: 500, radius: 320)\n\nButton { firework += 1 } label: { Text(\"🎆  Firework\").font(.title2.bold()) }\n    .confettiCannon(\n        trigger: $firework,\n        num: 50,\n        confettis: [.text(\"❤️\"), .text(\"💙\"), .sfSymbol(symbolName: \"star.fill\")],\n        colors: [.red, .blue, .yellow],\n        confettiSize: 18,\n        openingAngle: .degrees(0),\n        closingAngle: .degrees(360),\n        radius: 220,\n        repetitions: 2,\n        repetitionInterval: 0.7\n    )",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "One modifier per cannon; bump the trigger to fire, pick shapes, emoji or SF Symbols, angles, radius and repeats."
   },
   {
    "title": "Jelly",
@@ -1701,7 +1734,8 @@
     "via": "MotionBook app 3.7 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let chrome = PresentationUIConfiguration(cornerRadius: 20, backgroundStyle: .dimmed(alpha: 0.45), isTapBackgroundToDismissEnabled: true)\nlet presentation = SlidePresentation(uiConfiguration: chrome, direction: .bottom, size: .custom(value: 280))\nanimator = Animator(presentation: presentation)      // keep a strong reference while presented\nanimator?.prepare(presentedViewController: card)\npresent(card, animated: true)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Configure a presentation (slide, cover or fade), create an Animator, prepare the controller and present it."
   },
   {
    "title": "Wave",
@@ -1735,7 +1769,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "private let spring = Spring(dampingRatio: 0.55, response: 0.7)\nprivate let interactive = Spring(dampingRatio: 1.0, response: 0.12)\n\n@objc private func pan(_ gesture: UIPanGestureRecognizer) {\n    switch gesture.state {\n    case .began, .changed:\n        let location = gesture.location(in: view)\n        Wave.animate(withSpring: interactive) {\n            ball.animator.center = location\n            ball.animator.scale = CGPoint(x: 1.2, y: 1.2)\n        }\n    case .ended, .cancelled:\n        let velocity = gesture.velocity(in: view)\n        Wave.animate(withSpring: spring, gestureVelocity: velocity) {\n            ball.animator.center = restCenter\n            ball.animator.scale = CGPoint(x: 1, y: 1)\n        }\n    default:\n        break\n    }\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Spring-animate any view's animator properties; pass the gesture velocity so a release continues the motion."
   },
   {
    "title": "AMWaveTransition",
@@ -1815,7 +1850,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "Button(\"Show popover\") { showPopover = true }\n    .buttonStyle(DemoPrimaryButtonStyle())\n    .popover(present: $showPopover, attributes: {\n        $0.position = .absolute(originAnchor: .bottom, popoverAnchor: .top)\n        $0.sourceFrameInset.bottom = -8\n    }) {\n        Templates.Container(arrowSide: .top(.centered), backgroundColor: DemoSwiftUIPalette.accent) {\n            Text(\"Hi, I'm a popover.\").foregroundColor(.white).padding(4)\n        }\n    }\n\nTemplates.Menu {\n    Templates.MenuButton(title: \"Copy\", systemImage: \"doc.on.doc\") {}\n    Templates.MenuButton(title: \"Share\", systemImage: \"square.and.arrow.up\") {}\n    Templates.MenuButton(title: \"Delete\", systemImage: \"trash\") {}\n} label: { fade in\n    Text(\"Open menu\").demoChip().opacity(fade ? 0.5 : 1)\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Popovers and menus attached to a view with placement attributes and Templates for containers and menu buttons."
   },
   {
    "title": "MarkdownView",
@@ -1845,7 +1881,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "private let markdownView = MarkdownView()\n\nmarkdownView.isScrollEnabled = false\n\nmarkdownView.onRendered = { [weak self] _ in self?.markdownView.invalidateIntrinsicContentSize() }\nmarkdownView.onTouchLink = { _ in false }\n\nmarkdownView.load(markdown: \"\"\"\n# MotionBook\n\nA catalog of **112 open-source motion libraries** for iOS, with *live demos* for 64 of them.\n\n## Why a demo app?\n\n1. Seeing a transition beats reading about it.\n2. Every library here builds against the current Xcode.\n3. Fixes went back upstream as pull requests.\n\n## Example\n\n```swift\nlet banner = NotificationBanner(title: \"MotionBook\", style: .success)\nbanner.show()\n```\n\n| Category | Libraries | Live |\n| --- | ---: | ---: |\n| Transition | 18 | 9 |\n| Menu | 11 | 5 |\n| SwiftUI | 20 | 19 |\n\n> Markdown rendered by [MarkdownView](https://github.com/keitaoouchi/MarkdownView).\n\"\"\")",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "MarkdownView renders Markdown in a web view; onRendered reports the height and onTouchLink intercepts links."
   },
   {
    "title": "ElasticTransition",
@@ -1902,7 +1939,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "Grid(tracks: [GridTrack](repeating: .fr(1), count: trackCount), spacing: 8) {\n    ForEach(0..<14, id: \\.self) { index in\n        RoundedRectangle(cornerRadius: 10)\n            .fill(colors[index % colors.count])\n            .overlay(Text(\"\\(index)\").foregroundColor(.white).bold())\n            .frame(height: 56)\n            .gridSpan(column: (index % 5 == 0 && wideSpans) ? 2 : 1)\n    }\n}\n.gridContentMode(.scroll)\n.gridFlow(.rows)\n.gridPacking(dense ? .dense : .sparse)\n.gridAnimation(.easeInOut(duration: 0.5))",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "A CSS-style grid: tracks, column spans, flow, dense packing and animated reflow."
   },
   {
    "title": "Pull-to-Refresh.Rentals-iOS",
@@ -1932,7 +1970,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "self.sunnyRefreshControl = [YALSunnyRefreshControl new];\n[self.sunnyRefreshControl addTarget:self\n                             action:@selector(sunnyControlDidStartAnimation)\n                   forControlEvents:UIControlEventValueChanged];\n[self.sunnyRefreshControl attachToScrollView:self.tableView];\n\n[self.sunnyRefreshControl endRefreshing];",
-   "usage_language": "objc"
+   "usage_language": "objc",
+   "usage_note": "Attach YALSunnyRefreshControl to a scroll view and call endRefreshing when the load finishes."
   },
   {
    "title": "Glur",
@@ -1966,7 +2005,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "tiles.frame(height: 320, alignment: .top).clipped()\n    .glur(radius: radius, offset: offset, interpolation: 0.4, direction: down ? .down : .up)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Progressive blur over any view: radius, offset where the blur starts, interpolation and direction."
   },
   {
    "title": "preview-transition",
@@ -1996,7 +2036,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let storyboard = UIStoryboard(name: \"preview-transition\", bundle: .module)\nlet detaleViewController: PTDemoDetailViewController = storyboard.instantiateViewController()\npushViewController(detaleViewController)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Subclass PTTableViewController; pushViewController animates the parallax preview transition."
   },
   {
    "title": "SweetAlert-iOS",
@@ -2026,7 +2067,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "_ = SweetAlert().showAlert(\"Here's a message!\")\n\n_ = SweetAlert().showAlert(\"Good job!\", subTitle: \"You clicked the button!\", style: AlertStyle.success)\n\n@IBAction func warningAlert(_ sender: AnyObject) {\n    _ = SweetAlert().showAlert(\"Are you sure?\", subTitle: \"You file will permanently delete!\", style: AlertStyle.warning, buttonTitle:\"Cancel\", buttonColor:UIColor(demoRGB: 0xD0D0D0) , otherButtonTitle:  \"Yes, delete it!\", otherButtonColor: UIColor(demoRGB: 0xDD6B55)) { (isOtherButton) -> Void in\n        if isOtherButton == true {\n\n            print(\"Cancel Button  Pressed\", terminator: \"\")\n        }\n        else {\n            _ = SweetAlert().showAlert(\"Deleted!\", subTitle: \"Your imaginary file has been deleted!\", style: AlertStyle.success)\n        }\n    }",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "SweetAlert().showAlert with a style; the closure tells you which button was tapped."
   },
   {
    "title": "fluid-slider",
@@ -2079,7 +2121,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "self.shineLabel = ({\n    RQShineLabel *label = [[RQShineLabel alloc] initWithFrame:CGRectMake(16, 16, 320 - 32, CGRectGetHeight(self.view.bounds) - 16)];\n    label.numberOfLines = 0;\n    label.text = [self.textArray objectAtIndex:self.textIndex];\n    label.font = [UIFont fontWithName:@\"HelveticaNeue-Light\" size:24.0];\n    label.backgroundColor = [UIColor clearColor];\n    [label sizeToFit];\n    label.center = self.view.center;\n    label;\n});\n[self.view addSubview:self.shineLabel];\n\n[self.shineLabel shine];",
-   "usage_language": "objc"
+   "usage_language": "objc",
+   "usage_note": "RQShineLabel shines its text in letter by letter; call shine, then fade it out."
   },
   {
    "title": "PinterestSwift",
@@ -2155,7 +2198,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let alert = AlertController(title: \"SDCAlertView\", message: \"Looks like UIAlertController, behaves like your own view.\", preferredStyle: .alert)\nalert.addAction(AlertAction(title: \"Cancel\", style: .normal))\nalert.addAction(AlertAction(title: \"OK\", style: .preferred))\nalert.present()\n\nlet alert = AlertController(title: \"Working\", message: \"Custom content view with a spinner…\")\nalert.contentView.addSubview(spinner)\nNSLayoutConstraint.activate([\n    spinner.centerXAnchor.constraint(equalTo: alert.contentView.centerXAnchor),\n    spinner.topAnchor.constraint(equalTo: alert.contentView.topAnchor),\n    spinner.bottomAnchor.constraint(equalTo: alert.contentView.bottomAnchor),\n])\nalert.addAction(AlertAction(title: \"Stop\", style: .preferred))\nalert.present()\n\nlet alert = AlertController(title: \"Dismissal rules\", message: \"Only the preferred action closes this alert.\")\nalert.addAction(AlertAction(title: \"Doesn't dismiss\", style: .normal))\nalert.addAction(AlertAction(title: \"Dismiss\", style: .preferred))\nalert.shouldDismissHandler = { $0?.title == \"Dismiss\" }\nalert.present()",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "AlertController mirrors UIAlertController, accepts custom content views and a shouldDismissHandler."
   },
   {
    "title": "Motion",
@@ -2262,7 +2306,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "Text(\"MotionBook\")\n    .font(.system(size: 44, weight: .black))\n    .foregroundColor(DemoSwiftUIPalette.accent)\n    .shimmering(active: active)\nText(\"Custom gradient mode\")\n    .font(.title.bold())\n    .shimmering(active: active, gradient: Gradient(colors: [.clear, .orange, .white, .green, .clear]), bandSize: 0.5, mode: .overlay())\n\n.redacted(reason: .placeholder)\n.shimmering(active: active)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Add .shimmering to any view, optionally with a custom gradient, band size and mode; pairs well with .redacted."
   },
   {
    "title": "ActivityIndicatorView",
@@ -2296,7 +2341,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "(\"default\", .default(count: 8)),\n(\"arcs\", .arcs(count: 3, lineWidth: 2)),\n(\"rotatingDots\", .rotatingDots(count: 5)),\n(\"flickeringDots\", .flickeringDots(count: 8)),\n(\"scalingDots\", .scalingDots(count: 3, inset: 2)),\n(\"opacityDots\", .opacityDots(count: 3, inset: 4)),\n(\"equalizer\", .equalizer(count: 5)),\n\nActivityIndicatorView(type: indicators[index].type)\n    .frame(width: 52, height: 52)\n    .foregroundColor(DemoSwiftUIPalette.accent)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Pick an indicator type and give the view a frame and colour."
   },
   {
    "title": "AnimatedMaskLabel",
@@ -2353,7 +2399,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "VortexViewReader { proxy in\n    ZStack(alignment: .bottom) {\n        VortexView(presets[preset].system()) {\n            Circle().fill(.white).blendMode(.plusLighter).frame(width: 32).tag(\"circle\")\n            Rectangle().fill(.white).frame(width: 16, height: 16).tag(\"square\")\n            Circle().fill(.white).blur(radius: 3).frame(width: 32).tag(\"sparkle\")\n        }\n\nButton(\"Burst\") { proxy.burst() }",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "VortexView renders a particle system (built-in presets or custom) from tagged particle views; the reader proxy bursts on demand."
   },
   {
    "title": "ScalingHeaderScrollView",
@@ -2387,7 +2434,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "ScalingHeaderScrollView(minHeight: 100, maxHeight: 300) { _, progress in\n\n} content: {\n\n}\n.collapseProgress($progress)\n.allowsHeaderCollapse()\n.ignoresSafeArea(edges: .top)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "A scroll view with a header that collapses between minHeight and maxHeight; the closure receives the collapse progress."
   },
   {
    "title": "Motion (b3ll)",
@@ -2421,7 +2469,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "private let spring = SpringAnimation<CGPoint>()\n\nspring.configure(response: 0.5, dampingRatio: 0.5)\nspring.onValueChanged { [weak self] newValue in\n    self?.ball.center = newValue\n}\n\ncase .ended, .cancelled:\n    spring.toValue = restCenter\n    spring.velocity = gesture.velocity(in: view)\n    spring.start()",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "A SpringAnimation drives a value; update it while dragging, then hand over the velocity and start."
   },
   {
    "title": "TKRubberIndicator",
@@ -2451,7 +2500,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let page = TKRubberPageControl(frame: CGRect(x: 100, y: 100, width: 200, height: 100), count: 3)\n\npage.center = view.center\npage.valueChange = {(num) -> Void in\n    print(\"Closure : Page is \\(num)\")\n}\npage.addTarget(self, action: #selector(TKRubberPageControlViewController.targetActionValueChange(_:)), for: UIControl.Event.valueChanged)\nview.addSubview(page)\n\npage.numberOfPage = 3\n\npage.numberOfPage = sender.selectedSegmentIndex + 3",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "TKRubberPageControl with a page count; observe valueChange or the control event."
   },
   {
    "title": "YNDropDownMenu",
@@ -2481,7 +2531,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let view = YNDropDownMenu(frame: CGRect(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: 38), dropDownViews: _ZBdropDownViews, dropDownViewTitles: [\"Apple\", \"Banana\", \"Kiwi\", \"Pear\"])\n\nview.setStatesImages(\n    normalImages: Array(repeating: UIImage(named: \"arrow_nor\", in: .module, compatibleWith: nil), count: menuCount),\n    selectedImages: Array(repeating: UIImage(named: \"arrow_sel\", in: .module, compatibleWith: nil), count: menuCount),\n    disabledImages: Array(repeating: UIImage(named: \"arrow_dim\", in: .module, compatibleWith: nil), count: menuCount)\n)\nview.setLabelColorWhen(normal: UIColor.black, selected: FFA409, disabled: UIColor.gray)\nview.setLabelFontWhen(normal: UIFont.systemFont(ofSize: 12), selected: UIFont.boldSystemFont(ofSize: 12), disabled: UIFont.systemFont(ofSize: 12))\n\nview.backgroundBlurEnabled = true\n\nview.alwaysSelected(at: 0)\n\nself.view.addSubview(view)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "YNDropDownMenu takes drop-down views and titles; set state images, label colours and fonts, open programmatically."
   },
   {
    "title": "Ease",
@@ -2534,7 +2585,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "let splash = RevealingSplashView(iconImage: icon, iconInitialSize: CGSize(width: 90, height: 90), backgroundColor: DemoSupport.accent)\nsplash.useCustomIconColor = true\nsplash.iconColor = .white\nsplash.animationType = types[picker.selectedSegmentIndex]\nsplash.duration = 4.0\nsplash.frame = view.bounds\nsplash.autoresizingMask = [.flexibleWidth, .flexibleHeight]\nview.addSubview(splash)\nsplash.startAnimation()",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Create a splash with an icon, pick an animationType and duration, add it over the view and start."
   },
   {
    "title": "Transmission",
@@ -2568,7 +2620,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "PresentationLink(transition: .toast, isPresented: $showToast) {\n    TransmissionDestination(title: \"Toast\")\n} label: {\n    Text(\"Toast\").frame(maxWidth: .infinity).demoChip()\n}\n\n@Environment(\\.presentationCoordinator) private var coordinator\n\nButton(\"Dismiss\") { coordinator.dismiss() }.buttonStyle(DemoPrimaryButtonStyle())",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "PresentationLink presents SwiftUI content with UIKit transitions; the destination dismisses through the presentation coordinator."
   },
   {
    "title": "YNSearch",
@@ -2598,7 +2651,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "YNSearch.shared.setCategories(value: categories)\nYNSearch.shared.setSearchHistories(value: [\"Menu\", \"Transition\", \"Hero\"])\nynSearchinit()\ndelegate = self\nlet database = libraries.map { name, category, stars -> LibraryEntry in\n    let entry = LibraryEntry(key: name)\n    entry.category = category\n    entry.stars = stars\n    return entry\n}\ninitData(database: database)\nsetYNCategoryButtonType(type: .colorful)\nynSearchView.ynSearchMainView.redrawSearchHistoryButtons()\n\nfunc ynSearchListView(_ ynSearchListView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {\n    let cell = ynSearchView.ynSearchListView.dequeueReusableCell(withIdentifier: YNSearchListViewCell.ID) as! YNSearchListViewCell\n    if let entry = ynSearchView.ynSearchListView.searchResultDatabase[indexPath.row] as? LibraryEntry {\n        cell.searchLabel.text = \"\\(entry.key ?? \"\")  ·  \\(entry.category)  ·  \\(entry.stars) ★\"\n    }\n    return cell\n}\n\nfunc ynSearchListView(_ ynSearchListView: UITableView, didSelectRowAt indexPath: IndexPath) {\n    guard let entry = ynSearchView.ynSearchListView.searchResultDatabase[indexPath.row] as? LibraryEntry, let key = entry.key else { return }\n    ynSearchView.ynSearchListView.ynSearchListViewDelegate?.ynSearchListViewClicked(key: key)\n    ynSearchView.ynSearchListView.ynSearch.appendSearchHistories(value: key)\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Subclass YNSearchViewController: set categories and history, init data, and implement the list delegate."
   },
   {
    "title": "CDAlertView",
@@ -2655,7 +2709,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "Text(title)\n    .font(.system(size: 36, weight: .black))\n    .shiny(surface)\n    .frame(width: 280, height: 110)\n    .background(RoundedRectangle(cornerRadius: 18).shiny(background))",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Apply .shiny with a surface gradient; the highlight follows device motion."
   },
   {
    "title": "GlitchLabel",
@@ -2754,7 +2809,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "self.transition = JTMaterialTransition(animatedView: self.presentControllerButton!)\n\n\t\t let controller = JTMaterialTransitionSecondViewController()\n\n        controller.modalPresentationStyle = .custom\n        controller.transitioningDelegate = self.transition\n\n        self.present(controller, animated: true, completion: nil)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Create the transition with the button to animate from, set it as transitioningDelegate with a .custom presentation."
   },
   {
    "title": "Windless",
@@ -2807,7 +2863,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "for view in highlightables {\n    let normal: [NSAttributedString.Key: Any] = [.foregroundColor: view is UIButton ? DemoSupport.title : UIColor.label]\n    (view as? Highlightable)?.highlight(text: query, normal: normal, highlight: highlight)\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Call highlight(text:normal:highlight:) on any Highlightable view; a non-matching query resets it (2.1.1)."
   },
   {
    "title": "elongation-preview",
@@ -2864,7 +2921,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "Liquid()\n    .frame(width: 260, height: 260)\n    .foregroundColor(DemoSwiftUIPalette.accent)\n    .opacity(0.3)\n\nLiquid(samples: 5)\n    .frame(width: 200, height: 200)\n    .foregroundColor(DemoSwiftUIPalette.accent)\n\nLiquid(samples: 3, period: 3).frame(width: 90, height: 90).foregroundColor(.purple)\nLiquid(samples: 8, period: 8).frame(width: 90, height: 90).foregroundColor(.orange)\nLiquid(samples: 12, period: 4).frame(width: 90, height: 90).foregroundColor(.teal)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "Liquid() is a morphing blob view; samples and period control the shape and speed."
   },
   {
    "title": "rive-ios",
@@ -2898,7 +2956,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "@StateObject private var logo = RiveViewModel(fileName: \"rive_animation_logo\", in: .module)\n@StateObject private var tree = RiveViewModel(fileName: \"windy_tree\", in: .module)\n\nlogo.view()\n    .frame(height: 260)\n\nButton(\"Replay\") {\n    logo.reset()\n    logo.play()\n    tree.reset()\n    tree.play()\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "RiveViewModel loads a .riv file; its view plays the animation and the model controls playback."
   },
   {
    "title": "MediaBrowser",
@@ -2928,7 +2987,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "mediaItems = images.enumerated().map { Media(image: $1, caption: \"Sample image \\($0 + 1) of 6\") }\n\nlet browser = MediaBrowser(delegate: self)\nbrowser.displayActionButton = true\nbrowser.displayMediaNavigationArrows = true\nbrowser.enableGrid = true\nbrowser.zoomPhotosToFill = true\nbrowser.autoPlayOnAppear = false\nbrowser.setCurrentIndex(at: index)\nnavigationController?.pushViewController(browser, animated: true)\n\nfunc numberOfMedia(in mediaBrowser: MediaBrowser) -> Int { mediaItems.count }\n\nfunc media(for mediaBrowser: MediaBrowser, at index: Int) -> Media {\n    mediaItems[min(index, mediaItems.count - 1)]\n}\n\nfunc thumbnail(for mediaBrowser: MediaBrowser, at index: Int) -> Media {\n    mediaItems[min(index, mediaItems.count - 1)]\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "MediaBrowser(delegate:) with Media items; configure the browser and push it, then serve media from the delegate."
   },
   {
    "title": "SwiftSpreadsheet",
@@ -2981,7 +3041,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "extension PopupViewController: MIBlurPopupDelegate {\n\n    var popupView: UIView {\n        return popupContentContainerView ?? UIView()\n    }\n    var blurEffectStyle: UIBlurEffect.Style? {\n        return customBlurEffectStyle\n    }\n    var initialScaleAmmount: CGFloat {\n        return customInitialScaleAmmount\n    }\n    var animationDuration: TimeInterval {\n        return customAnimationDuration\n    }\n\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "The presented controller adopts MIBlurPopupDelegate to supply the popup view, blur style, scale and duration."
   },
   {
    "title": "TKSwarmAlert",
@@ -3084,7 +3145,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "@IBOutlet var ynTableView: YNTableView!\n\nfunc tableView(_ tableView: YNTableView, expandCellWithHeightAt indexPath: IndexPath) -> YNTableViewCell? {\n    let ynSliderCell = YNTableViewCell()\n    ynSliderCell.cell = tableView.dequeueReusableCell(withIdentifier: YNSliderCell.ID) as! YNSliderCell\n    ynSliderCell.height = 142\n\n    let ynSegmentCell = YNTableViewCell()\n    ynSegmentCell.cell = tableView.dequeueReusableCell(withIdentifier: YNSegmentCell.ID) as! YNSegmentCell\n    ynSegmentCell.height = 160\n\n    if indexPath.section == 0 && indexPath.row == 1 {\n        return ynSliderCell\n    } else if indexPath.section == 0 && indexPath.row == 2 {\n        return ynSegmentCell\n    } else if indexPath.section == 0 && indexPath.row == 4 {\n        return ynSegmentCell\n    } else if indexPath.section == 1 && indexPath.row == 0 {\n        return ynSegmentCell\n    } else if indexPath.section == 1 && indexPath.row == 1 {\n        return ynSliderCell\n    } else if indexPath.section == 2 && indexPath.row == 2 {\n        return ynSliderCell\n    } else if indexPath.section == 2 && indexPath.row == 4 {\n        return ynSliderCell\n    }\n    return nil\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "YNTableView with YNTableViewDelegate: return the expanded cell and height per index path."
   },
   {
    "title": "URWeatherView",
@@ -3141,7 +3203,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "FluidGradient(\n    blobs: [DemoSwiftUIPalette.accent, .purple, .blue],\n    highlights: [.yellow, .orange, .pink],\n    speed: speed,\n    blur: blur\n)",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "FluidGradient animates blurred colour blobs; tune blobs, highlights, speed and blur."
   },
   {
    "title": "AnimateText",
@@ -3175,7 +3238,8 @@
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
    "usage": "case 0: AnimateText<ATCurtainEffect>($text)\ncase 1: AnimateText<ATChimeBellEffect>($text)\ncase 2: AnimateText<ATDropEffect>($text)\n\nprivate func replay() {\n    text = \"\"\n    DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {\n        text = phrases[Int.random(in: 0..<phrases.count)]\n    }\n}",
-   "usage_language": "swift"
+   "usage_language": "swift",
+   "usage_note": "AnimateText<Effect> animates a bound string letter by letter; reset the text to replay."
   },
   {
    "title": "GoogleWearAlert",
