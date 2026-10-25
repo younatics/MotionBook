@@ -4,19 +4,48 @@
   "title": "MotionBook catalog",
   "description": "Machine-readable catalog of open-source iOS motion / animation libraries. catalog.json at the repository root is the single source of truth; README.md, llms.txt and docs/ are generated from it.",
   "type": "object",
-  "required": ["schema_version", "source", "stats_as_of", "gif_base_url", "libraries"],
+  "required": [
+    "schema_version",
+    "source",
+    "stats_as_of",
+    "gif_base_url",
+    "libraries"
+  ],
   "properties": {
-    "schema_version": {"const": "motionbook.catalog.v2"},
-    "source": {"type": "string", "format": "uri"},
-    "stats_as_of": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Date the GitHub numbers (stars, pushed, license, archived, latest_tag) were refreshed"},
-    "gif_base_url": {"type": "string", "format": "uri"},
+    "schema_version": {
+      "const": "motionbook.catalog.v2"
+    },
+    "source": {
+      "type": "string",
+      "format": "uri"
+    },
+    "stats_as_of": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Date the GitHub numbers (stars, pushed, license, archived, latest_tag) were refreshed"
+    },
+    "gif_base_url": {
+      "type": "string",
+      "format": "uri"
+    },
     "app": {
       "type": "object",
       "properties": {
-        "name": {"type": "string"},
-        "app_store_id": {"type": "string"},
-        "version": {"type": "string"},
-        "live_demos": {"type": "array", "items": {"type": "string"}}
+        "name": {
+          "type": "string"
+        },
+        "app_store_id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "live_demos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "libraries": {
@@ -24,36 +53,154 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["title", "author", "category", "summary", "url", "tags", "featured", "install", "live_demo"],
+        "required": [
+          "title",
+          "author",
+          "category",
+          "summary",
+          "url",
+          "tags",
+          "featured",
+          "install",
+          "live_demo"
+        ],
         "properties": {
-          "title": {"type": "string", "minLength": 1, "description": "Unique display name (repository name, or name + author when two repos share it)"},
-          "author": {"type": "string"},
-          "category": {"type": "string", "enum": ["Alert", "Animation", "Collection View", "Indicator", "Menu", "Table View", "Transition", "UI"]},
-          "summary": {"type": "string"},
-          "url": {"type": "string", "pattern": "^https://github\\.com/[^/]+/[^/]+$"},
-          "tags": {"type": "array", "items": {"type": "string"}},
-          "featured": {"type": "boolean"},
-          "gif": {"type": ["string", "null"], "description": "Repository-relative path of the preview GIF (motion-book/<title>.gif) or null"},
-          "stars": {"type": ["integer", "null"]},
-          "pushed": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
-          "license": {"type": ["string", "null"], "description": "SPDX identifier"},
-          "archived": {"type": "boolean"},
-          "latest_tag": {"type": ["string", "null"]},
-          "install": {
-            "type": "object",
-            "required": ["spm", "cocoapods", "carthage"],
-            "properties": {
-              "spm": {"type": "boolean", "description": "Package.swift present on the default branch"},
-              "spm_package": {"type": ["string", "null"], "description": "Ready-to-paste .package(url:from:) line when a semver tag exists"},
-              "cocoapods": {"type": "boolean"},
-              "carthage": {"type": "boolean"}
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Unique display name (repository name, or name + author when two repos share it)"
+          },
+          "author": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Alert",
+              "Animation",
+              "Collection View",
+              "Indicator",
+              "Menu",
+              "Table View",
+              "Transition",
+              "UI"
+            ]
+          },
+          "summary": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://github\\.com/[^/]+/[^/]+$"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
             }
           },
-          "live_demo": {"type": "boolean", "description": "The MotionBook iOS app runs this library live"},
+          "featured": {
+            "type": "boolean"
+          },
+          "gif": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Repository-relative path of the preview GIF (motion-book/<title>.gif) or null"
+          },
+          "stars": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "pushed": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "license": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "SPDX identifier"
+          },
+          "archived": {
+            "type": "boolean"
+          },
+          "latest_tag": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "install": {
+            "type": "object",
+            "required": [
+              "spm",
+              "cocoapods",
+              "carthage"
+            ],
+            "properties": {
+              "spm": {
+                "type": "boolean",
+                "description": "Package.swift present on the default branch"
+              },
+              "spm_package": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Ready-to-paste .package(url:from:) line when a semver tag exists"
+              },
+              "cocoapods": {
+                "type": "boolean"
+              },
+              "carthage": {
+                "type": "boolean"
+              }
+            }
+          },
+          "live_demo": {
+            "type": "boolean",
+            "description": "The MotionBook iOS app runs this library live"
+          },
           "verified": {
-            "type": ["object", "null"],
-            "properties": {"date": {"type": "string"}, "xcode": {"type": "string"}, "ios": {"type": "string"}, "via": {"type": "string"}},
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "date": {
+                "type": "string"
+              },
+              "xcode": {
+                "type": "string"
+              },
+              "ios": {
+                "type": "string"
+              },
+              "via": {
+                "type": "string"
+              }
+            },
             "description": "Last time the library was built and run against a current toolchain, and how"
+          },
+          "usage": {
+            "type": "string",
+            "description": "Minimal Swift usage copied verbatim from the MotionBook live-demo source for this library, so it compiles against the pinned version (install line + these lines = a working start)."
+          },
+          "usage_language": {
+            "type": "string",
+            "enum": [
+              "swift",
+              "objc"
+            ],
+            "description": "Language of `usage` (the three 2017 Objective-C demos mark Objective-C)."
           }
         }
       }

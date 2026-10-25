@@ -1,8 +1,8 @@
 # MotionBook
 
-> Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 59 of them live. Stats as of 2026-10-25.
+> Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 64 of them live. Stats as of 2026-10-25.
 
-Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with.
+Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with. Entries with a live demo also carry `usage`: a minimal Swift snippet copied from the demo source, so it compiles against the pinned version; the same snippet is shown under the library below.
 
 ## Catalog
 
@@ -17,117 +17,915 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 ### Animation
 
 - [Lottie](https://github.com/airbnb/lottie-ios): Render After Effects animations natively and keep product motion consistent across screens. (27K stars, pushed 2026-10-06; live demo, SPM)
+  ```swift
+  private let animationView = LottieAnimationView()
+
+  animationView.animation = LottieAnimation.named("LottieLogo1", bundle: .module)
+  animationView.loopMode = .loop
+  animationView.play()
+
+  animationView.play(fromProgress: toggled ? 0 : 0.5, toProgress: toggled ? 0.5 : 1, loopMode: .playOnce)
+  ```
 - [Pop](https://github.com/facebookarchive/pop): Classic extensible animation primitives for spring and decay motion in UIKit apps. (20K stars, pushed 2020-01-02; CocoaPods, archived)
 - [Spring](https://github.com/MengTo/Spring): A library to simplify iOS animations in Swift. (14K stars, pushed 2023-07-03; live demo, CocoaPods)
+  ```swift
+  ballView.animate()
+
+  ballView.force = selectedForce
+  ballView.duration = selectedDuration
+  ballView.delay = selectedDelay
+
+  ballView.animation = animations[selectedRow].rawValue
+  ballView.curve = animationCurves[selectedEasing].rawValue
+  ```
 - [SkeletonView](https://github.com/Juanpe/SkeletonView): Today almost all apps have async processes, such as Api requests, long running processes, etc. And while the processes are working, usually developers place a loading view to show users that something is going on.SkeletonView has been conceived to address this need, an elegant way to show users that something is happening and also prepare them to which contents he is waiting. (13K stars, pushed 2026-06-23; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  stack.isSkeletonable = true
+
+  stack.showAnimatedGradientSkeleton(usingGradient: SkeletonGradient(baseColor: DemoSupport.hairline), transition: .crossDissolve(0.25))
+  DispatchQueue.main.asyncAfter(deadline: .now() + 4) { [weak self] in
+      self?.stack.hideSkeleton(transition: .crossDissolve(0.4))
+  }
+
+  title.isSkeletonable = true
+  title.linesCornerRadius = 6
+  ```
 - [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage): FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do (7.9K stars, pushed 2024-03-21; live demo, SPM, CocoaPods)
+  ```swift
+  private let imageView = FLAnimatedImageView()
+
+  let image = FLAnimatedImage(animatedGIFData: data)
+
+  imageView.animatedImage = image
+  ```
 - [ViewAnimator](https://github.com/marcosgriselli/ViewAnimator): Animate collection and table view content with concise, reusable item animations. (7.3K stars, pushed 2024-03-31; live demo, SPM)
+  ```swift
+  let animations: [Animation]
+  switch picker.selectedSegmentIndex {
+  case 1: animations = [AnimationType.zoom(scale: 0.3)]
+  case 2: animations = [AnimationType.rotate(angle: .pi / 4), AnimationType.zoom(scale: 0.6)]
+  case 3: animations = [AnimationType.from(direction: .left, offset: 60)]
+  default: animations = [AnimationType.from(direction: .bottom, offset: 40), AnimationType.zoom(scale: 0.8)]
+  }
+  let cells = collectionView.visibleCells.sorted { lhs, rhs in
+      (collectionView.indexPath(for: lhs) ?? IndexPath(item: 0, section: 0)) < (collectionView.indexPath(for: rhs) ?? IndexPath(item: 0, section: 0))
+  }
+  UIView.animate(views: cells, animations: animations, duration: 0.6)
+  ```
 - [Macaw](https://github.com/exyte/Macaw): Powerful and easy-to-use vector graphics Swift library with SVG support (6.0K stars, pushed 2024-02-07; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  macawView = MacawView(node: makeScene(side: side), frame: CGRect(x: 0, y: 0, width: side, height: side))
+
+  animations.forEach { $0.play() }
+
+  let center = side / 2
+  let accent = Color(val: 0xEE165B)
+  let ring = Shape(form: Circle(cx: center, cy: center, r: 110), fill: nil, stroke: Stroke(fill: Color(val: 0xE1E4E8), width: 10))
+  let square = Shape(form: Rect(x: center - 44, y: center - 44, w: 88, h: 88), fill: Color(val: 0x5C6774))
+  let ball = Shape(form: Circle(cx: center + 110, cy: center, r: 22), fill: accent)
+  let dot = Shape(form: Circle(cx: center, cy: center - 110, r: 12), fill: Color(val: 0x4ECDC4))
+  animations = [
+      ball.placeVar.animation(angle: .pi * 2, x: center, y: center, during: 3).cycle(),
+      dot.placeVar.animation(angle: -.pi * 2, x: center, y: center, during: 5).cycle(),
+      square.placeVar.animation(to: Transform.identity.rotate(angle: .pi / 2, x: center, y: center), during: 2).autoreversed().cycle(),
+      square.opacityVar.animation(to: 0.35, during: 1.5).autoreversed().cycle(),
+      ball.fillVar.animation(to: Color(val: 0x8E44AD), during: 1.5).autoreversed().cycle(),
+  ]
+  return Group(contents: [ring, square, ball, dot])
+  ```
 - [ScrollableGraphView](https://github.com/philackm/ScrollableGraphView): An adaptive scrollable graph view for iOS to visualise simple discrete datasets. Written in Swift. (5.3K stars, pushed 2020-12-02; CocoaPods, Carthage, inactive)
 - [Advance](https://github.com/timdonnelly/Advance): A physics-based animation framework for direct manipulation, gestures, and playful interface motion. (4.5K stars, pushed 2022-05-16; SPM, archived)
 - [Pow](https://github.com/EmergeTools/Pow): Delightful SwiftUI effects for your app (4.4K stars, pushed 2026-04-13; live demo, SwiftUI, SPM)
+  ```swift
+  private static let transitions: [(name: String, transition: AnyTransition)] = [
+      ("anvil", .movingParts.anvil),
+      ("poof", .movingParts.poof),
+      ("boing", .movingParts.boing),
+
+  .changeEffect(.spray(origin: .center) { Image(systemName: "heart.fill").foregroundColor(.red) }, value: likes, isEnabled: isLiked)
+
+  .changeEffect(.jump(height: 24), value: taps)
+
+  .changeEffect(.spin, value: taps)
+
+      .conditionalEffect(.smoke, condition: isSmoking)
+  Text("Repeat").demoChip()
+
+      .conditionalEffect(.repeat(.jump(height: 12), every: 1.2), condition: true)
+  Text("Push down").demoChip()
+  ```
 - [Pastel](https://github.com/cruisediary/Pastel): 🎨Gradient animation effect like Instagram (3.5K stars, pushed 2026-03-24; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  let pastelView = PastelView(frame: view.bounds)
+  pastelView.animationDuration = 3.0
+
+  pastelView.setColors([UIColor(red: 156/255, green: 39/255, blue: 176/255, alpha: 1.0),
+                        UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1.0),
+                        UIColor(red: 123/255, green: 31/255, blue: 162/255, alpha: 1.0),
+                        UIColor(red: 32/255, green: 76/255, blue: 255/255, alpha: 1.0),
+                        UIColor(red: 32/255, green: 158/255, blue: 255/255, alpha: 1.0),
+                        UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1.0),
+                        UIColor(red: 58/255, green: 255/255, blue: 217/255, alpha: 1.0)])
+
+  pastelView.startAnimation()
+  view.insertSubview(pastelView, at: 0)
+  ```
 - [Gifu](https://github.com/kaishin/Gifu): Animated GIF playback for UIImageView with frame caching and memory control. (3.2K stars, pushed 2025-08-17; SPM)
 - [Stellar](https://github.com/AugustRush/Stellar): A fantastic Physical animation library for swift(Not Just Spring !!!), it is base on UIDynamic and extension to it, friendly APIs make you use it or custom your own animation very easily! (2.9K stars, pushed 2019-07-31; SPM, CocoaPods, Carthage, inactive)
 - [paper-switch](https://github.com/Ramotion/paper-switch): RAMPaperSwitch is a Swift material design UI module which paints over the parent view when the switch is turned on. (2.9K stars, pushed 2022-01-25; SPM, CocoaPods, Carthage)
 - [ConfettiSwiftUI](https://github.com/simibac/ConfettiSwiftUI): SwiftUI Package for Configurable Confetti Animation 🎉 (2.5K stars, pushed 2026-01-05; live demo, SwiftUI, SPM)
+  ```swift
+  Button { cannon += 1 } label: { Text("🎉  Cannon").font(.title2.bold()) }
+      .confettiCannon(trigger: $cannon, num: 60, confettiSize: 12, rainHeight: 500, radius: 320)
+
+  Button { firework += 1 } label: { Text("🎆  Firework").font(.title2.bold()) }
+      .confettiCannon(
+          trigger: $firework,
+          num: 50,
+          confettis: [.text("❤️"), .text("💙"), .sfSymbol(symbolName: "star.fill")],
+          colors: [.red, .blue, .yellow],
+          confettiSize: 18,
+          openingAngle: .degrees(0),
+          closingAngle: .degrees(360),
+          radius: 220,
+          repetitions: 2,
+          repetitionInterval: 0.7
+      )
+  ```
 - [Wave](https://github.com/jtrivedi/Wave): Wave is a spring-based animation engine for iOS and macOS that makes it easy to create fluid, interruptible animations that feel great. (2.4K stars, pushed 2026-03-25; live demo, SPM)
+  ```swift
+  private let spring = Spring(dampingRatio: 0.55, response: 0.7)
+  private let interactive = Spring(dampingRatio: 1.0, response: 0.12)
+
+  @objc private func pan(_ gesture: UIPanGestureRecognizer) {
+      switch gesture.state {
+      case .began, .changed:
+          let location = gesture.location(in: view)
+          Wave.animate(withSpring: interactive) {
+              ball.animator.center = location
+              ball.animator.scale = CGPoint(x: 1.2, y: 1.2)
+          }
+      case .ended, .cancelled:
+          let velocity = gesture.velocity(in: view)
+          Wave.animate(withSpring: spring, gestureVelocity: velocity) {
+              ball.animator.center = restCenter
+              ball.animator.scale = CGPoint(x: 1, y: 1)
+          }
+      default:
+          break
+      }
+  }
+  ```
 - [RQShineLabel](https://github.com/zipme/RQShineLabel): A UILabel subclass that lets you animate text similar to Secret app. (1.9K stars, pushed 2023-12-25; live demo, SPM, CocoaPods)
+  ```objc
+  self.shineLabel = ({
+      RQShineLabel *label = [[RQShineLabel alloc] initWithFrame:CGRectMake(16, 16, 320 - 32, CGRectGetHeight(self.view.bounds) - 16)];
+      label.numberOfLines = 0;
+      label.text = [self.textArray objectAtIndex:self.textIndex];
+      label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:24.0];
+      label.backgroundColor = [UIColor clearColor];
+      [label sizeToFit];
+      label.center = self.view.center;
+      label;
+  });
+  [self.view addSubview:self.shineLabel];
+
+  [self.shineLabel shine];
+  ```
 - [YLGIFImage](https://github.com/liyong03/YLGIFImage): Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory. (1.8K stars, pushed 2020-12-19; CocoaPods, inactive)
 - [AnimatedMaskLabel](https://github.com/jogendra/LoadingShimmer): Nice gradient animated label that enable an easy way to add a shimmering effect (1.6K stars, pushed 2022-10-22; CocoaPods, Carthage)
 - [Vortex](https://github.com/twostraws/Vortex): High-performance particle effects for SwiftUI. (1.6K stars, pushed 2026-04-03; live demo, SwiftUI, SPM)
+  ```swift
+  VortexViewReader { proxy in
+      ZStack(alignment: .bottom) {
+          VortexView(presets[preset].system()) {
+              Circle().fill(.white).blendMode(.plusLighter).frame(width: 32).tag("circle")
+              Rectangle().fill(.white).frame(width: 16, height: 16).tag("square")
+              Circle().fill(.white).blur(radius: 3).frame(width: 32).tag("sparkle")
+          }
+
+  Button("Burst") { proxy.burst() }
+  ```
 - [Motion (b3ll)](https://github.com/b3ll/Motion): Animation engine for gesturally-driven user interfaces, animations, and interactions on iOS, macOS, and tvOS. (1.5K stars, pushed 2024-10-19; live demo, SPM)
+  ```swift
+  private let spring = SpringAnimation<CGPoint>()
+
+  spring.configure(response: 0.5, dampingRatio: 0.5)
+  spring.onValueChanged { [weak self] newValue in
+      self?.ball.center = newValue
+  }
+
+  case .ended, .cancelled:
+      spring.toValue = restCenter
+      spring.velocity = gesture.velocity(in: view)
+      spring.start()
+  ```
 - [Ease](https://github.com/roberthein/Ease): Ease is a event driven animation system that combines the observer pattern with custom spring animations as observers. (1.3K stars, pushed 2020-07-14; SPM, CocoaPods, inactive)
 - [RevealingSplashView](https://github.com/PiXeL16/RevealingSplashView): A Splash view that animates and reveals its content, inspired by Twitter splash (1.2K stars, pushed 2025-03-30; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  let splash = RevealingSplashView(iconImage: icon, iconInitialSize: CGSize(width: 90, height: 90), backgroundColor: DemoSupport.accent)
+  splash.useCustomIconColor = true
+  splash.iconColor = .white
+  splash.animationType = types[picker.selectedSegmentIndex]
+  splash.duration = 4.0
+  splash.frame = view.bounds
+  splash.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+  view.addSubview(splash)
+  splash.startAnimation()
+  ```
 - [GlitchLabel](https://github.com/kciter/GlitchLabel): G..lit...c...hing UILa..bel fo..r iO...S (1.0K stars, pushed 2022-12-23; SPM, CocoaPods, Carthage)
 - [Windless](https://github.com/ParkGwangBeom/Windless): Windless makes it easy to implement invisible layout loading view. (947 stars, pushed 2022-07-14; SPM, CocoaPods, Carthage)
 - [Highlighter](https://github.com/younatics/Highlighter): 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class. (921 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  for view in highlightables {
+      let normal: [NSAttributedString.Key: Any] = [.foregroundColor: view is UIButton ? DemoSupport.title : UIColor.label]
+      (view as? Highlightable)?.highlight(text: query, normal: normal, highlight: highlight)
+  }
+  ```
 - [Liquid](https://github.com/maustinstar/liquid): Create a playful backsplash in SwiftUI. (856 stars, pushed 2024-08-19; live demo, SwiftUI, SPM)
+  ```swift
+  Liquid()
+      .frame(width: 260, height: 260)
+      .foregroundColor(DemoSwiftUIPalette.accent)
+      .opacity(0.3)
+
+  Liquid(samples: 5)
+      .frame(width: 200, height: 200)
+      .foregroundColor(DemoSwiftUIPalette.accent)
+
+  Liquid(samples: 3, period: 3).frame(width: 90, height: 90).foregroundColor(.purple)
+  Liquid(samples: 8, period: 8).frame(width: 90, height: 90).foregroundColor(.orange)
+  Liquid(samples: 12, period: 4).frame(width: 90, height: 90).foregroundColor(.teal)
+  ```
 - [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (851 stars, pushed 2026-10-24; live demo, SPM)
+  ```swift
+  @StateObject private var logo = RiveViewModel(fileName: "rive_animation_logo", in: .module)
+  @StateObject private var tree = RiveViewModel(fileName: "windy_tree", in: .module)
+
+  logo.view()
+      .frame(height: 260)
+
+  Button("Replay") {
+      logo.reset()
+      logo.play()
+      tree.reset()
+      tree.play()
+  }
+  ```
 - [URWeatherView](https://github.com/Urtaq/URWeatherView): Show the weather effects onto view written in Swift3 (447 stars, pushed 2019-01-07; CocoaPods, Carthage, inactive)
 - [AnimateText](https://github.com/jasudev/AnimateText): This library for animating text. Developed with SwiftUI. This library supports iOS/macOS. (432 stars, pushed 2024-02-13; live demo, SwiftUI, SPM)
+  ```swift
+  case 0: AnimateText<ATCurtainEffect>($text)
+  case 1: AnimateText<ATChimeBellEffect>($text)
+  case 2: AnimateText<ATDropEffect>($text)
+
+  private func replay() {
+      text = ""
+      DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+          text = phrases[Int.random(in: 0..<phrases.count)]
+      }
+  }
+  ```
 - [Gecco](https://github.com/xai3/Gecco): Simply highlight items for your tutorial walkthrough, written in Swift. Gecco means Moonlight in Japanese. (19 stars, pushed 2020-09-16; CocoaPods, Carthage, inactive)
 
 ### Transition
 
 - [Hero](https://github.com/HeroTransitions/Hero): Hero is a library for building iOS view controller transitions. It provides a layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers. (22K stars, pushed 2025-01-23; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  cell.heroModifiers = [.fade, .translate(x:-100)]
+  cell.imageView!.heroID = "image_\(indexPath.item)"
+  cell.imageView!.heroModifiers = [.arc]
+
+  hero_replaceViewController(with: next)
+
+  func heroWillStartAnimatingTo(viewController: UIViewController) {
+    if let _ = viewController as? GridCollectionViewController {
+      tableView.heroModifiers = [.ignoreSubviewModifiers]
+    } else if viewController is ImageViewController {
+    } else {
+      tableView.heroModifiers = [.cascade]
+    }
+  }
+  ```
 - [XLPagerTabStrip](https://github.com/xmartlabs/XLPagerTabStrip): XLPagerTabStrip is a Container View Controller that allows us to switch easily among a collection of view controllers. Pan gesture can be used to move on to next or previous view controller. It shows a interactive indicator of the current, previous, next child view controllers. (7.0K stars, pushed 2023-11-22; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  settings.style.buttonBarBackgroundColor = .systemBackground
+  settings.style.buttonBarItemBackgroundColor = .systemBackground
+  settings.style.selectedBarBackgroundColor = DemoSupport.accent
+  settings.style.selectedBarHeight = 3
+  settings.style.buttonBarItemFont = .systemFont(ofSize: 15, weight: .semibold)
+  settings.style.buttonBarItemTitleColor = DemoSupport.title
+  settings.style.buttonBarItemsShouldFillAvailableWidth = true
+  settings.style.buttonBarMinimumLineSpacing = 0
+  settings.style.buttonBarLeftContentInset = 0
+  settings.style.buttonBarRightContentInset = 0
+
+  override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
+      [
+          PagerChildViewController(title: "Transitions", symbol: "arrow.left.arrow.right", color: DemoSupport.accent),
+          PagerChildViewController(title: "Menus", symbol: "line.3.horizontal", color: .systemIndigo),
+          PagerChildViewController(title: "Loaders", symbol: "circle.dotted", color: .systemTeal),
+      ]
+  }
+
+  func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+      IndicatorInfo(title: tabTitle)
+  }
+  ```
 - [AnimatedCollectionViewLayout](https://github.com/KelvinJin/AnimatedCollectionViewLayout): Animated UIButton of Loading Animation and Transition Animation. (4.9K stars, pushed 2020-09-20; live demo, SPM, CocoaPods, inactive)
+  ```swift
+  if let layout = collectionView?.collectionViewLayout as? AnimatedCollectionViewLayout {
+      layout.scrollDirection = direction
+      layout.animator = animator?.0
+  }
+  ```
 - [Gemini](https://github.com/shoheiyokoyama/Gemini): Gemini is rich scroll based animation framework for iOS, written in Swift. (3.3K stars, pushed 2025-06-28; CocoaPods, Carthage)
 - [BubbleTransition](https://github.com/andreamazz/BubbleTransition): A custom modal transition that presents and dismiss a controller inside an expanding and shrinking bubble. (3.3K stars, pushed 2020-11-04; SPM, CocoaPods, Carthage, inactive)
 - [BWWalkthrough](https://github.com/ariok/BWWalkthrough): BWWalkthrough (BWWT) is a class that helps you create Walkthroughs for your iOS Apps. It differs from other similar classes in that there is no rigid template; BWWT is just a layer placed over your controllers that gives you complete freedom on the design of your views. (2.7K stars, pushed 2021-02-07; SPM, CocoaPods, Carthage)
-- [SPStorkController](https://github.com/ivanvorobei/SPStorkController): Apple Music style modal presentation: a card that slides up and can be dragged down to dismiss. (2.7K stars, pushed 2023-01-31; SPM)
+- [SPStorkController](https://github.com/ivanvorobei/SPStorkController): Apple Music style modal presentation: a card that slides up and can be dragged down to dismiss. (2.7K stars, pushed 2023-01-31; live demo, SPM)
+  ```swift
+  transitionDelegate.customHeight = height          // nil = the default, almost full-height card
+  transitionDelegate.showIndicator = true            // grab indicator at the top
+  transitionDelegate.swipeToDismissEnabled = true
+  transitionDelegate.tapAroundToDismissEnabled = true
+  controller.transitioningDelegate = transitionDelegate   // keep the delegate alive: it is a weak reference
+  controller.modalPresentationStyle = .custom
+  controller.modalPresentationCapturesStatusBarAppearance = true
+  present(controller, animated: true)
+  ```
 - [Transition](https://github.com/Touchwonders/Transition): Interactive, interruptible view controller transitions built from reusable animation and interaction pieces. (2.6K stars, pushed 2020-11-02; SPM, inactive)
 - [AnimatedTransitionGallery](https://github.com/shu223/AnimatedTransitionGallery): Collection of custom animated transitions for iOS using UIViewControllerAnimatedTransitioning protocol. (2.5K stars, pushed 2024-04-30; manual install)
-- [Jelly](https://github.com/SebastianBoldt/Jelly): Animated view controller presentations (slide, fade, shift), interactive or not, in a few lines. (2.5K stars, pushed 2025-11-28; SPM)
+- [Jelly](https://github.com/SebastianBoldt/Jelly): Animated view controller presentations (slide, fade, shift), interactive or not, in a few lines. (2.5K stars, pushed 2025-11-28; live demo, SPM)
+  ```swift
+  let chrome = PresentationUIConfiguration(cornerRadius: 20, backgroundStyle: .dimmed(alpha: 0.45), isTapBackgroundToDismissEnabled: true)
+  let presentation = SlidePresentation(uiConfiguration: chrome, direction: .bottom, size: .custom(value: 280))
+  animator = Animator(presentation: presentation)      // keep a strong reference while presented
+  animator?.prepare(presentedViewController: card)
+  present(card, animated: true)
+  ```
 - [AMWaveTransition](https://github.com/andreamazz/AMWaveTransition): Custom transition between viewcontrollers holding tableviews. Each cell is animated to simulate a 'wave effect'. (2.3K stars, pushed 2020-06-07; CocoaPods, Carthage, inactive)
 - [TKSubmitTransition](https://github.com/takuoka/TKSubmitTransition): Animated UIButton of Loading Animation and Transition Animation. (2.3K stars, pushed 2019-12-04; CocoaPods, inactive)
 - [ElasticTransition](https://github.com/lkzhao/ElasticTransition): A UIKit custom transition that simulates an elastic drag. Written in Swift. (2.2K stars, pushed 2020-05-10; CocoaPods, inactive)
 - [preview-transition](https://github.com/Ramotion/preview-transition): PreviewTransition is a simple preview gallery controller (2.1K stars, pushed 2020-04-06; live demo, SPM, CocoaPods, Carthage, inactive)
+  ```swift
+  let storyboard = UIStoryboard(name: "preview-transition", bundle: .module)
+  let detaleViewController: PTDemoDetailViewController = storyboard.instantiateViewController()
+  pushViewController(detaleViewController)
+  ```
 - [PinterestSwift](https://github.com/demonnico/PinterestSwift): This is a Swift based demo project to show how to make the transition Pinterest liked. (1.9K stars, pushed 2020-06-15; inactive)
 - [CKWaveCollectionViewTransition](https://github.com/CezaryKopacz/CKWaveCollectionViewTransition): Cool wave like transition between two or more UICollectionView (1.8K stars, pushed 2019-10-13; CocoaPods, inactive)
 - [Motion](https://github.com/CosmicMind/Motion): A Material-inspired motion engine for transitions, transforms, and interactive presentation work. (1.8K stars, pushed 2020-01-28; SPM, inactive)
 - [Transmission](https://github.com/nathantannar4/Transmission): Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more. (1.2K stars, pushed 2026-10-24; live demo, SwiftUI, SPM)
+  ```swift
+  PresentationLink(transition: .toast, isPresented: $showToast) {
+      TransmissionDestination(title: "Toast")
+  } label: {
+      Text("Toast").frame(maxWidth: .infinity).demoChip()
+  }
+
+  @Environment(\.presentationCoordinator) private var coordinator
+
+  Button("Dismiss") { coordinator.dismiss() }.buttonStyle(DemoPrimaryButtonStyle())
+  ```
 - [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition): An iOS transition for controllers based on material design. (949 stars, pushed 2019-01-17; live demo, SPM, CocoaPods, inactive)
+  ```swift
+  self.transition = JTMaterialTransition(animatedView: self.presentControllerButton!)
+
+  		 let controller = JTMaterialTransitionSecondViewController()
+
+          controller.modalPresentationStyle = .custom
+          controller.transitioningDelegate = self.transition
+
+          self.present(controller, animated: true, completion: nil)
+  ```
 
 ### UI
 
 - [IBAnimatable](https://github.com/IBAnimatable/IBAnimatable): Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Interface Builder with IBAnimatable. (8.6K stars, pushed 2023-02-21; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  private let box = AnimatableView()
+  private let label = AnimatableLabel()
+
+  private func runChain() {
+      box.animate(.squeezeFade(way: .in, direction: .down))
+          .then(.pop(repeatCount: 1))
+          .then(.shake(repeatCount: 1))
+          .then(.flip(along: .x))
+      label.animate(.slideFade(way: .in, direction: .left)).then(.swing(repeatCount: 1))
+  }
+  ```
 - [LTMorphingLabel](https://github.com/lexrus/LTMorphingLabel): A morphing UILabel subclass written in Swift. The .Scale effect mimicked Apple's QuickType animation of iOS 8 in WWDC 2014. New morphing effects are available as Swift extensions. (8.1K stars, pushed 2026-03-08; live demo, SPM, CocoaPods, Carthage)
-- [TextFieldEffects](https://github.com/raulriera/TextFieldEffects): Text field subclasses with the Codrops entrance effects: floating labels, underlines and borders that animate on focus. (6.0K stars, pushed 2024-01-28; SPM)
-- [MarqueeLabel](https://github.com/cbpowell/MarqueeLabel): UILabel replacement that scrolls text that does not fit, with configurable speed, fade and direction. (4.3K stars, pushed 2025-09-13; SPM)
+  ```swift
+  private let label = LTMorphingLabel()
+
+  label.morphingDuration = 0.9
+  label.morphingEffect = .sparkle
+  label.text = words[0]
+
+  label.text = words[index]
+  ```
+- [TextFieldEffects](https://github.com/raulriera/TextFieldEffects): Text field subclasses with the Codrops entrance effects: floating labels, underlines and borders that animate on focus. (6.0K stars, pushed 2024-01-28; live demo, SPM)
+  ```swift
+  let hoshi = HoshiTextField()                    // underline grows, placeholder floats up
+  hoshi.placeholder = "Hoshi — name"
+  hoshi.borderInactiveColor = DemoSupport.hairline
+  hoshi.borderActiveColor = DemoSupport.accent
+  hoshi.placeholderColor = .secondaryLabel
+
+  let kaede = KaedeTextField()                    // placeholder slides right, field slides in
+  kaede.placeholder = "Kaede — email"
+  kaede.placeholderColor = DemoSupport.accent
+  kaede.foregroundColor = .secondarySystemBackground
+
+  let yoko = YokoTextField()                      // 3D flip reveals the field
+  yoko.placeholder = "Yoko — city"
+  yoko.placeholderColor = .white
+  yoko.foregroundColor = DemoSupport.accent
+
+  let jiro = JiroTextField()                      // the border fills from the bottom
+  jiro.placeholder = "Jiro — note"
+  jiro.borderColor = DemoSupport.accent
+  jiro.placeholderColor = .secondaryLabel
+  ```
+- [MarqueeLabel](https://github.com/cbpowell/MarqueeLabel): UILabel replacement that scrolls text that does not fit, with configurable speed, fade and direction. (4.3K stars, pushed 2025-09-13; live demo, SPM)
+  ```swift
+  let marquee = MarqueeLabel(frame: .zero, rate: 60, fadeLength: 12)   // 60 points per second, 12 pt fade at both edges
+  marquee.type = .continuous           // .leftRight, .rightLeft, .continuousReverse
+  marquee.animationDelay = 1           // seconds before each pass
+  marquee.trailingBuffer = 24          // gap between repeats
+  marquee.text = "Text wider than the label scrolls; shorter text sits still like a normal UILabel."
+  ```
 - [Cards](https://github.com/PaoloCuscela/Cards): Awesome iOS 11 appstore cards in swift 4. (4.2K stars, pushed 2023-04-19; CocoaPods)
 - [StarWars.iOS](https://github.com/Yalantis/StarWars.iOS): This component implements transition animation to crumble view-controller into tiny pieces. (3.8K stars, pushed 2022-10-11; CocoaPods)
 - [DKNightVersion](https://github.com/draveness/DKNightVersion): Manage Colors, Integrate Night/Multiple Themes (3.5K stars, pushed 2019-09-03; CocoaPods, Carthage, archived)
 - [RazzleDazzle](https://github.com/IFTTT/RazzleDazzle): Create scroll-driven onboarding and storytelling animations without hand-wiring every offset. (3.3K stars, pushed 2023-10-11; CocoaPods)
 - [Presentation](https://github.com/hyperoslo/Presentation): Looking for the easiest way of presenting something in your iOS app? Then you are in the right place. Presentation will help you make your tutorials, release notes and any kind of animated pages with the minimum amount of effort. (3.1K stars, pushed 2020-06-05; CocoaPods, Carthage, inactive)
 - [Inferno](https://github.com/twostraws/Inferno): Metal shaders for SwiftUI. (2.9K stars, pushed 2026-05-17; live demo, SwiftUI, SPM)
+  ```swift
+  ("circles", .circles()),
+  ("pixellate", .pixellate()),
+  ("genie", .genie()),
+
+  TimelineView(.animation) { timeline in
+      let time = timeline.date.timeIntervalSince(start) // seconds since the view appeared: shaders take a Float
+
+  Image(systemName: "figure.run.circle.fill")
+      .font(.system(size: 96))
+      .rainbowNoise(time: time)
+
+  .distortionEffect(
+      InfernoShaderLibrary.water(.float2(300, 80), .float(time), .float(3), .float(3), .float(10)),
+      maxSampleOffset: CGSize(width: 12, height: 12)
+  )
+
+  .colorEffect(InfernoShaderLibrary.animatedGradientFill(.float2(320, 70), .float(time)))
+  ```
 - [Segmentio](https://github.com/Yalantis/Segmentio): Animated top/bottom segmented control written in Swift. (2.5K stars, pushed 2024-08-12; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  let items = zip(titles, symbols).map { SegmentioItem(title: $0, image: UIImage(systemName: $1)) }
+  let states = SegmentioStates(
+      defaultState: SegmentioState(backgroundColor: .clear, titleFont: .systemFont(ofSize: 12), titleTextColor: .secondaryLabel),
+      selectedState: SegmentioState(backgroundColor: .clear, titleFont: .systemFont(ofSize: 12, weight: .semibold), titleTextColor: DemoSupport.accent),
+      highlightedState: SegmentioState(backgroundColor: .systemGray5, titleFont: .systemFont(ofSize: 12), titleTextColor: .label)
+  )
+  let options = SegmentioOptions(
+      backgroundColor: .systemBackground,
+      segmentPosition: .fixed(maxVisibleItems: 5),
+      scrollEnabled: false,
+      indicatorOptions: SegmentioIndicatorOptions(type: .bottom, ratio: 1, height: 4, color: DemoSupport.accent),
+      horizontalSeparatorOptions: SegmentioHorizontalSeparatorOptions(type: .bottom, height: 1, color: DemoSupport.hairline),
+      verticalSeparatorOptions: SegmentioVerticalSeparatorOptions(ratio: 0.5, color: DemoSupport.hairline),
+      imageContentMode: .center,
+      labelTextAlignment: .center,
+      labelTextNumberOfLines: 1,
+      segmentStates: states,
+      animationDuration: 0.3
+  )
+  segmentio.setup(content: items, style: .imageOverLabel, options: options)
+  segmentio.selectedSegmentioIndex = 0
+  segmentio.valueDidChange = { [weak self] _, index in
+      guard let self else { return }
+      detail.text = "Selected: \(titles[index])"
+  }
+  ```
 - [MarkdownView](https://github.com/keitaoouchi/MarkdownView): MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it. (2.2K stars, pushed 2026-10-22; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  private let markdownView = MarkdownView()
+
+  markdownView.isScrollEnabled = false
+
+  markdownView.onRendered = { [weak self] _ in self?.markdownView.invalidateIntrinsicContentSize() }
+  markdownView.onTouchLink = { _ in false }
+
+  markdownView.load(markdown: """
+  # MotionBook
+
+  A catalog of **112 open-source motion libraries** for iOS, with *live demos* for 64 of them.
+
+  ## Why a demo app?
+
+  1. Seeing a transition beats reading about it.
+  2. Every library here builds against the current Xcode.
+  3. Fixes went back upstream as pull requests.
+
+  ## Example
+
+  ```swift
+  let banner = NotificationBanner(title: "MotionBook", style: .success)
+  banner.show()
+  ```
+
+  | Category | Libraries | Live |
+  | --- | ---: | ---: |
+  | Transition | 18 | 9 |
+  | Menu | 11 | 5 |
+  | SwiftUI | 20 | 19 |
+
+  > Markdown rendered by [MarkdownView](https://github.com/keitaoouchi/MarkdownView).
+  """)
+  ```
 - [Glur](https://github.com/joogps/Glur): A library for progressive blurs in SwiftUI. (2.1K stars, pushed 2026-10-18; live demo, SwiftUI, SPM)
+  ```swift
+  tiles.frame(height: 320, alignment: .top).clipped()
+      .glur(radius: radius, offset: offset, interpolation: 0.4, direction: down ? .down : .up)
+  ```
 - [fluid-slider](https://github.com/Ramotion/fluid-slider): A slider widget with a popup bubble displaying the precise value selected. (2.0K stars, pushed 2022-06-01; SPM, CocoaPods, Carthage)
 - [SwiftUI-Shimmer](https://github.com/markiv/SwiftUI-Shimmer): Shimmer is a super-light modifier that adds a shimmering effect to any SwiftUI View, for example, to show that an operation is in progress. It works well on light and dark modes, and across iOS, macOS, tvOS, watchOS and visionOS. (1.7K stars, pushed 2024-08-14; live demo, SwiftUI, SPM)
+  ```swift
+  Text("MotionBook")
+      .font(.system(size: 44, weight: .black))
+      .foregroundColor(DemoSwiftUIPalette.accent)
+      .shimmering(active: active)
+  Text("Custom gradient mode")
+      .font(.title.bold())
+      .shimmering(active: active, gradient: Gradient(colors: [.clear, .orange, .white, .green, .clear]), bandSize: 0.5, mode: .overlay())
+
+  .redacted(reason: .placeholder)
+  .shimmering(active: active)
+  ```
 - [ScalingHeaderScrollView](https://github.com/exyte/ScalingHeaderScrollView): A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI. (1.5K stars, pushed 2026-10-20; live demo, SwiftUI, SPM)
+  ```swift
+  ScalingHeaderScrollView(minHeight: 100, maxHeight: 300) { _, progress in
+
+  } content: {
+
+  }
+  .collapseProgress($progress)
+  .allowsHeaderCollapse()
+  .ignoresSafeArea(edges: .top)
+  ```
 - [YNSearch](https://github.com/younatics/YNSearch): ✨Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm! (1.2K stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  YNSearch.shared.setCategories(value: categories)
+  YNSearch.shared.setSearchHistories(value: ["Menu", "Transition", "Hero"])
+  ynSearchinit()
+  delegate = self
+  let database = libraries.map { name, category, stars -> LibraryEntry in
+      let entry = LibraryEntry(key: name)
+      entry.category = category
+      entry.stars = stars
+      return entry
+  }
+  initData(database: database)
+  setYNCategoryButtonType(type: .colorful)
+  ynSearchView.ynSearchMainView.redrawSearchHistoryButtons()
+
+  func ynSearchListView(_ ynSearchListView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      let cell = ynSearchView.ynSearchListView.dequeueReusableCell(withIdentifier: YNSearchListViewCell.ID) as! YNSearchListViewCell
+      if let entry = ynSearchView.ynSearchListView.searchResultDatabase[indexPath.row] as? LibraryEntry {
+          cell.searchLabel.text = "\(entry.key ?? "")  ·  \(entry.category)  ·  \(entry.stars) ★"
+      }
+      return cell
+  }
+
+  func ynSearchListView(_ ynSearchListView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      guard let entry = ynSearchView.ynSearchListView.searchResultDatabase[indexPath.row] as? LibraryEntry, let key = entry.key else { return }
+      ynSearchView.ynSearchListView.ynSearchListViewDelegate?.ynSearchListViewClicked(key: key)
+      ynSearchView.ynSearchListView.ynSearch.appendSearchHistories(value: key)
+  }
+  ```
 - [Shiny](https://github.com/maustinstar/shiny): Shiny uses your gyroscope to simulate lighting and motion effects on colors. Works on almost every SwiftUI View. (1.1K stars, pushed 2024-07-12; live demo, SwiftUI, SPM)
+  ```swift
+  Text(title)
+      .font(.system(size: 36, weight: .black))
+      .shiny(surface)
+      .frame(width: 280, height: 110)
+      .background(RoundedRectangle(cornerRadius: 18).shiny(background))
+  ```
 - [AIFlatSwitch](https://github.com/cocoatoucher/AIFlatSwitch): A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used instead of UISwitch. Inspired by Creativedash's Dribbble post (963 stars, pushed 2022-06-06; SPM, CocoaPods)
 - [MediaBrowser](https://github.com/younatics/MediaBrowser): 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view. (646 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  mediaItems = images.enumerated().map { Media(image: $1, caption: "Sample image \($0 + 1) of 6") }
+
+  let browser = MediaBrowser(delegate: self)
+  browser.displayActionButton = true
+  browser.displayMediaNavigationArrows = true
+  browser.enableGrid = true
+  browser.zoomPhotosToFill = true
+  browser.autoPlayOnAppear = false
+  browser.setCurrentIndex(at: index)
+  navigationController?.pushViewController(browser, animated: true)
+
+  func numberOfMedia(in mediaBrowser: MediaBrowser) -> Int { mediaItems.count }
+
+  func media(for mediaBrowser: MediaBrowser, at index: Int) -> Media {
+      mediaItems[min(index, mediaItems.count - 1)]
+  }
+
+  func thumbnail(for mediaBrowser: MediaBrowser, at index: Int) -> Media {
+      mediaItems[min(index, mediaItems.count - 1)]
+  }
+  ```
 - [FluidGradient](https://github.com/Cindori/FluidGradient): A fluid, animated gradient implemented with CoreAnimation and SwiftUI. (439 stars, pushed 2024-03-14; live demo, SwiftUI, SPM)
+  ```swift
+  FluidGradient(
+      blobs: [DemoSwiftUIPalette.accent, .purple, .blue],
+      highlights: [.yellow, .orange, .pink],
+      speed: speed,
+      blur: blur
+  )
+  ```
 - [PARTagPicker](https://github.com/paulrolfe/PARTagPicker): This pod provides a view controller for choosing and creating tags in the style of wordpress or tumblr. This tag picker was originally used in the Intrepid Pursuits app, Slate. (365 stars, pushed 2019-06-28; CocoaPods, inactive)
 
 ### Menu
 
 - [animated-tab-bar](https://github.com/Ramotion/animated-tab-bar): RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items. (11K stars, pushed 2022-01-26; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  @IBAction func showBadgeHandelr(_ sender: AnyObject) {
+      index += 1
+      self.tabBarItem.badgeValue = "\(index)"
+  }
+
+  @IBAction func hideBadgeHandler(_ sender: AnyObject) {
+      self.tabBarItem.badgeValue = nil
+  }
+  ```
 - [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController): Customisable tab bar controller with a raised centre button, badges and animated tab items. (7.0K stars, pushed 2026-10-23; SPM)
 - [SideMenu](https://github.com/jonkykong/SideMenu): Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+. (5.8K stars, pushed 2023-02-09; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  SideMenuManager.default.menuEnableSwipeGestures = true
+  // Define the menus
+  SideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
+  SideMenuManager.default.menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightMenuNavigationController") as? UISideMenuNavigationController
+
+  // Enable gestures. The left and/or right menus must be set up above for these to work.
+  // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
+  SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+  SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+
+  SideMenuManager.default.menuPresentMode = .viewSlideOut
+
+  let modes:[SideMenuManager.MenuPresentMode] = [.menuSlideIn, .viewSlideOut, .viewSlideInOut, .menuDissolveIn]
+  SideMenuManager.default.menuPresentMode = modes[segmentControl.selectedSegmentIndex]
+  ```
 - [ESTabBarController](https://github.com/eggswift/ESTabBarController): Tab bar controller with customisable item animations, badges and a highlighted centre item. (5.2K stars, pushed 2023-05-09; SPM)
 - [circle-menu](https://github.com/Ramotion/circle-menu): This project is maintained by Ramotion, Inc. We specialize in the designing and coding of custom UI for Mobile Apps and Websites. (3.4K stars, pushed 2022-07-12; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  button.delegate = self
+
+  func circleMenu(_ circleMenu: CircleMenu, willDisplay button: UIButton, atIndex: Int) {
+      button.backgroundColor = items[atIndex].color
+
+      button.setImage(UIImage(named: items[atIndex].icon, in: .module, compatibleWith: nil), for: .normal)
+
+      let highlightedImage  = UIImage(named: items[atIndex].icon, in: .module, compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
+      button.setImage(highlightedImage, for: .highlighted)
+      button.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
+  }
+  ```
 - [SlideMenuControllerSwift](https://github.com/dekatotoro/SlideMenuControllerSwift): iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift. (3.4K stars, pushed 2023-09-07; CocoaPods, Carthage)
 - [GuillotineMenu](https://github.com/Yalantis/GuillotineMenu): Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine. (2.9K stars, pushed 2020-04-13; CocoaPods, inactive)
 - [Side-Menu.iOS](https://github.com/Yalantis/Side-Menu.iOS): Animated side menu with customizable UI. Made in Yalantis. (2.7K stars, pushed 2020-04-13; CocoaPods, inactive)
 - [YNDropDownMenu](https://github.com/younatics/YNDropDownMenu): ✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc) (1.3K stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  let view = YNDropDownMenu(frame: CGRect(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: 38), dropDownViews: _ZBdropDownViews, dropDownViewTitles: ["Apple", "Banana", "Kiwi", "Pear"])
+
+  view.setStatesImages(
+      normalImages: Array(repeating: UIImage(named: "arrow_nor", in: .module, compatibleWith: nil), count: menuCount),
+      selectedImages: Array(repeating: UIImage(named: "arrow_sel", in: .module, compatibleWith: nil), count: menuCount),
+      disabledImages: Array(repeating: UIImage(named: "arrow_dim", in: .module, compatibleWith: nil), count: menuCount)
+  )
+  view.setLabelColorWhen(normal: UIColor.black, selected: FFA409, disabled: UIColor.gray)
+  view.setLabelFontWhen(normal: UIFont.systemFont(ofSize: 12), selected: UIFont.boldSystemFont(ofSize: 12), disabled: UIFont.systemFont(ofSize: 12))
+
+  view.backgroundBlurEnabled = true
+
+  view.alwaysSelected(at: 0)
+
+  self.view.addSubview(view)
+  ```
 - [AnimatedTabBar (exyte)](https://github.com/exyte/AnimatedTabBar): A tabbar with a number of preset animations written in pure SwiftUI (557 stars, pushed 2026-07-08; SwiftUI, SPM)
 
 ### Alert
 
 - [NotificationBanner](https://github.com/Daltron/NotificationBanner): NotificationBanner is an extremely customizable and lightweight library that makes the task of displaying in app notification banners and drop down alerts an absolute breeze in iOS. (4.9K stars, pushed 2024-07-29; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  let banner = NotificationBanner(title: "Basic Success Notification",
+                                  subtitle: "Extremely Customizable!",
+                                  style: .success)
+
+  banner.show(queuePosition: selectedQueuePosition())
+
+  let banner = StatusBarNotificationBanner(title: "Success Status Bar Notification", style: .success)
+  banner.show(queuePosition: selectedQueuePosition())
+  ```
 - [CRToast](https://github.com/cruffenach/CRToast): CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar. (4.1K stars, pushed 2024-05-02; live demo, CocoaPods, Carthage)
+  ```objc
+      [CRToastManager showNotificationWithOptions:[self options]
+                                   apperanceBlock:^(void) {
+  //                                     NSLog(@"Appeared");
+                                   }
+                                  completionBlock:^(void) {
+  //                                    NSLog(@"Completed");
+                                  }];
+
+  [CRToastManager dismissNotification:YES];
+
+  NSMutableDictionary *options = [@{kCRToastNotificationTypeKey               : self.coverNavBarSwitch.on ? @(CRToastTypeNavigationBar) : @(CRToastTypeStatusBar),
+                                    kCRToastNotificationPresentationTypeKey   : self.slideOverSwitch.on ? @(CRToastPresentationTypeCover) : @(CRToastPresentationTypePush),
+                                    kCRToastUnderStatusBarKey                 : @(self.slideUnderSwitch.on),
+                                    kCRToastTextKey                           : self.txtNotificationMessage.text,
+                                    kCRToastTextAlignmentKey                  : @(self.textAlignment),
+                                    kCRToastTimeIntervalKey                   : @(self.sliderDuration.value),
+                                    kCRToastAnimationInTypeKey                : @(CRToastAnimationTypeFromSegmentedControl(_inAnimationTypeSegmentedControl)),
+                                    kCRToastAnimationOutTypeKey               : @(CRToastAnimationTypeFromSegmentedControl(_outAnimationTypeSegmentedControl)),
+                                    kCRToastAnimationInDirectionKey           : @(self.segFromDirection.selectedSegmentIndex),
+                                    kCRToastAnimationOutDirectionKey          : @(self.segToDirection.selectedSegmentIndex),
+                                    kCRToastNotificationPreferredPaddingKey   : @(self.sliderPadding.value)} mutableCopy];
+  ```
 - [PopupView](https://github.com/exyte/PopupView): Toasts and popups library written with SwiftUI (4.1K stars, pushed 2026-10-06; live demo, SwiftUI, SPM)
+  ```swift
+  .popup(isPresented: $showFloater) {
+      PopupCard(icon: "bell.fill", title: "Floater", message: "Slides in from the top and hides after 5 s.")
+  } customize: {
+      $0.type(.floater()).position(.top).animation(.spring()).autohideIn(5).displayMode(.overlay)
+  }
+
+  } customize: {
+      $0.type(.toast).position(.bottom).dragToDismiss(true).closeOnTapOutside(true).backgroundColor(.black.opacity(0.4)).displayMode(.overlay)
+  }
+  ```
 - [PopupDialog](https://github.com/Orderella/PopupDialog): A simple, customizable popup dialog for iOS written in Swift. Replaces UIAlertController alert style. (4.0K stars, pushed 2024-02-07; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  let popup = PopupDialog(title: title, message: message, image: image)
+
+  // Create first button
+  let buttonOne = CancelButton(title: "CANCEL") {
+      self.label.text = "You canceled the car dialog."
+  }
+
+  // Create second button
+  let buttonTwo = DefaultButton(title: "ADMIRE CAR") {
+      self.label.text = "What a beauty!"
+  }
+
+  // Create third button
+  let buttonThree = DefaultButton(title: "BUY CAR") {
+      self.label.text = "Ah, maybe next time :)"
+  }
+
+  // Add buttons to dialog
+  popup.addButtons([buttonOne, buttonTwo, buttonThree])
+
+  // Present dialog
+  self.present(popup, animated: animated, completion: nil)
+  ```
 - [Popovers](https://github.com/aheze/Popovers): A library to present popovers. Simple, modern, and highly customizable. Not boring! (2.2K stars, pushed 2025-02-19; live demo, SwiftUI, SPM)
+  ```swift
+  Button("Show popover") { showPopover = true }
+      .buttonStyle(DemoPrimaryButtonStyle())
+      .popover(present: $showPopover, attributes: {
+          $0.position = .absolute(originAnchor: .bottom, popoverAnchor: .top)
+          $0.sourceFrameInset.bottom = -8
+      }) {
+          Templates.Container(arrowSide: .top(.centered), backgroundColor: DemoSwiftUIPalette.accent) {
+              Text("Hi, I'm a popover.").foregroundColor(.white).padding(4)
+          }
+      }
+
+  Templates.Menu {
+      Templates.MenuButton(title: "Copy", systemImage: "doc.on.doc") {}
+      Templates.MenuButton(title: "Share", systemImage: "square.and.arrow.up") {}
+      Templates.MenuButton(title: "Delete", systemImage: "trash") {}
+  } label: { fade in
+      Text("Open menu").demoChip().opacity(fade ? 0.5 : 1)
+  }
+  ```
 - [SweetAlert-iOS](https://github.com/codestergit/SweetAlert-iOS): Beautiful Animated custom Alert View inspired from javascript library SweetAlert. Written in Swift this SweetAlertView can be used in Swift and Objective-C projects. SweetAlertView provides live intutive experience to user actions.It can be used in place of UIAlertView and UIAlertController (2.0K stars, pushed 2020-03-16; live demo, inactive)
+  ```swift
+  _ = SweetAlert().showAlert("Here's a message!")
+
+  _ = SweetAlert().showAlert("Good job!", subTitle: "You clicked the button!", style: AlertStyle.success)
+
+  @IBAction func warningAlert(_ sender: AnyObject) {
+      _ = SweetAlert().showAlert("Are you sure?", subTitle: "You file will permanently delete!", style: AlertStyle.warning, buttonTitle:"Cancel", buttonColor:UIColor(demoRGB: 0xD0D0D0) , otherButtonTitle:  "Yes, delete it!", otherButtonColor: UIColor(demoRGB: 0xDD6B55)) { (isOtherButton) -> Void in
+          if isOtherButton == true {
+
+              print("Cancel Button  Pressed", terminator: "")
+          }
+          else {
+              _ = SweetAlert().showAlert("Deleted!", subTitle: "Your imaginary file has been deleted!", style: AlertStyle.success)
+          }
+      }
+  ```
 - [SDCAlertView](https://github.com/sberrevoets/SDCAlertView): SDCAlertView started out as an alert that looked identical to UIAlertView, but had support for a custom content view. With the introduction of UIAlertController in iOS 8, the project was updated to the more modern API that UIAlertController brought. (1.8K stars, pushed 2025-01-22; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  let alert = AlertController(title: "SDCAlertView", message: "Looks like UIAlertController, behaves like your own view.", preferredStyle: .alert)
+  alert.addAction(AlertAction(title: "Cancel", style: .normal))
+  alert.addAction(AlertAction(title: "OK", style: .preferred))
+  alert.present()
+
+  let alert = AlertController(title: "Working", message: "Custom content view with a spinner…")
+  alert.contentView.addSubview(spinner)
+  NSLayoutConstraint.activate([
+      spinner.centerXAnchor.constraint(equalTo: alert.contentView.centerXAnchor),
+      spinner.topAnchor.constraint(equalTo: alert.contentView.topAnchor),
+      spinner.bottomAnchor.constraint(equalTo: alert.contentView.bottomAnchor),
+  ])
+  alert.addAction(AlertAction(title: "Stop", style: .preferred))
+  alert.present()
+
+  let alert = AlertController(title: "Dismissal rules", message: "Only the preferred action closes this alert.")
+  alert.addAction(AlertAction(title: "Doesn't dismiss", style: .normal))
+  alert.addAction(AlertAction(title: "Dismiss", style: .preferred))
+  alert.shouldDismissHandler = { $0?.title == "Dismiss" }
+  alert.present()
+  ```
 - [CDAlertView](https://github.com/candostdagdeviren/CDAlertView): CDAlertView is highly customizable alert popup written in Swift 3. Usage is similar to UIAlertController. (1.1K stars, pushed 2026-08-20; CocoaPods, Carthage)
 - [MIBlurPopup](https://github.com/MarioIannotta/MIBlurPopup): MIBlurPopup lets you create amazing popups with a blurred background (598 stars, pushed 2020-03-30; live demo, CocoaPods, inactive)
+  ```swift
+  extension PopupViewController: MIBlurPopupDelegate {
+
+      var popupView: UIView {
+          return popupContentContainerView ?? UIView()
+      }
+      var blurEffectStyle: UIBlurEffect.Style? {
+          return customBlurEffectStyle
+      }
+      var initialScaleAmmount: CGFloat {
+          return customInitialScaleAmmount
+      }
+      var animationDuration: TimeInterval {
+          return customAnimationDuration
+      }
+
+  }
+  ```
 - [TKSwarmAlert](https://github.com/takuoka/TKSwarmAlert): Animated alert library like Swarm app. (573 stars, pushed 2019-03-30; CocoaPods, Carthage, inactive)
 - [GoogleWearAlert](https://github.com/ashrobo/GoogleWearAlert): An Android Wear style confirmation view for iOS (417 stars, pushed 2016-10-16; inactive)
 
 ### Collection View
 
 - [expanding-collection](https://github.com/Ramotion/expanding-collection): This project aims to provide a simple and customizable pull to refresh implementation. (5.5K stars, pushed 2020-04-06; live demo, SPM, CocoaPods, Carthage, inactive)
+  ```swift
+  itemSize = CGSize(width: 256, height: 335)
+
+  // double swipe Up transition
+  if cell.isOpened == true && sender.direction == .up {
+      pushToViewController(getViewController())
+  ```
 - [Koloda](https://github.com/Yalantis/Koloda): KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS. (5.4K stars, pushed 2024-05-29; live demo, CocoaPods, Carthage)
+  ```swift
+  kolodaView.dataSource = self
+  kolodaView.delegate = self
+
+  @IBAction func leftButtonTapped() {
+      kolodaView?.swipe(.left)
+  }
+
+  @IBAction func rightButtonTapped() {
+      kolodaView?.swipe(.right)
+  }
+
+  func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
+      return dataSource.count
+  }
+
+  func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
+      return .default
+  }
+
+  func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+      return UIImageView(image: dataSource[Int(index)])
+  }
+  ```
 - [CSStickyHeaderFlowLayout](https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout): UICollectionView replacement of UITableView. Do even more like Parallax Header, Sticky Section Header. Made for iOS 7. (5.0K stars, pushed 2021-07-17; CocoaPods, Carthage)
 - [Grid (exyte)](https://github.com/exyte/Grid): The most powerful Grid container missed in SwiftUI (2.1K stars, pushed 2026-09-15; live demo, SwiftUI, SPM)
+  ```swift
+  Grid(tracks: [GridTrack](repeating: .fr(1), count: trackCount), spacing: 8) {
+      ForEach(0..<14, id: \.self) { index in
+          RoundedRectangle(cornerRadius: 10)
+              .fill(colors[index % colors.count])
+              .overlay(Text("\(index)").foregroundColor(.white).bold())
+              .frame(height: 56)
+              .gridSpan(column: (index % 5 == 0 && wideSpans) ? 2 : 1)
+      }
+  }
+  .gridContentMode(.scroll)
+  .gridFlow(.rows)
+  .gridPacking(dense ? .dense : .sparse)
+  .gridAnimation(.easeInOut(duration: 0.5))
+  ```
 - [GSKStretchyHeaderView](https://github.com/gskbyte/GSKStretchyHeaderView): GSKStretchyHeaderView is an implementation of the stretchy header paradigm as seen on many apps, like Twitter, Spotify or airbnb. (1.7K stars, pushed 2024-08-06; CocoaPods, Carthage)
 - [SwiftSpreadsheet](https://github.com/stuffrabbit/SwiftSpreadsheet): Spreadsheet CollectionViewLayout in Swift. Fully customizable. (637 stars, pushed 2019-10-15; SPM, CocoaPods, inactive)
 - [MMCardView](https://github.com/MillmanY/MMCardView): Custom CollectionView like Wallet App (565 stars, pushed 2021-10-13; CocoaPods)
@@ -135,17 +933,162 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 ### Table View
 
 - [folding-cell](https://github.com/Ramotion/folding-cell): FoldingCell is an expanding content cell inspired by folding paper material (10K stars, pushed 2024-04-28; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  if cellHeights[(indexPath as NSIndexPath).row] == kCloseCellHeight {
+    cell.unfold(false, animated: false, completion:nil)
+  } else {
+    cell.unfold(true, animated: false, completion: nil)
+  }
+
+  let cell = tableView.cellForRow(at: indexPath) as! FoldingCell
+
+  if cellHeights[(indexPath as NSIndexPath).row] == kCloseCellHeight { // open cell
+      cellHeights[(indexPath as NSIndexPath).row] = kOpenCellHeight
+      cell.unfold(true, animated: true, completion: nil)
+      duration = 0.5
+  } else {// close cell
+      cellHeights[(indexPath as NSIndexPath).row] = kCloseCellHeight
+      cell.unfold(false, animated: true, completion: nil)
+      duration = 0.8
+  }
+  ```
 - [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit): Swipeable UITableViewCell based on the stock Mail.app, implemented in Swift. (6.3K stars, pushed 2024-05-19; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  tableView.register(SwipeTableViewCell.self, forCellReuseIdentifier: "cell")
+
+  cell.delegate = self
+
+  func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+      if orientation == .right {
+          let delete = SwipeAction(style: .destructive, title: "Delete") { [weak self] _, indexPath in
+              self?.items.remove(at: indexPath.row)
+          }
+          delete.image = UIImage(systemName: "trash")
+          let flag = SwipeAction(style: .default, title: "Flag") { _, _ in }
+          flag.image = UIImage(systemName: "flag")
+          flag.backgroundColor = .systemOrange
+          return [delete, flag]
+      }
+      let read = SwipeAction(style: .default, title: "Read") { _, _ in }
+      read.image = UIImage(systemName: "envelope.open")
+      read.backgroundColor = DemoSupport.accent
+      return [read]
+  }
+
+  func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeOptions {
+      var options = SwipeOptions()
+      options.expansionStyle = orientation == .left ? .selection : .destructive
+      options.transitionStyle = .border
+      return options
+  }
+  ```
 - [Pull-to-Refresh.Rentals-iOS](https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS): This project aims to provide a simple and customizable pull to refresh implementation. (2.1K stars, pushed 2018-06-16; live demo, CocoaPods, inactive)
+  ```objc
+  self.sunnyRefreshControl = [YALSunnyRefreshControl new];
+  [self.sunnyRefreshControl addTarget:self
+                               action:@selector(sunnyControlDidStartAnimation)
+                     forControlEvents:UIControlEventValueChanged];
+  [self.sunnyRefreshControl attachToScrollView:self.tableView];
+
+  [self.sunnyRefreshControl endRefreshing];
+  ```
 - [elongation-preview](https://github.com/Ramotion/elongation-preview): ElongationPreview is an elegant push-pop style view controller (888 stars, pushed 2020-04-06; SPM, CocoaPods, Carthage, inactive)
 - [YNExpandableCell](https://github.com/younatics/YNExpandableCell): ✨Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell? (451 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  @IBOutlet var ynTableView: YNTableView!
+
+  func tableView(_ tableView: YNTableView, expandCellWithHeightAt indexPath: IndexPath) -> YNTableViewCell? {
+      let ynSliderCell = YNTableViewCell()
+      ynSliderCell.cell = tableView.dequeueReusableCell(withIdentifier: YNSliderCell.ID) as! YNSliderCell
+      ynSliderCell.height = 142
+
+      let ynSegmentCell = YNTableViewCell()
+      ynSegmentCell.cell = tableView.dequeueReusableCell(withIdentifier: YNSegmentCell.ID) as! YNSegmentCell
+      ynSegmentCell.height = 160
+
+      if indexPath.section == 0 && indexPath.row == 1 {
+          return ynSliderCell
+      } else if indexPath.section == 0 && indexPath.row == 2 {
+          return ynSegmentCell
+      } else if indexPath.section == 0 && indexPath.row == 4 {
+          return ynSegmentCell
+      } else if indexPath.section == 1 && indexPath.row == 0 {
+          return ynSegmentCell
+      } else if indexPath.section == 1 && indexPath.row == 1 {
+          return ynSliderCell
+      } else if indexPath.section == 2 && indexPath.row == 2 {
+          return ynSliderCell
+      } else if indexPath.section == 2 && indexPath.row == 4 {
+          return ynSliderCell
+      }
+      return nil
+  }
+  ```
 
 ### Indicator
 
 - [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView): NVActivityIndicatorView is a collection of awesome loading animations. (11K stars, pushed 2026-03-18; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  let activityIndicatorView = NVActivityIndicatorView(frame: frame,
+                                                      type: types[$0])
+
+  activityIndicatorView.padding = 20
+
+  activityIndicatorView.startAnimating()
+
+  let types = NVActivityIndicatorType.allCases.filter { $0 != .blank }
+  startAnimating(size, message: "Loading...", type: types[sender.tag])
+  ```
 - [PKHUD](https://github.com/pkluz/PKHUD): A Swift based reimplementation of the Apple HUD (Volume, Ringer, Rotation,…) for iOS 8. (3.8K stars, pushed 2023-02-16; live demo, SPM, CocoaPods, Carthage)
-- [ProgressHUD](https://github.com/relatedcode/ProgressHUD): Lightweight HUD with progress, activity-indicator and symbol animations plus banners. (3.0K stars, pushed 2026-09-13; SPM)
+  ```swift
+  PKHUD.sharedHUD.dimsBackground = true
+
+  makeButton("Success") { HUD.flash(.success, delay: 1.0) },
+  makeButton("Error") { HUD.flash(.error, delay: 1.0) },
+
+  HUD.show(.labeledProgress(title: "Loading", subtitle: "fetching stars"))
+  DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { HUD.flash(.labeledSuccess(title: "Done", subtitle: "103 libraries"), delay: 1.0) }
+
+  HUD.show(.labeledProgress(title: "Loading", subtitle: "PKHUD"), onView: view)
+  ```
+- [ProgressHUD](https://github.com/relatedcode/ProgressHUD): Lightweight HUD with progress, activity-indicator and symbol animations plus banners. (3.0K stars, pushed 2026-09-13; live demo, SPM)
+  ```swift
+  ProgressHUD.colorAnimation = DemoSupport.accent     // tint of the animation and the progress ring
+  ProgressHUD.animationType = .circleStrokeSpin        // one of ~20 built-in animations
+
+  ProgressHUD.animate("Loading…", .circleStrokeSpin)           // text is optional; interaction stays enabled
+  after(1.2) { ProgressHUD.progress("Downloading", 0.35) }    // 0...1 on a ring
+  after(2.0) { ProgressHUD.progress("Downloading", 0.8) }
+  after(2.8) { ProgressHUD.succeed("Done", delay: 1.2) }       // checkmark, then hides itself
+  ```
 - [ActivityIndicatorView](https://github.com/exyte/ActivityIndicatorView): A number of preset loading indicators created with SwiftUI (1.7K stars, pushed 2026-09-10; live demo, SwiftUI, SPM)
+  ```swift
+  ("default", .default(count: 8)),
+  ("arcs", .arcs(count: 3, lineWidth: 2)),
+  ("rotatingDots", .rotatingDots(count: 5)),
+  ("flickeringDots", .flickeringDots(count: 8)),
+  ("scalingDots", .scalingDots(count: 3, inset: 2)),
+  ("opacityDots", .opacityDots(count: 3, inset: 4)),
+  ("equalizer", .equalizer(count: 5)),
+
+  ActivityIndicatorView(type: indicators[index].type)
+      .frame(width: 52, height: 52)
+      .foregroundColor(DemoSwiftUIPalette.accent)
+  ```
 - [TKRubberIndicator](https://github.com/tbxark/TKRubberIndicator): A rubber animation pagecontrol (1.5K stars, pushed 2026-09-14; live demo, SPM, CocoaPods, Carthage)
+  ```swift
+  let page = TKRubberPageControl(frame: CGRect(x: 100, y: 100, width: 200, height: 100), count: 3)
+
+  page.center = view.center
+  page.valueChange = {(num) -> Void in
+      print("Closure : Page is \(num)")
+  }
+  page.addTarget(self, action: #selector(TKRubberPageControlViewController.targetActionValueChange(_:)), for: UIControl.Event.valueChanged)
+  view.addSubview(page)
+
+  page.numberOfPage = 3
+
+  page.numberOfPage = sender.selectedSegmentIndex + 3
+  ```
 - [BusyNavigationBar](https://github.com/gmertk/BusyNavigationBar): A UINavigationBar extension to show loading effects above navigation bar's background. (980 stars, pushed 2017-05-01; CocoaPods, Carthage, inactive)
 - [SpringIndicator](https://github.com/KyoheiG3/SpringIndicator): SpringIndicator is indicator and PullToRefresh. Inspired by Material design components. (271 stars, pushed 2020-09-21; SPM, CocoaPods, Carthage, inactive)

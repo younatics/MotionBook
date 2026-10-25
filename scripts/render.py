@@ -213,7 +213,9 @@ def render_llms(doc: dict) -> str:
         f"Stats as of {doc['stats_as_of']}.",
         "",
         "Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, "
-        "latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with.",
+        "latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with. "
+        "Entries with a live demo also carry `usage`: a minimal Swift snippet copied from the demo source, so it compiles against the "
+        "pinned version; the same snippet is shown under the library below.",
         "",
         "## Catalog",
         "",
@@ -246,6 +248,10 @@ def render_llms(doc: dict) -> str:
                 flags.append("inactive")
             summary = (e["summary"].strip() or "no description").replace("\n", " ")
             lines.append(f"- [{e['title']}]({e['url']}): {summary} ({stars(e)} stars, pushed {e.get('pushed') or 'unknown'}; {', '.join(flags) or 'manual install'})")
+            if e.get("usage"):
+                lines.append(f"  ```{e.get('usage_language', 'swift')}")
+                lines += ["  " + l if l.strip() else "" for l in e["usage"].rstrip().splitlines()]
+                lines.append("  ```")
         lines.append("")
     return "\n".join(lines)
 
@@ -257,6 +263,8 @@ def render_site(doc: dict) -> str:
         tags = " ".join(f'<span class="badge">{html.escape(b)}</span>' for b in badges(e))
         spm = e.get("install", {}).get("spm_package")
         install = f'<code>{html.escape(spm)}</code>' if spm else ""
+        if e.get("usage"):
+            install += f'<details><summary>Usage</summary><pre>{html.escape(e["usage"].rstrip())}</pre></details>'
         cards.append(
             f'<article class="card" data-category="{html.escape(e["category"])}" data-live="{str(bool(e.get("live_demo"))).lower()}" '
             f'data-swiftui="{str("swiftui" in e.get("tags", [])).lower()}" data-inactive="{str(is_inactive(e)).lower()}">'
@@ -280,6 +288,7 @@ main{{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap
 .card img,.nogif{{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:12px;background:#e5e7eb}}
 .nogif{{display:flex;align-items:center;justify-content:center;color:#6b7280;font-size:13px;aspect-ratio:9/4}}
 .card h3{{margin:6px 0 0;font-size:17px}}.card a{{color:#ee165b;text-decoration:none}}.meta{{color:#5b6674;font-size:13px;margin:0}}
+.card details{{font-size:13px}}.card summary{{cursor:pointer;color:#5b6674}}.card pre{{margin:6px 0 0;padding:8px;background:#f3f4f6;border-radius:8px;font-size:12px;overflow:auto;white-space:pre}}
 .card p{{margin:0;font-size:14px}}.badge{{display:inline-block;background:#fde7ee;color:#ee165b;border-radius:999px;padding:2px 8px;font-size:12px;margin:2px 4px 0 0}}
 code{{font-size:12px;background:#f1f5f9;border-radius:8px;padding:6px 8px;overflow-wrap:anywhere;display:block}}
 .hidden{{display:none}}footer{{text-align:center;color:#6b7280;font-size:13px;padding:0 20px 40px}}
