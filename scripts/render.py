@@ -253,7 +253,7 @@ def render_llms(doc: dict) -> str:
 def render_site(doc: dict) -> str:
     cards = []
     for e in sorted(doc["libraries"], key=lambda x: (-(x.get("stars") or 0), x["title"].lower())):
-        gif = f'<img loading="lazy" src="../{html.escape(e["gif"])}" alt="{html.escape(e["title"])} preview">' if e.get("gif") else '<div class="nogif">no preview</div>'
+        gif = f'<img loading="lazy" src="{html.escape(doc["gif_base_url"] + e["gif"])}" alt="{html.escape(e["title"])} preview">' if e.get("gif") else '<div class="nogif">no preview</div>'
         tags = " ".join(f'<span class="badge">{html.escape(b)}</span>' for b in badges(e))
         spm = e.get("install", {}).get("spm_package")
         install = f'<code>{html.escape(spm)}</code>' if spm else ""
@@ -268,6 +268,7 @@ def render_site(doc: dict) -> str:
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MotionBook — {len(doc['libraries'])} iOS motion libraries</title>
+<link rel="icon" href="data:,">
 <style>
 body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;background:#f8fafc;color:#111827}}
 header{{padding:28px 20px 12px;max-width:1200px;margin:0 auto}}h1{{margin:0 0 6px;font-size:28px}}
@@ -283,7 +284,7 @@ main{{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap
 code{{font-size:12px;background:#f1f5f9;border-radius:8px;padding:6px 8px;overflow-wrap:anywhere;display:block}}
 .hidden{{display:none}}footer{{text-align:center;color:#6b7280;font-size:13px;padding:0 20px 40px}}
 </style></head><body>
-<header><h1>📖 MotionBook</h1><p>{len(doc['libraries'])} open-source iOS motion libraries · stats as of {doc['stats_as_of']} · <a href="https://github.com/younatics/MotionBook">GitHub</a> · <a href="../catalog.json">catalog.json</a> · <a href="{APP_STORE}">App Store</a></p></header>
+<header><h1>📖 MotionBook</h1><p>{len(doc['libraries'])} open-source iOS motion libraries · stats as of {doc['stats_as_of']} · <a href="https://github.com/younatics/MotionBook">GitHub</a> · <a href="https://raw.githubusercontent.com/younatics/MotionBook/master/catalog.json">catalog.json</a> · <a href="{APP_STORE}">App Store</a></p></header>
 <div class="controls"><input id="q" placeholder="Search title, author, tags…"><select id="cat"><option value="">All categories</option>{categories}</select>
 <label><input type="checkbox" id="live"> Live in the app</label><label><input type="checkbox" id="swiftui"> SwiftUI</label><label><input type="checkbox" id="active" checked> Hide inactive</label></div>
 <main id="grid">{''.join(cards)}</main>
