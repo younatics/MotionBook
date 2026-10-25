@@ -49,7 +49,7 @@ Render After Effects animations natively and keep product motion consistent acro
 `▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/airbnb/lottie-ios", from: "4.6.1")`
 
 #### [Pop](https://github.com/facebookarchive/pop)
-Facebook · ★ 20K · ⟳ 2020-01 · tag `1.0.11`
+Facebook · ★ 20K · ⟳ 2020-01 · BSD-3-Clause · tag `1.0.11`
 
 Classic extensible animation primitives for spring and decay motion in UIKit apps.
 
@@ -338,7 +338,7 @@ This is a Swift based demo project to show how to make the transition Pinterest 
 `Inactive since 2020` · [preview GIF](motion-book/PinterestSwift.gif)
 
 #### [CKWaveCollectionViewTransition](https://github.com/CezaryKopacz/CKWaveCollectionViewTransition)
-CezaryKopacz · ★ 1.8K · ⟳ 2019-10 · tag `v1.2`
+CezaryKopacz · ★ 1.8K · ⟳ 2019-10 · MIT · tag `v1.2`
 
 Cool wave like transition between two or more UICollectionView
 
@@ -410,14 +410,14 @@ Create scroll-driven onboarding and storytelling animations without hand-wiring 
 `CocoaPods`
 
 #### [Presentation](https://github.com/hyperoslo/Presentation)
-hyperoslo · ★ 3.1K · ⟳ 2020-06 · tag `4.1.2`
+hyperoslo · ★ 3.1K · ⟳ 2020-06 · MIT · tag `4.1.2`
 
 Looking for the easiest way of presenting something in your iOS app? Then you are in the right place. Presentation will help you make your tutorials, release notes and any kind of animated pages with the minimum amount of effort.
 
 `CocoaPods` · `Carthage` · `Inactive since 2020` · [preview GIF](motion-book/Presentation.gif)
 
 #### [Inferno](https://github.com/twostraws/Inferno)
-twostraws · ★ 2.9K · ⟳ 2026-05 · tag `1.1.0`
+twostraws · ★ 2.9K · ⟳ 2026-05 · MIT · tag `1.1.0`
 
 Metal shaders for SwiftUI.
 
@@ -589,7 +589,7 @@ Toasts and popups library written with SwiftUI
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · `.package(url: "https://github.com/exyte/PopupView", from: "5.0.8")`
 
 #### [PopupDialog](https://github.com/Orderella/PopupDialog)
-Orderella · ★ 4.0K · ⟳ 2024-02 · tag `1.1.1`
+Orderella · ★ 4.0K · ⟳ 2024-02 · MIT · tag `1.1.1`
 
 A simple, customizable popup dialog for iOS written in Swift. Replaces UIAlertController alert style.
 
@@ -705,7 +705,7 @@ FoldingCell is an expanding content cell inspired by folding paper material
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/folding-cell.gif) · `.package(url: "https://github.com/Ramotion/folding-cell", from: "5.0.2")`
 
 #### [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit)
-jerkoch · ★ 6.3K · ⟳ 2024-05 · tag `2.7.1`
+jerkoch · ★ 6.3K · ⟳ 2024-05 · MIT · tag `2.7.1`
 
 Swipeable UITableViewCell based on the stock Mail.app, implemented in Swift.
 

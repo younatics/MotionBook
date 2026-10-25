@@ -1,2874 +1,2874 @@
 {
- "schema_version": "motionbook.catalog.v2",
- "source": "https://github.com/younatics/MotionBook",
- "stats_as_of": "2026-10-25",
- "gif_base_url": "https://raw.githubusercontent.com/younatics/MotionBook/master/",
- "app": {
-  "name": "MotionBook",
-  "app_store_id": "1205163580",
-  "version": "3.6",
-  "live_demos": [
-   "ActivityIndicatorView",
-   "AnimateText",
-   "AnimatedCollectionViewLayout",
-   "CRToast",
-   "ConfettiSwiftUI",
-   "FLAnimatedImage",
-   "FluidGradient",
-   "Glur",
-   "Grid (exyte)",
-   "Hero",
-   "Highlighter",
-   "IBAnimatable",
-   "Inferno",
-   "JTMaterialTransition",
-   "Koloda",
-   "LTMorphingLabel",
-   "Liquid",
-   "Lottie",
-   "MIBlurPopup",
-   "Macaw",
-   "MarkdownView",
-   "MediaBrowser",
-   "Motion (b3ll)",
-   "NVActivityIndicatorView",
-   "NotificationBanner",
-   "PKHUD",
-   "Pastel",
-   "Popovers",
-   "PopupDialog",
-   "PopupView",
-   "Pow",
-   "Pull-to-Refresh.Rentals-iOS",
-   "RQShineLabel",
-   "RevealingSplashView",
-   "SDCAlertView",
-   "ScalingHeaderScrollView",
-   "Segmentio",
-   "Shiny",
-   "SideMenu",
-   "SkeletonView",
-   "Spring",
-   "SweetAlert-iOS",
-   "SwiftUI-Shimmer",
-   "SwipeCellKit",
-   "TKRubberIndicator",
-   "Transmission",
-   "ViewAnimator",
-   "Vortex",
-   "Wave",
-   "XLPagerTabStrip",
-   "YNDropDownMenu",
-   "YNExpandableCell",
-   "YNSearch",
-   "animated-tab-bar",
-   "circle-menu",
-   "expanding-collection",
-   "folding-cell",
-   "preview-transition",
-   "rive-ios"
-  ]
- },
- "libraries": [
-  {
-   "title": "Lottie",
-   "author": "Airbnb",
-   "category": "Animation",
-   "summary": "Render After Effects animations natively and keep product motion consistent across screens.",
-   "url": "https://github.com/airbnb/lottie-ios",
-   "tags": [
-    "vector",
-    "after effects",
-    "json"
-   ],
-   "featured": true,
-   "gif": null,
-   "stars": 26917,
-   "pushed": "2026-10-06",
-   "license": "Apache-2.0",
-   "archived": false,
-   "latest_tag": "4.6.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/airbnb/lottie-ios\", from: \"4.6.1\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Hero",
-   "author": "lkzhao",
-   "category": "Transition",
-   "summary": "Hero is a library for building iOS view controller transitions. It provides a layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers.",
-   "url": "https://github.com/HeroTransitions/Hero",
-   "tags": [
-    "transition",
-    "navigation",
-    "interactive"
-   ],
-   "featured": true,
-   "gif": "motion-book/Hero.gif",
-   "stars": 22489,
-   "pushed": "2025-01-23",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.6.4",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/HeroTransitions/Hero\", from: \"1.6.4\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Pop",
-   "author": "Facebook",
-   "category": "Animation",
-   "summary": "Classic extensible animation primitives for spring and decay motion in UIKit apps.",
-   "url": "https://github.com/facebookarchive/pop",
-   "tags": [
-    "spring",
-    "decay",
-    "classic"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 19513,
-   "pushed": "2020-01-02",
-   "license": null,
-   "archived": true,
-   "latest_tag": "1.0.11",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Spring",
-   "author": "MengTo",
-   "category": "Animation",
-   "summary": "A library to simplify iOS animations in Swift.",
-   "url": "https://github.com/MengTo/Spring",
-   "tags": [
-    "prototype",
-    "easing",
-    "spring"
-   ],
-   "featured": false,
-   "gif": "motion-book/Spring.gif",
-   "stars": 14064,
-   "pushed": "2023-07-03",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.5",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "SkeletonView",
-   "author": "Juanpe",
-   "category": "Animation",
-   "summary": "Today almost all apps have async processes, such as Api requests, long running processes, etc. And while the processes are working, usually developers place a loading view to show users that something is going on.SkeletonView has been conceived to address this need, an elegant way to show users that something is happening and also prepare them to which contents he is waiting.",
-   "url": "https://github.com/Juanpe/SkeletonView",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/SkeletonView.gif",
-   "stars": 12889,
-   "pushed": "2026-06-23",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.31.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Juanpe/SkeletonView\", from: \"1.31.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "animated-tab-bar",
-   "author": "Ramotion",
-   "category": "Menu",
-   "summary": "RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items.",
-   "url": "https://github.com/Ramotion/animated-tab-bar",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/animated-tab-bar.gif",
-   "stars": 11085,
-   "pushed": "2022-01-26",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "5.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Ramotion/animated-tab-bar\", from: \"5.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "NVActivityIndicatorView",
-   "author": "ninjaprox",
-   "category": "Indicator",
-   "summary": "NVActivityIndicatorView is a collection of awesome loading animations.",
-   "url": "https://github.com/ninjaprox/NVActivityIndicatorView",
-   "tags": [
-    "loading",
-    "indicator",
-    "feedback"
-   ],
-   "featured": false,
-   "gif": "motion-book/NVActivityIndicatorView.gif",
-   "stars": 10700,
-   "pushed": "2026-03-18",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "5.2.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/ninjaprox/NVActivityIndicatorView\", from: \"5.2.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "folding-cell",
-   "author": "Ramotion",
-   "category": "Table View",
-   "summary": "FoldingCell is an expanding content cell inspired by folding paper material",
-   "url": "https://github.com/Ramotion/folding-cell",
-   "tags": [
-    "table",
-    "card",
-    "interaction"
-   ],
-   "featured": false,
-   "gif": "motion-book/folding-cell.gif",
-   "stars": 10170,
-   "pushed": "2024-04-28",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "5.0.2",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Ramotion/folding-cell\", from: \"5.0.2\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "IBAnimatable",
-   "author": "IBAnimatable",
-   "category": "UI",
-   "summary": "Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Interface Builder with IBAnimatable.",
-   "url": "https://github.com/IBAnimatable/IBAnimatable",
-   "tags": [
-    "interface builder",
-    "prototype",
-    "design"
-   ],
-   "featured": false,
-   "gif": "motion-book/IBAnimatable.gif",
-   "stars": 8635,
-   "pushed": "2023-02-21",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "6.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/IBAnimatable/IBAnimatable\", from: \"6.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "LTMorphingLabel",
-   "author": "lexrus",
-   "category": "UI",
-   "summary": "A morphing UILabel subclass written in Swift. The .Scale effect mimicked Apple's QuickType animation of iOS 8 in WWDC 2014. New morphing effects are available as Swift extensions.",
-   "url": "https://github.com/lexrus/LTMorphingLabel",
-   "tags": [
-    "text",
-    "label",
-    "morph"
-   ],
-   "featured": false,
-   "gif": "motion-book/LTMorphingLabel.gif",
-   "stars": 8135,
-   "pushed": "2026-03-08",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.9.3",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/lexrus/LTMorphingLabel\", from: \"0.9.3\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "FLAnimatedImage",
-   "author": "Flipboard",
-   "category": "Animation",
-   "summary": "FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do",
-   "url": "https://github.com/Flipboard/FLAnimatedImage",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/FLAnimatedImage.gif",
-   "stars": 7937,
-   "pushed": "2024-03-21",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.17",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Flipboard/FLAnimatedImage\", from: \"1.0.17\")",
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "ViewAnimator",
-   "author": "Marcos Griselli",
-   "category": "Animation",
-   "summary": "Animate collection and table view content with concise, reusable item animations.",
-   "url": "https://github.com/marcosgriselli/ViewAnimator",
-   "tags": [
-    "list",
-    "collection",
-    "stagger"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 7303,
-   "pushed": "2024-03-31",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/marcosgriselli/ViewAnimator\", from: \"3.1.0\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "XLPagerTabStrip",
-   "author": "xmartlabs",
-   "category": "Transition",
-   "summary": "XLPagerTabStrip is a Container View Controller that allows us to switch easily among a collection of view controllers. Pan gesture can be used to move on to next or previous view controller. It shows a interactive indicator of the current, previous, next child view controllers.",
-   "url": "https://github.com/xmartlabs/XLPagerTabStrip",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/XLPagerTabStrip.gif",
-   "stars": 6990,
-   "pushed": "2023-11-22",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "9.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/xmartlabs/XLPagerTabStrip\", from: \"9.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "SwipeCellKit",
-   "author": "jerkoch",
-   "category": "Table View",
-   "summary": "Swipeable UITableViewCell based on the stock Mail.app, implemented in Swift.",
-   "url": "https://github.com/SwipeCellKit/SwipeCellKit",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/SwipeCellKit.gif",
-   "stars": 6276,
-   "pushed": "2024-05-19",
-   "license": null,
-   "archived": false,
-   "latest_tag": "2.7.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/SwipeCellKit/SwipeCellKit\", from: \"2.7.1\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Macaw",
-   "author": "exyte",
-   "category": "Animation",
-   "summary": "Powerful and easy-to-use vector graphics Swift library with SVG support",
-   "url": "https://github.com/exyte/Macaw",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Macaw.gif",
-   "stars": 6045,
-   "pushed": "2024-02-07",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.9.10",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/exyte/Macaw\", from: \"0.9.10\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "SideMenu",
-   "author": "jonkykong",
-   "category": "Menu",
-   "summary": "Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+.",
-   "url": "https://github.com/jonkykong/SideMenu",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/SideMenu.gif",
-   "stars": 5818,
-   "pushed": "2023-02-09",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "6.5.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/jonkykong/SideMenu\", from: \"6.5.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "expanding-collection",
-   "author": "Ramotion",
-   "category": "Collection View",
-   "summary": "This project aims to provide a simple and customizable pull to refresh implementation.",
-   "url": "https://github.com/Ramotion/expanding-collection",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/expanding-collection.gif",
-   "stars": 5510,
-   "pushed": "2020-04-06",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Ramotion/expanding-collection\", from: \"3.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Koloda",
-   "author": "Yalantis",
-   "category": "Collection View",
-   "summary": "KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS.",
-   "url": "https://github.com/Yalantis/Koloda",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Koloda.gif",
-   "stars": 5388,
-   "pushed": "2024-05-29",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "4.3.1",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "ScrollableGraphView",
-   "author": "philackm",
-   "category": "Animation",
-   "summary": "An adaptive scrollable graph view for iOS to visualise simple discrete datasets. Written in Swift.",
-   "url": "https://github.com/philackm/ScrollableGraphView",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/ScrollableGraphView.gif",
-   "stars": 5278,
-   "pushed": "2020-12-02",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "4.0.6",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "CSStickyHeaderFlowLayout",
-   "author": "CSStickyHeaderFlowLayout",
-   "category": "Collection View",
-   "summary": "UICollectionView replacement of UITableView. Do even more like Parallax Header, Sticky Section Header. Made for iOS 7.",
-   "url": "https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/CSStickyHeaderFlowLayout.gif",
-   "stars": 5019,
-   "pushed": "2021-07-17",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.2.12",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "NotificationBanner",
-   "author": "Daltron",
-   "category": "Alert",
-   "summary": "NotificationBanner is an extremely customizable and lightweight library that makes the task of displaying in app notification banners and drop down alerts an absolute breeze in iOS.",
-   "url": "https://github.com/Daltron/NotificationBanner",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/NotificationBanner.gif",
-   "stars": 4862,
-   "pushed": "2024-07-29",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.2.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Daltron/NotificationBanner\", from: \"3.2.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "AnimatedCollectionViewLayout",
-   "author": "KelvinJin",
-   "category": "Transition",
-   "summary": "Animated UIButton of Loading Animation and Transition Animation.",
-   "url": "https://github.com/KelvinJin/AnimatedCollectionViewLayout",
-   "tags": [
-    "collection",
-    "layout",
-    "paging"
-   ],
-   "featured": false,
-   "gif": "motion-book/AnimatedCollectionViewLayout.gif",
-   "stars": 4856,
-   "pushed": "2020-09-20",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/KelvinJin/AnimatedCollectionViewLayout\", from: \"1.1.0\")",
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Advance",
-   "author": "Storehouse",
-   "category": "Animation",
-   "summary": "A physics-based animation framework for direct manipulation, gestures, and playful interface motion.",
-   "url": "https://github.com/timdonnelly/Advance",
-   "tags": [
-    "physics",
-    "gesture",
-    "simulation"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 4459,
-   "pushed": "2022-05-16",
-   "license": "BSD-2-Clause",
-   "archived": true,
-   "latest_tag": "3.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/timdonnelly/Advance\", from: \"3.1.0\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Pow",
-   "author": "EmergeTools",
-   "category": "Animation",
-   "summary": "Delightful SwiftUI effects for your app",
-   "url": "https://github.com/EmergeTools/Pow",
-   "tags": [
-    "swiftui",
-    "effects",
-    "transitions"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 4420,
-   "pushed": "2026-04-13",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.5",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/EmergeTools/Pow\", from: \"1.0.5\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Cards",
-   "author": "PaoloCuscela",
-   "category": "UI",
-   "summary": "Awesome iOS 11 appstore cards in swift 4.",
-   "url": "https://github.com/PaoloCuscela/Cards",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Cards.gif",
-   "stars": 4199,
-   "pushed": "2023-04-19",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.4.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "CRToast",
-   "author": "cruffenach",
-   "category": "Alert",
-   "summary": "CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar.",
-   "url": "https://github.com/cruffenach/CRToast",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/CRToast.gif",
-   "stars": 4119,
-   "pushed": "2024-05-02",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.0.9",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "PopupView",
-   "author": "exyte",
-   "category": "Alert",
-   "summary": "Toasts and popups library written with SwiftUI",
-   "url": "https://github.com/exyte/PopupView",
-   "tags": [
-    "swiftui",
-    "toast",
-    "popup"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 4061,
-   "pushed": "2026-10-06",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "5.0.8",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/exyte/PopupView\", from: \"5.0.8\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "PopupDialog",
-   "author": "Orderella",
-   "category": "Alert",
-   "summary": "A simple, customizable popup dialog for iOS written in Swift. Replaces UIAlertController alert style.",
-   "url": "https://github.com/Orderella/PopupDialog",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/PopupDialog.gif",
-   "stars": 4037,
-   "pushed": "2024-02-07",
-   "license": null,
-   "archived": false,
-   "latest_tag": "1.1.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Orderella/PopupDialog\", from: \"1.1.1\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "PKHUD",
-   "author": "pkluz",
-   "category": "Indicator",
-   "summary": "A Swift based reimplementation of the Apple HUD (Volume, Ringer, Rotation,…) for iOS 8.",
-   "url": "https://github.com/pkluz/PKHUD",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/PKHUD.gif",
-   "stars": 3769,
-   "pushed": "2023-02-16",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "5.4.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/pkluz/PKHUD\", from: \"5.4.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "StarWars.iOS",
-   "author": "Yalantis",
-   "category": "UI",
-   "summary": "This component implements transition animation to crumble view-controller into tiny pieces.",
-   "url": "https://github.com/Yalantis/StarWars.iOS",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/StarWars.iOS.gif",
-   "stars": 3760,
-   "pushed": "2022-10-11",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "4.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Pastel",
-   "author": "cruisediary",
-   "category": "Animation",
-   "summary": "🎨Gradient animation effect like Instagram",
-   "url": "https://github.com/cruisediary/Pastel",
-   "tags": [
-    "gradient",
-    "background",
-    "branding"
-   ],
-   "featured": false,
-   "gif": "motion-book/Pastel.gif",
-   "stars": 3514,
-   "pushed": "2026-03-24",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/cruisediary/Pastel\", from: \"1.0.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "DKNightVersion",
-   "author": "Draveness",
-   "category": "UI",
-   "summary": "Manage Colors, Integrate Night/Multiple Themes",
-   "url": "https://github.com/draveness/DKNightVersion",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/DKNightVersion.gif",
-   "stars": 3513,
-   "pushed": "2019-09-03",
-   "license": "MIT",
-   "archived": true,
-   "latest_tag": "2.4.3",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "circle-menu",
-   "author": "Ramotion",
-   "category": "Menu",
-   "summary": "This project is maintained by Ramotion, Inc. We specialize in the designing and coding of custom UI for Mobile Apps and Websites.",
-   "url": "https://github.com/Ramotion/circle-menu",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/circle-menu.gif",
-   "stars": 3407,
-   "pushed": "2022-07-12",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "4.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Ramotion/circle-menu\", from: \"4.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "SlideMenuControllerSwift",
-   "author": "dekatotoro",
-   "category": "Menu",
-   "summary": "iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift.",
-   "url": "https://github.com/dekatotoro/SlideMenuControllerSwift",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/SlideMenuControllerSwift.gif",
-   "stars": 3367,
-   "pushed": "2023-09-07",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.2.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "RazzleDazzle",
-   "author": "IFTTT",
-   "category": "UI",
-   "summary": "Create scroll-driven onboarding and storytelling animations without hand-wiring every offset.",
-   "url": "https://github.com/IFTTT/RazzleDazzle",
-   "tags": [
-    "onboarding",
-    "scroll",
-    "story"
-   ],
-   "featured": true,
-   "gif": null,
-   "stars": 3337,
-   "pushed": "2023-10-11",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.1.5",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Gemini",
-   "author": "shoheiyokoyama",
-   "category": "Transition",
-   "summary": "Gemini is rich scroll based animation framework for iOS, written in Swift.",
-   "url": "https://github.com/shoheiyokoyama/Gemini",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Gemini.gif",
-   "stars": 3308,
-   "pushed": "2025-06-28",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.4.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "BubbleTransition",
-   "author": "andreamazz",
-   "category": "Transition",
-   "summary": "A custom modal transition that presents and dismiss a controller inside an expanding and shrinking bubble.",
-   "url": "https://github.com/andreamazz/BubbleTransition",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/BubbleTransition.gif",
-   "stars": 3297,
-   "pushed": "2020-11-04",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.1.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/andreamazz/BubbleTransition\", from: \"3.1.1\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Presentation",
-   "author": "hyperoslo",
-   "category": "UI",
-   "summary": "Looking for the easiest way of presenting something in your iOS app? Then you are in the right place. Presentation will help you make your tutorials, release notes and any kind of animated pages with the minimum amount of effort.",
-   "url": "https://github.com/hyperoslo/Presentation",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Presentation.gif",
-   "stars": 3068,
-   "pushed": "2020-06-05",
-   "license": null,
-   "archived": false,
-   "latest_tag": "4.1.2",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Stellar",
-   "author": "AugustRush",
-   "category": "Animation",
-   "summary": "A fantastic Physical animation library for swift(Not Just Spring !!!), it is base on UIDynamic and extension to it, friendly APIs make you use it or custom your own animation very easily!",
-   "url": "https://github.com/AugustRush/Stellar",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Stellar.gif",
-   "stars": 2941,
-   "pushed": "2019-07-31",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.67",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/AugustRush/Stellar\", from: \"0.67\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Inferno",
-   "author": "twostraws",
-   "category": "UI",
-   "summary": "Metal shaders for SwiftUI.",
-   "url": "https://github.com/twostraws/Inferno",
-   "tags": [
-    "swiftui",
-    "metal",
-    "shaders"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 2932,
-   "pushed": "2026-05-17",
-   "license": null,
-   "archived": false,
-   "latest_tag": "1.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/twostraws/Inferno\", from: \"1.1.0\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "paper-switch",
-   "author": "Ramotion",
-   "category": "Animation",
-   "summary": "RAMPaperSwitch is a Swift material design UI module which paints over the parent view when the switch is turned on.",
-   "url": "https://github.com/Ramotion/paper-switch",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/paper-switch.gif",
-   "stars": 2897,
-   "pushed": "2022-01-25",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Ramotion/paper-switch\", from: \"3.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "GuillotineMenu",
-   "author": "Yalantis",
-   "category": "Menu",
-   "summary": "Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine.",
-   "url": "https://github.com/Yalantis/GuillotineMenu",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/GuillotineMenu.gif",
-   "stars": 2876,
-   "pushed": "2020-04-13",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.0.2",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "BWWalkthrough",
-   "author": "ariok",
-   "category": "Transition",
-   "summary": "BWWalkthrough (BWWT) is a class that helps you create Walkthroughs for your iOS Apps. It differs from other similar classes in that there is no rigid template; BWWT is just a layer placed over your controllers that gives you complete freedom on the design of your views.",
-   "url": "https://github.com/ariok/BWWalkthrough",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/BWWalkthrough.gif",
-   "stars": 2741,
-   "pushed": "2021-02-07",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "4.0.2",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/ariok/BWWalkthrough\", from: \"4.0.2\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Side-Menu.iOS",
-   "author": "Yalantis",
-   "category": "Menu",
-   "summary": "Animated side menu with customizable UI. Made in Yalantis.",
-   "url": "https://github.com/Yalantis/Side-Menu.iOS",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Side-Menu.iOS.gif",
-   "stars": 2708,
-   "pushed": "2020-04-13",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.0.2",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Segmentio",
-   "author": "Yalantis",
-   "category": "UI",
-   "summary": "Animated top/bottom segmented control written in Swift.",
-   "url": "https://github.com/Yalantis/Segmentio",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Segmentio.gif",
-   "stars": 2515,
-   "pushed": "2024-08-12",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Yalantis/Segmentio\", from: \"3.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "AnimatedTransitionGallery",
-   "author": "shu223",
-   "category": "Transition",
-   "summary": "Collection of custom animated transitions for iOS using UIViewControllerAnimatedTransitioning protocol.",
-   "url": "https://github.com/shu223/AnimatedTransitionGallery",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/AnimatedTransitionGallery.gif",
-   "stars": 2500,
-   "pushed": "2024-04-30",
-   "license": null,
-   "archived": false,
-   "latest_tag": null,
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "ConfettiSwiftUI",
-   "author": "simibac",
-   "category": "Animation",
-   "summary": "SwiftUI Package for Configurable Confetti Animation 🎉",
-   "url": "https://github.com/simibac/ConfettiSwiftUI",
-   "tags": [
-    "swiftui",
-    "confetti",
-    "particles"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 2469,
-   "pushed": "2026-01-05",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.0.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/simibac/ConfettiSwiftUI\", from: \"3.0.0\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Wave",
-   "author": "jtrivedi",
-   "category": "Animation",
-   "summary": "Wave is a spring-based animation engine for iOS and macOS that makes it easy to create fluid, interruptible animations that feel great.",
-   "url": "https://github.com/jtrivedi/Wave",
-   "tags": [
-    "spring",
-    "gesture",
-    "engine"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 2402,
-   "pushed": "2026-03-25",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.3.3",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/jtrivedi/Wave\", from: \"0.3.3\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "AMWaveTransition",
-   "author": "andreamazz",
-   "category": "Transition",
-   "summary": "Custom transition between viewcontrollers holding tableviews. Each cell is animated to simulate a 'wave effect'.",
-   "url": "https://github.com/andreamazz/AMWaveTransition",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/AMWaveTransition.gif",
-   "stars": 2343,
-   "pushed": "2020-06-07",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.6.2",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "TKSubmitTransition",
-   "author": "entotsu",
-   "category": "Transition",
-   "summary": "Animated UIButton of Loading Animation and Transition Animation.",
-   "url": "https://github.com/takuoka/TKSubmitTransition",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/TKSubmitTransition.gif",
-   "stars": 2255,
-   "pushed": "2019-12-04",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.1.1",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Popovers",
-   "author": "aheze",
-   "category": "Alert",
-   "summary": "A library to present popovers. Simple, modern, and highly customizable. Not boring!",
-   "url": "https://github.com/aheze/Popovers",
-   "tags": [
-    "swiftui",
-    "popover",
-    "menu"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 2211,
-   "pushed": "2025-02-19",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.3.2",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/aheze/Popovers\", from: \"1.3.2\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "MarkdownView",
-   "author": "keitaoouchi",
-   "category": "UI",
-   "summary": "MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it.",
-   "url": "https://github.com/keitaoouchi/MarkdownView",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/MarkdownView.gif",
-   "stars": 2177,
-   "pushed": "2026-10-22",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.1.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/keitaoouchi/MarkdownView\", from: \"2.1.1\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "ElasticTransition",
-   "author": "lkzhao",
-   "category": "Transition",
-   "summary": "A UIKit custom transition that simulates an elastic drag. Written in Swift.",
-   "url": "https://github.com/lkzhao/ElasticTransition",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/ElasticTransition.gif",
-   "stars": 2161,
-   "pushed": "2020-05-10",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.1.1",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Grid (exyte)",
-   "author": "exyte",
-   "category": "Collection View",
-   "summary": "The most powerful Grid container missed in SwiftUI",
-   "url": "https://github.com/exyte/Grid",
-   "tags": [
-    "swiftui",
-    "grid",
-    "layout"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 2119,
-   "pushed": "2026-09-15",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.5.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/exyte/Grid\", from: \"1.5.0\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Pull-to-Refresh.Rentals-iOS",
-   "author": "Yalantis",
-   "category": "Table View",
-   "summary": "This project aims to provide a simple and customizable pull to refresh implementation.",
-   "url": "https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Pull-to-Refresh.Rentals-iOS.gif",
-   "stars": 2115,
-   "pushed": "2018-06-16",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Glur",
-   "author": "joogps",
-   "category": "UI",
-   "summary": "A library for progressive blurs in SwiftUI.",
-   "url": "https://github.com/joogps/Glur",
-   "tags": [
-    "swiftui",
-    "blur",
-    "progressive"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 2086,
-   "pushed": "2026-10-18",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/joogps/Glur\", from: \"2.1\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "preview-transition",
-   "author": "Ramotion",
-   "category": "Transition",
-   "summary": "PreviewTransition is a simple preview gallery controller",
-   "url": "https://github.com/Ramotion/preview-transition",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/preview-transition.gif",
-   "stars": 2071,
-   "pushed": "2020-04-06",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "4.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Ramotion/preview-transition\", from: \"4.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "SweetAlert-iOS",
-   "author": "codestergit",
-   "category": "Alert",
-   "summary": "Beautiful Animated custom Alert View inspired from javascript library SweetAlert. Written in Swift this SweetAlertView can be used in Swift and Objective-C projects. SweetAlertView provides live intutive experience to user actions.It can be used in place of UIAlertView and UIAlertController",
-   "url": "https://github.com/codestergit/SweetAlert-iOS",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/SweetAlert-iOS.gif",
-   "stars": 2028,
-   "pushed": "2020-03-16",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "v0.9",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "fluid-slider",
-   "author": "Ramotion",
-   "category": "UI",
-   "summary": "A slider widget with a popup bubble displaying the precise value selected.",
-   "url": "https://github.com/Ramotion/fluid-slider",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/fluid-slider.gif",
-   "stars": 1985,
-   "pushed": "2022-06-01",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Ramotion/fluid-slider\", from: \"1.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "RQShineLabel",
-   "author": "zipme",
-   "category": "Animation",
-   "summary": "A UILabel subclass that lets you animate text similar to Secret app.",
-   "url": "https://github.com/zipme/RQShineLabel",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/RQShineLabel.gif",
-   "stars": 1949,
-   "pushed": "2023-12-25",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/zipme/RQShineLabel\", from: \"1.0.0\")",
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "PinterestSwift",
-   "author": "demonnico",
-   "category": "Transition",
-   "summary": "This is a Swift based demo project to show how to make the transition Pinterest liked.",
-   "url": "https://github.com/demonnico/PinterestSwift",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/PinterestSwift.gif",
-   "stars": 1875,
-   "pushed": "2020-06-15",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": null,
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "CKWaveCollectionViewTransition",
-   "author": "CezaryKopacz",
-   "category": "Transition",
-   "summary": "Cool wave like transition between two or more UICollectionView",
-   "url": "https://github.com/CezaryKopacz/CKWaveCollectionViewTransition",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/CKWaveCollectionViewTransition.gif",
-   "stars": 1843,
-   "pushed": "2019-10-13",
-   "license": null,
-   "archived": false,
-   "latest_tag": "v1.2",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "SDCAlertView",
-   "author": "sberrevoets",
-   "category": "Alert",
-   "summary": "SDCAlertView started out as an alert that looked identical to UIAlertView, but had support for a custom content view. With the introduction of UIAlertController in iOS 8, the project was updated to the more modern API that UIAlertController brought.",
-   "url": "https://github.com/sberrevoets/SDCAlertView",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/SDCAlertView.gif",
-   "stars": 1836,
-   "pushed": "2025-01-22",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "12.0.5",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/sberrevoets/SDCAlertView\", from: \"12.0.5\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Motion",
-   "author": "CosmicMind",
-   "category": "Transition",
-   "summary": "A Material-inspired motion engine for transitions, transforms, and interactive presentation work.",
-   "url": "https://github.com/CosmicMind/Motion",
-   "tags": [
-    "material",
-    "transition",
-    "layout"
-   ],
-   "featured": true,
-   "gif": null,
-   "stars": 1777,
-   "pushed": "2020-01-28",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.1.3",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/CosmicMind/Motion\", from: \"3.1.3\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "YLGIFImage",
-   "author": "liyong03",
-   "category": "Animation",
-   "summary": "Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory.",
-   "url": "https://github.com/liyong03/YLGIFImage",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/YLGIFImage.gif",
-   "stars": 1759,
-   "pushed": "2020-12-19",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.11",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "GSKStretchyHeaderView",
-   "author": "gskbyte",
-   "category": "Collection View",
-   "summary": "GSKStretchyHeaderView is an implementation of the stretchy header paradigm as seen on many apps, like Twitter, Spotify or airbnb.",
-   "url": "https://github.com/gskbyte/GSKStretchyHeaderView",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/GSKStretchyHeaderView.gif",
-   "stars": 1739,
-   "pushed": "2024-08-06",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.4",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "SwiftUI-Shimmer",
-   "author": "markiv",
-   "category": "UI",
-   "summary": "Shimmer is a super-light modifier that adds a shimmering effect to any SwiftUI View, for example, to show that an operation is in progress. It works well on light and dark modes, and across iOS, macOS, tvOS, watchOS and visionOS.",
-   "url": "https://github.com/markiv/SwiftUI-Shimmer",
-   "tags": [
-    "swiftui",
-    "shimmer",
-    "loading"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 1697,
-   "pushed": "2024-08-14",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.5.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/markiv/SwiftUI-Shimmer\", from: \"1.5.1\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "ActivityIndicatorView",
-   "author": "exyte",
-   "category": "Indicator",
-   "summary": "A number of preset loading indicators created with SwiftUI",
-   "url": "https://github.com/exyte/ActivityIndicatorView",
-   "tags": [
-    "swiftui",
-    "loading",
-    "indicator"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 1675,
-   "pushed": "2026-09-10",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.0.2",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/exyte/ActivityIndicatorView\", from: \"2.0.2\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "AnimatedMaskLabel",
-   "author": "imjog",
-   "category": "Animation",
-   "summary": "Nice gradient animated label that enable an easy way to add a shimmering effect",
-   "url": "https://github.com/jogendra/LoadingShimmer",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/AnimatedMaskLabel.gif",
-   "stars": 1597,
-   "pushed": "2022-10-22",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.3",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Vortex",
-   "author": "twostraws",
-   "category": "Animation",
-   "summary": "High-performance particle effects for SwiftUI.",
-   "url": "https://github.com/twostraws/Vortex",
-   "tags": [
-    "swiftui",
-    "particles",
-    "effects"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 1589,
-   "pushed": "2026-04-03",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.4",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/twostraws/Vortex\", from: \"1.0.4\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "ScalingHeaderScrollView",
-   "author": "exyte",
-   "category": "UI",
-   "summary": "A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI.",
-   "url": "https://github.com/exyte/ScalingHeaderScrollView",
-   "tags": [
-    "swiftui",
-    "header",
-    "scroll"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 1547,
-   "pushed": "2026-10-20",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/exyte/ScalingHeaderScrollView\", from: \"3.1.0\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Motion (b3ll)",
-   "author": "b3ll",
-   "category": "Animation",
-   "summary": "Animation engine for gesturally-driven user interfaces, animations, and interactions on iOS, macOS, and tvOS.",
-   "url": "https://github.com/b3ll/Motion",
-   "tags": [
-    "spring",
-    "gesture",
-    "engine"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 1491,
-   "pushed": "2024-10-19",
-   "license": "BSD-2-Clause",
-   "archived": false,
-   "latest_tag": "v0.1.5",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/b3ll/Motion\", from: \"0.1.5\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "TKRubberIndicator",
-   "author": "TBXark",
-   "category": "Indicator",
-   "summary": "A rubber animation pagecontrol",
-   "url": "https://github.com/tbxark/TKRubberIndicator",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/TKRubberIndicator.gif",
-   "stars": 1468,
-   "pushed": "2026-09-14",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.0.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/tbxark/TKRubberIndicator\", from: \"2.0.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "YNDropDownMenu",
-   "author": "younatics",
-   "category": "Menu",
-   "summary": "✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)",
-   "url": "https://github.com/younatics/YNDropDownMenu",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/YNDropDownMenu.gif",
-   "stars": 1326,
-   "pushed": "2026-10-24",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "4.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/younatics/YNDropDownMenu\", from: \"4.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Ease",
-   "author": "roberthein",
-   "category": "Animation",
-   "summary": "Ease is a event driven animation system that combines the observer pattern with custom spring animations as observers.",
-   "url": "https://github.com/roberthein/Ease",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Ease.gif",
-   "stars": 1260,
-   "pushed": "2020-07-14",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.2.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/roberthein/Ease\", from: \"3.2.0\")",
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "RevealingSplashView",
-   "author": "PiXeL16",
-   "category": "Animation",
-   "summary": "A Splash view that animates and reveals its content, inspired by Twitter splash",
-   "url": "https://github.com/PiXeL16/RevealingSplashView",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/RevealingSplashView.gif",
-   "stars": 1240,
-   "pushed": "2025-03-30",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.9.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/PiXeL16/RevealingSplashView\", from: \"0.9.1\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Transmission",
-   "author": "nathantannar4",
-   "category": "Transition",
-   "summary": "Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more.",
-   "url": "https://github.com/nathantannar4/Transmission",
-   "tags": [
-    "swiftui",
-    "presentation",
-    "transition"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 1190,
-   "pushed": "2026-10-24",
-   "license": "BSD-2-Clause",
-   "archived": false,
-   "latest_tag": "3.0.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/nathantannar4/Transmission\", from: \"3.0.0\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "YNSearch",
-   "author": "younatics",
-   "category": "UI",
-   "summary": "✨Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm!",
-   "url": "https://github.com/younatics/YNSearch",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/YNSearch.gif",
-   "stars": 1181,
-   "pushed": "2026-10-24",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/younatics/YNSearch\", from: \"3.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "CDAlertView",
-   "author": "candostdagdeviren",
-   "category": "Alert",
-   "summary": "CDAlertView is highly customizable alert popup written in Swift 3. Usage is similar to UIAlertController.",
-   "url": "https://github.com/candostdagdeviren/CDAlertView",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/CDAlertView.gif",
-   "stars": 1134,
-   "pushed": "2026-08-20",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.11.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Shiny",
-   "author": "maustinstar",
-   "category": "UI",
-   "summary": "Shiny uses your gyroscope to simulate lighting and motion effects on colors. Works on almost every SwiftUI View.",
-   "url": "https://github.com/maustinstar/shiny",
-   "tags": [
-    "swiftui",
-    "gyroscope",
-    "shine"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 1090,
-   "pushed": "2024-07-12",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "v0.0.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/maustinstar/shiny\", from: \"0.0.1\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "GlitchLabel",
-   "author": "kciter",
-   "category": "Animation",
-   "summary": "G..lit...c...hing UILa..bel fo..r iO...S",
-   "url": "https://github.com/kciter/GlitchLabel",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/GlitchLabel.gif",
-   "stars": 1048,
-   "pushed": "2022-12-23",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/kciter/GlitchLabel\", from: \"2.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "BusyNavigationBar",
-   "author": "gmertk",
-   "category": "Indicator",
-   "summary": "A UINavigationBar extension to show loading effects above navigation bar's background.",
-   "url": "https://github.com/gmertk/BusyNavigationBar",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/BusyNavigationBar.gif",
-   "stars": 980,
-   "pushed": "2017-05-01",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.0.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "AIFlatSwitch",
-   "author": "cocoatoucher",
-   "category": "UI",
-   "summary": "A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used instead of UISwitch. Inspired by Creativedash's Dribbble post",
-   "url": "https://github.com/cocoatoucher/AIFlatSwitch",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/AIFlatSwitch.gif",
-   "stars": 963,
-   "pushed": "2022-06-06",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.8",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/cocoatoucher/AIFlatSwitch\", from: \"1.0.8\")",
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "JTMaterialTransition",
-   "author": "jonathantribouharet",
-   "category": "Transition",
-   "summary": "An iOS transition for controllers based on material design.",
-   "url": "https://github.com/johnvuko/JTMaterialTransition",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/JTMaterialTransition.gif",
-   "stars": 949,
-   "pushed": "2019-01-17",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.0.3",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/johnvuko/JTMaterialTransition\", from: \"2.0.3\")",
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "Windless",
-   "author": "Interactive-Studio",
-   "category": "Animation",
-   "summary": "Windless makes it easy to implement invisible layout loading view.",
-   "url": "https://github.com/ParkGwangBeom/Windless",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Windless.gif",
-   "stars": 947,
-   "pushed": "2022-07-14",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.1.5",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/ParkGwangBeom/Windless\", from: \"0.1.5\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Highlighter",
-   "author": "younatics",
-   "category": "Animation",
-   "summary": "🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.",
-   "url": "https://github.com/younatics/Highlighter",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Highlighter.gif",
-   "stars": 921,
-   "pushed": "2026-10-24",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/younatics/Highlighter\", from: \"2.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "elongation-preview",
-   "author": "Ramotion",
-   "category": "Table View",
-   "summary": "ElongationPreview is an elegant push-pop style view controller",
-   "url": "https://github.com/Ramotion/elongation-preview",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/elongation-preview.gif",
-   "stars": 888,
-   "pushed": "2020-04-06",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.1.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Ramotion/elongation-preview\", from: \"1.1.1\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Liquid",
-   "author": "maustinstar",
-   "category": "Animation",
-   "summary": "Create a playful backsplash in SwiftUI.",
-   "url": "https://github.com/maustinstar/liquid",
-   "tags": [
-    "swiftui",
-    "blob",
-    "backsplash"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 856,
-   "pushed": "2024-08-19",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "v0.0.2",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/maustinstar/liquid\", from: \"0.0.2\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "rive-ios",
-   "author": "rive-app",
-   "category": "Animation",
-   "summary": "iOS runtime for Rive",
-   "url": "https://github.com/rive-app/rive-ios",
-   "tags": [
-    "rive",
-    "runtime",
-    "vector"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 851,
-   "pushed": "2026-10-24",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "6.28.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/rive-app/rive-ios\", from: \"6.28.1\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "MediaBrowser",
-   "author": "younatics",
-   "category": "UI",
-   "summary": "🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view.",
-   "url": "https://github.com/younatics/MediaBrowser",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/MediaBrowser.gif",
-   "stars": 646,
-   "pushed": "2026-10-24",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "3.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/younatics/MediaBrowser\", from: \"3.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "SwiftSpreadsheet",
-   "author": "stuffrabbit",
-   "category": "Collection View",
-   "summary": "Spreadsheet CollectionViewLayout in Swift. Fully customizable.",
-   "url": "https://github.com/stuffrabbit/SwiftSpreadsheet",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/SwiftSpreadsheet.gif",
-   "stars": 637,
-   "pushed": "2019-10-15",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.2.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/stuffrabbit/SwiftSpreadsheet\", from: \"1.2.1\")",
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "MIBlurPopup",
-   "author": "MarioIannotta",
-   "category": "Alert",
-   "summary": "MIBlurPopup lets you create amazing popups with a blurred background",
-   "url": "https://github.com/MarioIannotta/MIBlurPopup",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/MIBlurPopup.gif",
-   "stars": 598,
-   "pushed": "2020-03-30",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "TKSwarmAlert",
-   "author": "entotsu",
-   "category": "Alert",
-   "summary": "Animated alert library like Swarm app.",
-   "url": "https://github.com/takuoka/TKSwarmAlert",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/TKSwarmAlert.gif",
-   "stars": 573,
-   "pushed": "2019-03-30",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.1.3",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "MMCardView",
-   "author": "MillmanY",
-   "category": "Collection View",
-   "summary": "Custom CollectionView like Wallet App",
-   "url": "https://github.com/MillmanY/MMCardView",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/MMCardView.gif",
-   "stars": 565,
-   "pushed": "2021-10-13",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.1.2",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "AnimatedTabBar (exyte)",
-   "author": "exyte",
-   "category": "Menu",
-   "summary": "A tabbar with a number of preset animations written in pure SwiftUI",
-   "url": "https://github.com/exyte/AnimatedTabBar",
-   "tags": [
-    "swiftui",
-    "tabbar",
-    "animation"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 557,
-   "pushed": "2026-07-08",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.1",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/exyte/AnimatedTabBar\", from: \"1.0.1\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "YNExpandableCell",
-   "author": "younatics",
-   "category": "Table View",
-   "summary": "✨Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell?",
-   "url": "https://github.com/younatics/YNExpandableCell",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/YNExpandableCell.gif",
-   "stars": 451,
-   "pushed": "2026-10-24",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.1.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/younatics/YNExpandableCell\", from: \"2.1.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "URWeatherView",
-   "author": "jegumhon",
-   "category": "Animation",
-   "summary": "Show the weather effects onto view written in Swift3",
-   "url": "https://github.com/Urtaq/URWeatherView",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/URWeatherView.gif",
-   "stars": 447,
-   "pushed": "2019-01-07",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.7.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "FluidGradient",
-   "author": "Cindori",
-   "category": "UI",
-   "summary": "A fluid, animated gradient implemented with CoreAnimation and SwiftUI.",
-   "url": "https://github.com/Cindori/FluidGradient",
-   "tags": [
-    "swiftui",
-    "gradient",
-    "background"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 439,
-   "pushed": "2024-03-14",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.0.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/Cindori/FluidGradient\", from: \"1.0.0\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "AnimateText",
-   "author": "jasudev",
-   "category": "Animation",
-   "summary": "This library for animating text. Developed with SwiftUI. This library supports iOS/macOS.",
-   "url": "https://github.com/jasudev/AnimateText",
-   "tags": [
-    "swiftui",
-    "text",
-    "animation"
-   ],
-   "featured": false,
-   "gif": null,
-   "stars": 432,
-   "pushed": "2024-02-13",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "0.5.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/jasudev/AnimateText\", from: \"0.5.0\")",
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": true,
-   "verified": {
-    "date": "2026-10-25",
-    "xcode": "27.1",
-    "ios": "27.1",
-    "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
-   }
-  },
-  {
-   "title": "GoogleWearAlert",
-   "author": "AshRobinson",
-   "category": "Alert",
-   "summary": "An Android Wear style confirmation view for iOS",
-   "url": "https://github.com/ashrobo/GoogleWearAlert",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/GoogleWearAlert.gif",
-   "stars": 417,
-   "pushed": "2016-10-16",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": null,
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": false,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "PARTagPicker",
-   "author": "paulrolfe",
-   "category": "UI",
-   "summary": "This pod provides a view controller for choosing and creating tags in the style of wordpress or tumblr. This tag picker was originally used in the Intrepid Pursuits app, Slate.",
-   "url": "https://github.com/paulrolfe/PARTagPicker",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/PARTagPicker.gif",
-   "stars": 365,
-   "pushed": "2019-06-28",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "1.4.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": false
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "SpringIndicator",
-   "author": "KyoheiG3",
-   "category": "Indicator",
-   "summary": "SpringIndicator is indicator and PullToRefresh. Inspired by Material design components.",
-   "url": "https://github.com/KyoheiG3/SpringIndicator",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/SpringIndicator.gif",
-   "stars": 271,
-   "pushed": "2020-09-21",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "4.0.0",
-   "install": {
-    "spm": true,
-    "spm_package": ".package(url: \"https://github.com/KyoheiG3/SpringIndicator\", from: \"4.0.0\")",
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  },
-  {
-   "title": "Gecco",
-   "author": "yukiasai",
-   "category": "Animation",
-   "summary": "Simply highlight items for your tutorial walkthrough, written in Swift. Gecco means Moonlight in Japanese.",
-   "url": "https://github.com/xai3/Gecco",
-   "tags": [],
-   "featured": false,
-   "gif": "motion-book/Gecco.gif",
-   "stars": 19,
-   "pushed": "2020-09-16",
-   "license": "MIT",
-   "archived": false,
-   "latest_tag": "2.0.0",
-   "install": {
-    "spm": false,
-    "spm_package": null,
-    "cocoapods": true,
-    "carthage": true
-   },
-   "live_demo": false,
-   "verified": null
-  }
- ]
+    "schema_version": "motionbook.catalog.v2",
+    "source": "https://github.com/younatics/MotionBook",
+    "stats_as_of": "2026-10-25",
+    "gif_base_url": "https://raw.githubusercontent.com/younatics/MotionBook/master/",
+    "app": {
+        "name": "MotionBook",
+        "app_store_id": "1205163580",
+        "version": "3.6",
+        "live_demos": [
+            "ActivityIndicatorView",
+            "AnimateText",
+            "AnimatedCollectionViewLayout",
+            "CRToast",
+            "ConfettiSwiftUI",
+            "FLAnimatedImage",
+            "FluidGradient",
+            "Glur",
+            "Grid (exyte)",
+            "Hero",
+            "Highlighter",
+            "IBAnimatable",
+            "Inferno",
+            "JTMaterialTransition",
+            "Koloda",
+            "LTMorphingLabel",
+            "Liquid",
+            "Lottie",
+            "MIBlurPopup",
+            "Macaw",
+            "MarkdownView",
+            "MediaBrowser",
+            "Motion (b3ll)",
+            "NVActivityIndicatorView",
+            "NotificationBanner",
+            "PKHUD",
+            "Pastel",
+            "Popovers",
+            "PopupDialog",
+            "PopupView",
+            "Pow",
+            "Pull-to-Refresh.Rentals-iOS",
+            "RQShineLabel",
+            "RevealingSplashView",
+            "SDCAlertView",
+            "ScalingHeaderScrollView",
+            "Segmentio",
+            "Shiny",
+            "SideMenu",
+            "SkeletonView",
+            "Spring",
+            "SweetAlert-iOS",
+            "SwiftUI-Shimmer",
+            "SwipeCellKit",
+            "TKRubberIndicator",
+            "Transmission",
+            "ViewAnimator",
+            "Vortex",
+            "Wave",
+            "XLPagerTabStrip",
+            "YNDropDownMenu",
+            "YNExpandableCell",
+            "YNSearch",
+            "animated-tab-bar",
+            "circle-menu",
+            "expanding-collection",
+            "folding-cell",
+            "preview-transition",
+            "rive-ios"
+        ]
+    },
+    "libraries": [
+        {
+            "title": "Lottie",
+            "author": "Airbnb",
+            "category": "Animation",
+            "summary": "Render After Effects animations natively and keep product motion consistent across screens.",
+            "url": "https://github.com/airbnb/lottie-ios",
+            "tags": [
+                "vector",
+                "after effects",
+                "json"
+            ],
+            "featured": true,
+            "gif": null,
+            "stars": 26917,
+            "pushed": "2026-10-06",
+            "license": "Apache-2.0",
+            "archived": false,
+            "latest_tag": "4.6.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/airbnb/lottie-ios\", from: \"4.6.1\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Hero",
+            "author": "lkzhao",
+            "category": "Transition",
+            "summary": "Hero is a library for building iOS view controller transitions. It provides a layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers.",
+            "url": "https://github.com/HeroTransitions/Hero",
+            "tags": [
+                "transition",
+                "navigation",
+                "interactive"
+            ],
+            "featured": true,
+            "gif": "motion-book/Hero.gif",
+            "stars": 22489,
+            "pushed": "2025-01-23",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.6.4",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/HeroTransitions/Hero\", from: \"1.6.4\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Pop",
+            "author": "Facebook",
+            "category": "Animation",
+            "summary": "Classic extensible animation primitives for spring and decay motion in UIKit apps.",
+            "url": "https://github.com/facebookarchive/pop",
+            "tags": [
+                "spring",
+                "decay",
+                "classic"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 19513,
+            "pushed": "2020-01-02",
+            "license": "BSD-3-Clause",
+            "archived": true,
+            "latest_tag": "1.0.11",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Spring",
+            "author": "MengTo",
+            "category": "Animation",
+            "summary": "A library to simplify iOS animations in Swift.",
+            "url": "https://github.com/MengTo/Spring",
+            "tags": [
+                "prototype",
+                "easing",
+                "spring"
+            ],
+            "featured": false,
+            "gif": "motion-book/Spring.gif",
+            "stars": 14064,
+            "pushed": "2023-07-03",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.5",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "SkeletonView",
+            "author": "Juanpe",
+            "category": "Animation",
+            "summary": "Today almost all apps have async processes, such as Api requests, long running processes, etc. And while the processes are working, usually developers place a loading view to show users that something is going on.SkeletonView has been conceived to address this need, an elegant way to show users that something is happening and also prepare them to which contents he is waiting.",
+            "url": "https://github.com/Juanpe/SkeletonView",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/SkeletonView.gif",
+            "stars": 12889,
+            "pushed": "2026-06-23",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.31.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Juanpe/SkeletonView\", from: \"1.31.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "animated-tab-bar",
+            "author": "Ramotion",
+            "category": "Menu",
+            "summary": "RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items.",
+            "url": "https://github.com/Ramotion/animated-tab-bar",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/animated-tab-bar.gif",
+            "stars": 11085,
+            "pushed": "2022-01-26",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "5.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Ramotion/animated-tab-bar\", from: \"5.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "NVActivityIndicatorView",
+            "author": "ninjaprox",
+            "category": "Indicator",
+            "summary": "NVActivityIndicatorView is a collection of awesome loading animations.",
+            "url": "https://github.com/ninjaprox/NVActivityIndicatorView",
+            "tags": [
+                "loading",
+                "indicator",
+                "feedback"
+            ],
+            "featured": false,
+            "gif": "motion-book/NVActivityIndicatorView.gif",
+            "stars": 10700,
+            "pushed": "2026-03-18",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "5.2.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/ninjaprox/NVActivityIndicatorView\", from: \"5.2.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "folding-cell",
+            "author": "Ramotion",
+            "category": "Table View",
+            "summary": "FoldingCell is an expanding content cell inspired by folding paper material",
+            "url": "https://github.com/Ramotion/folding-cell",
+            "tags": [
+                "table",
+                "card",
+                "interaction"
+            ],
+            "featured": false,
+            "gif": "motion-book/folding-cell.gif",
+            "stars": 10170,
+            "pushed": "2024-04-28",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "5.0.2",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Ramotion/folding-cell\", from: \"5.0.2\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "IBAnimatable",
+            "author": "IBAnimatable",
+            "category": "UI",
+            "summary": "Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Interface Builder with IBAnimatable.",
+            "url": "https://github.com/IBAnimatable/IBAnimatable",
+            "tags": [
+                "interface builder",
+                "prototype",
+                "design"
+            ],
+            "featured": false,
+            "gif": "motion-book/IBAnimatable.gif",
+            "stars": 8635,
+            "pushed": "2023-02-21",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "6.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/IBAnimatable/IBAnimatable\", from: \"6.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "LTMorphingLabel",
+            "author": "lexrus",
+            "category": "UI",
+            "summary": "A morphing UILabel subclass written in Swift. The .Scale effect mimicked Apple's QuickType animation of iOS 8 in WWDC 2014. New morphing effects are available as Swift extensions.",
+            "url": "https://github.com/lexrus/LTMorphingLabel",
+            "tags": [
+                "text",
+                "label",
+                "morph"
+            ],
+            "featured": false,
+            "gif": "motion-book/LTMorphingLabel.gif",
+            "stars": 8135,
+            "pushed": "2026-03-08",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.9.3",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/lexrus/LTMorphingLabel\", from: \"0.9.3\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "FLAnimatedImage",
+            "author": "Flipboard",
+            "category": "Animation",
+            "summary": "FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do",
+            "url": "https://github.com/Flipboard/FLAnimatedImage",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/FLAnimatedImage.gif",
+            "stars": 7937,
+            "pushed": "2024-03-21",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.17",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Flipboard/FLAnimatedImage\", from: \"1.0.17\")",
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "ViewAnimator",
+            "author": "Marcos Griselli",
+            "category": "Animation",
+            "summary": "Animate collection and table view content with concise, reusable item animations.",
+            "url": "https://github.com/marcosgriselli/ViewAnimator",
+            "tags": [
+                "list",
+                "collection",
+                "stagger"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 7303,
+            "pushed": "2024-03-31",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/marcosgriselli/ViewAnimator\", from: \"3.1.0\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "XLPagerTabStrip",
+            "author": "xmartlabs",
+            "category": "Transition",
+            "summary": "XLPagerTabStrip is a Container View Controller that allows us to switch easily among a collection of view controllers. Pan gesture can be used to move on to next or previous view controller. It shows a interactive indicator of the current, previous, next child view controllers.",
+            "url": "https://github.com/xmartlabs/XLPagerTabStrip",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/XLPagerTabStrip.gif",
+            "stars": 6990,
+            "pushed": "2023-11-22",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "9.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/xmartlabs/XLPagerTabStrip\", from: \"9.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "SwipeCellKit",
+            "author": "jerkoch",
+            "category": "Table View",
+            "summary": "Swipeable UITableViewCell based on the stock Mail.app, implemented in Swift.",
+            "url": "https://github.com/SwipeCellKit/SwipeCellKit",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/SwipeCellKit.gif",
+            "stars": 6276,
+            "pushed": "2024-05-19",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.7.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/SwipeCellKit/SwipeCellKit\", from: \"2.7.1\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Macaw",
+            "author": "exyte",
+            "category": "Animation",
+            "summary": "Powerful and easy-to-use vector graphics Swift library with SVG support",
+            "url": "https://github.com/exyte/Macaw",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Macaw.gif",
+            "stars": 6045,
+            "pushed": "2024-02-07",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.9.10",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/exyte/Macaw\", from: \"0.9.10\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "SideMenu",
+            "author": "jonkykong",
+            "category": "Menu",
+            "summary": "Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+.",
+            "url": "https://github.com/jonkykong/SideMenu",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/SideMenu.gif",
+            "stars": 5818,
+            "pushed": "2023-02-09",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "6.5.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/jonkykong/SideMenu\", from: \"6.5.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "expanding-collection",
+            "author": "Ramotion",
+            "category": "Collection View",
+            "summary": "This project aims to provide a simple and customizable pull to refresh implementation.",
+            "url": "https://github.com/Ramotion/expanding-collection",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/expanding-collection.gif",
+            "stars": 5510,
+            "pushed": "2020-04-06",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Ramotion/expanding-collection\", from: \"3.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Koloda",
+            "author": "Yalantis",
+            "category": "Collection View",
+            "summary": "KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS.",
+            "url": "https://github.com/Yalantis/Koloda",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Koloda.gif",
+            "stars": 5388,
+            "pushed": "2024-05-29",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "4.3.1",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "ScrollableGraphView",
+            "author": "philackm",
+            "category": "Animation",
+            "summary": "An adaptive scrollable graph view for iOS to visualise simple discrete datasets. Written in Swift.",
+            "url": "https://github.com/philackm/ScrollableGraphView",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/ScrollableGraphView.gif",
+            "stars": 5278,
+            "pushed": "2020-12-02",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "4.0.6",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "CSStickyHeaderFlowLayout",
+            "author": "CSStickyHeaderFlowLayout",
+            "category": "Collection View",
+            "summary": "UICollectionView replacement of UITableView. Do even more like Parallax Header, Sticky Section Header. Made for iOS 7.",
+            "url": "https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/CSStickyHeaderFlowLayout.gif",
+            "stars": 5019,
+            "pushed": "2021-07-17",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.2.12",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "NotificationBanner",
+            "author": "Daltron",
+            "category": "Alert",
+            "summary": "NotificationBanner is an extremely customizable and lightweight library that makes the task of displaying in app notification banners and drop down alerts an absolute breeze in iOS.",
+            "url": "https://github.com/Daltron/NotificationBanner",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/NotificationBanner.gif",
+            "stars": 4862,
+            "pushed": "2024-07-29",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.2.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Daltron/NotificationBanner\", from: \"3.2.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "AnimatedCollectionViewLayout",
+            "author": "KelvinJin",
+            "category": "Transition",
+            "summary": "Animated UIButton of Loading Animation and Transition Animation.",
+            "url": "https://github.com/KelvinJin/AnimatedCollectionViewLayout",
+            "tags": [
+                "collection",
+                "layout",
+                "paging"
+            ],
+            "featured": false,
+            "gif": "motion-book/AnimatedCollectionViewLayout.gif",
+            "stars": 4856,
+            "pushed": "2020-09-20",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/KelvinJin/AnimatedCollectionViewLayout\", from: \"1.1.0\")",
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Advance",
+            "author": "Storehouse",
+            "category": "Animation",
+            "summary": "A physics-based animation framework for direct manipulation, gestures, and playful interface motion.",
+            "url": "https://github.com/timdonnelly/Advance",
+            "tags": [
+                "physics",
+                "gesture",
+                "simulation"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 4459,
+            "pushed": "2022-05-16",
+            "license": "BSD-2-Clause",
+            "archived": true,
+            "latest_tag": "3.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/timdonnelly/Advance\", from: \"3.1.0\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Pow",
+            "author": "EmergeTools",
+            "category": "Animation",
+            "summary": "Delightful SwiftUI effects for your app",
+            "url": "https://github.com/EmergeTools/Pow",
+            "tags": [
+                "swiftui",
+                "effects",
+                "transitions"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 4420,
+            "pushed": "2026-04-13",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.5",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/EmergeTools/Pow\", from: \"1.0.5\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Cards",
+            "author": "PaoloCuscela",
+            "category": "UI",
+            "summary": "Awesome iOS 11 appstore cards in swift 4.",
+            "url": "https://github.com/PaoloCuscela/Cards",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Cards.gif",
+            "stars": 4199,
+            "pushed": "2023-04-19",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.4.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "CRToast",
+            "author": "cruffenach",
+            "category": "Alert",
+            "summary": "CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar.",
+            "url": "https://github.com/cruffenach/CRToast",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/CRToast.gif",
+            "stars": 4119,
+            "pushed": "2024-05-02",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.0.9",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "PopupView",
+            "author": "exyte",
+            "category": "Alert",
+            "summary": "Toasts and popups library written with SwiftUI",
+            "url": "https://github.com/exyte/PopupView",
+            "tags": [
+                "swiftui",
+                "toast",
+                "popup"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 4061,
+            "pushed": "2026-10-06",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "5.0.8",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/exyte/PopupView\", from: \"5.0.8\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "PopupDialog",
+            "author": "Orderella",
+            "category": "Alert",
+            "summary": "A simple, customizable popup dialog for iOS written in Swift. Replaces UIAlertController alert style.",
+            "url": "https://github.com/Orderella/PopupDialog",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/PopupDialog.gif",
+            "stars": 4037,
+            "pushed": "2024-02-07",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.1.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Orderella/PopupDialog\", from: \"1.1.1\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "PKHUD",
+            "author": "pkluz",
+            "category": "Indicator",
+            "summary": "A Swift based reimplementation of the Apple HUD (Volume, Ringer, Rotation,…) for iOS 8.",
+            "url": "https://github.com/pkluz/PKHUD",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/PKHUD.gif",
+            "stars": 3769,
+            "pushed": "2023-02-16",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "5.4.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/pkluz/PKHUD\", from: \"5.4.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "StarWars.iOS",
+            "author": "Yalantis",
+            "category": "UI",
+            "summary": "This component implements transition animation to crumble view-controller into tiny pieces.",
+            "url": "https://github.com/Yalantis/StarWars.iOS",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/StarWars.iOS.gif",
+            "stars": 3760,
+            "pushed": "2022-10-11",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "4.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Pastel",
+            "author": "cruisediary",
+            "category": "Animation",
+            "summary": "🎨Gradient animation effect like Instagram",
+            "url": "https://github.com/cruisediary/Pastel",
+            "tags": [
+                "gradient",
+                "background",
+                "branding"
+            ],
+            "featured": false,
+            "gif": "motion-book/Pastel.gif",
+            "stars": 3514,
+            "pushed": "2026-03-24",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/cruisediary/Pastel\", from: \"1.0.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "DKNightVersion",
+            "author": "Draveness",
+            "category": "UI",
+            "summary": "Manage Colors, Integrate Night/Multiple Themes",
+            "url": "https://github.com/draveness/DKNightVersion",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/DKNightVersion.gif",
+            "stars": 3513,
+            "pushed": "2019-09-03",
+            "license": "MIT",
+            "archived": true,
+            "latest_tag": "2.4.3",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "circle-menu",
+            "author": "Ramotion",
+            "category": "Menu",
+            "summary": "This project is maintained by Ramotion, Inc. We specialize in the designing and coding of custom UI for Mobile Apps and Websites.",
+            "url": "https://github.com/Ramotion/circle-menu",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/circle-menu.gif",
+            "stars": 3407,
+            "pushed": "2022-07-12",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "4.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Ramotion/circle-menu\", from: \"4.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "SlideMenuControllerSwift",
+            "author": "dekatotoro",
+            "category": "Menu",
+            "summary": "iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift.",
+            "url": "https://github.com/dekatotoro/SlideMenuControllerSwift",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/SlideMenuControllerSwift.gif",
+            "stars": 3367,
+            "pushed": "2023-09-07",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.2.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "RazzleDazzle",
+            "author": "IFTTT",
+            "category": "UI",
+            "summary": "Create scroll-driven onboarding and storytelling animations without hand-wiring every offset.",
+            "url": "https://github.com/IFTTT/RazzleDazzle",
+            "tags": [
+                "onboarding",
+                "scroll",
+                "story"
+            ],
+            "featured": true,
+            "gif": null,
+            "stars": 3337,
+            "pushed": "2023-10-11",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.1.5",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Gemini",
+            "author": "shoheiyokoyama",
+            "category": "Transition",
+            "summary": "Gemini is rich scroll based animation framework for iOS, written in Swift.",
+            "url": "https://github.com/shoheiyokoyama/Gemini",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Gemini.gif",
+            "stars": 3308,
+            "pushed": "2025-06-28",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.4.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "BubbleTransition",
+            "author": "andreamazz",
+            "category": "Transition",
+            "summary": "A custom modal transition that presents and dismiss a controller inside an expanding and shrinking bubble.",
+            "url": "https://github.com/andreamazz/BubbleTransition",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/BubbleTransition.gif",
+            "stars": 3297,
+            "pushed": "2020-11-04",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.1.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/andreamazz/BubbleTransition\", from: \"3.1.1\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Presentation",
+            "author": "hyperoslo",
+            "category": "UI",
+            "summary": "Looking for the easiest way of presenting something in your iOS app? Then you are in the right place. Presentation will help you make your tutorials, release notes and any kind of animated pages with the minimum amount of effort.",
+            "url": "https://github.com/hyperoslo/Presentation",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Presentation.gif",
+            "stars": 3068,
+            "pushed": "2020-06-05",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "4.1.2",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Stellar",
+            "author": "AugustRush",
+            "category": "Animation",
+            "summary": "A fantastic Physical animation library for swift(Not Just Spring !!!), it is base on UIDynamic and extension to it, friendly APIs make you use it or custom your own animation very easily!",
+            "url": "https://github.com/AugustRush/Stellar",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Stellar.gif",
+            "stars": 2941,
+            "pushed": "2019-07-31",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.67",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/AugustRush/Stellar\", from: \"0.67\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Inferno",
+            "author": "twostraws",
+            "category": "UI",
+            "summary": "Metal shaders for SwiftUI.",
+            "url": "https://github.com/twostraws/Inferno",
+            "tags": [
+                "swiftui",
+                "metal",
+                "shaders"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 2932,
+            "pushed": "2026-05-17",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/twostraws/Inferno\", from: \"1.1.0\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "paper-switch",
+            "author": "Ramotion",
+            "category": "Animation",
+            "summary": "RAMPaperSwitch is a Swift material design UI module which paints over the parent view when the switch is turned on.",
+            "url": "https://github.com/Ramotion/paper-switch",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/paper-switch.gif",
+            "stars": 2897,
+            "pushed": "2022-01-25",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Ramotion/paper-switch\", from: \"3.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "GuillotineMenu",
+            "author": "Yalantis",
+            "category": "Menu",
+            "summary": "Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine.",
+            "url": "https://github.com/Yalantis/GuillotineMenu",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/GuillotineMenu.gif",
+            "stars": 2876,
+            "pushed": "2020-04-13",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.0.2",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "BWWalkthrough",
+            "author": "ariok",
+            "category": "Transition",
+            "summary": "BWWalkthrough (BWWT) is a class that helps you create Walkthroughs for your iOS Apps. It differs from other similar classes in that there is no rigid template; BWWT is just a layer placed over your controllers that gives you complete freedom on the design of your views.",
+            "url": "https://github.com/ariok/BWWalkthrough",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/BWWalkthrough.gif",
+            "stars": 2741,
+            "pushed": "2021-02-07",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "4.0.2",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/ariok/BWWalkthrough\", from: \"4.0.2\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Side-Menu.iOS",
+            "author": "Yalantis",
+            "category": "Menu",
+            "summary": "Animated side menu with customizable UI. Made in Yalantis.",
+            "url": "https://github.com/Yalantis/Side-Menu.iOS",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Side-Menu.iOS.gif",
+            "stars": 2708,
+            "pushed": "2020-04-13",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.0.2",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Segmentio",
+            "author": "Yalantis",
+            "category": "UI",
+            "summary": "Animated top/bottom segmented control written in Swift.",
+            "url": "https://github.com/Yalantis/Segmentio",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Segmentio.gif",
+            "stars": 2515,
+            "pushed": "2024-08-12",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Yalantis/Segmentio\", from: \"3.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "AnimatedTransitionGallery",
+            "author": "shu223",
+            "category": "Transition",
+            "summary": "Collection of custom animated transitions for iOS using UIViewControllerAnimatedTransitioning protocol.",
+            "url": "https://github.com/shu223/AnimatedTransitionGallery",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/AnimatedTransitionGallery.gif",
+            "stars": 2500,
+            "pushed": "2024-04-30",
+            "license": null,
+            "archived": false,
+            "latest_tag": null,
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "ConfettiSwiftUI",
+            "author": "simibac",
+            "category": "Animation",
+            "summary": "SwiftUI Package for Configurable Confetti Animation 🎉",
+            "url": "https://github.com/simibac/ConfettiSwiftUI",
+            "tags": [
+                "swiftui",
+                "confetti",
+                "particles"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 2469,
+            "pushed": "2026-01-05",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.0.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/simibac/ConfettiSwiftUI\", from: \"3.0.0\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Wave",
+            "author": "jtrivedi",
+            "category": "Animation",
+            "summary": "Wave is a spring-based animation engine for iOS and macOS that makes it easy to create fluid, interruptible animations that feel great.",
+            "url": "https://github.com/jtrivedi/Wave",
+            "tags": [
+                "spring",
+                "gesture",
+                "engine"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 2402,
+            "pushed": "2026-03-25",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.3.3",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/jtrivedi/Wave\", from: \"0.3.3\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "AMWaveTransition",
+            "author": "andreamazz",
+            "category": "Transition",
+            "summary": "Custom transition between viewcontrollers holding tableviews. Each cell is animated to simulate a 'wave effect'.",
+            "url": "https://github.com/andreamazz/AMWaveTransition",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/AMWaveTransition.gif",
+            "stars": 2343,
+            "pushed": "2020-06-07",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.6.2",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "TKSubmitTransition",
+            "author": "entotsu",
+            "category": "Transition",
+            "summary": "Animated UIButton of Loading Animation and Transition Animation.",
+            "url": "https://github.com/takuoka/TKSubmitTransition",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/TKSubmitTransition.gif",
+            "stars": 2255,
+            "pushed": "2019-12-04",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.1.1",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Popovers",
+            "author": "aheze",
+            "category": "Alert",
+            "summary": "A library to present popovers. Simple, modern, and highly customizable. Not boring!",
+            "url": "https://github.com/aheze/Popovers",
+            "tags": [
+                "swiftui",
+                "popover",
+                "menu"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 2211,
+            "pushed": "2025-02-19",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.3.2",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/aheze/Popovers\", from: \"1.3.2\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "MarkdownView",
+            "author": "keitaoouchi",
+            "category": "UI",
+            "summary": "MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it.",
+            "url": "https://github.com/keitaoouchi/MarkdownView",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/MarkdownView.gif",
+            "stars": 2177,
+            "pushed": "2026-10-22",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.1.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/keitaoouchi/MarkdownView\", from: \"2.1.1\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "ElasticTransition",
+            "author": "lkzhao",
+            "category": "Transition",
+            "summary": "A UIKit custom transition that simulates an elastic drag. Written in Swift.",
+            "url": "https://github.com/lkzhao/ElasticTransition",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/ElasticTransition.gif",
+            "stars": 2161,
+            "pushed": "2020-05-10",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.1.1",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Grid (exyte)",
+            "author": "exyte",
+            "category": "Collection View",
+            "summary": "The most powerful Grid container missed in SwiftUI",
+            "url": "https://github.com/exyte/Grid",
+            "tags": [
+                "swiftui",
+                "grid",
+                "layout"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 2119,
+            "pushed": "2026-09-15",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.5.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/exyte/Grid\", from: \"1.5.0\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Pull-to-Refresh.Rentals-iOS",
+            "author": "Yalantis",
+            "category": "Table View",
+            "summary": "This project aims to provide a simple and customizable pull to refresh implementation.",
+            "url": "https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Pull-to-Refresh.Rentals-iOS.gif",
+            "stars": 2115,
+            "pushed": "2018-06-16",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Glur",
+            "author": "joogps",
+            "category": "UI",
+            "summary": "A library for progressive blurs in SwiftUI.",
+            "url": "https://github.com/joogps/Glur",
+            "tags": [
+                "swiftui",
+                "blur",
+                "progressive"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 2086,
+            "pushed": "2026-10-18",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/joogps/Glur\", from: \"2.1\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "preview-transition",
+            "author": "Ramotion",
+            "category": "Transition",
+            "summary": "PreviewTransition is a simple preview gallery controller",
+            "url": "https://github.com/Ramotion/preview-transition",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/preview-transition.gif",
+            "stars": 2071,
+            "pushed": "2020-04-06",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "4.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Ramotion/preview-transition\", from: \"4.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "SweetAlert-iOS",
+            "author": "codestergit",
+            "category": "Alert",
+            "summary": "Beautiful Animated custom Alert View inspired from javascript library SweetAlert. Written in Swift this SweetAlertView can be used in Swift and Objective-C projects. SweetAlertView provides live intutive experience to user actions.It can be used in place of UIAlertView and UIAlertController",
+            "url": "https://github.com/codestergit/SweetAlert-iOS",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/SweetAlert-iOS.gif",
+            "stars": 2028,
+            "pushed": "2020-03-16",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "v0.9",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "fluid-slider",
+            "author": "Ramotion",
+            "category": "UI",
+            "summary": "A slider widget with a popup bubble displaying the precise value selected.",
+            "url": "https://github.com/Ramotion/fluid-slider",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/fluid-slider.gif",
+            "stars": 1985,
+            "pushed": "2022-06-01",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Ramotion/fluid-slider\", from: \"1.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "RQShineLabel",
+            "author": "zipme",
+            "category": "Animation",
+            "summary": "A UILabel subclass that lets you animate text similar to Secret app.",
+            "url": "https://github.com/zipme/RQShineLabel",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/RQShineLabel.gif",
+            "stars": 1949,
+            "pushed": "2023-12-25",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/zipme/RQShineLabel\", from: \"1.0.0\")",
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "PinterestSwift",
+            "author": "demonnico",
+            "category": "Transition",
+            "summary": "This is a Swift based demo project to show how to make the transition Pinterest liked.",
+            "url": "https://github.com/demonnico/PinterestSwift",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/PinterestSwift.gif",
+            "stars": 1875,
+            "pushed": "2020-06-15",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": null,
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "CKWaveCollectionViewTransition",
+            "author": "CezaryKopacz",
+            "category": "Transition",
+            "summary": "Cool wave like transition between two or more UICollectionView",
+            "url": "https://github.com/CezaryKopacz/CKWaveCollectionViewTransition",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/CKWaveCollectionViewTransition.gif",
+            "stars": 1843,
+            "pushed": "2019-10-13",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "v1.2",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "SDCAlertView",
+            "author": "sberrevoets",
+            "category": "Alert",
+            "summary": "SDCAlertView started out as an alert that looked identical to UIAlertView, but had support for a custom content view. With the introduction of UIAlertController in iOS 8, the project was updated to the more modern API that UIAlertController brought.",
+            "url": "https://github.com/sberrevoets/SDCAlertView",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/SDCAlertView.gif",
+            "stars": 1836,
+            "pushed": "2025-01-22",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "12.0.5",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/sberrevoets/SDCAlertView\", from: \"12.0.5\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Motion",
+            "author": "CosmicMind",
+            "category": "Transition",
+            "summary": "A Material-inspired motion engine for transitions, transforms, and interactive presentation work.",
+            "url": "https://github.com/CosmicMind/Motion",
+            "tags": [
+                "material",
+                "transition",
+                "layout"
+            ],
+            "featured": true,
+            "gif": null,
+            "stars": 1777,
+            "pushed": "2020-01-28",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.1.3",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/CosmicMind/Motion\", from: \"3.1.3\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "YLGIFImage",
+            "author": "liyong03",
+            "category": "Animation",
+            "summary": "Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory.",
+            "url": "https://github.com/liyong03/YLGIFImage",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/YLGIFImage.gif",
+            "stars": 1759,
+            "pushed": "2020-12-19",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.11",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "GSKStretchyHeaderView",
+            "author": "gskbyte",
+            "category": "Collection View",
+            "summary": "GSKStretchyHeaderView is an implementation of the stretchy header paradigm as seen on many apps, like Twitter, Spotify or airbnb.",
+            "url": "https://github.com/gskbyte/GSKStretchyHeaderView",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/GSKStretchyHeaderView.gif",
+            "stars": 1739,
+            "pushed": "2024-08-06",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.4",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "SwiftUI-Shimmer",
+            "author": "markiv",
+            "category": "UI",
+            "summary": "Shimmer is a super-light modifier that adds a shimmering effect to any SwiftUI View, for example, to show that an operation is in progress. It works well on light and dark modes, and across iOS, macOS, tvOS, watchOS and visionOS.",
+            "url": "https://github.com/markiv/SwiftUI-Shimmer",
+            "tags": [
+                "swiftui",
+                "shimmer",
+                "loading"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 1697,
+            "pushed": "2024-08-14",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.5.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/markiv/SwiftUI-Shimmer\", from: \"1.5.1\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "ActivityIndicatorView",
+            "author": "exyte",
+            "category": "Indicator",
+            "summary": "A number of preset loading indicators created with SwiftUI",
+            "url": "https://github.com/exyte/ActivityIndicatorView",
+            "tags": [
+                "swiftui",
+                "loading",
+                "indicator"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 1675,
+            "pushed": "2026-09-10",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.0.2",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/exyte/ActivityIndicatorView\", from: \"2.0.2\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "AnimatedMaskLabel",
+            "author": "imjog",
+            "category": "Animation",
+            "summary": "Nice gradient animated label that enable an easy way to add a shimmering effect",
+            "url": "https://github.com/jogendra/LoadingShimmer",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/AnimatedMaskLabel.gif",
+            "stars": 1597,
+            "pushed": "2022-10-22",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.3",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Vortex",
+            "author": "twostraws",
+            "category": "Animation",
+            "summary": "High-performance particle effects for SwiftUI.",
+            "url": "https://github.com/twostraws/Vortex",
+            "tags": [
+                "swiftui",
+                "particles",
+                "effects"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 1589,
+            "pushed": "2026-04-03",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.4",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/twostraws/Vortex\", from: \"1.0.4\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "ScalingHeaderScrollView",
+            "author": "exyte",
+            "category": "UI",
+            "summary": "A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI.",
+            "url": "https://github.com/exyte/ScalingHeaderScrollView",
+            "tags": [
+                "swiftui",
+                "header",
+                "scroll"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 1547,
+            "pushed": "2026-10-20",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/exyte/ScalingHeaderScrollView\", from: \"3.1.0\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Motion (b3ll)",
+            "author": "b3ll",
+            "category": "Animation",
+            "summary": "Animation engine for gesturally-driven user interfaces, animations, and interactions on iOS, macOS, and tvOS.",
+            "url": "https://github.com/b3ll/Motion",
+            "tags": [
+                "spring",
+                "gesture",
+                "engine"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 1491,
+            "pushed": "2024-10-19",
+            "license": "BSD-2-Clause",
+            "archived": false,
+            "latest_tag": "v0.1.5",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/b3ll/Motion\", from: \"0.1.5\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "TKRubberIndicator",
+            "author": "TBXark",
+            "category": "Indicator",
+            "summary": "A rubber animation pagecontrol",
+            "url": "https://github.com/tbxark/TKRubberIndicator",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/TKRubberIndicator.gif",
+            "stars": 1468,
+            "pushed": "2026-09-14",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.0.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/tbxark/TKRubberIndicator\", from: \"2.0.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "YNDropDownMenu",
+            "author": "younatics",
+            "category": "Menu",
+            "summary": "✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)",
+            "url": "https://github.com/younatics/YNDropDownMenu",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/YNDropDownMenu.gif",
+            "stars": 1326,
+            "pushed": "2026-10-24",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "4.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/younatics/YNDropDownMenu\", from: \"4.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Ease",
+            "author": "roberthein",
+            "category": "Animation",
+            "summary": "Ease is a event driven animation system that combines the observer pattern with custom spring animations as observers.",
+            "url": "https://github.com/roberthein/Ease",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Ease.gif",
+            "stars": 1260,
+            "pushed": "2020-07-14",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.2.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/roberthein/Ease\", from: \"3.2.0\")",
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "RevealingSplashView",
+            "author": "PiXeL16",
+            "category": "Animation",
+            "summary": "A Splash view that animates and reveals its content, inspired by Twitter splash",
+            "url": "https://github.com/PiXeL16/RevealingSplashView",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/RevealingSplashView.gif",
+            "stars": 1240,
+            "pushed": "2025-03-30",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.9.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/PiXeL16/RevealingSplashView\", from: \"0.9.1\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Transmission",
+            "author": "nathantannar4",
+            "category": "Transition",
+            "summary": "Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more.",
+            "url": "https://github.com/nathantannar4/Transmission",
+            "tags": [
+                "swiftui",
+                "presentation",
+                "transition"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 1190,
+            "pushed": "2026-10-24",
+            "license": "BSD-2-Clause",
+            "archived": false,
+            "latest_tag": "3.0.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/nathantannar4/Transmission\", from: \"3.0.0\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "YNSearch",
+            "author": "younatics",
+            "category": "UI",
+            "summary": "✨Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm!",
+            "url": "https://github.com/younatics/YNSearch",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/YNSearch.gif",
+            "stars": 1181,
+            "pushed": "2026-10-24",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/younatics/YNSearch\", from: \"3.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "CDAlertView",
+            "author": "candostdagdeviren",
+            "category": "Alert",
+            "summary": "CDAlertView is highly customizable alert popup written in Swift 3. Usage is similar to UIAlertController.",
+            "url": "https://github.com/candostdagdeviren/CDAlertView",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/CDAlertView.gif",
+            "stars": 1134,
+            "pushed": "2026-08-20",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.11.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Shiny",
+            "author": "maustinstar",
+            "category": "UI",
+            "summary": "Shiny uses your gyroscope to simulate lighting and motion effects on colors. Works on almost every SwiftUI View.",
+            "url": "https://github.com/maustinstar/shiny",
+            "tags": [
+                "swiftui",
+                "gyroscope",
+                "shine"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 1090,
+            "pushed": "2024-07-12",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "v0.0.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/maustinstar/shiny\", from: \"0.0.1\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "GlitchLabel",
+            "author": "kciter",
+            "category": "Animation",
+            "summary": "G..lit...c...hing UILa..bel fo..r iO...S",
+            "url": "https://github.com/kciter/GlitchLabel",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/GlitchLabel.gif",
+            "stars": 1048,
+            "pushed": "2022-12-23",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/kciter/GlitchLabel\", from: \"2.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "BusyNavigationBar",
+            "author": "gmertk",
+            "category": "Indicator",
+            "summary": "A UINavigationBar extension to show loading effects above navigation bar's background.",
+            "url": "https://github.com/gmertk/BusyNavigationBar",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/BusyNavigationBar.gif",
+            "stars": 980,
+            "pushed": "2017-05-01",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.0.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "AIFlatSwitch",
+            "author": "cocoatoucher",
+            "category": "UI",
+            "summary": "A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used instead of UISwitch. Inspired by Creativedash's Dribbble post",
+            "url": "https://github.com/cocoatoucher/AIFlatSwitch",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/AIFlatSwitch.gif",
+            "stars": 963,
+            "pushed": "2022-06-06",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.8",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/cocoatoucher/AIFlatSwitch\", from: \"1.0.8\")",
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "JTMaterialTransition",
+            "author": "jonathantribouharet",
+            "category": "Transition",
+            "summary": "An iOS transition for controllers based on material design.",
+            "url": "https://github.com/johnvuko/JTMaterialTransition",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/JTMaterialTransition.gif",
+            "stars": 949,
+            "pushed": "2019-01-17",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.0.3",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/johnvuko/JTMaterialTransition\", from: \"2.0.3\")",
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "Windless",
+            "author": "Interactive-Studio",
+            "category": "Animation",
+            "summary": "Windless makes it easy to implement invisible layout loading view.",
+            "url": "https://github.com/ParkGwangBeom/Windless",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Windless.gif",
+            "stars": 947,
+            "pushed": "2022-07-14",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.1.5",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/ParkGwangBeom/Windless\", from: \"0.1.5\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Highlighter",
+            "author": "younatics",
+            "category": "Animation",
+            "summary": "🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.",
+            "url": "https://github.com/younatics/Highlighter",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Highlighter.gif",
+            "stars": 921,
+            "pushed": "2026-10-24",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/younatics/Highlighter\", from: \"2.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "elongation-preview",
+            "author": "Ramotion",
+            "category": "Table View",
+            "summary": "ElongationPreview is an elegant push-pop style view controller",
+            "url": "https://github.com/Ramotion/elongation-preview",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/elongation-preview.gif",
+            "stars": 888,
+            "pushed": "2020-04-06",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.1.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Ramotion/elongation-preview\", from: \"1.1.1\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Liquid",
+            "author": "maustinstar",
+            "category": "Animation",
+            "summary": "Create a playful backsplash in SwiftUI.",
+            "url": "https://github.com/maustinstar/liquid",
+            "tags": [
+                "swiftui",
+                "blob",
+                "backsplash"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 856,
+            "pushed": "2024-08-19",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "v0.0.2",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/maustinstar/liquid\", from: \"0.0.2\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "rive-ios",
+            "author": "rive-app",
+            "category": "Animation",
+            "summary": "iOS runtime for Rive",
+            "url": "https://github.com/rive-app/rive-ios",
+            "tags": [
+                "rive",
+                "runtime",
+                "vector"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 851,
+            "pushed": "2026-10-24",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "6.28.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/rive-app/rive-ios\", from: \"6.28.1\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "MediaBrowser",
+            "author": "younatics",
+            "category": "UI",
+            "summary": "🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view.",
+            "url": "https://github.com/younatics/MediaBrowser",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/MediaBrowser.gif",
+            "stars": 646,
+            "pushed": "2026-10-24",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "3.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/younatics/MediaBrowser\", from: \"3.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "SwiftSpreadsheet",
+            "author": "stuffrabbit",
+            "category": "Collection View",
+            "summary": "Spreadsheet CollectionViewLayout in Swift. Fully customizable.",
+            "url": "https://github.com/stuffrabbit/SwiftSpreadsheet",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/SwiftSpreadsheet.gif",
+            "stars": 637,
+            "pushed": "2019-10-15",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.2.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/stuffrabbit/SwiftSpreadsheet\", from: \"1.2.1\")",
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "MIBlurPopup",
+            "author": "MarioIannotta",
+            "category": "Alert",
+            "summary": "MIBlurPopup lets you create amazing popups with a blurred background",
+            "url": "https://github.com/MarioIannotta/MIBlurPopup",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/MIBlurPopup.gif",
+            "stars": 598,
+            "pushed": "2020-03-30",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "TKSwarmAlert",
+            "author": "entotsu",
+            "category": "Alert",
+            "summary": "Animated alert library like Swarm app.",
+            "url": "https://github.com/takuoka/TKSwarmAlert",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/TKSwarmAlert.gif",
+            "stars": 573,
+            "pushed": "2019-03-30",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.1.3",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "MMCardView",
+            "author": "MillmanY",
+            "category": "Collection View",
+            "summary": "Custom CollectionView like Wallet App",
+            "url": "https://github.com/MillmanY/MMCardView",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/MMCardView.gif",
+            "stars": 565,
+            "pushed": "2021-10-13",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.1.2",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "AnimatedTabBar (exyte)",
+            "author": "exyte",
+            "category": "Menu",
+            "summary": "A tabbar with a number of preset animations written in pure SwiftUI",
+            "url": "https://github.com/exyte/AnimatedTabBar",
+            "tags": [
+                "swiftui",
+                "tabbar",
+                "animation"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 557,
+            "pushed": "2026-07-08",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.1",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/exyte/AnimatedTabBar\", from: \"1.0.1\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "YNExpandableCell",
+            "author": "younatics",
+            "category": "Table View",
+            "summary": "✨Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell?",
+            "url": "https://github.com/younatics/YNExpandableCell",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/YNExpandableCell.gif",
+            "stars": 451,
+            "pushed": "2026-10-24",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.1.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/younatics/YNExpandableCell\", from: \"2.1.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "URWeatherView",
+            "author": "jegumhon",
+            "category": "Animation",
+            "summary": "Show the weather effects onto view written in Swift3",
+            "url": "https://github.com/Urtaq/URWeatherView",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/URWeatherView.gif",
+            "stars": 447,
+            "pushed": "2019-01-07",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.7.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "FluidGradient",
+            "author": "Cindori",
+            "category": "UI",
+            "summary": "A fluid, animated gradient implemented with CoreAnimation and SwiftUI.",
+            "url": "https://github.com/Cindori/FluidGradient",
+            "tags": [
+                "swiftui",
+                "gradient",
+                "background"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 439,
+            "pushed": "2024-03-14",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.0.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/Cindori/FluidGradient\", from: \"1.0.0\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "AnimateText",
+            "author": "jasudev",
+            "category": "Animation",
+            "summary": "This library for animating text. Developed with SwiftUI. This library supports iOS/macOS.",
+            "url": "https://github.com/jasudev/AnimateText",
+            "tags": [
+                "swiftui",
+                "text",
+                "animation"
+            ],
+            "featured": false,
+            "gif": null,
+            "stars": 432,
+            "pushed": "2024-02-13",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "0.5.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/jasudev/AnimateText\", from: \"0.5.0\")",
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": true,
+            "verified": {
+                "date": "2026-10-25",
+                "xcode": "27.1",
+                "ios": "27.1",
+                "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
+            }
+        },
+        {
+            "title": "GoogleWearAlert",
+            "author": "AshRobinson",
+            "category": "Alert",
+            "summary": "An Android Wear style confirmation view for iOS",
+            "url": "https://github.com/ashrobo/GoogleWearAlert",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/GoogleWearAlert.gif",
+            "stars": 417,
+            "pushed": "2016-10-16",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": null,
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": false,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "PARTagPicker",
+            "author": "paulrolfe",
+            "category": "UI",
+            "summary": "This pod provides a view controller for choosing and creating tags in the style of wordpress or tumblr. This tag picker was originally used in the Intrepid Pursuits app, Slate.",
+            "url": "https://github.com/paulrolfe/PARTagPicker",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/PARTagPicker.gif",
+            "stars": 365,
+            "pushed": "2019-06-28",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "1.4.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": false
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "SpringIndicator",
+            "author": "KyoheiG3",
+            "category": "Indicator",
+            "summary": "SpringIndicator is indicator and PullToRefresh. Inspired by Material design components.",
+            "url": "https://github.com/KyoheiG3/SpringIndicator",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/SpringIndicator.gif",
+            "stars": 271,
+            "pushed": "2020-09-21",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "4.0.0",
+            "install": {
+                "spm": true,
+                "spm_package": ".package(url: \"https://github.com/KyoheiG3/SpringIndicator\", from: \"4.0.0\")",
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        },
+        {
+            "title": "Gecco",
+            "author": "yukiasai",
+            "category": "Animation",
+            "summary": "Simply highlight items for your tutorial walkthrough, written in Swift. Gecco means Moonlight in Japanese.",
+            "url": "https://github.com/xai3/Gecco",
+            "tags": [],
+            "featured": false,
+            "gif": "motion-book/Gecco.gif",
+            "stars": 19,
+            "pushed": "2020-09-16",
+            "license": "MIT",
+            "archived": false,
+            "latest_tag": "2.0.0",
+            "install": {
+                "spm": false,
+                "spm_package": null,
+                "cocoapods": true,
+                "carthage": true
+            },
+            "live_demo": false,
+            "verified": null
+        }
+    ]
 }
