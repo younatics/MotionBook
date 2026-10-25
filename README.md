@@ -307,7 +307,7 @@ ivanvorobei · ★ 2.7K · ⟳ 2023-01 · MIT · tag `1.8.5`
 
 Apple Music style modal presentation: a card that slides up and can be dragged down to dismiss.
 
-`▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/ivanvorobei/SPStorkController", from: "1.8.5")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/SPStorkController.gif) · `.package(url: "https://github.com/ivanvorobei/SPStorkController", from: "1.8.5")`
 
 #### [Transition](https://github.com/Touchwonders/Transition)
 Touchwonders · ★ 2.6K · ⟳ 2020-11 · MIT · tag `1.3.0`
@@ -328,7 +328,7 @@ SebastianBoldt · ★ 2.5K · ⟳ 2025-11 · MIT · tag `2.3.0`
 
 Animated view controller presentations (slide, fade, shift), interactive or not, in a few lines.
 
-`▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/SebastianBoldt/Jelly", from: "2.3.0")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/Jelly.gif) · `.package(url: "https://github.com/SebastianBoldt/Jelly", from: "2.3.0")`
 
 #### [AMWaveTransition](https://github.com/andreamazz/AMWaveTransition)
 andreamazz · ★ 2.3K · ⟳ 2020-06 · MIT · tag `0.6.2`
@@ -414,14 +414,14 @@ raulriera · ★ 6.0K · ⟳ 2024-01 · MIT · tag `1.7.0`
 
 Text field subclasses with the Codrops entrance effects: floating labels, underlines and borders that animate on focus.
 
-`▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/raulriera/TextFieldEffects", from: "1.7.0")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/TextFieldEffects.gif) · `.package(url: "https://github.com/raulriera/TextFieldEffects", from: "1.7.0")`
 
 #### [MarqueeLabel](https://github.com/cbpowell/MarqueeLabel)
 cbpowell · ★ 4.3K · ⟳ 2025-09 · MIT · tag `4.5.3`
 
 UILabel replacement that scrolls text that does not fit, with configurable speed, fade and direction.
 
-`▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/cbpowell/MarqueeLabel", from: "4.5.3")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/MarqueeLabel.gif) · `.package(url: "https://github.com/cbpowell/MarqueeLabel", from: "4.5.3")`
 
 #### [Cards](https://github.com/PaoloCuscela/Cards)
 PaoloCuscela · ★ 4.2K · ⟳ 2023-04 · MIT · tag `1.4.0`
@@ -809,7 +809,7 @@ relatedcode · ★ 3.0K · ⟳ 2026-09 · MIT · tag `15.0.3`
 
 Lightweight HUD with progress, activity-indicator and symbol animations plus banners.
 
-`▶ Live demo in the app` · `SPM` · `.package(url: "https://github.com/relatedcode/ProgressHUD", from: "15.0.3")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/ProgressHUD.gif) · `.package(url: "https://github.com/relatedcode/ProgressHUD", from: "15.0.3")`
 
 #### [ActivityIndicatorView](https://github.com/exyte/ActivityIndicatorView)
 exyte · ★ 1.7K · ⟳ 2026-09 · MIT · tag `2.0.2`

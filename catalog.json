@@ -592,7 +592,7 @@
     "focus"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/TextFieldEffects.gif",
    "stars": 6011,
    "pushed": "2024-01-28",
    "license": "MIT",
@@ -913,7 +913,7 @@
     "scroll"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/MarqueeLabel.gif",
    "stars": 4296,
    "pushed": "2025-09-13",
    "license": "MIT",
@@ -1350,7 +1350,7 @@
     "progress"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/ProgressHUD.gif",
    "stars": 2966,
    "pushed": "2026-09-13",
    "license": "MIT",
@@ -1510,7 +1510,7 @@
     "modal"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/SPStorkController.gif",
    "stars": 2718,
    "pushed": "2023-01-31",
    "license": "MIT",
@@ -1681,7 +1681,7 @@
     "modal"
    ],
    "featured": false,
-   "gif": null,
+   "gif": "motion-book/Jelly.gif",
    "stars": 2452,
    "pushed": "2025-11-28",
    "license": "MIT",
