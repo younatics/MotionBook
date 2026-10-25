@@ -438,6 +438,33 @@
    }
   },
   {
+   "title": "CYLTabBarController",
+   "author": "ChenYilong",
+   "category": "Menu",
+   "summary": "Customisable tab bar controller with a raised centre button, badges and animated tab items.",
+   "url": "https://github.com/ChenYilong/CYLTabBarController",
+   "tags": [
+    "tabbar",
+    "uikit",
+    "badge"
+   ],
+   "featured": false,
+   "gif": null,
+   "stars": 7050,
+   "pushed": "2026-10-23",
+   "license": "MIT",
+   "archived": false,
+   "latest_tag": "1.99.55",
+   "install": {
+    "spm": true,
+    "spm_package": ".package(url: \"https://github.com/ChenYilong/CYLTabBarController\", from: \"1.99.55\")",
+    "cocoapods": false,
+    "carthage": false
+   },
+   "live_demo": false,
+   "verified": null
+  },
+  {
    "title": "XLPagerTabStrip",
    "author": "xmartlabs",
    "category": "Transition",
@@ -520,6 +547,33 @@
     "ios": "27.1",
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    }
+  },
+  {
+   "title": "TextFieldEffects",
+   "author": "raulriera",
+   "category": "UI",
+   "summary": "Text field subclasses with the Codrops entrance effects: floating labels, underlines and borders that animate on focus.",
+   "url": "https://github.com/raulriera/TextFieldEffects",
+   "tags": [
+    "textfield",
+    "input",
+    "focus"
+   ],
+   "featured": false,
+   "gif": null,
+   "stars": 6011,
+   "pushed": "2024-01-28",
+   "license": "MIT",
+   "archived": false,
+   "latest_tag": "1.7.0",
+   "install": {
+    "spm": true,
+    "spm_package": ".package(url: \"https://github.com/raulriera/TextFieldEffects\", from: \"1.7.0\")",
+    "cocoapods": false,
+    "carthage": false
+   },
+   "live_demo": false,
+   "verified": null
   },
   {
    "title": "SideMenu",
@@ -624,6 +678,33 @@
     "spm_package": null,
     "cocoapods": true,
     "carthage": true
+   },
+   "live_demo": false,
+   "verified": null
+  },
+  {
+   "title": "ESTabBarController",
+   "author": "eggswift",
+   "category": "Menu",
+   "summary": "Tab bar controller with customisable item animations, badges and a highlighted centre item.",
+   "url": "https://github.com/eggswift/ESTabBarController",
+   "tags": [
+    "tabbar",
+    "badge",
+    "uikit"
+   ],
+   "featured": false,
+   "gif": null,
+   "stars": 5223,
+   "pushed": "2023-05-09",
+   "license": "MIT",
+   "archived": false,
+   "latest_tag": "2.9.0-spm",
+   "install": {
+    "spm": true,
+    "spm_package": ".package(url: \"https://github.com/eggswift/ESTabBarController\", from: \"2.9.0-spm\")",
+    "cocoapods": false,
+    "carthage": false
    },
    "live_demo": false,
    "verified": null
@@ -769,6 +850,33 @@
     "ios": "27.1",
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    }
+  },
+  {
+   "title": "MarqueeLabel",
+   "author": "cbpowell",
+   "category": "UI",
+   "summary": "UILabel replacement that scrolls text that does not fit, with configurable speed, fade and direction.",
+   "url": "https://github.com/cbpowell/MarqueeLabel",
+   "tags": [
+    "label",
+    "text",
+    "scroll"
+   ],
+   "featured": false,
+   "gif": null,
+   "stars": 4296,
+   "pushed": "2025-09-13",
+   "license": "MIT",
+   "archived": false,
+   "latest_tag": "4.5.3",
+   "install": {
+    "spm": true,
+    "spm_package": ".package(url: \"https://github.com/cbpowell/MarqueeLabel\", from: \"4.5.3\")",
+    "cocoapods": false,
+    "carthage": false
+   },
+   "live_demo": false,
+   "verified": null
   },
   {
    "title": "Cards",
@@ -1112,6 +1220,33 @@
    "verified": null
   },
   {
+   "title": "Gifu",
+   "author": "kaishin",
+   "category": "Animation",
+   "summary": "Animated GIF playback for UIImageView with frame caching and memory control.",
+   "url": "https://github.com/kaishin/Gifu",
+   "tags": [
+    "gif",
+    "image",
+    "uikit"
+   ],
+   "featured": false,
+   "gif": null,
+   "stars": 3212,
+   "pushed": "2025-08-17",
+   "license": null,
+   "archived": false,
+   "latest_tag": "v4.0.1",
+   "install": {
+    "spm": true,
+    "spm_package": ".package(url: \"https://github.com/kaishin/Gifu\", from: \"4.0.1\")",
+    "cocoapods": false,
+    "carthage": false
+   },
+   "live_demo": false,
+   "verified": null
+  },
+  {
    "title": "Presentation",
    "author": "hyperoslo",
    "category": "UI",
@@ -1130,6 +1265,33 @@
     "spm_package": null,
     "cocoapods": true,
     "carthage": true
+   },
+   "live_demo": false,
+   "verified": null
+  },
+  {
+   "title": "ProgressHUD",
+   "author": "relatedcode",
+   "category": "Indicator",
+   "summary": "Lightweight HUD with progress, activity-indicator and symbol animations plus banners.",
+   "url": "https://github.com/relatedcode/ProgressHUD",
+   "tags": [
+    "hud",
+    "loading",
+    "progress"
+   ],
+   "featured": false,
+   "gif": null,
+   "stars": 2966,
+   "pushed": "2026-09-13",
+   "license": "MIT",
+   "archived": false,
+   "latest_tag": "15.0.3",
+   "install": {
+    "spm": true,
+    "spm_package": ".package(url: \"https://github.com/relatedcode/ProgressHUD\", from: \"15.0.3\")",
+    "cocoapods": false,
+    "carthage": false
    },
    "live_demo": false,
    "verified": null
@@ -1259,6 +1421,33 @@
    "verified": null
   },
   {
+   "title": "SPStorkController",
+   "author": "ivanvorobei",
+   "category": "Transition",
+   "summary": "Apple Music style modal presentation: a card that slides up and can be dragged down to dismiss.",
+   "url": "https://github.com/ivanvorobei/SPStorkController",
+   "tags": [
+    "presentation",
+    "sheet",
+    "modal"
+   ],
+   "featured": false,
+   "gif": null,
+   "stars": 2718,
+   "pushed": "2023-01-31",
+   "license": "MIT",
+   "archived": false,
+   "latest_tag": "1.8.5",
+   "install": {
+    "spm": true,
+    "spm_package": ".package(url: \"https://github.com/ivanvorobei/SPStorkController\", from: \"1.8.5\")",
+    "cocoapods": false,
+    "carthage": false
+   },
+   "live_demo": false,
+   "verified": null
+  },
+  {
    "title": "Side-Menu.iOS",
    "author": "Yalantis",
    "category": "Menu",
@@ -1276,6 +1465,33 @@
     "spm": false,
     "spm_package": null,
     "cocoapods": true,
+    "carthage": false
+   },
+   "live_demo": false,
+   "verified": null
+  },
+  {
+   "title": "Transition",
+   "author": "Touchwonders",
+   "category": "Transition",
+   "summary": "Interactive, interruptible view controller transitions built from reusable animation and interaction pieces.",
+   "url": "https://github.com/Touchwonders/Transition",
+   "tags": [
+    "transition",
+    "interactive",
+    "navigation"
+   ],
+   "featured": false,
+   "gif": null,
+   "stars": 2623,
+   "pushed": "2020-11-02",
+   "license": "MIT",
+   "archived": false,
+   "latest_tag": "1.3.0",
+   "install": {
+    "spm": true,
+    "spm_package": ".package(url: \"https://github.com/Touchwonders/Transition\", from: \"1.3.0\")",
+    "cocoapods": false,
     "carthage": false
    },
    "live_demo": false,
@@ -1363,6 +1579,33 @@
     "ios": "27.1",
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    }
+  },
+  {
+   "title": "Jelly",
+   "author": "SebastianBoldt",
+   "category": "Transition",
+   "summary": "Animated view controller presentations (slide, fade, shift), interactive or not, in a few lines.",
+   "url": "https://github.com/SebastianBoldt/Jelly",
+   "tags": [
+    "presentation",
+    "transition",
+    "modal"
+   ],
+   "featured": false,
+   "gif": null,
+   "stars": 2452,
+   "pushed": "2025-11-28",
+   "license": "MIT",
+   "archived": false,
+   "latest_tag": "2.3.0",
+   "install": {
+    "spm": true,
+    "spm_package": ".package(url: \"https://github.com/SebastianBoldt/Jelly\", from: \"2.3.0\")",
+    "cocoapods": false,
+    "carthage": false
+   },
+   "live_demo": false,
+   "verified": null
   },
   {
    "title": "Wave",

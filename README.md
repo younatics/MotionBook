@@ -3,16 +3,16 @@
 [![Platform](https://img.shields.io/badge/platform-iOS-green.svg?style=flat)](https://developer.apple.com/ios/)
 ![Language](https://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](LICENSE)
-[![Catalog](https://img.shields.io/badge/catalog-103%20libraries-ee165b.svg?style=flat)](catalog.json)
+[![Catalog](https://img.shields.io/badge/catalog-112%20libraries-ee165b.svg?style=flat)](catalog.json)
 [![Refresh](https://github.com/younatics/MotionBook/actions/workflows/refresh.yml/badge.svg)](https://github.com/younatics/MotionBook/actions/workflows/refresh.yml)
 
 <a href="https://apps.apple.com/app/id1205163580"><img src="Images/appstore.png" width="170" height="58" alt="Download on the App Store"></a>
 
-**103 open-source motion, transition and UI libraries for iOS**, with the real thing running inside the [MotionBook app](https://apps.apple.com/app/id1205163580) for 59 of them. Every entry carries its GitHub stars, last push, license, latest tag, how to install it (Swift Package Manager / CocoaPods / Carthage) and, for the live ones, the Xcode version it was last built and run with.
+**112 open-source motion, transition and UI libraries for iOS**, with the real thing running inside the [MotionBook app](https://apps.apple.com/app/id1205163580) for 59 of them. Every entry carries its GitHub stars, last push, license, latest tag, how to install it (Swift Package Manager / CocoaPods / Carthage) and, for the live ones, the Xcode version it was last built and run with.
 
 - **People**: browse the list below or the [web catalog](https://younatics.github.io/MotionBook/) with previews.
 - **Agents and tools**: read [`catalog.json`](catalog.json) (schema: [`schema/catalog.schema.json`](schema/catalog.schema.json)) or [`llms.txt`](llms.txt). Everything on this page is generated from that file by `scripts/render.py`.
-- **Freshness**: GitHub numbers refreshed `2026-10-25` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 33 marked inactive (no push since 2021) or archived.
+- **Freshness**: GitHub numbers refreshed `2026-10-25` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 34 marked inactive (no push since 2021) or archived.
 
 ## Use it from an agent
 
@@ -37,7 +37,7 @@ python3 scripts/render.py
 
 Grouped by category, sorted by stars. ★ = GitHub stars · ⟳ = last push · badges: ▶ live in the app, SwiftUI, SPM, CocoaPods, Carthage, Archived / Inactive.
 
-[Animation](#animation) (30) · [Transition](#transition) (16) · [UI](#ui) (20) · [Menu](#menu) (8) · [Alert](#alert) (11) · [Collection View](#collection-view) (7) · [Table View](#table-view) (5) · [Indicator](#indicator) (6)
+[Animation](#animation) (31) · [Transition](#transition) (19) · [UI](#ui) (22) · [Menu](#menu) (10) · [Alert](#alert) (11) · [Collection View](#collection-view) (7) · [Table View](#table-view) (5) · [Indicator](#indicator) (7)
 
 ### Animation
 
@@ -117,6 +117,13 @@ cruisediary · ★ 3.5K · ⟳ 2026-03 · MIT · tag `1.0.0`
 🎨Gradient animation effect like Instagram
 
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/Pastel.gif) · `.package(url: "https://github.com/cruisediary/Pastel", from: "1.0.0")`
+
+#### [Gifu](https://github.com/kaishin/Gifu)
+kaishin · ★ 3.2K · ⟳ 2025-08 · tag `v4.0.1`
+
+Animated GIF playback for UIImageView with frame caching and memory control.
+
+`SPM` · `.package(url: "https://github.com/kaishin/Gifu", from: "4.0.1")`
 
 #### [Stellar](https://github.com/AugustRush/Stellar)
 AugustRush · ★ 2.9K · ⟳ 2019-07 · MIT · tag `0.67`
@@ -295,12 +302,33 @@ BWWalkthrough (BWWT) is a class that helps you create Walkthroughs for your iOS 
 
 `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/BWWalkthrough.gif) · `.package(url: "https://github.com/ariok/BWWalkthrough", from: "4.0.2")`
 
+#### [SPStorkController](https://github.com/ivanvorobei/SPStorkController)
+ivanvorobei · ★ 2.7K · ⟳ 2023-01 · MIT · tag `1.8.5`
+
+Apple Music style modal presentation: a card that slides up and can be dragged down to dismiss.
+
+`SPM` · `.package(url: "https://github.com/ivanvorobei/SPStorkController", from: "1.8.5")`
+
+#### [Transition](https://github.com/Touchwonders/Transition)
+Touchwonders · ★ 2.6K · ⟳ 2020-11 · MIT · tag `1.3.0`
+
+Interactive, interruptible view controller transitions built from reusable animation and interaction pieces.
+
+`SPM` · `Inactive since 2020` · `.package(url: "https://github.com/Touchwonders/Transition", from: "1.3.0")`
+
 #### [AnimatedTransitionGallery](https://github.com/shu223/AnimatedTransitionGallery)
 shu223 · ★ 2.5K · ⟳ 2024-04
 
 Collection of custom animated transitions for iOS using UIViewControllerAnimatedTransitioning protocol.
 
 [preview GIF](motion-book/AnimatedTransitionGallery.gif)
+
+#### [Jelly](https://github.com/SebastianBoldt/Jelly)
+SebastianBoldt · ★ 2.5K · ⟳ 2025-11 · MIT · tag `2.3.0`
+
+Animated view controller presentations (slide, fade, shift), interactive or not, in a few lines.
+
+`SPM` · `.package(url: "https://github.com/SebastianBoldt/Jelly", from: "2.3.0")`
 
 #### [AMWaveTransition](https://github.com/andreamazz/AMWaveTransition)
 andreamazz · ★ 2.3K · ⟳ 2020-06 · MIT · tag `0.6.2`
@@ -380,6 +408,20 @@ lexrus · ★ 8.1K · ⟳ 2026-03 · MIT · tag `0.9.3`
 A morphing UILabel subclass written in Swift. The .Scale effect mimicked Apple's QuickType animation of iOS 8 in WWDC 2014. New morphing effects are available as Swift extensions.
 
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/LTMorphingLabel.gif) · `.package(url: "https://github.com/lexrus/LTMorphingLabel", from: "0.9.3")`
+
+#### [TextFieldEffects](https://github.com/raulriera/TextFieldEffects)
+raulriera · ★ 6.0K · ⟳ 2024-01 · MIT · tag `1.7.0`
+
+Text field subclasses with the Codrops entrance effects: floating labels, underlines and borders that animate on focus.
+
+`SPM` · `.package(url: "https://github.com/raulriera/TextFieldEffects", from: "1.7.0")`
+
+#### [MarqueeLabel](https://github.com/cbpowell/MarqueeLabel)
+cbpowell · ★ 4.3K · ⟳ 2025-09 · MIT · tag `4.5.3`
+
+UILabel replacement that scrolls text that does not fit, with configurable speed, fade and direction.
+
+`SPM` · `.package(url: "https://github.com/cbpowell/MarqueeLabel", from: "4.5.3")`
 
 #### [Cards](https://github.com/PaoloCuscela/Cards)
 PaoloCuscela · ★ 4.2K · ⟳ 2023-04 · MIT · tag `1.4.0`
@@ -516,12 +558,26 @@ RAMAnimatedTabBarController is a Swift module for adding animation to tabbar ite
 
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/animated-tab-bar.gif) · `.package(url: "https://github.com/Ramotion/animated-tab-bar", from: "5.1.0")`
 
+#### [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController)
+ChenYilong · ★ 7.0K · ⟳ 2026-10 · MIT · tag `1.99.55`
+
+Customisable tab bar controller with a raised centre button, badges and animated tab items.
+
+`SPM` · `.package(url: "https://github.com/ChenYilong/CYLTabBarController", from: "1.99.55")`
+
 #### [SideMenu](https://github.com/jonkykong/SideMenu)
 jonkykong · ★ 5.8K · ⟳ 2023-02 · MIT · tag `6.5.0`
 
 Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+.
 
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/SideMenu.gif) · `.package(url: "https://github.com/jonkykong/SideMenu", from: "6.5.0")`
+
+#### [ESTabBarController](https://github.com/eggswift/ESTabBarController)
+eggswift · ★ 5.2K · ⟳ 2023-05 · MIT · tag `2.9.0-spm`
+
+Tab bar controller with customisable item animations, badges and a highlighted centre item.
+
+`SPM` · `.package(url: "https://github.com/eggswift/ESTabBarController", from: "2.9.0-spm")`
 
 #### [circle-menu](https://github.com/Ramotion/circle-menu)
 Ramotion · ★ 3.4K · ⟳ 2022-07 · MIT · tag `4.1.0`
@@ -747,6 +803,13 @@ pkluz · ★ 3.8K · ⟳ 2023-02 · MIT · tag `5.4.0`
 A Swift based reimplementation of the Apple HUD (Volume, Ringer, Rotation,…) for iOS 8.
 
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/PKHUD.gif) · `.package(url: "https://github.com/pkluz/PKHUD", from: "5.4.0")`
+
+#### [ProgressHUD](https://github.com/relatedcode/ProgressHUD)
+relatedcode · ★ 3.0K · ⟳ 2026-09 · MIT · tag `15.0.3`
+
+Lightweight HUD with progress, activity-indicator and symbol animations plus banners.
+
+`SPM` · `.package(url: "https://github.com/relatedcode/ProgressHUD", from: "15.0.3")`
 
 #### [ActivityIndicatorView](https://github.com/exyte/ActivityIndicatorView)
 exyte · ★ 1.7K · ⟳ 2026-09 · MIT · tag `2.0.2`
