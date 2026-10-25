@@ -297,7 +297,25 @@ function apply(){{const t=q.value.toLowerCase();document.querySelectorAll('.card
 """
 
 
-OUTPUTS = {"README.md": render_readme, "llms.txt": render_llms, "docs/index.html": render_site}
+def render_robots(doc: dict) -> str:
+    return "User-agent: *\nAllow: /\n"
+
+
+def render_catalog_copy(doc: dict) -> str:
+    """The site serves only docs/, so agents get /catalog.json and /llms.txt next to the page."""
+    return json.dumps(doc, indent=1, ensure_ascii=False) + "\n"
+
+
+OUTPUTS = {
+    "README.md": render_readme,
+    "llms.txt": render_llms,
+    "docs/index.html": render_site,
+    # GitHub Pages publishes docs/ only: without these copies https://younatics.github.io/MotionBook/llms.txt
+    # and /catalog.json were 404 (2026-10-25), i.e. invisible to agents that look for the llms.txt convention.
+    "docs/llms.txt": render_llms,
+    "docs/catalog.json": render_catalog_copy,
+    "docs/robots.txt": render_robots,
+}
 
 
 def main() -> int:
