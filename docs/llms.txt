@@ -97,11 +97,6 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 - [Advance](https://github.com/timdonnelly/Advance): A physics-based animation framework for direct manipulation, gestures, and playful interface motion. (4.5K stars, pushed 2022-05-16; SPM, archived)
 - [Pow](https://github.com/EmergeTools/Pow): Delightful SwiftUI effects for your app (4.4K stars, pushed 2026-04-13; live demo, SwiftUI, SPM)
   ```swift
-  private static let transitions: [(name: String, transition: AnyTransition)] = [
-      ("anvil", .movingParts.anvil),
-      ("poof", .movingParts.poof),
-      ("boing", .movingParts.boing),
-
   .changeEffect(.spray(origin: .center) { Image(systemName: "heart.fill").foregroundColor(.red) }, value: likes, isEnabled: isLiked)
 
   .changeEffect(.jump(height: 24), value: taps)

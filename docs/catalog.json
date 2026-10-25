@@ -898,7 +898,7 @@
     "ios": "27.1",
     "via": "MotionBook app 3.6 live demo (built, run and screenshot-reviewed)"
    },
-   "usage": "private static let transitions: [(name: String, transition: AnyTransition)] = [\n    (\"anvil\", .movingParts.anvil),\n    (\"poof\", .movingParts.poof),\n    (\"boing\", .movingParts.boing),\n\n.changeEffect(.spray(origin: .center) { Image(systemName: \"heart.fill\").foregroundColor(.red) }, value: likes, isEnabled: isLiked)\n\n.changeEffect(.jump(height: 24), value: taps)\n\n.changeEffect(.spin, value: taps)\n\n    .conditionalEffect(.smoke, condition: isSmoking)\nText(\"Repeat\").demoChip()\n\n    .conditionalEffect(.repeat(.jump(height: 12), every: 1.2), condition: true)\nText(\"Push down\").demoChip()",
+   "usage": ".changeEffect(.spray(origin: .center) { Image(systemName: \"heart.fill\").foregroundColor(.red) }, value: likes, isEnabled: isLiked)\n\n.changeEffect(.jump(height: 24), value: taps)\n\n.changeEffect(.spin, value: taps)\n\n    .conditionalEffect(.smoke, condition: isSmoking)\nText(\"Repeat\").demoChip()\n\n    .conditionalEffect(.repeat(.jump(height: 12), every: 1.2), condition: true)\nText(\"Push down\").demoChip()",
    "usage_language": "swift"
   },
   {
