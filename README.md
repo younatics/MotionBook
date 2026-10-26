@@ -12,7 +12,7 @@
 
 - **People**: browse the list below or the [web catalog](https://younatics.github.io/MotionBook/) with previews.
 - **Agents and tools**: read [`catalog.json`](catalog.json) (schema: [`schema/catalog.schema.json`](schema/catalog.schema.json)) or [`llms.txt`](llms.txt). Everything on this page is generated from that file by `scripts/render.py`.
-- **Freshness**: GitHub numbers refreshed `2026-10-25` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 34 marked inactive (no push since 2021) or archived.
+- **Freshness**: GitHub numbers refreshed `2026-10-26` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 34 marked inactive (no push since 2021) or archived.
 
 ## Use it from an agent
 
@@ -267,13 +267,13 @@ Windless makes it easy to implement invisible layout loading view.
 `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/Windless.gif) · `.package(url: "https://github.com/ParkGwangBeom/Windless", from: "0.1.5")`
 
 #### [Highlighter](https://github.com/younatics/Highlighter)
-younatics · ★ 921 · ⟳ 2026-10 · MIT · tag `2.1.0`
+younatics · ★ 921 · ⟳ 2026-10 · MIT · tag `2.1.1`
 
 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.
 
 <sub>highlight · search · text · uilabel · uitextview</sub>
 
-`▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/Highlighter.gif) · `.package(url: "https://github.com/younatics/Highlighter", from: "2.1.0")`
+`▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/Highlighter.gif) · `.package(url: "https://github.com/younatics/Highlighter", from: "2.1.1")`
 
 #### [Liquid](https://github.com/maustinstar/liquid)
 maustinstar · ★ 856 · ⟳ 2024-08 · MIT · tag `v0.0.2`
@@ -285,7 +285,7 @@ Create a playful backsplash in SwiftUI.
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Liquid.gif) · `.package(url: "https://github.com/maustinstar/liquid", from: "0.0.2")`
 
 #### [rive-ios](https://github.com/rive-app/rive-ios)
-rive-app · ★ 851 · ⟳ 2026-10 · MIT · tag `6.28.1`
+rive-app · ★ 854 · ⟳ 2026-10 · MIT · tag `6.28.1`
 
 iOS runtime for Rive
 

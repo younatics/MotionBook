@@ -1,6 +1,6 @@
 # MotionBook
 
-> Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 64 of them live. Stats as of 2026-10-25.
+> Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 64 of them live. Stats as of 2026-10-26.
 
 Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with. Entries with a live demo also carry `usage`: a minimal Swift snippet copied from the demo source, so it compiles against the pinned version; the same snippet is shown under the library below. Every entry has `tags`: plain search words for what the library does (component names, behaviours, look-alikes such as tinder or apple music), listed after the summary.
 
@@ -244,7 +244,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   ```
 - [GlitchLabel](https://github.com/kciter/GlitchLabel): G..lit...c...hing UILa..bel fo..r iO...S (1.0K stars, pushed 2022-12-23; SPM, CocoaPods, Carthage; tags: label, text, glitch, text animation, uilabel)
 - [Windless](https://github.com/ParkGwangBeom/Windless): Windless makes it easy to implement invisible layout loading view. (947 stars, pushed 2022-07-14; SPM, CocoaPods, Carthage; tags: skeleton, loading, placeholder, shimmer, layout)
-- [Highlighter](https://github.com/younatics/Highlighter): 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class. (921 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage; tags: highlight, search, text, uilabel, uitextview)
+- [Highlighter](https://github.com/younatics/Highlighter): 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class. (921 stars, pushed 2026-10-25; live demo, SPM, CocoaPods, Carthage; tags: highlight, search, text, uilabel, uitextview)
   Call highlight(text:normal:highlight:) on any Highlightable view; a non-matching query resets it (2.1.1).
   ```swift
   for view in highlightables {
@@ -268,7 +268,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   Liquid(samples: 8, period: 8).frame(width: 90, height: 90).foregroundColor(.orange)
   Liquid(samples: 12, period: 4).frame(width: 90, height: 90).foregroundColor(.teal)
   ```
-- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (851 stars, pushed 2026-10-24; live demo, SPM; tags: rive, runtime, vector, animation, state machine, interactive)
+- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (854 stars, pushed 2026-10-24; live demo, SPM; tags: rive, runtime, vector, animation, state machine, interactive)
   RiveViewModel loads a .riv file; its view plays the animation and the model controls playback.
   ```swift
   @StateObject private var logo = RiveViewModel(fileName: "rive_animation_logo", in: .module)
