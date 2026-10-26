@@ -2,7 +2,7 @@
 
 > Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 64 of them live. Stats as of 2026-10-25.
 
-Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with. Entries with a live demo also carry `usage`: a minimal Swift snippet copied from the demo source, so it compiles against the pinned version; the same snippet is shown under the library below.
+Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with. Entries with a live demo also carry `usage`: a minimal Swift snippet copied from the demo source, so it compiles against the pinned version; the same snippet is shown under the library below. Every entry has `tags`: plain search words for what the library does (component names, behaviours, look-alikes such as tinder or apple music), listed after the summary.
 
 ## Catalog
 
@@ -16,7 +16,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
 ### Animation
 
-- [Lottie](https://github.com/airbnb/lottie-ios): Render After Effects animations natively and keep product motion consistent across screens. (27K stars, pushed 2026-10-06; live demo, SPM)
+- [Lottie](https://github.com/airbnb/lottie-ios): Render After Effects animations natively and keep product motion consistent across screens. (27K stars, pushed 2026-10-06; live demo, SPM; tags: vector, after effects, json, animation, bodymovin, keyframes)
   LottieAnimationView plays an exported JSON animation; set loop mode or play a progress range.
   ```swift
   private let animationView = LottieAnimationView()
@@ -27,8 +27,8 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   animationView.play(fromProgress: toggled ? 0 : 0.5, toProgress: toggled ? 0.5 : 1, loopMode: .playOnce)
   ```
-- [Pop](https://github.com/facebookarchive/pop): Classic extensible animation primitives for spring and decay motion in UIKit apps. (20K stars, pushed 2020-01-02; CocoaPods, archived)
-- [Spring](https://github.com/MengTo/Spring): A library to simplify iOS animations in Swift. (14K stars, pushed 2023-07-03; live demo, CocoaPods)
+- [Pop](https://github.com/facebookarchive/pop): Classic extensible animation primitives for spring and decay motion in UIKit apps. (20K stars, pushed 2020-01-02; CocoaPods, archived; tags: spring, decay, classic, physics, animation engine, objective-c, facebook)
+- [Spring](https://github.com/MengTo/Spring): A library to simplify iOS animations in Swift. (14K stars, pushed 2023-07-03; live demo, CocoaPods; tags: prototype, easing, spring, animation, uiview, interface builder)
   SpringView (from the storyboard) animates with the animation, curve, force, duration and delay you set.
   ```swift
   ballView.animate()
@@ -40,7 +40,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   ballView.animation = animations[selectedRow].rawValue
   ballView.curve = animationCurves[selectedEasing].rawValue
   ```
-- [SkeletonView](https://github.com/Juanpe/SkeletonView): Today almost all apps have async processes, such as Api requests, long running processes, etc. And while the processes are working, usually developers place a loading view to show users that something is going on.SkeletonView has been conceived to address this need, an elegant way to show users that something is happening and also prepare them to which contents he is waiting. (13K stars, pushed 2026-06-23; live demo, SPM, CocoaPods, Carthage)
+- [SkeletonView](https://github.com/Juanpe/SkeletonView): Today almost all apps have async processes, such as Api requests, long running processes, etc. And while the processes are working, usually developers place a loading view to show users that something is going on.SkeletonView has been conceived to address this need, an elegant way to show users that something is happening and also prepare them to which contents he is waiting. (13K stars, pushed 2026-06-23; live demo, SPM, CocoaPods, Carthage; tags: skeleton, loading, placeholder, shimmer, redacted, table view, collection view)
   Mark views skeletonable, show an animated gradient skeleton while loading, then hide it with a transition.
   ```swift
   stack.isSkeletonable = true
@@ -53,7 +53,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   title.isSkeletonable = true
   title.linesCornerRadius = 6
   ```
-- [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage): FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do (7.9K stars, pushed 2024-03-21; live demo, SPM, CocoaPods)
+- [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage): FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do (7.9K stars, pushed 2024-03-21; live demo, SPM, CocoaPods; tags: gif, image, animated image, performance, objective-c, flipboard)
   FLAnimatedImage decodes GIF data; FLAnimatedImageView plays it frame by frame with flat memory use.
   ```swift
   private let imageView = FLAnimatedImageView()
@@ -62,7 +62,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   imageView.animatedImage = image
   ```
-- [ViewAnimator](https://github.com/marcosgriselli/ViewAnimator): Animate collection and table view content with concise, reusable item animations. (7.3K stars, pushed 2024-03-31; live demo, SPM)
+- [ViewAnimator](https://github.com/marcosgriselli/ViewAnimator): Animate collection and table view content with concise, reusable item animations. (7.3K stars, pushed 2024-03-31; live demo, SPM; tags: list, collection, stagger, table view, collection view, animation)
   Animate a list of views at once with direction, zoom and rotation animations and staggered timing.
   ```swift
   let animations: [Animation]
@@ -77,7 +77,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   }
   UIView.animate(views: cells, animations: animations, duration: 0.6)
   ```
-- [Macaw](https://github.com/exyte/Macaw): Powerful and easy-to-use vector graphics Swift library with SVG support (6.0K stars, pushed 2024-02-07; live demo, SPM, CocoaPods, Carthage)
+- [Macaw](https://github.com/exyte/Macaw): Powerful and easy-to-use vector graphics Swift library with SVG support (6.0K stars, pushed 2024-02-07; live demo, SPM, CocoaPods, Carthage; tags: vector, svg, drawing, graphics, animation)
   Build a scene graph of shapes, animate their placeVar, opacityVar and fillVar, and play the animations.
   ```swift
   macawView = MacawView(node: makeScene(side: side), frame: CGRect(x: 0, y: 0, width: side, height: side))
@@ -99,9 +99,9 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   ]
   return Group(contents: [ring, square, ball, dot])
   ```
-- [ScrollableGraphView](https://github.com/philackm/ScrollableGraphView): An adaptive scrollable graph view for iOS to visualise simple discrete datasets. Written in Swift. (5.3K stars, pushed 2020-12-02; CocoaPods, Carthage, inactive)
-- [Advance](https://github.com/timdonnelly/Advance): A physics-based animation framework for direct manipulation, gestures, and playful interface motion. (4.5K stars, pushed 2022-05-16; SPM, archived)
-- [Pow](https://github.com/EmergeTools/Pow): Delightful SwiftUI effects for your app (4.4K stars, pushed 2026-04-13; live demo, SwiftUI, SPM)
+- [ScrollableGraphView](https://github.com/philackm/ScrollableGraphView): An adaptive scrollable graph view for iOS to visualise simple discrete datasets. Written in Swift. (5.3K stars, pushed 2020-12-02; CocoaPods, Carthage, inactive; tags: chart, graph, line chart, data, visualization, scroll)
+- [Advance](https://github.com/timdonnelly/Advance): A physics-based animation framework for direct manipulation, gestures, and playful interface motion. (4.5K stars, pushed 2022-05-16; SPM, archived; tags: physics, gesture, simulation, spring, interactive, animation engine)
+- [Pow](https://github.com/EmergeTools/Pow): Delightful SwiftUI effects for your app (4.4K stars, pushed 2026-04-13; live demo, SwiftUI, SPM; tags: swiftui, effects, transitions, particles, change effect, animation)
   Change effects fire when a value changes, transitions animate insertion and removal, conditional effects run while a condition holds.
   ```swift
   .changeEffect(.spray(origin: .center) { Image(systemName: "heart.fill").foregroundColor(.red) }, value: likes, isEnabled: isLiked)
@@ -116,7 +116,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       .conditionalEffect(.repeat(.jump(height: 12), every: 1.2), condition: true)
   Text("Push down").demoChip()
   ```
-- [Pastel](https://github.com/cruisediary/Pastel): 🎨Gradient animation effect like Instagram (3.5K stars, pushed 2026-03-24; live demo, SPM, CocoaPods, Carthage)
+- [Pastel](https://github.com/cruisediary/Pastel): 🎨Gradient animation effect like Instagram (3.5K stars, pushed 2026-03-24; live demo, SPM, CocoaPods, Carthage; tags: gradient, background, branding, instagram, animation)
   PastelView animates a gradient between the given colours; insert it behind your content and start.
   ```swift
   let pastelView = PastelView(frame: view.bounds)
@@ -133,10 +133,10 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   pastelView.startAnimation()
   view.insertSubview(pastelView, at: 0)
   ```
-- [Gifu](https://github.com/kaishin/Gifu): Animated GIF playback for UIImageView with frame caching and memory control. (3.2K stars, pushed 2025-08-17; SPM)
-- [Stellar](https://github.com/AugustRush/Stellar): A fantastic Physical animation library for swift(Not Just Spring !!!), it is base on UIDynamic and extension to it, friendly APIs make you use it or custom your own animation very easily! (2.9K stars, pushed 2019-07-31; SPM, CocoaPods, Carthage, inactive)
-- [paper-switch](https://github.com/Ramotion/paper-switch): RAMPaperSwitch is a Swift material design UI module which paints over the parent view when the switch is turned on. (2.9K stars, pushed 2022-01-25; SPM, CocoaPods, Carthage)
-- [ConfettiSwiftUI](https://github.com/simibac/ConfettiSwiftUI): SwiftUI Package for Configurable Confetti Animation 🎉 (2.5K stars, pushed 2026-01-05; live demo, SwiftUI, SPM)
+- [Gifu](https://github.com/kaishin/Gifu): Animated GIF playback for UIImageView with frame caching and memory control. (3.2K stars, pushed 2025-08-17; SPM; tags: gif, image, uikit, animated image, uiimageview)
+- [Stellar](https://github.com/AugustRush/Stellar): A fantastic Physical animation library for swift(Not Just Spring !!!), it is base on UIDynamic and extension to it, friendly APIs make you use it or custom your own animation very easily! (2.9K stars, pushed 2019-07-31; SPM, CocoaPods, Carthage, inactive; tags: physics, uidynamics, animation, spring, gravity, snap)
+- [paper-switch](https://github.com/Ramotion/paper-switch): RAMPaperSwitch is a Swift material design UI module which paints over the parent view when the switch is turned on. (2.9K stars, pushed 2022-01-25; SPM, CocoaPods, Carthage; tags: switch, toggle, material design, fill, uiswitch)
+- [ConfettiSwiftUI](https://github.com/simibac/ConfettiSwiftUI): SwiftUI Package for Configurable Confetti Animation 🎉 (2.5K stars, pushed 2026-01-05; live demo, SwiftUI, SPM; tags: swiftui, confetti, particles, celebration, effects)
   One modifier per cannon; bump the trigger to fire, pick shapes, emoji or SF Symbols, angles, radius and repeats.
   ```swift
   Button { cannon += 1 } label: { Text("🎉  Cannon").font(.title2.bold()) }
@@ -156,7 +156,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
           repetitionInterval: 0.7
       )
   ```
-- [Wave](https://github.com/jtrivedi/Wave): Wave is a spring-based animation engine for iOS and macOS that makes it easy to create fluid, interruptible animations that feel great. (2.4K stars, pushed 2026-03-25; live demo, SPM)
+- [Wave](https://github.com/jtrivedi/Wave): Wave is a spring-based animation engine for iOS and macOS that makes it easy to create fluid, interruptible animations that feel great. (2.4K stars, pushed 2026-03-25; live demo, SPM; tags: spring, gesture, engine, animation engine, interruptible, uikit)
   Spring-animate any view's animator properties; pass the gesture velocity so a release continues the motion.
   ```swift
   private let spring = Spring(dampingRatio: 0.55, response: 0.7)
@@ -181,7 +181,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       }
   }
   ```
-- [RQShineLabel](https://github.com/zipme/RQShineLabel): A UILabel subclass that lets you animate text similar to Secret app. (1.9K stars, pushed 2023-12-25; live demo, SPM, CocoaPods)
+- [RQShineLabel](https://github.com/zipme/RQShineLabel): A UILabel subclass that lets you animate text similar to Secret app. (1.9K stars, pushed 2023-12-25; live demo, SPM, CocoaPods; tags: label, text, text animation, fade, secret app, objective-c)
   RQShineLabel shines its text in letter by letter; call shine, then fade it out.
   ```objc
   self.shineLabel = ({
@@ -198,9 +198,9 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   [self.shineLabel shine];
   ```
-- [YLGIFImage](https://github.com/liyong03/YLGIFImage): Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory. (1.8K stars, pushed 2020-12-19; CocoaPods, inactive)
-- [AnimatedMaskLabel](https://github.com/jogendra/LoadingShimmer): Nice gradient animated label that enable an easy way to add a shimmering effect (1.6K stars, pushed 2022-10-22; CocoaPods, Carthage)
-- [Vortex](https://github.com/twostraws/Vortex): High-performance particle effects for SwiftUI. (1.6K stars, pushed 2026-04-03; live demo, SwiftUI, SPM)
+- [YLGIFImage](https://github.com/liyong03/YLGIFImage): Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory. (1.8K stars, pushed 2020-12-19; CocoaPods, inactive; tags: gif, image, image viewer, animated image, memory, objective-c)
+- [AnimatedMaskLabel](https://github.com/jogendra/LoadingShimmer): Nice gradient animated label that enable an easy way to add a shimmering effect (1.6K stars, pushed 2022-10-22; CocoaPods, Carthage; tags: label, text, gradient, shimmer, slide to unlock)
+- [Vortex](https://github.com/twostraws/Vortex): High-performance particle effects for SwiftUI. (1.6K stars, pushed 2026-04-03; live demo, SwiftUI, SPM; tags: swiftui, particles, effects, confetti, snow, fireworks)
   VortexView renders a particle system (built-in presets or custom) from tagged particle views; the reader proxy bursts on demand.
   ```swift
   VortexViewReader { proxy in
@@ -213,7 +213,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   Button("Burst") { proxy.burst() }
   ```
-- [Motion (b3ll)](https://github.com/b3ll/Motion): Animation engine for gesturally-driven user interfaces, animations, and interactions on iOS, macOS, and tvOS. (1.5K stars, pushed 2024-10-19; live demo, SPM)
+- [Motion (b3ll)](https://github.com/b3ll/Motion): Animation engine for gesturally-driven user interfaces, animations, and interactions on iOS, macOS, and tvOS. (1.5K stars, pushed 2024-10-19; live demo, SPM; tags: spring, gesture, engine, animation engine, interruptible, interactive)
   A SpringAnimation drives a value; update it while dragging, then hand over the velocity and start.
   ```swift
   private let spring = SpringAnimation<CGPoint>()
@@ -228,8 +228,8 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       spring.velocity = gesture.velocity(in: view)
       spring.start()
   ```
-- [Ease](https://github.com/roberthein/Ease): Ease is a event driven animation system that combines the observer pattern with custom spring animations as observers. (1.3K stars, pushed 2020-07-14; SPM, CocoaPods, inactive)
-- [RevealingSplashView](https://github.com/PiXeL16/RevealingSplashView): A Splash view that animates and reveals its content, inspired by Twitter splash (1.2K stars, pushed 2025-03-30; live demo, SPM, CocoaPods, Carthage)
+- [Ease](https://github.com/roberthein/Ease): Ease is a event driven animation system that combines the observer pattern with custom spring animations as observers. (1.3K stars, pushed 2020-07-14; SPM, CocoaPods, inactive; tags: easing, spring, observer, scroll, gyroscope, animation)
+- [RevealingSplashView](https://github.com/PiXeL16/RevealingSplashView): A Splash view that animates and reveals its content, inspired by Twitter splash (1.2K stars, pushed 2025-03-30; live demo, SPM, CocoaPods, Carthage; tags: splash, launch screen, reveal, twitter, logo)
   Create a splash with an icon, pick an animationType and duration, add it over the view and start.
   ```swift
   let splash = RevealingSplashView(iconImage: icon, iconInitialSize: CGSize(width: 90, height: 90), backgroundColor: DemoSupport.accent)
@@ -242,9 +242,9 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   view.addSubview(splash)
   splash.startAnimation()
   ```
-- [GlitchLabel](https://github.com/kciter/GlitchLabel): G..lit...c...hing UILa..bel fo..r iO...S (1.0K stars, pushed 2022-12-23; SPM, CocoaPods, Carthage)
-- [Windless](https://github.com/ParkGwangBeom/Windless): Windless makes it easy to implement invisible layout loading view. (947 stars, pushed 2022-07-14; SPM, CocoaPods, Carthage)
-- [Highlighter](https://github.com/younatics/Highlighter): 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class. (921 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
+- [GlitchLabel](https://github.com/kciter/GlitchLabel): G..lit...c...hing UILa..bel fo..r iO...S (1.0K stars, pushed 2022-12-23; SPM, CocoaPods, Carthage; tags: label, text, glitch, text animation, uilabel)
+- [Windless](https://github.com/ParkGwangBeom/Windless): Windless makes it easy to implement invisible layout loading view. (947 stars, pushed 2022-07-14; SPM, CocoaPods, Carthage; tags: skeleton, loading, placeholder, shimmer, layout)
+- [Highlighter](https://github.com/younatics/Highlighter): 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class. (921 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage; tags: highlight, search, text, uilabel, uitextview)
   Call highlight(text:normal:highlight:) on any Highlightable view; a non-matching query resets it (2.1.1).
   ```swift
   for view in highlightables {
@@ -252,7 +252,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       (view as? Highlightable)?.highlight(text: query, normal: normal, highlight: highlight)
   }
   ```
-- [Liquid](https://github.com/maustinstar/liquid): Create a playful backsplash in SwiftUI. (856 stars, pushed 2024-08-19; live demo, SwiftUI, SPM)
+- [Liquid](https://github.com/maustinstar/liquid): Create a playful backsplash in SwiftUI. (856 stars, pushed 2024-08-19; live demo, SwiftUI, SPM; tags: swiftui, blob, backsplash, shapes, animation, background)
   Liquid() is a morphing blob view; samples and period control the shape and speed.
   ```swift
   Liquid()
@@ -268,7 +268,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   Liquid(samples: 8, period: 8).frame(width: 90, height: 90).foregroundColor(.orange)
   Liquid(samples: 12, period: 4).frame(width: 90, height: 90).foregroundColor(.teal)
   ```
-- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (851 stars, pushed 2026-10-24; live demo, SPM)
+- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (851 stars, pushed 2026-10-24; live demo, SPM; tags: rive, runtime, vector, animation, state machine, interactive)
   RiveViewModel loads a .riv file; its view plays the animation and the model controls playback.
   ```swift
   @StateObject private var logo = RiveViewModel(fileName: "rive_animation_logo", in: .module)
@@ -284,8 +284,8 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       tree.play()
   }
   ```
-- [URWeatherView](https://github.com/Urtaq/URWeatherView): Show the weather effects onto view written in Swift3 (447 stars, pushed 2019-01-07; CocoaPods, Carthage, inactive)
-- [AnimateText](https://github.com/jasudev/AnimateText): This library for animating text. Developed with SwiftUI. This library supports iOS/macOS. (432 stars, pushed 2024-02-13; live demo, SwiftUI, SPM)
+- [URWeatherView](https://github.com/Urtaq/URWeatherView): Show the weather effects onto view written in Swift3 (447 stars, pushed 2019-01-07; CocoaPods, Carthage, inactive; tags: weather, effects, rain, snow, shader, particles)
+- [AnimateText](https://github.com/jasudev/AnimateText): This library for animating text. Developed with SwiftUI. This library supports iOS/macOS. (432 stars, pushed 2024-02-13; live demo, SwiftUI, SPM; tags: swiftui, text, animation, text animation, typing, typography)
   AnimateText<Effect> animates a bound string letter by letter; reset the text to replay.
   ```swift
   case 0: AnimateText<ATCurtainEffect>($text)
@@ -299,11 +299,11 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       }
   }
   ```
-- [Gecco](https://github.com/xai3/Gecco): Simply highlight items for your tutorial walkthrough, written in Swift. Gecco means Moonlight in Japanese. (19 stars, pushed 2020-09-16; CocoaPods, Carthage, inactive)
+- [Gecco](https://github.com/xai3/Gecco): Simply highlight items for your tutorial walkthrough, written in Swift. Gecco means Moonlight in Japanese. (19 stars, pushed 2020-09-16; CocoaPods, Carthage, inactive; tags: tutorial, walkthrough, spotlight, highlight, onboarding, coach mark)
 
 ### Transition
 
-- [Hero](https://github.com/HeroTransitions/Hero): Hero is a library for building iOS view controller transitions. It provides a layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers. (22K stars, pushed 2025-01-23; live demo, SPM, CocoaPods, Carthage)
+- [Hero](https://github.com/HeroTransitions/Hero): Hero is a library for building iOS view controller transitions. It provides a layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers. (22K stars, pushed 2025-01-23; live demo, SPM, CocoaPods, Carthage; tags: transition, navigation, interactive, shared element, material design, view controller)
   Give matching views the same heroID, add heroModifiers, and replace or push view controllers with Hero enabled.
   ```swift
   cell.heroModifiers = [.fade, .translate(x:-100)]
@@ -321,7 +321,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
     }
   }
   ```
-- [XLPagerTabStrip](https://github.com/xmartlabs/XLPagerTabStrip): XLPagerTabStrip is a Container View Controller that allows us to switch easily among a collection of view controllers. Pan gesture can be used to move on to next or previous view controller. It shows a interactive indicator of the current, previous, next child view controllers. (7.0K stars, pushed 2023-11-22; live demo, SPM, CocoaPods, Carthage)
+- [XLPagerTabStrip](https://github.com/xmartlabs/XLPagerTabStrip): XLPagerTabStrip is a Container View Controller that allows us to switch easily among a collection of view controllers. Pan gesture can be used to move on to next or previous view controller. It shows a interactive indicator of the current, previous, next child view controllers. (7.0K stars, pushed 2023-11-22; live demo, SPM, CocoaPods, Carthage; tags: pager, tabs, paging, segmented, container, swipe)
   Subclass ButtonBarPagerTabStripViewController, style the button bar, return child controllers that provide IndicatorInfo.
   ```swift
   settings.style.buttonBarBackgroundColor = .systemBackground
@@ -347,7 +347,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       IndicatorInfo(title: tabTitle)
   }
   ```
-- [AnimatedCollectionViewLayout](https://github.com/KelvinJin/AnimatedCollectionViewLayout): Animated UIButton of Loading Animation and Transition Animation. (4.9K stars, pushed 2020-09-20; live demo, SPM, CocoaPods, inactive)
+- [AnimatedCollectionViewLayout](https://github.com/KelvinJin/AnimatedCollectionViewLayout): A UICollectionViewLayout subclass that adds custom transitions/animations to the UICollectionView without effecting your existing code. (4.9K stars, pushed 2020-09-20; live demo, SPM, CocoaPods, inactive; tags: collection, layout, paging, carousel, transition, collection view)
   Set the layout's animator and scrollDirection; items animate as they scroll into view.
   ```swift
   if let layout = collectionView?.collectionViewLayout as? AnimatedCollectionViewLayout {
@@ -355,10 +355,10 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       layout.animator = animator?.0
   }
   ```
-- [Gemini](https://github.com/shoheiyokoyama/Gemini): Gemini is rich scroll based animation framework for iOS, written in Swift. (3.3K stars, pushed 2025-06-28; CocoaPods, Carthage)
-- [BubbleTransition](https://github.com/andreamazz/BubbleTransition): A custom modal transition that presents and dismiss a controller inside an expanding and shrinking bubble. (3.3K stars, pushed 2020-11-04; SPM, CocoaPods, Carthage, inactive)
-- [BWWalkthrough](https://github.com/ariok/BWWalkthrough): BWWalkthrough (BWWT) is a class that helps you create Walkthroughs for your iOS Apps. It differs from other similar classes in that there is no rigid template; BWWT is just a layer placed over your controllers that gives you complete freedom on the design of your views. (2.7K stars, pushed 2021-02-07; SPM, CocoaPods, Carthage)
-- [SPStorkController](https://github.com/ivanvorobei/SPStorkController): Apple Music style modal presentation: a card that slides up and can be dragged down to dismiss. (2.7K stars, pushed 2023-01-31; live demo, SPM)
+- [Gemini](https://github.com/shoheiyokoyama/Gemini): Gemini is rich scroll based animation framework for iOS, written in Swift. (3.3K stars, pushed 2025-06-28; CocoaPods, Carthage; tags: scroll, collection view, 3d, animation, carousel, effects)
+- [BubbleTransition](https://github.com/andreamazz/BubbleTransition): A custom modal transition that presents and dismiss a controller inside an expanding and shrinking bubble. (3.3K stars, pushed 2020-11-04; SPM, CocoaPods, Carthage, inactive; tags: transition, modal, bubble, circular, present)
+- [BWWalkthrough](https://github.com/ariok/BWWalkthrough): BWWalkthrough (BWWT) is a class that helps you create Walkthroughs for your iOS Apps. It differs from other similar classes in that there is no rigid template; BWWT is just a layer placed over your controllers that gives you complete freedom on the design of your views. (2.7K stars, pushed 2021-02-07; SPM, CocoaPods, Carthage; tags: onboarding, walkthrough, tutorial, pages, intro)
+- [SPStorkController](https://github.com/ivanvorobei/SPStorkController): Apple Music style modal presentation: a card that slides up and can be dragged down to dismiss. (2.7K stars, pushed 2023-01-31; live demo, SPM; tags: presentation, sheet, modal, bottom sheet, apple music, card, drag to dismiss)
   Set the controller's transitioningDelegate to an SPStorkTransitioningDelegate and present with .custom style.
   ```swift
   transitionDelegate.customHeight = height          // nil = the default, almost full-height card
@@ -370,9 +370,9 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   controller.modalPresentationCapturesStatusBarAppearance = true
   present(controller, animated: true)
   ```
-- [Transition](https://github.com/Touchwonders/Transition): Interactive, interruptible view controller transitions built from reusable animation and interaction pieces. (2.6K stars, pushed 2020-11-02; SPM, inactive)
-- [AnimatedTransitionGallery](https://github.com/shu223/AnimatedTransitionGallery): Collection of custom animated transitions for iOS using UIViewControllerAnimatedTransitioning protocol. (2.5K stars, pushed 2024-04-30; manual install)
-- [Jelly](https://github.com/SebastianBoldt/Jelly): Animated view controller presentations (slide, fade, shift), interactive or not, in a few lines. (2.5K stars, pushed 2025-11-28; live demo, SPM)
+- [Transition](https://github.com/Touchwonders/Transition): Interactive, interruptible view controller transitions built from reusable animation and interaction pieces. (2.6K stars, pushed 2020-11-02; SPM, inactive; tags: transition, interactive, navigation, interruptible, view controller)
+- [AnimatedTransitionGallery](https://github.com/shu223/AnimatedTransitionGallery): Collection of custom animated transitions for iOS using UIViewControllerAnimatedTransitioning protocol. (2.5K stars, pushed 2024-04-30; manual install; tags: transition, gallery, view controller, custom transition, examples)
+- [Jelly](https://github.com/SebastianBoldt/Jelly): Animated view controller presentations (slide, fade, shift), interactive or not, in a few lines. (2.5K stars, pushed 2025-11-28; live demo, SPM; tags: presentation, transition, modal, slide, fade, interactive)
   Configure a presentation (slide, cover or fade), create an Animator, prepare the controller and present it.
   ```swift
   let chrome = PresentationUIConfiguration(cornerRadius: 20, backgroundStyle: .dimmed(alpha: 0.45), isTapBackgroundToDismissEnabled: true)
@@ -381,20 +381,20 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   animator?.prepare(presentedViewController: card)
   present(card, animated: true)
   ```
-- [AMWaveTransition](https://github.com/andreamazz/AMWaveTransition): Custom transition between viewcontrollers holding tableviews. Each cell is animated to simulate a 'wave effect'. (2.3K stars, pushed 2020-06-07; CocoaPods, Carthage, inactive)
-- [TKSubmitTransition](https://github.com/takuoka/TKSubmitTransition): Animated UIButton of Loading Animation and Transition Animation. (2.3K stars, pushed 2019-12-04; CocoaPods, inactive)
-- [ElasticTransition](https://github.com/lkzhao/ElasticTransition): A UIKit custom transition that simulates an elastic drag. Written in Swift. (2.2K stars, pushed 2020-05-10; CocoaPods, inactive)
-- [preview-transition](https://github.com/Ramotion/preview-transition): PreviewTransition is a simple preview gallery controller (2.1K stars, pushed 2020-04-06; live demo, SPM, CocoaPods, Carthage, inactive)
+- [AMWaveTransition](https://github.com/andreamazz/AMWaveTransition): Custom transition between viewcontrollers holding tableviews. Each cell is animated to simulate a 'wave effect'. (2.3K stars, pushed 2020-06-07; CocoaPods, Carthage, inactive; tags: transition, table view, wave, cells, navigation)
+- [TKSubmitTransition](https://github.com/takuoka/TKSubmitTransition): Animated UIButton of Loading Animation and Transition Animation. (2.3K stars, pushed 2019-12-04; CocoaPods, inactive; tags: button, loading, transition, submit, spinner)
+- [ElasticTransition](https://github.com/lkzhao/ElasticTransition): A UIKit custom transition that simulates an elastic drag. Written in Swift. (2.2K stars, pushed 2020-05-10; CocoaPods, inactive; tags: transition, elastic, drag, menu, interactive)
+- [preview-transition](https://github.com/Ramotion/preview-transition): PreviewTransition is a simple preview gallery controller (2.1K stars, pushed 2020-04-06; live demo, SPM, CocoaPods, Carthage, inactive; tags: transition, gallery, preview, table view, parallax)
   Subclass PTTableViewController; pushViewController animates the parallax preview transition.
   ```swift
   let storyboard = UIStoryboard(name: "preview-transition", bundle: .module)
   let detaleViewController: PTDemoDetailViewController = storyboard.instantiateViewController()
   pushViewController(detaleViewController)
   ```
-- [PinterestSwift](https://github.com/demonnico/PinterestSwift): This is a Swift based demo project to show how to make the transition Pinterest liked. (1.9K stars, pushed 2020-06-15; inactive)
-- [CKWaveCollectionViewTransition](https://github.com/CezaryKopacz/CKWaveCollectionViewTransition): Cool wave like transition between two or more UICollectionView (1.8K stars, pushed 2019-10-13; CocoaPods, inactive)
-- [Motion](https://github.com/CosmicMind/Motion): A Material-inspired motion engine for transitions, transforms, and interactive presentation work. (1.8K stars, pushed 2020-01-28; SPM, inactive)
-- [Transmission](https://github.com/nathantannar4/Transmission): Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more. (1.2K stars, pushed 2026-10-24; live demo, SwiftUI, SPM)
+- [PinterestSwift](https://github.com/demonnico/PinterestSwift): This is a Swift based demo project to show how to make the transition Pinterest liked. (1.9K stars, pushed 2020-06-15; inactive; tags: transition, pinterest, collection view, zoom, navigation)
+- [CKWaveCollectionViewTransition](https://github.com/CezaryKopacz/CKWaveCollectionViewTransition): Cool wave like transition between two or more UICollectionView (1.8K stars, pushed 2019-10-13; CocoaPods, inactive; tags: transition, collection view, wave, navigation)
+- [Motion](https://github.com/CosmicMind/Motion): A Material-inspired motion engine for transitions, transforms, and interactive presentation work. (1.8K stars, pushed 2020-01-28; SPM, inactive; tags: material, transition, layout, animation engine, material design)
+- [Transmission](https://github.com/nathantannar4/Transmission): Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more. (1.2K stars, pushed 2026-10-24; live demo, SwiftUI, SPM; tags: swiftui, presentation, transition, modal, uikit bridge, sheet)
   PresentationLink presents SwiftUI content with UIKit transitions; the destination dismisses through the presentation coordinator.
   ```swift
   PresentationLink(transition: .toast, isPresented: $showToast) {
@@ -407,7 +407,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   Button("Dismiss") { coordinator.dismiss() }.buttonStyle(DemoPrimaryButtonStyle())
   ```
-- [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition): An iOS transition for controllers based on material design. (949 stars, pushed 2019-01-17; live demo, SPM, CocoaPods, inactive)
+- [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition): An iOS transition for controllers based on material design. (949 stars, pushed 2019-01-17; live demo, SPM, CocoaPods, inactive; tags: transition, material design, circular reveal, present, button)
   Create the transition with the button to animate from, set it as transitioningDelegate with a .custom presentation.
   ```swift
   self.transition = JTMaterialTransition(animatedView: self.presentControllerButton!)
@@ -422,7 +422,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
 ### UI
 
-- [IBAnimatable](https://github.com/IBAnimatable/IBAnimatable): Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Interface Builder with IBAnimatable. (8.6K stars, pushed 2023-02-21; live demo, SPM, CocoaPods, Carthage)
+- [IBAnimatable](https://github.com/IBAnimatable/IBAnimatable): Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Interface Builder with IBAnimatable. (8.6K stars, pushed 2023-02-21; live demo, SPM, CocoaPods, Carthage; tags: interface builder, prototype, design, storyboard, transition, animation)
   Animatable views and labels chain animations with .animate(...).then(...).
   ```swift
   private let box = AnimatableView()
@@ -436,7 +436,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       label.animate(.slideFade(way: .in, direction: .left)).then(.swing(repeatCount: 1))
   }
   ```
-- [LTMorphingLabel](https://github.com/lexrus/LTMorphingLabel): A morphing UILabel subclass written in Swift. The .Scale effect mimicked Apple's QuickType animation of iOS 8 in WWDC 2014. New morphing effects are available as Swift extensions. (8.1K stars, pushed 2026-03-08; live demo, SPM, CocoaPods, Carthage)
+- [LTMorphingLabel](https://github.com/lexrus/LTMorphingLabel): A morphing UILabel subclass written in Swift. The .Scale effect mimicked Apple's QuickType animation of iOS 8 in WWDC 2014. New morphing effects are available as Swift extensions. (8.1K stars, pushed 2026-03-08; live demo, SPM, CocoaPods, Carthage; tags: text, label, morph, text animation, uilabel)
   Set morphingEffect and duration, then assign new text and the label morphs from the old one.
   ```swift
   private let label = LTMorphingLabel()
@@ -447,7 +447,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   label.text = words[index]
   ```
-- [TextFieldEffects](https://github.com/raulriera/TextFieldEffects): Text field subclasses with the Codrops entrance effects: floating labels, underlines and borders that animate on focus. (6.0K stars, pushed 2024-01-28; live demo, SPM)
+- [TextFieldEffects](https://github.com/raulriera/TextFieldEffects): Text field subclasses with the Codrops entrance effects: floating labels, underlines and borders that animate on focus. (6.0K stars, pushed 2024-01-28; live demo, SPM; tags: textfield, input, focus, text field, floating label, form)
   Drop-in UITextField subclasses; set placeholder and the effect's colours, the animation plays on focus.
   ```swift
   let hoshi = HoshiTextField()                    // underline grows, placeholder floats up
@@ -471,7 +471,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   jiro.borderColor = DemoSupport.accent
   jiro.placeholderColor = .secondaryLabel
   ```
-- [MarqueeLabel](https://github.com/cbpowell/MarqueeLabel): UILabel replacement that scrolls text that does not fit, with configurable speed, fade and direction. (4.3K stars, pushed 2025-09-13; live demo, SPM)
+- [MarqueeLabel](https://github.com/cbpowell/MarqueeLabel): UILabel replacement that scrolls text that does not fit, with configurable speed, fade and direction. (4.3K stars, pushed 2025-09-13; live demo, SPM; tags: label, text, scroll, marquee, ticker, uilabel)
   MarqueeLabel(frame:rate:fadeLength:) scrolls text that does not fit; type, delay and buffers tune the marquee.
   ```swift
   let marquee = MarqueeLabel(frame: .zero, rate: 60, fadeLength: 12)   // 60 points per second, 12 pt fade at both edges
@@ -480,12 +480,12 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   marquee.trailingBuffer = 24          // gap between repeats
   marquee.text = "Text wider than the label scrolls; shorter text sits still like a normal UILabel."
   ```
-- [Cards](https://github.com/PaoloCuscela/Cards): Awesome iOS 11 appstore cards in swift 4. (4.2K stars, pushed 2023-04-19; CocoaPods)
-- [StarWars.iOS](https://github.com/Yalantis/StarWars.iOS): This component implements transition animation to crumble view-controller into tiny pieces. (3.8K stars, pushed 2022-10-11; CocoaPods)
-- [DKNightVersion](https://github.com/draveness/DKNightVersion): Manage Colors, Integrate Night/Multiple Themes (3.5K stars, pushed 2019-09-03; CocoaPods, Carthage, archived)
-- [RazzleDazzle](https://github.com/IFTTT/RazzleDazzle): Create scroll-driven onboarding and storytelling animations without hand-wiring every offset. (3.3K stars, pushed 2023-10-11; CocoaPods)
-- [Presentation](https://github.com/hyperoslo/Presentation): Looking for the easiest way of presenting something in your iOS app? Then you are in the right place. Presentation will help you make your tutorials, release notes and any kind of animated pages with the minimum amount of effort. (3.1K stars, pushed 2020-06-05; CocoaPods, Carthage, inactive)
-- [Inferno](https://github.com/twostraws/Inferno): Metal shaders for SwiftUI. (2.9K stars, pushed 2026-05-17; live demo, SwiftUI, SPM)
+- [Cards](https://github.com/PaoloCuscela/Cards): Awesome iOS 11 appstore cards in swift 4. (4.2K stars, pushed 2023-04-19; CocoaPods; tags: card, app store, uikit, storyboard, today, ibdesignable)
+- [StarWars.iOS](https://github.com/Yalantis/StarWars.iOS): This component implements transition animation to crumble view-controller into tiny pieces. (3.8K stars, pushed 2022-10-11; CocoaPods; tags: transition, crumble, particles, uidynamics, effect)
+- [DKNightVersion](https://github.com/draveness/DKNightVersion): Manage Colors, Integrate Night/Multiple Themes (3.5K stars, pushed 2019-09-03; CocoaPods, Carthage, archived; tags: theme, night mode, dark mode, colors, objective-c)
+- [RazzleDazzle](https://github.com/IFTTT/RazzleDazzle): Create scroll-driven onboarding and storytelling animations without hand-wiring every offset. (3.3K stars, pushed 2023-10-11; CocoaPods; tags: onboarding, scroll, story, walkthrough, keyframes)
+- [Presentation](https://github.com/hyperoslo/Presentation): Looking for the easiest way of presenting something in your iOS app? Then you are in the right place. Presentation will help you make your tutorials, release notes and any kind of animated pages with the minimum amount of effort. (3.1K stars, pushed 2020-06-05; CocoaPods, Carthage, inactive; tags: onboarding, slides, pages, walkthrough, tutorial, presentation)
+- [Inferno](https://github.com/twostraws/Inferno): Metal shaders for SwiftUI. (2.9K stars, pushed 2026-05-17; live demo, SwiftUI, SPM; tags: swiftui, metal, shaders, effects, gpu)
   Metal shaders as SwiftUI modifiers: colour effects, distortions, generated fills and shader-driven transitions, driven by a TimelineView clock.
   ```swift
   ("circles", .circles()),
@@ -506,7 +506,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   .colorEffect(InfernoShaderLibrary.animatedGradientFill(.float2(320, 70), .float(time)))
   ```
-- [Segmentio](https://github.com/Yalantis/Segmentio): Animated top/bottom segmented control written in Swift. (2.5K stars, pushed 2024-08-12; live demo, SPM, CocoaPods, Carthage)
+- [Segmentio](https://github.com/Yalantis/Segmentio): Animated top/bottom segmented control written in Swift. (2.5K stars, pushed 2024-08-12; live demo, SPM, CocoaPods, Carthage; tags: segmented control, tabs, control, indicator, top bar)
   Build items, states and options, then setup the control and observe valueDidChange.
   ```swift
   let items = zip(titles, symbols).map { SegmentioItem(title: $0, image: UIImage(systemName: $1)) }
@@ -535,7 +535,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       detail.text = "Selected: \(titles[index])"
   }
   ```
-- [MarkdownView](https://github.com/keitaoouchi/MarkdownView): MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it. (2.2K stars, pushed 2026-10-22; live demo, SPM, CocoaPods, Carthage)
+- [MarkdownView](https://github.com/keitaoouchi/MarkdownView): MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it. (2.2K stars, pushed 2026-10-22; live demo, SPM, CocoaPods, Carthage; tags: markdown, web view, text, rendering, wkwebview)
   MarkdownView renders Markdown in a web view; onRendered reports the height and onTouchLink intercepts links.
   ```swift
   private let markdownView = MarkdownView()
@@ -572,14 +572,14 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   > Markdown rendered by [MarkdownView](https://github.com/keitaoouchi/MarkdownView).
   """)
   ```
-- [Glur](https://github.com/joogps/Glur): A library for progressive blurs in SwiftUI. (2.1K stars, pushed 2026-10-18; live demo, SwiftUI, SPM)
+- [Glur](https://github.com/joogps/Glur): A library for progressive blurs in SwiftUI. (2.1K stars, pushed 2026-10-18; live demo, SwiftUI, SPM; tags: swiftui, blur, progressive, variable blur, effects)
   Progressive blur over any view: radius, offset where the blur starts, interpolation and direction.
   ```swift
   tiles.frame(height: 320, alignment: .top).clipped()
       .glur(radius: radius, offset: offset, interpolation: 0.4, direction: down ? .down : .up)
   ```
-- [fluid-slider](https://github.com/Ramotion/fluid-slider): A slider widget with a popup bubble displaying the precise value selected. (2.0K stars, pushed 2022-06-01; SPM, CocoaPods, Carthage)
-- [SwiftUI-Shimmer](https://github.com/markiv/SwiftUI-Shimmer): Shimmer is a super-light modifier that adds a shimmering effect to any SwiftUI View, for example, to show that an operation is in progress. It works well on light and dark modes, and across iOS, macOS, tvOS, watchOS and visionOS. (1.7K stars, pushed 2024-08-14; live demo, SwiftUI, SPM)
+- [fluid-slider](https://github.com/Ramotion/fluid-slider): A slider widget with a popup bubble displaying the precise value selected. (2.0K stars, pushed 2022-06-01; SPM, CocoaPods, Carthage; tags: slider, control, input, bubble, uislider)
+- [SwiftUI-Shimmer](https://github.com/markiv/SwiftUI-Shimmer): Shimmer is a super-light modifier that adds a shimmering effect to any SwiftUI View, for example, to show that an operation is in progress. It works well on light and dark modes, and across iOS, macOS, tvOS, watchOS and visionOS. (1.7K stars, pushed 2024-08-14; live demo, SwiftUI, SPM; tags: swiftui, shimmer, loading, skeleton, placeholder)
   Add .shimmering to any view, optionally with a custom gradient, band size and mode; pairs well with .redacted.
   ```swift
   Text("MotionBook")
@@ -593,7 +593,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   .redacted(reason: .placeholder)
   .shimmering(active: active)
   ```
-- [ScalingHeaderScrollView](https://github.com/exyte/ScalingHeaderScrollView): A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI. (1.5K stars, pushed 2026-10-20; live demo, SwiftUI, SPM)
+- [ScalingHeaderScrollView](https://github.com/exyte/ScalingHeaderScrollView): A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI. (1.5K stars, pushed 2026-10-20; live demo, SwiftUI, SPM; tags: swiftui, header, scroll, sticky header, collapsing header, parallax)
   A scroll view with a header that collapses between minHeight and maxHeight; the closure receives the collapse progress.
   ```swift
   ScalingHeaderScrollView(minHeight: 100, maxHeight: 300) { _, progress in
@@ -605,7 +605,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   .allowsHeaderCollapse()
   .ignoresSafeArea(edges: .top)
   ```
-- [YNSearch](https://github.com/younatics/YNSearch): ✨Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm! (1.2K stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
+- [YNSearch](https://github.com/younatics/YNSearch): ✨Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm! (1.2K stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage; tags: search, search bar, pinterest, suggestions, history)
   Subclass YNSearchViewController: set categories and history, init data, and implement the list delegate.
   ```swift
   YNSearch.shared.setCategories(value: categories)
@@ -636,7 +636,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       ynSearchView.ynSearchListView.ynSearch.appendSearchHistories(value: key)
   }
   ```
-- [Shiny](https://github.com/maustinstar/shiny): Shiny uses your gyroscope to simulate lighting and motion effects on colors. Works on almost every SwiftUI View. (1.1K stars, pushed 2024-07-12; live demo, SwiftUI, SPM)
+- [Shiny](https://github.com/maustinstar/shiny): Shiny uses your gyroscope to simulate lighting and motion effects on colors. Works on almost every SwiftUI View. (1.1K stars, pushed 2024-07-12; live demo, SwiftUI, SPM; tags: swiftui, gyroscope, shine, lighting, motion, holographic)
   Apply .shiny with a surface gradient; the highlight follows device motion.
   ```swift
   Text(title)
@@ -645,8 +645,8 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       .frame(width: 280, height: 110)
       .background(RoundedRectangle(cornerRadius: 18).shiny(background))
   ```
-- [AIFlatSwitch](https://github.com/cocoatoucher/AIFlatSwitch): A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used instead of UISwitch. Inspired by Creativedash's Dribbble post (963 stars, pushed 2022-06-06; SPM, CocoaPods)
-- [MediaBrowser](https://github.com/younatics/MediaBrowser): 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view. (646 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
+- [AIFlatSwitch](https://github.com/cocoatoucher/AIFlatSwitch): A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used instead of UISwitch. Inspired by Creativedash's Dribbble post (963 stars, pushed 2022-06-06; SPM, CocoaPods; tags: switch, checkbox, checkmark, toggle, flat design, uiswitch)
+- [MediaBrowser](https://github.com/younatics/MediaBrowser): 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view. (646 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage; tags: photo browser, gallery, image viewer, video, media, zoom)
   MediaBrowser(delegate:) with Media items; configure the browser and push it, then serve media from the delegate.
   ```swift
   mediaItems = images.enumerated().map { Media(image: $1, caption: "Sample image \($0 + 1) of 6") }
@@ -670,7 +670,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       mediaItems[min(index, mediaItems.count - 1)]
   }
   ```
-- [FluidGradient](https://github.com/Cindori/FluidGradient): A fluid, animated gradient implemented with CoreAnimation and SwiftUI. (439 stars, pushed 2024-03-14; live demo, SwiftUI, SPM)
+- [FluidGradient](https://github.com/Cindori/FluidGradient): A fluid, animated gradient implemented with CoreAnimation and SwiftUI. (439 stars, pushed 2024-03-14; live demo, SwiftUI, SPM; tags: swiftui, gradient, background, mesh, animation)
   FluidGradient animates blurred colour blobs; tune blobs, highlights, speed and blur.
   ```swift
   FluidGradient(
@@ -680,11 +680,11 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       blur: blur
   )
   ```
-- [PARTagPicker](https://github.com/paulrolfe/PARTagPicker): This pod provides a view controller for choosing and creating tags in the style of wordpress or tumblr. This tag picker was originally used in the Intrepid Pursuits app, Slate. (365 stars, pushed 2019-06-28; CocoaPods, inactive)
+- [PARTagPicker](https://github.com/paulrolfe/PARTagPicker): This pod provides a view controller for choosing and creating tags in the style of wordpress or tumblr. This tag picker was originally used in the Intrepid Pursuits app, Slate. (365 stars, pushed 2019-06-28; CocoaPods, inactive; tags: tags, tag picker, input, chips, text field)
 
 ### Menu
 
-- [animated-tab-bar](https://github.com/Ramotion/animated-tab-bar): RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items. (11K stars, pushed 2022-01-26; live demo, SPM, CocoaPods, Carthage)
+- [animated-tab-bar](https://github.com/Ramotion/animated-tab-bar): RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items. (11K stars, pushed 2022-01-26; live demo, SPM, CocoaPods, Carthage; tags: tab bar, animation, menu, material design, uikit)
   Set up RAMAnimatedTabBarController in the storyboard with RAMAnimatedTabBarItem items; badges work as usual.
   ```swift
   @IBAction func showBadgeHandelr(_ sender: AnyObject) {
@@ -696,8 +696,8 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       self.tabBarItem.badgeValue = nil
   }
   ```
-- [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController): Customisable tab bar controller with a raised centre button, badges and animated tab items. (7.0K stars, pushed 2026-10-23; SPM)
-- [SideMenu](https://github.com/jonkykong/SideMenu): Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+. (5.8K stars, pushed 2023-02-09; live demo, SPM, CocoaPods, Carthage)
+- [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController): Customisable tab bar controller with a raised centre button, badges and animated tab items. (7.0K stars, pushed 2026-10-23; SPM; tags: tabbar, uikit, badge, tab bar, center button, objective-c)
+- [SideMenu](https://github.com/jonkykong/SideMenu): Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+. (5.8K stars, pushed 2023-02-09; live demo, SPM, CocoaPods, Carthage; tags: side menu, drawer, navigation, hamburger, menu, storyboard)
   Configure SideMenuManager with the menu navigation controllers, gestures and presentation mode.
   ```swift
   SideMenuManager.default.menuEnableSwipeGestures = true
@@ -715,8 +715,8 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   let modes:[SideMenuManager.MenuPresentMode] = [.menuSlideIn, .viewSlideOut, .viewSlideInOut, .menuDissolveIn]
   SideMenuManager.default.menuPresentMode = modes[segmentControl.selectedSegmentIndex]
   ```
-- [ESTabBarController](https://github.com/eggswift/ESTabBarController): Tab bar controller with customisable item animations, badges and a highlighted centre item. (5.2K stars, pushed 2023-05-09; SPM)
-- [circle-menu](https://github.com/Ramotion/circle-menu): This project is maintained by Ramotion, Inc. We specialize in the designing and coding of custom UI for Mobile Apps and Websites. (3.4K stars, pushed 2022-07-12; live demo, SPM, CocoaPods, Carthage)
+- [ESTabBarController](https://github.com/eggswift/ESTabBarController): Tab bar controller with customisable item animations, badges and a highlighted centre item. (5.2K stars, pushed 2023-05-09; SPM; tags: tabbar, badge, uikit, tab bar, center button, objective-c)
+- [circle-menu](https://github.com/Ramotion/circle-menu): CircleMenu is a simple, elegant UI menu with a circular layout and material design animations. (3.4K stars, pushed 2022-07-12; live demo, SPM, CocoaPods, Carthage; tags: menu, circular, radial, buttons, animation, material design)
   CircleMenu is a UIButton subclass; the delegate configures each item as it is displayed.
   ```swift
   button.delegate = self
@@ -731,10 +731,10 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       button.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
   }
   ```
-- [SlideMenuControllerSwift](https://github.com/dekatotoro/SlideMenuControllerSwift): iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift. (3.4K stars, pushed 2023-09-07; CocoaPods, Carthage)
-- [GuillotineMenu](https://github.com/Yalantis/GuillotineMenu): Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine. (2.9K stars, pushed 2020-04-13; CocoaPods, inactive)
-- [Side-Menu.iOS](https://github.com/Yalantis/Side-Menu.iOS): Animated side menu with customizable UI. Made in Yalantis. (2.7K stars, pushed 2020-04-13; CocoaPods, inactive)
-- [YNDropDownMenu](https://github.com/younatics/YNDropDownMenu): ✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc) (1.3K stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
+- [SlideMenuControllerSwift](https://github.com/dekatotoro/SlideMenuControllerSwift): iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift. (3.4K stars, pushed 2023-09-07; CocoaPods, Carthage; tags: side menu, drawer, slide menu, navigation, menu)
+- [GuillotineMenu](https://github.com/Yalantis/GuillotineMenu): Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine. (2.9K stars, pushed 2020-04-13; CocoaPods, inactive; tags: menu, navigation, transition, rotation, hamburger)
+- [Side-Menu.iOS](https://github.com/Yalantis/Side-Menu.iOS): Animated side menu with customizable UI. Made in Yalantis. (2.7K stars, pushed 2020-04-13; CocoaPods, inactive; tags: side menu, drawer, navigation, menu, animation)
+- [YNDropDownMenu](https://github.com/younatics/YNDropDownMenu): ✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc) (1.3K stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage; tags: dropdown, menu, filter, navigation, dropdown menu)
   YNDropDownMenu takes drop-down views and titles; set state images, label colours and fonts, open programmatically.
   ```swift
   let view = YNDropDownMenu(frame: CGRect(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: 38), dropDownViews: _ZBdropDownViews, dropDownViewTitles: ["Apple", "Banana", "Kiwi", "Pear"])
@@ -753,11 +753,11 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   self.view.addSubview(view)
   ```
-- [AnimatedTabBar (exyte)](https://github.com/exyte/AnimatedTabBar): A tabbar with a number of preset animations written in pure SwiftUI (557 stars, pushed 2026-07-08; SwiftUI, SPM)
+- [AnimatedTabBar (exyte)](https://github.com/exyte/AnimatedTabBar): A tabbar with a number of preset animations written in pure SwiftUI (557 stars, pushed 2026-07-08; SwiftUI, SPM; tags: swiftui, tabbar, animation, tab bar, menu)
 
 ### Alert
 
-- [NotificationBanner](https://github.com/Daltron/NotificationBanner): NotificationBanner is an extremely customizable and lightweight library that makes the task of displaying in app notification banners and drop down alerts an absolute breeze in iOS. (4.9K stars, pushed 2024-07-29; live demo, SPM, CocoaPods, Carthage)
+- [NotificationBanner](https://github.com/Daltron/NotificationBanner): NotificationBanner is an extremely customizable and lightweight library that makes the task of displaying in app notification banners and drop down alerts an absolute breeze in iOS. (4.9K stars, pushed 2024-07-29; live demo, SPM, CocoaPods, Carthage; tags: banner, notification, toast, in app, status bar, alert)
   Create a NotificationBanner or StatusBarNotificationBanner with a style and show it, optionally at a queue position.
   ```swift
   let banner = NotificationBanner(title: "Basic Success Notification",
@@ -769,7 +769,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   let banner = StatusBarNotificationBanner(title: "Success Status Bar Notification", style: .success)
   banner.show(queuePosition: selectedQueuePosition())
   ```
-- [CRToast](https://github.com/cruffenach/CRToast): CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar. (4.1K stars, pushed 2024-05-02; live demo, CocoaPods, Carthage)
+- [CRToast](https://github.com/cruffenach/CRToast): CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar. (4.1K stars, pushed 2024-05-02; live demo, CocoaPods, Carthage; tags: toast, notification, status bar, banner, objective-c)
   Build an options dictionary with the kCRToast keys and show it through CRToastManager.
   ```objc
       [CRToastManager showNotificationWithOptions:[self options]
@@ -794,7 +794,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
                                     kCRToastAnimationOutDirectionKey          : @(self.segToDirection.selectedSegmentIndex),
                                     kCRToastNotificationPreferredPaddingKey   : @(self.sliderPadding.value)} mutableCopy];
   ```
-- [PopupView](https://github.com/exyte/PopupView): Toasts and popups library written with SwiftUI (4.1K stars, pushed 2026-10-06; live demo, SwiftUI, SPM)
+- [PopupView](https://github.com/exyte/PopupView): Toasts and popups library written with SwiftUI (4.1K stars, pushed 2026-10-06; live demo, SwiftUI, SPM; tags: swiftui, toast, popup, banner, notification)
   Attach .popup to any view; the customize closure picks type, position, animation, auto-hide and display mode.
   ```swift
   .popup(isPresented: $showFloater) {
@@ -807,7 +807,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       $0.type(.toast).position(.bottom).dragToDismiss(true).closeOnTapOutside(true).backgroundColor(.black.opacity(0.4)).displayMode(.overlay)
   }
   ```
-- [PopupDialog](https://github.com/Orderella/PopupDialog): A simple, customizable popup dialog for iOS written in Swift. Replaces UIAlertController alert style. (4.0K stars, pushed 2024-02-07; live demo, SPM, CocoaPods, Carthage)
+- [PopupDialog](https://github.com/Orderella/PopupDialog): A simple, customizable popup dialog for iOS written in Swift. Replaces UIAlertController alert style. (4.0K stars, pushed 2024-02-07; live demo, SPM, CocoaPods, Carthage; tags: popup, dialog, alert, modal, overlay)
   PopupDialog with title, message and image; add CancelButton/DefaultButton actions and present it.
   ```swift
   let popup = PopupDialog(title: title, message: message, image: image)
@@ -833,7 +833,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   // Present dialog
   self.present(popup, animated: animated, completion: nil)
   ```
-- [Popovers](https://github.com/aheze/Popovers): A library to present popovers. Simple, modern, and highly customizable. Not boring! (2.2K stars, pushed 2025-02-19; live demo, SwiftUI, SPM)
+- [Popovers](https://github.com/aheze/Popovers): A library to present popovers. Simple, modern, and highly customizable. Not boring! (2.2K stars, pushed 2025-02-19; live demo, SwiftUI, SPM; tags: swiftui, popover, menu, tooltip, popup, notification)
   Popovers and menus attached to a view with placement attributes and Templates for containers and menu buttons.
   ```swift
   Button("Show popover") { showPopover = true }
@@ -855,7 +855,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       Text("Open menu").demoChip().opacity(fade ? 0.5 : 1)
   }
   ```
-- [SweetAlert-iOS](https://github.com/codestergit/SweetAlert-iOS): Beautiful Animated custom Alert View inspired from javascript library SweetAlert. Written in Swift this SweetAlertView can be used in Swift and Objective-C projects. SweetAlertView provides live intutive experience to user actions.It can be used in place of UIAlertView and UIAlertController (2.0K stars, pushed 2020-03-16; live demo, inactive)
+- [SweetAlert-iOS](https://github.com/codestergit/SweetAlert-iOS): Beautiful Animated custom Alert View inspired from javascript library SweetAlert. Written in Swift this SweetAlertView can be used in Swift and Objective-C projects. SweetAlertView provides live intutive experience to user actions.It can be used in place of UIAlertView and UIAlertController (2.0K stars, pushed 2020-03-16; live demo, inactive; tags: alert, dialog, popup, animated alert, modal)
   SweetAlert().showAlert with a style; the closure tells you which button was tapped.
   ```swift
   _ = SweetAlert().showAlert("Here's a message!")
@@ -873,7 +873,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
           }
       }
   ```
-- [SDCAlertView](https://github.com/sberrevoets/SDCAlertView): SDCAlertView started out as an alert that looked identical to UIAlertView, but had support for a custom content view. With the introduction of UIAlertController in iOS 8, the project was updated to the more modern API that UIAlertController brought. (1.8K stars, pushed 2025-01-22; live demo, SPM, CocoaPods, Carthage)
+- [SDCAlertView](https://github.com/sberrevoets/SDCAlertView): SDCAlertView started out as an alert that looked identical to UIAlertView, but had support for a custom content view. With the introduction of UIAlertController in iOS 8, the project was updated to the more modern API that UIAlertController brought. (1.8K stars, pushed 2025-01-22; live demo, SPM, CocoaPods, Carthage; tags: alert, action sheet, dialog, uialertcontroller, custom content)
   AlertController mirrors UIAlertController, accepts custom content views and a shouldDismissHandler.
   ```swift
   let alert = AlertController(title: "SDCAlertView", message: "Looks like UIAlertController, behaves like your own view.", preferredStyle: .alert)
@@ -897,8 +897,8 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   alert.shouldDismissHandler = { $0?.title == "Dismiss" }
   alert.present()
   ```
-- [CDAlertView](https://github.com/candostdagdeviren/CDAlertView): CDAlertView is highly customizable alert popup written in Swift 3. Usage is similar to UIAlertController. (1.1K stars, pushed 2026-08-20; CocoaPods, Carthage)
-- [MIBlurPopup](https://github.com/MarioIannotta/MIBlurPopup): MIBlurPopup lets you create amazing popups with a blurred background (598 stars, pushed 2020-03-30; live demo, CocoaPods, inactive)
+- [CDAlertView](https://github.com/candostdagdeviren/CDAlertView): CDAlertView is highly customizable alert popup written in Swift 3. Usage is similar to UIAlertController. (1.1K stars, pushed 2026-08-20; CocoaPods, Carthage; tags: alert, popup, dialog, uialertcontroller, warning)
+- [MIBlurPopup](https://github.com/MarioIannotta/MIBlurPopup): MIBlurPopup lets you create amazing popups with a blurred background (598 stars, pushed 2020-03-30; live demo, CocoaPods, inactive; tags: popup, blur, alert, modal, segue)
   The presented controller adopts MIBlurPopupDelegate to supply the popup view, blur style, scale and duration.
   ```swift
   extension PopupViewController: MIBlurPopupDelegate {
@@ -918,12 +918,12 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   }
   ```
-- [TKSwarmAlert](https://github.com/takuoka/TKSwarmAlert): Animated alert library like Swarm app. (573 stars, pushed 2019-03-30; CocoaPods, Carthage, inactive)
-- [GoogleWearAlert](https://github.com/ashrobo/GoogleWearAlert): An Android Wear style confirmation view for iOS (417 stars, pushed 2016-10-16; inactive)
+- [TKSwarmAlert](https://github.com/takuoka/TKSwarmAlert): Animated alert library like Swarm app. (573 stars, pushed 2019-03-30; CocoaPods, Carthage, inactive; tags: alert, popup, animation, swarm app, spring)
+- [GoogleWearAlert](https://github.com/ashrobo/GoogleWearAlert): An Android Wear style confirmation view for iOS (417 stars, pushed 2016-10-16; inactive; tags: alert, confirmation, android wear, checkmark, overlay)
 
 ### Collection View
 
-- [expanding-collection](https://github.com/Ramotion/expanding-collection): This project aims to provide a simple and customizable pull to refresh implementation. (5.5K stars, pushed 2020-04-06; live demo, SPM, CocoaPods, Carthage, inactive)
+- [expanding-collection](https://github.com/Ramotion/expanding-collection): ExpandingCollection is an animated material design UI card peek/pop controller. (5.5K stars, pushed 2020-04-06; live demo, SPM, CocoaPods, Carthage, inactive; tags: card, collection view, expand, stack, material design, preview)
   Subclass ExpandingViewController, set itemSize, and push the detail with pushToViewController.
   ```swift
   itemSize = CGSize(width: 256, height: 335)
@@ -932,7 +932,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   if cell.isOpened == true && sender.direction == .up {
       pushToViewController(getViewController())
   ```
-- [Koloda](https://github.com/Yalantis/Koloda): KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS. (5.4K stars, pushed 2024-05-29; live demo, CocoaPods, Carthage)
+- [Koloda](https://github.com/Yalantis/Koloda): KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS. (5.4K stars, pushed 2024-05-29; live demo, CocoaPods, Carthage; tags: card, swipe, tinder, stack, collection view, gesture)
   KolodaView takes a data source and delegate for cards; swipe programmatically or revert the last action.
   ```swift
   kolodaView.dataSource = self
@@ -958,8 +958,8 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       return UIImageView(image: dataSource[Int(index)])
   }
   ```
-- [CSStickyHeaderFlowLayout](https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout): UICollectionView replacement of UITableView. Do even more like Parallax Header, Sticky Section Header. Made for iOS 7. (5.0K stars, pushed 2021-07-17; CocoaPods, Carthage)
-- [Grid (exyte)](https://github.com/exyte/Grid): The most powerful Grid container missed in SwiftUI (2.1K stars, pushed 2026-09-15; live demo, SwiftUI, SPM)
+- [CSStickyHeaderFlowLayout](https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout): UICollectionView replacement of UITableView. Do even more like Parallax Header, Sticky Section Header. Made for iOS 7. (5.0K stars, pushed 2021-07-17; CocoaPods, Carthage; tags: parallax, sticky header, collection view, layout, header)
+- [Grid (exyte)](https://github.com/exyte/Grid): The most powerful Grid container missed in SwiftUI (2.1K stars, pushed 2026-09-15; live demo, SwiftUI, SPM; tags: swiftui, grid, layout, spans, collection)
   A CSS-style grid: tracks, column spans, flow, dense packing and animated reflow.
   ```swift
   Grid(tracks: [GridTrack](repeating: .fr(1), count: trackCount), spacing: 8) {
@@ -976,13 +976,13 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   .gridPacking(dense ? .dense : .sparse)
   .gridAnimation(.easeInOut(duration: 0.5))
   ```
-- [GSKStretchyHeaderView](https://github.com/gskbyte/GSKStretchyHeaderView): GSKStretchyHeaderView is an implementation of the stretchy header paradigm as seen on many apps, like Twitter, Spotify or airbnb. (1.7K stars, pushed 2024-08-06; CocoaPods, Carthage)
-- [SwiftSpreadsheet](https://github.com/stuffrabbit/SwiftSpreadsheet): Spreadsheet CollectionViewLayout in Swift. Fully customizable. (637 stars, pushed 2019-10-15; SPM, CocoaPods, inactive)
-- [MMCardView](https://github.com/MillmanY/MMCardView): Custom CollectionView like Wallet App (565 stars, pushed 2021-10-13; CocoaPods)
+- [GSKStretchyHeaderView](https://github.com/gskbyte/GSKStretchyHeaderView): GSKStretchyHeaderView is an implementation of the stretchy header paradigm as seen on many apps, like Twitter, Spotify or airbnb. (1.7K stars, pushed 2024-08-06; CocoaPods, Carthage; tags: stretchy header, parallax, header, table view, collection view, scroll)
+- [SwiftSpreadsheet](https://github.com/stuffrabbit/SwiftSpreadsheet): Spreadsheet CollectionViewLayout in Swift. Fully customizable. (637 stars, pushed 2019-10-15; SPM, CocoaPods, inactive; tags: spreadsheet, table, grid, collection view, layout)
+- [MMCardView](https://github.com/MillmanY/MMCardView): Custom CollectionView like Wallet App (565 stars, pushed 2021-10-13; CocoaPods; tags: card, wallet, collection view, stack, passbook)
 
 ### Table View
 
-- [folding-cell](https://github.com/Ramotion/folding-cell): FoldingCell is an expanding content cell inspired by folding paper material (10K stars, pushed 2024-04-28; live demo, SPM, CocoaPods, Carthage)
+- [folding-cell](https://github.com/Ramotion/folding-cell): FoldingCell is an expanding content cell inspired by folding paper material (10K stars, pushed 2024-04-28; live demo, SPM, CocoaPods, Carthage; tags: table, card, interaction, table view, expand, folding, material design)
   FoldingCell subclasses unfold with unfold(_:animated:completion:); keep the open/closed heights per row.
   ```swift
   if cellHeights[(indexPath as NSIndexPath).row] == kCloseCellHeight {
@@ -1003,7 +1003,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       duration = 0.8
   }
   ```
-- [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit): Swipeable UITableViewCell based on the stock Mail.app, implemented in Swift. (6.3K stars, pushed 2024-05-19; live demo, SPM, CocoaPods, Carthage)
+- [SwipeCellKit](https://github.com/SwipeCellKit/SwipeCellKit): Swipeable UITableViewCell based on the stock Mail.app, implemented in Swift. (6.3K stars, pushed 2024-05-19; live demo, SPM, CocoaPods, Carthage; tags: swipe, table view, cell, actions, mail app, drag)
   Register SwipeTableViewCell, set its delegate, and return SwipeActions and SwipeOptions per orientation.
   ```swift
   tableView.register(SwipeTableViewCell.self, forCellReuseIdentifier: "cell")
@@ -1034,7 +1034,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       return options
   }
   ```
-- [Pull-to-Refresh.Rentals-iOS](https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS): This project aims to provide a simple and customizable pull to refresh implementation. (2.1K stars, pushed 2018-06-16; live demo, CocoaPods, inactive)
+- [Pull-to-Refresh.Rentals-iOS](https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS): This project aims to provide a simple and customizable pull to refresh implementation. (2.1K stars, pushed 2018-06-16; live demo, CocoaPods, inactive; tags: pull to refresh, refresh, table view, scroll, objective-c, animation)
   Attach YALSunnyRefreshControl to a scroll view and call endRefreshing when the load finishes.
   ```objc
   self.sunnyRefreshControl = [YALSunnyRefreshControl new];
@@ -1045,8 +1045,8 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   [self.sunnyRefreshControl endRefreshing];
   ```
-- [elongation-preview](https://github.com/Ramotion/elongation-preview): ElongationPreview is an elegant push-pop style view controller (888 stars, pushed 2020-04-06; SPM, CocoaPods, Carthage, inactive)
-- [YNExpandableCell](https://github.com/younatics/YNExpandableCell): ✨Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell? (451 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage)
+- [elongation-preview](https://github.com/Ramotion/elongation-preview): ElongationPreview is an elegant push-pop style view controller (888 stars, pushed 2020-04-06; SPM, CocoaPods, Carthage, inactive; tags: preview, table view, expand, push, detail)
+- [YNExpandableCell](https://github.com/younatics/YNExpandableCell): ✨Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell? (451 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage; tags: table view, expandable, collapsible, cell, accordion)
   YNTableView with YNTableViewDelegate: return the expanded cell and height per index path.
   ```swift
   @IBOutlet var ynTableView: YNTableView!
@@ -1081,7 +1081,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
 ### Indicator
 
-- [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView): NVActivityIndicatorView is a collection of awesome loading animations. (11K stars, pushed 2026-03-18; live demo, SPM, CocoaPods, Carthage)
+- [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView): NVActivityIndicatorView is a collection of awesome loading animations. (11K stars, pushed 2026-03-18; live demo, SPM, CocoaPods, Carthage; tags: loading, indicator, feedback, spinner, activity indicator)
   Create an indicator with a frame and type and start it; startAnimating shows a full-screen HUD.
   ```swift
   let activityIndicatorView = NVActivityIndicatorView(frame: frame,
@@ -1094,7 +1094,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   let types = NVActivityIndicatorType.allCases.filter { $0 != .blank }
   startAnimating(size, message: "Loading...", type: types[sender.tag])
   ```
-- [PKHUD](https://github.com/pkluz/PKHUD): A Swift based reimplementation of the Apple HUD (Volume, Ringer, Rotation,…) for iOS 8. (3.8K stars, pushed 2023-02-16; live demo, SPM, CocoaPods, Carthage)
+- [PKHUD](https://github.com/pkluz/PKHUD): A Swift based reimplementation of the Apple HUD (Volume, Ringer, Rotation,…) for iOS 8. (3.8K stars, pushed 2023-02-16; live demo, SPM, CocoaPods, Carthage; tags: hud, loading, progress, apple, overlay)
   HUD.show / HUD.flash with built-in content types; onView keeps it inside a view instead of the whole window.
   ```swift
   PKHUD.sharedHUD.dimsBackground = true
@@ -1107,7 +1107,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   HUD.show(.labeledProgress(title: "Loading", subtitle: "PKHUD"), onView: view)
   ```
-- [ProgressHUD](https://github.com/relatedcode/ProgressHUD): Lightweight HUD with progress, activity-indicator and symbol animations plus banners. (3.0K stars, pushed 2026-09-13; live demo, SPM)
+- [ProgressHUD](https://github.com/relatedcode/ProgressHUD): Lightweight HUD with progress, activity-indicator and symbol animations plus banners. (3.0K stars, pushed 2026-09-13; live demo, SPM; tags: hud, loading, progress, activity indicator, banner, spinner)
   Static calls: animate, progress, succeed, failed, symbol, banner; colours and animation type are global settings.
   ```swift
   ProgressHUD.colorAnimation = DemoSupport.accent     // tint of the animation and the progress ring
@@ -1118,7 +1118,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   after(2.0) { ProgressHUD.progress("Downloading", 0.8) }
   after(2.8) { ProgressHUD.succeed("Done", delay: 1.2) }       // checkmark, then hides itself
   ```
-- [ActivityIndicatorView](https://github.com/exyte/ActivityIndicatorView): A number of preset loading indicators created with SwiftUI (1.7K stars, pushed 2026-09-10; live demo, SwiftUI, SPM)
+- [ActivityIndicatorView](https://github.com/exyte/ActivityIndicatorView): A number of preset loading indicators created with SwiftUI (1.7K stars, pushed 2026-09-10; live demo, SwiftUI, SPM; tags: swiftui, loading, indicator, spinner, activity indicator)
   Pick an indicator type and give the view a frame and colour.
   ```swift
   ("default", .default(count: 8)),
@@ -1133,7 +1133,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       .frame(width: 52, height: 52)
       .foregroundColor(DemoSwiftUIPalette.accent)
   ```
-- [TKRubberIndicator](https://github.com/tbxark/TKRubberIndicator): A rubber animation pagecontrol (1.5K stars, pushed 2026-09-14; live demo, SPM, CocoaPods, Carthage)
+- [TKRubberIndicator](https://github.com/tbxark/TKRubberIndicator): A rubber animation pagecontrol (1.5K stars, pushed 2026-09-14; live demo, SPM, CocoaPods, Carthage; tags: page control, pager, indicator, dots, rubber)
   TKRubberPageControl with a page count; observe valueChange or the control event.
   ```swift
   let page = TKRubberPageControl(frame: CGRect(x: 100, y: 100, width: 200, height: 100), count: 3)
@@ -1149,5 +1149,5 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   page.numberOfPage = sender.selectedSegmentIndex + 3
   ```
-- [BusyNavigationBar](https://github.com/gmertk/BusyNavigationBar): A UINavigationBar extension to show loading effects above navigation bar's background. (980 stars, pushed 2017-05-01; CocoaPods, Carthage, inactive)
-- [SpringIndicator](https://github.com/KyoheiG3/SpringIndicator): SpringIndicator is indicator and PullToRefresh. Inspired by Material design components. (271 stars, pushed 2020-09-21; SPM, CocoaPods, Carthage, inactive)
+- [BusyNavigationBar](https://github.com/gmertk/BusyNavigationBar): A UINavigationBar extension to show loading effects above navigation bar's background. (980 stars, pushed 2017-05-01; CocoaPods, Carthage, inactive; tags: navigation bar, loading, indicator, activity, busy)
+- [SpringIndicator](https://github.com/KyoheiG3/SpringIndicator): SpringIndicator is indicator and PullToRefresh. Inspired by Material design components. (271 stars, pushed 2020-09-21; SPM, CocoaPods, Carthage, inactive; tags: indicator, pull to refresh, spinner, loading, material design)

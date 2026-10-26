@@ -97,7 +97,10 @@
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "minItems": 3,
+            "uniqueItems": true,
+            "description": "Plain lowercase search words for what the library does: component names, behaviours, look-alikes (e.g. tinder, apple music). At least 3."
           },
           "featured": {
             "type": "boolean"

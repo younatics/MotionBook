@@ -6,7 +6,7 @@
  "app": {
   "name": "MotionBook",
   "app_store_id": "1205163580",
-  "version": "3.6",
+  "version": "3.7",
   "live_demos": [
    "ActivityIndicatorView",
    "AnimateText",
@@ -84,7 +84,10 @@
    "tags": [
     "vector",
     "after effects",
-    "json"
+    "json",
+    "animation",
+    "bodymovin",
+    "keyframes"
    ],
    "featured": true,
    "gif": "motion-book/Lottie.gif",
@@ -119,7 +122,10 @@
    "tags": [
     "transition",
     "navigation",
-    "interactive"
+    "interactive",
+    "shared element",
+    "material design",
+    "view controller"
    ],
    "featured": true,
    "gif": "motion-book/Hero.gif",
@@ -154,7 +160,11 @@
    "tags": [
     "spring",
     "decay",
-    "classic"
+    "classic",
+    "physics",
+    "animation engine",
+    "objective-c",
+    "facebook"
    ],
    "featured": false,
    "gif": null,
@@ -181,7 +191,10 @@
    "tags": [
     "prototype",
     "easing",
-    "spring"
+    "spring",
+    "animation",
+    "uiview",
+    "interface builder"
    ],
    "featured": false,
    "gif": "motion-book/Spring.gif",
@@ -213,7 +226,15 @@
    "category": "Animation",
    "summary": "Today almost all apps have async processes, such as Api requests, long running processes, etc. And while the processes are working, usually developers place a loading view to show users that something is going on.SkeletonView has been conceived to address this need, an elegant way to show users that something is happening and also prepare them to which contents he is waiting.",
    "url": "https://github.com/Juanpe/SkeletonView",
-   "tags": [],
+   "tags": [
+    "skeleton",
+    "loading",
+    "placeholder",
+    "shimmer",
+    "redacted",
+    "table view",
+    "collection view"
+   ],
    "featured": false,
    "gif": "motion-book/SkeletonView.gif",
    "stars": 12889,
@@ -244,7 +265,13 @@
    "category": "Menu",
    "summary": "RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items.",
    "url": "https://github.com/Ramotion/animated-tab-bar",
-   "tags": [],
+   "tags": [
+    "tab bar",
+    "animation",
+    "menu",
+    "material design",
+    "uikit"
+   ],
    "featured": false,
    "gif": "motion-book/animated-tab-bar.gif",
    "stars": 11085,
@@ -278,7 +305,9 @@
    "tags": [
     "loading",
     "indicator",
-    "feedback"
+    "feedback",
+    "spinner",
+    "activity indicator"
    ],
    "featured": false,
    "gif": "motion-book/NVActivityIndicatorView.gif",
@@ -313,7 +342,11 @@
    "tags": [
     "table",
     "card",
-    "interaction"
+    "interaction",
+    "table view",
+    "expand",
+    "folding",
+    "material design"
    ],
    "featured": false,
    "gif": "motion-book/folding-cell.gif",
@@ -348,7 +381,10 @@
    "tags": [
     "interface builder",
     "prototype",
-    "design"
+    "design",
+    "storyboard",
+    "transition",
+    "animation"
    ],
    "featured": false,
    "gif": "motion-book/IBAnimatable.gif",
@@ -383,7 +419,9 @@
    "tags": [
     "text",
     "label",
-    "morph"
+    "morph",
+    "text animation",
+    "uilabel"
    ],
    "featured": false,
    "gif": "motion-book/LTMorphingLabel.gif",
@@ -415,7 +453,14 @@
    "category": "Animation",
    "summary": "FLAnimatedImage is a performant animated GIF engine for iOS: 1. Plays multiple GIFs simultaneously with a playback speed comparable to desktop browsers 2. Honors variable frame delays 3. Behaves gracefully under memory pressure 4. Eliminates delays or blocking during the first playback loop 5. Interprets the frame delays of fast GIFs the same way modern browsers do",
    "url": "https://github.com/Flipboard/FLAnimatedImage",
-   "tags": [],
+   "tags": [
+    "gif",
+    "image",
+    "animated image",
+    "performance",
+    "objective-c",
+    "flipboard"
+   ],
    "featured": false,
    "gif": "motion-book/FLAnimatedImage.gif",
    "stars": 7937,
@@ -449,7 +494,10 @@
    "tags": [
     "list",
     "collection",
-    "stagger"
+    "stagger",
+    "table view",
+    "collection view",
+    "animation"
    ],
    "featured": false,
    "gif": "motion-book/ViewAnimator.gif",
@@ -484,7 +532,10 @@
    "tags": [
     "tabbar",
     "uikit",
-    "badge"
+    "badge",
+    "tab bar",
+    "center button",
+    "objective-c"
    ],
    "featured": false,
    "gif": null,
@@ -507,7 +558,14 @@
    "category": "Transition",
    "summary": "XLPagerTabStrip is a Container View Controller that allows us to switch easily among a collection of view controllers. Pan gesture can be used to move on to next or previous view controller. It shows a interactive indicator of the current, previous, next child view controllers.",
    "url": "https://github.com/xmartlabs/XLPagerTabStrip",
-   "tags": [],
+   "tags": [
+    "pager",
+    "tabs",
+    "paging",
+    "segmented",
+    "container",
+    "swipe"
+   ],
    "featured": false,
    "gif": "motion-book/XLPagerTabStrip.gif",
    "stars": 6990,
@@ -538,7 +596,14 @@
    "category": "Table View",
    "summary": "Swipeable UITableViewCell based on the stock Mail.app, implemented in Swift.",
    "url": "https://github.com/SwipeCellKit/SwipeCellKit",
-   "tags": [],
+   "tags": [
+    "swipe",
+    "table view",
+    "cell",
+    "actions",
+    "mail app",
+    "drag"
+   ],
    "featured": false,
    "gif": "motion-book/SwipeCellKit.gif",
    "stars": 6276,
@@ -569,7 +634,13 @@
    "category": "Animation",
    "summary": "Powerful and easy-to-use vector graphics Swift library with SVG support",
    "url": "https://github.com/exyte/Macaw",
-   "tags": [],
+   "tags": [
+    "vector",
+    "svg",
+    "drawing",
+    "graphics",
+    "animation"
+   ],
    "featured": false,
    "gif": "motion-book/Macaw.gif",
    "stars": 6045,
@@ -603,7 +674,10 @@
    "tags": [
     "textfield",
     "input",
-    "focus"
+    "focus",
+    "text field",
+    "floating label",
+    "form"
    ],
    "featured": false,
    "gif": "motion-book/TextFieldEffects.gif",
@@ -635,7 +709,14 @@
    "category": "Menu",
    "summary": "Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+.",
    "url": "https://github.com/jonkykong/SideMenu",
-   "tags": [],
+   "tags": [
+    "side menu",
+    "drawer",
+    "navigation",
+    "hamburger",
+    "menu",
+    "storyboard"
+   ],
    "featured": false,
    "gif": "motion-book/SideMenu.gif",
    "stars": 5818,
@@ -664,9 +745,16 @@
    "title": "expanding-collection",
    "author": "Ramotion",
    "category": "Collection View",
-   "summary": "This project aims to provide a simple and customizable pull to refresh implementation.",
+   "summary": "ExpandingCollection is an animated material design UI card peek/pop controller.",
    "url": "https://github.com/Ramotion/expanding-collection",
-   "tags": [],
+   "tags": [
+    "card",
+    "collection view",
+    "expand",
+    "stack",
+    "material design",
+    "preview"
+   ],
    "featured": false,
    "gif": "motion-book/expanding-collection.gif",
    "stars": 5510,
@@ -697,7 +785,14 @@
    "category": "Collection View",
    "summary": "KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS.",
    "url": "https://github.com/Yalantis/Koloda",
-   "tags": [],
+   "tags": [
+    "card",
+    "swipe",
+    "tinder",
+    "stack",
+    "collection view",
+    "gesture"
+   ],
    "featured": false,
    "gif": "motion-book/Koloda.gif",
    "stars": 5388,
@@ -728,7 +823,14 @@
    "category": "Animation",
    "summary": "An adaptive scrollable graph view for iOS to visualise simple discrete datasets. Written in Swift.",
    "url": "https://github.com/philackm/ScrollableGraphView",
-   "tags": [],
+   "tags": [
+    "chart",
+    "graph",
+    "line chart",
+    "data",
+    "visualization",
+    "scroll"
+   ],
    "featured": false,
    "gif": "motion-book/ScrollableGraphView.gif",
    "stars": 5278,
@@ -754,7 +856,10 @@
    "tags": [
     "tabbar",
     "badge",
-    "uikit"
+    "uikit",
+    "tab bar",
+    "center button",
+    "objective-c"
    ],
    "featured": false,
    "gif": null,
@@ -777,7 +882,13 @@
    "category": "Collection View",
    "summary": "UICollectionView replacement of UITableView. Do even more like Parallax Header, Sticky Section Header. Made for iOS 7.",
    "url": "https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout",
-   "tags": [],
+   "tags": [
+    "parallax",
+    "sticky header",
+    "collection view",
+    "layout",
+    "header"
+   ],
    "featured": false,
    "gif": "motion-book/CSStickyHeaderFlowLayout.gif",
    "stars": 5019,
@@ -800,7 +911,14 @@
    "category": "Alert",
    "summary": "NotificationBanner is an extremely customizable and lightweight library that makes the task of displaying in app notification banners and drop down alerts an absolute breeze in iOS.",
    "url": "https://github.com/Daltron/NotificationBanner",
-   "tags": [],
+   "tags": [
+    "banner",
+    "notification",
+    "toast",
+    "in app",
+    "status bar",
+    "alert"
+   ],
    "featured": false,
    "gif": "motion-book/NotificationBanner.gif",
    "stars": 4862,
@@ -829,12 +947,15 @@
    "title": "AnimatedCollectionViewLayout",
    "author": "KelvinJin",
    "category": "Transition",
-   "summary": "Animated UIButton of Loading Animation and Transition Animation.",
+   "summary": "A UICollectionViewLayout subclass that adds custom transitions/animations to the UICollectionView without effecting your existing code.",
    "url": "https://github.com/KelvinJin/AnimatedCollectionViewLayout",
    "tags": [
     "collection",
     "layout",
-    "paging"
+    "paging",
+    "carousel",
+    "transition",
+    "collection view"
    ],
    "featured": false,
    "gif": "motion-book/AnimatedCollectionViewLayout.gif",
@@ -869,7 +990,10 @@
    "tags": [
     "physics",
     "gesture",
-    "simulation"
+    "simulation",
+    "spring",
+    "interactive",
+    "animation engine"
    ],
    "featured": false,
    "gif": null,
@@ -896,7 +1020,10 @@
    "tags": [
     "swiftui",
     "effects",
-    "transitions"
+    "transitions",
+    "particles",
+    "change effect",
+    "animation"
    ],
    "featured": false,
    "gif": "motion-book/Pow.gif",
@@ -931,7 +1058,10 @@
    "tags": [
     "label",
     "text",
-    "scroll"
+    "scroll",
+    "marquee",
+    "ticker",
+    "uilabel"
    ],
    "featured": false,
    "gif": "motion-book/MarqueeLabel.gif",
@@ -963,7 +1093,14 @@
    "category": "UI",
    "summary": "Awesome iOS 11 appstore cards in swift 4.",
    "url": "https://github.com/PaoloCuscela/Cards",
-   "tags": [],
+   "tags": [
+    "card",
+    "app store",
+    "uikit",
+    "storyboard",
+    "today",
+    "ibdesignable"
+   ],
    "featured": false,
    "gif": "motion-book/Cards.gif",
    "stars": 4199,
@@ -986,7 +1123,13 @@
    "category": "Alert",
    "summary": "CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar.",
    "url": "https://github.com/cruffenach/CRToast",
-   "tags": [],
+   "tags": [
+    "toast",
+    "notification",
+    "status bar",
+    "banner",
+    "objective-c"
+   ],
    "featured": false,
    "gif": "motion-book/CRToast.gif",
    "stars": 4119,
@@ -1020,7 +1163,9 @@
    "tags": [
     "swiftui",
     "toast",
-    "popup"
+    "popup",
+    "banner",
+    "notification"
    ],
    "featured": false,
    "gif": "motion-book/PopupView.gif",
@@ -1052,7 +1197,13 @@
    "category": "Alert",
    "summary": "A simple, customizable popup dialog for iOS written in Swift. Replaces UIAlertController alert style.",
    "url": "https://github.com/Orderella/PopupDialog",
-   "tags": [],
+   "tags": [
+    "popup",
+    "dialog",
+    "alert",
+    "modal",
+    "overlay"
+   ],
    "featured": false,
    "gif": "motion-book/PopupDialog.gif",
    "stars": 4037,
@@ -1083,7 +1234,13 @@
    "category": "Indicator",
    "summary": "A Swift based reimplementation of the Apple HUD (Volume, Ringer, Rotation,…) for iOS 8.",
    "url": "https://github.com/pkluz/PKHUD",
-   "tags": [],
+   "tags": [
+    "hud",
+    "loading",
+    "progress",
+    "apple",
+    "overlay"
+   ],
    "featured": false,
    "gif": "motion-book/PKHUD.gif",
    "stars": 3769,
@@ -1114,7 +1271,13 @@
    "category": "UI",
    "summary": "This component implements transition animation to crumble view-controller into tiny pieces.",
    "url": "https://github.com/Yalantis/StarWars.iOS",
-   "tags": [],
+   "tags": [
+    "transition",
+    "crumble",
+    "particles",
+    "uidynamics",
+    "effect"
+   ],
    "featured": false,
    "gif": "motion-book/StarWars.iOS.gif",
    "stars": 3760,
@@ -1140,7 +1303,9 @@
    "tags": [
     "gradient",
     "background",
-    "branding"
+    "branding",
+    "instagram",
+    "animation"
    ],
    "featured": false,
    "gif": "motion-book/Pastel.gif",
@@ -1172,7 +1337,13 @@
    "category": "UI",
    "summary": "Manage Colors, Integrate Night/Multiple Themes",
    "url": "https://github.com/draveness/DKNightVersion",
-   "tags": [],
+   "tags": [
+    "theme",
+    "night mode",
+    "dark mode",
+    "colors",
+    "objective-c"
+   ],
    "featured": false,
    "gif": "motion-book/DKNightVersion.gif",
    "stars": 3513,
@@ -1193,9 +1364,16 @@
    "title": "circle-menu",
    "author": "Ramotion",
    "category": "Menu",
-   "summary": "This project is maintained by Ramotion, Inc. We specialize in the designing and coding of custom UI for Mobile Apps and Websites.",
+   "summary": "CircleMenu is a simple, elegant UI menu with a circular layout and material design animations.",
    "url": "https://github.com/Ramotion/circle-menu",
-   "tags": [],
+   "tags": [
+    "menu",
+    "circular",
+    "radial",
+    "buttons",
+    "animation",
+    "material design"
+   ],
    "featured": false,
    "gif": "motion-book/circle-menu.gif",
    "stars": 3407,
@@ -1226,7 +1404,13 @@
    "category": "Menu",
    "summary": "iOS Slide Menu View based on Google+, iQON, Feedly, Ameba iOS app. It is written in pure swift.",
    "url": "https://github.com/dekatotoro/SlideMenuControllerSwift",
-   "tags": [],
+   "tags": [
+    "side menu",
+    "drawer",
+    "slide menu",
+    "navigation",
+    "menu"
+   ],
    "featured": false,
    "gif": "motion-book/SlideMenuControllerSwift.gif",
    "stars": 3367,
@@ -1252,7 +1436,9 @@
    "tags": [
     "onboarding",
     "scroll",
-    "story"
+    "story",
+    "walkthrough",
+    "keyframes"
    ],
    "featured": true,
    "gif": null,
@@ -1276,7 +1462,14 @@
    "category": "Transition",
    "summary": "Gemini is rich scroll based animation framework for iOS, written in Swift.",
    "url": "https://github.com/shoheiyokoyama/Gemini",
-   "tags": [],
+   "tags": [
+    "scroll",
+    "collection view",
+    "3d",
+    "animation",
+    "carousel",
+    "effects"
+   ],
    "featured": false,
    "gif": "motion-book/Gemini.gif",
    "stars": 3308,
@@ -1299,7 +1492,13 @@
    "category": "Transition",
    "summary": "A custom modal transition that presents and dismiss a controller inside an expanding and shrinking bubble.",
    "url": "https://github.com/andreamazz/BubbleTransition",
-   "tags": [],
+   "tags": [
+    "transition",
+    "modal",
+    "bubble",
+    "circular",
+    "present"
+   ],
    "featured": false,
    "gif": "motion-book/BubbleTransition.gif",
    "stars": 3297,
@@ -1325,7 +1524,9 @@
    "tags": [
     "gif",
     "image",
-    "uikit"
+    "uikit",
+    "animated image",
+    "uiimageview"
    ],
    "featured": false,
    "gif": null,
@@ -1349,7 +1550,14 @@
    "category": "UI",
    "summary": "Looking for the easiest way of presenting something in your iOS app? Then you are in the right place. Presentation will help you make your tutorials, release notes and any kind of animated pages with the minimum amount of effort.",
    "url": "https://github.com/hyperoslo/Presentation",
-   "tags": [],
+   "tags": [
+    "onboarding",
+    "slides",
+    "pages",
+    "walkthrough",
+    "tutorial",
+    "presentation"
+   ],
    "featured": false,
    "gif": "motion-book/Presentation.gif",
    "stars": 3068,
@@ -1375,7 +1583,10 @@
    "tags": [
     "hud",
     "loading",
-    "progress"
+    "progress",
+    "activity indicator",
+    "banner",
+    "spinner"
    ],
    "featured": false,
    "gif": "motion-book/ProgressHUD.gif",
@@ -1407,7 +1618,14 @@
    "category": "Animation",
    "summary": "A fantastic Physical animation library for swift(Not Just Spring !!!), it is base on UIDynamic and extension to it, friendly APIs make you use it or custom your own animation very easily!",
    "url": "https://github.com/AugustRush/Stellar",
-   "tags": [],
+   "tags": [
+    "physics",
+    "uidynamics",
+    "animation",
+    "spring",
+    "gravity",
+    "snap"
+   ],
    "featured": false,
    "gif": "motion-book/Stellar.gif",
    "stars": 2941,
@@ -1433,7 +1651,9 @@
    "tags": [
     "swiftui",
     "metal",
-    "shaders"
+    "shaders",
+    "effects",
+    "gpu"
    ],
    "featured": false,
    "gif": "motion-book/Inferno.gif",
@@ -1465,7 +1685,13 @@
    "category": "Animation",
    "summary": "RAMPaperSwitch is a Swift material design UI module which paints over the parent view when the switch is turned on.",
    "url": "https://github.com/Ramotion/paper-switch",
-   "tags": [],
+   "tags": [
+    "switch",
+    "toggle",
+    "material design",
+    "fill",
+    "uiswitch"
+   ],
    "featured": false,
    "gif": "motion-book/paper-switch.gif",
    "stars": 2897,
@@ -1488,7 +1714,13 @@
    "category": "Menu",
    "summary": "Our Guillotine Menu Transitioning Animation implemented in Swift reminds a bit of a notorious killing machine.",
    "url": "https://github.com/Yalantis/GuillotineMenu",
-   "tags": [],
+   "tags": [
+    "menu",
+    "navigation",
+    "transition",
+    "rotation",
+    "hamburger"
+   ],
    "featured": false,
    "gif": "motion-book/GuillotineMenu.gif",
    "stars": 2876,
@@ -1511,7 +1743,13 @@
    "category": "Transition",
    "summary": "BWWalkthrough (BWWT) is a class that helps you create Walkthroughs for your iOS Apps. It differs from other similar classes in that there is no rigid template; BWWT is just a layer placed over your controllers that gives you complete freedom on the design of your views.",
    "url": "https://github.com/ariok/BWWalkthrough",
-   "tags": [],
+   "tags": [
+    "onboarding",
+    "walkthrough",
+    "tutorial",
+    "pages",
+    "intro"
+   ],
    "featured": false,
    "gif": "motion-book/BWWalkthrough.gif",
    "stars": 2741,
@@ -1537,7 +1775,11 @@
    "tags": [
     "presentation",
     "sheet",
-    "modal"
+    "modal",
+    "bottom sheet",
+    "apple music",
+    "card",
+    "drag to dismiss"
    ],
    "featured": false,
    "gif": "motion-book/SPStorkController.gif",
@@ -1569,7 +1811,13 @@
    "category": "Menu",
    "summary": "Animated side menu with customizable UI. Made in Yalantis.",
    "url": "https://github.com/Yalantis/Side-Menu.iOS",
-   "tags": [],
+   "tags": [
+    "side menu",
+    "drawer",
+    "navigation",
+    "menu",
+    "animation"
+   ],
    "featured": false,
    "gif": "motion-book/Side-Menu.iOS.gif",
    "stars": 2708,
@@ -1595,7 +1843,9 @@
    "tags": [
     "transition",
     "interactive",
-    "navigation"
+    "navigation",
+    "interruptible",
+    "view controller"
    ],
    "featured": false,
    "gif": null,
@@ -1619,7 +1869,13 @@
    "category": "UI",
    "summary": "Animated top/bottom segmented control written in Swift.",
    "url": "https://github.com/Yalantis/Segmentio",
-   "tags": [],
+   "tags": [
+    "segmented control",
+    "tabs",
+    "control",
+    "indicator",
+    "top bar"
+   ],
    "featured": false,
    "gif": "motion-book/Segmentio.gif",
    "stars": 2515,
@@ -1650,7 +1906,13 @@
    "category": "Transition",
    "summary": "Collection of custom animated transitions for iOS using UIViewControllerAnimatedTransitioning protocol.",
    "url": "https://github.com/shu223/AnimatedTransitionGallery",
-   "tags": [],
+   "tags": [
+    "transition",
+    "gallery",
+    "view controller",
+    "custom transition",
+    "examples"
+   ],
    "featured": false,
    "gif": "motion-book/AnimatedTransitionGallery.gif",
    "stars": 2500,
@@ -1676,7 +1938,9 @@
    "tags": [
     "swiftui",
     "confetti",
-    "particles"
+    "particles",
+    "celebration",
+    "effects"
    ],
    "featured": false,
    "gif": "motion-book/ConfettiSwiftUI.gif",
@@ -1711,7 +1975,10 @@
    "tags": [
     "presentation",
     "transition",
-    "modal"
+    "modal",
+    "slide",
+    "fade",
+    "interactive"
    ],
    "featured": false,
    "gif": "motion-book/Jelly.gif",
@@ -1746,7 +2013,10 @@
    "tags": [
     "spring",
     "gesture",
-    "engine"
+    "engine",
+    "animation engine",
+    "interruptible",
+    "uikit"
    ],
    "featured": false,
    "gif": "motion-book/Wave.gif",
@@ -1778,7 +2048,13 @@
    "category": "Transition",
    "summary": "Custom transition between viewcontrollers holding tableviews. Each cell is animated to simulate a 'wave effect'.",
    "url": "https://github.com/andreamazz/AMWaveTransition",
-   "tags": [],
+   "tags": [
+    "transition",
+    "table view",
+    "wave",
+    "cells",
+    "navigation"
+   ],
    "featured": false,
    "gif": "motion-book/AMWaveTransition.gif",
    "stars": 2343,
@@ -1801,7 +2077,13 @@
    "category": "Transition",
    "summary": "Animated UIButton of Loading Animation and Transition Animation.",
    "url": "https://github.com/takuoka/TKSubmitTransition",
-   "tags": [],
+   "tags": [
+    "button",
+    "loading",
+    "transition",
+    "submit",
+    "spinner"
+   ],
    "featured": false,
    "gif": "motion-book/TKSubmitTransition.gif",
    "stars": 2255,
@@ -1827,7 +2109,10 @@
    "tags": [
     "swiftui",
     "popover",
-    "menu"
+    "menu",
+    "tooltip",
+    "popup",
+    "notification"
    ],
    "featured": false,
    "gif": "motion-book/Popovers.gif",
@@ -1859,7 +2144,13 @@
    "category": "UI",
    "summary": "MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it.",
    "url": "https://github.com/keitaoouchi/MarkdownView",
-   "tags": [],
+   "tags": [
+    "markdown",
+    "web view",
+    "text",
+    "rendering",
+    "wkwebview"
+   ],
    "featured": false,
    "gif": "motion-book/MarkdownView.gif",
    "stars": 2177,
@@ -1890,7 +2181,13 @@
    "category": "Transition",
    "summary": "A UIKit custom transition that simulates an elastic drag. Written in Swift.",
    "url": "https://github.com/lkzhao/ElasticTransition",
-   "tags": [],
+   "tags": [
+    "transition",
+    "elastic",
+    "drag",
+    "menu",
+    "interactive"
+   ],
    "featured": false,
    "gif": "motion-book/ElasticTransition.gif",
    "stars": 2161,
@@ -1916,7 +2213,9 @@
    "tags": [
     "swiftui",
     "grid",
-    "layout"
+    "layout",
+    "spans",
+    "collection"
    ],
    "featured": false,
    "gif": "motion-book/Grid-exyte.gif",
@@ -1948,7 +2247,14 @@
    "category": "Table View",
    "summary": "This project aims to provide a simple and customizable pull to refresh implementation.",
    "url": "https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS",
-   "tags": [],
+   "tags": [
+    "pull to refresh",
+    "refresh",
+    "table view",
+    "scroll",
+    "objective-c",
+    "animation"
+   ],
    "featured": false,
    "gif": "motion-book/Pull-to-Refresh.Rentals-iOS.gif",
    "stars": 2115,
@@ -1982,7 +2288,9 @@
    "tags": [
     "swiftui",
     "blur",
-    "progressive"
+    "progressive",
+    "variable blur",
+    "effects"
    ],
    "featured": false,
    "gif": "motion-book/Glur.gif",
@@ -2014,7 +2322,13 @@
    "category": "Transition",
    "summary": "PreviewTransition is a simple preview gallery controller",
    "url": "https://github.com/Ramotion/preview-transition",
-   "tags": [],
+   "tags": [
+    "transition",
+    "gallery",
+    "preview",
+    "table view",
+    "parallax"
+   ],
    "featured": false,
    "gif": "motion-book/preview-transition.gif",
    "stars": 2071,
@@ -2045,7 +2359,13 @@
    "category": "Alert",
    "summary": "Beautiful Animated custom Alert View inspired from javascript library SweetAlert. Written in Swift this SweetAlertView can be used in Swift and Objective-C projects. SweetAlertView provides live intutive experience to user actions.It can be used in place of UIAlertView and UIAlertController",
    "url": "https://github.com/codestergit/SweetAlert-iOS",
-   "tags": [],
+   "tags": [
+    "alert",
+    "dialog",
+    "popup",
+    "animated alert",
+    "modal"
+   ],
    "featured": false,
    "gif": "motion-book/SweetAlert-iOS.gif",
    "stars": 2028,
@@ -2076,7 +2396,13 @@
    "category": "UI",
    "summary": "A slider widget with a popup bubble displaying the precise value selected.",
    "url": "https://github.com/Ramotion/fluid-slider",
-   "tags": [],
+   "tags": [
+    "slider",
+    "control",
+    "input",
+    "bubble",
+    "uislider"
+   ],
    "featured": false,
    "gif": "motion-book/fluid-slider.gif",
    "stars": 1985,
@@ -2099,7 +2425,14 @@
    "category": "Animation",
    "summary": "A UILabel subclass that lets you animate text similar to Secret app.",
    "url": "https://github.com/zipme/RQShineLabel",
-   "tags": [],
+   "tags": [
+    "label",
+    "text",
+    "text animation",
+    "fade",
+    "secret app",
+    "objective-c"
+   ],
    "featured": false,
    "gif": "motion-book/RQShineLabel.gif",
    "stars": 1949,
@@ -2130,7 +2463,13 @@
    "category": "Transition",
    "summary": "This is a Swift based demo project to show how to make the transition Pinterest liked.",
    "url": "https://github.com/demonnico/PinterestSwift",
-   "tags": [],
+   "tags": [
+    "transition",
+    "pinterest",
+    "collection view",
+    "zoom",
+    "navigation"
+   ],
    "featured": false,
    "gif": "motion-book/PinterestSwift.gif",
    "stars": 1875,
@@ -2153,7 +2492,12 @@
    "category": "Transition",
    "summary": "Cool wave like transition between two or more UICollectionView",
    "url": "https://github.com/CezaryKopacz/CKWaveCollectionViewTransition",
-   "tags": [],
+   "tags": [
+    "transition",
+    "collection view",
+    "wave",
+    "navigation"
+   ],
    "featured": false,
    "gif": "motion-book/CKWaveCollectionViewTransition.gif",
    "stars": 1843,
@@ -2176,7 +2520,13 @@
    "category": "Alert",
    "summary": "SDCAlertView started out as an alert that looked identical to UIAlertView, but had support for a custom content view. With the introduction of UIAlertController in iOS 8, the project was updated to the more modern API that UIAlertController brought.",
    "url": "https://github.com/sberrevoets/SDCAlertView",
-   "tags": [],
+   "tags": [
+    "alert",
+    "action sheet",
+    "dialog",
+    "uialertcontroller",
+    "custom content"
+   ],
    "featured": false,
    "gif": "motion-book/SDCAlertView.gif",
    "stars": 1836,
@@ -2210,7 +2560,9 @@
    "tags": [
     "material",
     "transition",
-    "layout"
+    "layout",
+    "animation engine",
+    "material design"
    ],
    "featured": true,
    "gif": null,
@@ -2234,7 +2586,14 @@
    "category": "Animation",
    "summary": "Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory.",
    "url": "https://github.com/liyong03/YLGIFImage",
-   "tags": [],
+   "tags": [
+    "gif",
+    "image",
+    "image viewer",
+    "animated image",
+    "memory",
+    "objective-c"
+   ],
    "featured": false,
    "gif": "motion-book/YLGIFImage.gif",
    "stars": 1759,
@@ -2257,7 +2616,14 @@
    "category": "Collection View",
    "summary": "GSKStretchyHeaderView is an implementation of the stretchy header paradigm as seen on many apps, like Twitter, Spotify or airbnb.",
    "url": "https://github.com/gskbyte/GSKStretchyHeaderView",
-   "tags": [],
+   "tags": [
+    "stretchy header",
+    "parallax",
+    "header",
+    "table view",
+    "collection view",
+    "scroll"
+   ],
    "featured": false,
    "gif": "motion-book/GSKStretchyHeaderView.gif",
    "stars": 1739,
@@ -2283,7 +2649,9 @@
    "tags": [
     "swiftui",
     "shimmer",
-    "loading"
+    "loading",
+    "skeleton",
+    "placeholder"
    ],
    "featured": false,
    "gif": "motion-book/SwiftUI-Shimmer.gif",
@@ -2318,7 +2686,9 @@
    "tags": [
     "swiftui",
     "loading",
-    "indicator"
+    "indicator",
+    "spinner",
+    "activity indicator"
    ],
    "featured": false,
    "gif": "motion-book/ActivityIndicatorView.gif",
@@ -2350,7 +2720,13 @@
    "category": "Animation",
    "summary": "Nice gradient animated label that enable an easy way to add a shimmering effect",
    "url": "https://github.com/jogendra/LoadingShimmer",
-   "tags": [],
+   "tags": [
+    "label",
+    "text",
+    "gradient",
+    "shimmer",
+    "slide to unlock"
+   ],
    "featured": false,
    "gif": "motion-book/AnimatedMaskLabel.gif",
    "stars": 1597,
@@ -2376,7 +2752,10 @@
    "tags": [
     "swiftui",
     "particles",
-    "effects"
+    "effects",
+    "confetti",
+    "snow",
+    "fireworks"
    ],
    "featured": false,
    "gif": "motion-book/Vortex.gif",
@@ -2411,7 +2790,10 @@
    "tags": [
     "swiftui",
     "header",
-    "scroll"
+    "scroll",
+    "sticky header",
+    "collapsing header",
+    "parallax"
    ],
    "featured": false,
    "gif": "motion-book/ScalingHeaderScrollView.gif",
@@ -2446,7 +2828,10 @@
    "tags": [
     "spring",
     "gesture",
-    "engine"
+    "engine",
+    "animation engine",
+    "interruptible",
+    "interactive"
    ],
    "featured": false,
    "gif": "motion-book/Motion-b3ll.gif",
@@ -2478,7 +2863,13 @@
    "category": "Indicator",
    "summary": "A rubber animation pagecontrol",
    "url": "https://github.com/tbxark/TKRubberIndicator",
-   "tags": [],
+   "tags": [
+    "page control",
+    "pager",
+    "indicator",
+    "dots",
+    "rubber"
+   ],
    "featured": false,
    "gif": "motion-book/TKRubberIndicator.gif",
    "stars": 1468,
@@ -2509,7 +2900,13 @@
    "category": "Menu",
    "summary": "✨The eligible dropdown menu, written in Swift 3, appears dropdown menu to display a view of related items when a user click on the dropdown menu. You can customize dropdown view whatever you like (e.g. UITableView, UICollectionView... etc)",
    "url": "https://github.com/younatics/YNDropDownMenu",
-   "tags": [],
+   "tags": [
+    "dropdown",
+    "menu",
+    "filter",
+    "navigation",
+    "dropdown menu"
+   ],
    "featured": false,
    "gif": "motion-book/YNDropDownMenu.gif",
    "stars": 1326,
@@ -2540,7 +2937,14 @@
    "category": "Animation",
    "summary": "Ease is a event driven animation system that combines the observer pattern with custom spring animations as observers.",
    "url": "https://github.com/roberthein/Ease",
-   "tags": [],
+   "tags": [
+    "easing",
+    "spring",
+    "observer",
+    "scroll",
+    "gyroscope",
+    "animation"
+   ],
    "featured": false,
    "gif": "motion-book/Ease.gif",
    "stars": 1260,
@@ -2563,7 +2967,13 @@
    "category": "Animation",
    "summary": "A Splash view that animates and reveals its content, inspired by Twitter splash",
    "url": "https://github.com/PiXeL16/RevealingSplashView",
-   "tags": [],
+   "tags": [
+    "splash",
+    "launch screen",
+    "reveal",
+    "twitter",
+    "logo"
+   ],
    "featured": false,
    "gif": "motion-book/RevealingSplashView.gif",
    "stars": 1240,
@@ -2597,7 +3007,10 @@
    "tags": [
     "swiftui",
     "presentation",
-    "transition"
+    "transition",
+    "modal",
+    "uikit bridge",
+    "sheet"
    ],
    "featured": false,
    "gif": "motion-book/Transmission.gif",
@@ -2629,7 +3042,13 @@
    "category": "UI",
    "summary": "✨Awesome search view, written in Swift 3, appears search view like Pinterest Search view. You can fully customize this library. You can also use this library with Realm!",
    "url": "https://github.com/younatics/YNSearch",
-   "tags": [],
+   "tags": [
+    "search",
+    "search bar",
+    "pinterest",
+    "suggestions",
+    "history"
+   ],
    "featured": false,
    "gif": "motion-book/YNSearch.gif",
    "stars": 1181,
@@ -2660,7 +3079,13 @@
    "category": "Alert",
    "summary": "CDAlertView is highly customizable alert popup written in Swift 3. Usage is similar to UIAlertController.",
    "url": "https://github.com/candostdagdeviren/CDAlertView",
-   "tags": [],
+   "tags": [
+    "alert",
+    "popup",
+    "dialog",
+    "uialertcontroller",
+    "warning"
+   ],
    "featured": false,
    "gif": "motion-book/CDAlertView.gif",
    "stars": 1134,
@@ -2686,7 +3111,10 @@
    "tags": [
     "swiftui",
     "gyroscope",
-    "shine"
+    "shine",
+    "lighting",
+    "motion",
+    "holographic"
    ],
    "featured": false,
    "gif": "motion-book/Shiny.gif",
@@ -2718,7 +3146,13 @@
    "category": "Animation",
    "summary": "G..lit...c...hing UILa..bel fo..r iO...S",
    "url": "https://github.com/kciter/GlitchLabel",
-   "tags": [],
+   "tags": [
+    "label",
+    "text",
+    "glitch",
+    "text animation",
+    "uilabel"
+   ],
    "featured": false,
    "gif": "motion-book/GlitchLabel.gif",
    "stars": 1048,
@@ -2741,7 +3175,13 @@
    "category": "Indicator",
    "summary": "A UINavigationBar extension to show loading effects above navigation bar's background.",
    "url": "https://github.com/gmertk/BusyNavigationBar",
-   "tags": [],
+   "tags": [
+    "navigation bar",
+    "loading",
+    "indicator",
+    "activity",
+    "busy"
+   ],
    "featured": false,
    "gif": "motion-book/BusyNavigationBar.gif",
    "stars": 980,
@@ -2764,7 +3204,14 @@
    "category": "UI",
    "summary": "A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used instead of UISwitch. Inspired by Creativedash's Dribbble post",
    "url": "https://github.com/cocoatoucher/AIFlatSwitch",
-   "tags": [],
+   "tags": [
+    "switch",
+    "checkbox",
+    "checkmark",
+    "toggle",
+    "flat design",
+    "uiswitch"
+   ],
    "featured": false,
    "gif": "motion-book/AIFlatSwitch.gif",
    "stars": 963,
@@ -2787,7 +3234,13 @@
    "category": "Transition",
    "summary": "An iOS transition for controllers based on material design.",
    "url": "https://github.com/johnvuko/JTMaterialTransition",
-   "tags": [],
+   "tags": [
+    "transition",
+    "material design",
+    "circular reveal",
+    "present",
+    "button"
+   ],
    "featured": false,
    "gif": "motion-book/JTMaterialTransition.gif",
    "stars": 949,
@@ -2818,7 +3271,13 @@
    "category": "Animation",
    "summary": "Windless makes it easy to implement invisible layout loading view.",
    "url": "https://github.com/ParkGwangBeom/Windless",
-   "tags": [],
+   "tags": [
+    "skeleton",
+    "loading",
+    "placeholder",
+    "shimmer",
+    "layout"
+   ],
    "featured": false,
    "gif": "motion-book/Windless.gif",
    "stars": 947,
@@ -2841,7 +3300,13 @@
    "category": "Animation",
    "summary": "🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.",
    "url": "https://github.com/younatics/Highlighter",
-   "tags": [],
+   "tags": [
+    "highlight",
+    "search",
+    "text",
+    "uilabel",
+    "uitextview"
+   ],
    "featured": false,
    "gif": "motion-book/Highlighter.gif",
    "stars": 921,
@@ -2872,7 +3337,13 @@
    "category": "Table View",
    "summary": "ElongationPreview is an elegant push-pop style view controller",
    "url": "https://github.com/Ramotion/elongation-preview",
-   "tags": [],
+   "tags": [
+    "preview",
+    "table view",
+    "expand",
+    "push",
+    "detail"
+   ],
    "featured": false,
    "gif": "motion-book/elongation-preview.gif",
    "stars": 888,
@@ -2898,7 +3369,10 @@
    "tags": [
     "swiftui",
     "blob",
-    "backsplash"
+    "backsplash",
+    "shapes",
+    "animation",
+    "background"
    ],
    "featured": false,
    "gif": "motion-book/Liquid.gif",
@@ -2933,7 +3407,10 @@
    "tags": [
     "rive",
     "runtime",
-    "vector"
+    "vector",
+    "animation",
+    "state machine",
+    "interactive"
    ],
    "featured": false,
    "gif": "motion-book/rive-ios.gif",
@@ -2965,7 +3442,14 @@
    "category": "UI",
    "summary": "🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view.",
    "url": "https://github.com/younatics/MediaBrowser",
-   "tags": [],
+   "tags": [
+    "photo browser",
+    "gallery",
+    "image viewer",
+    "video",
+    "media",
+    "zoom"
+   ],
    "featured": false,
    "gif": "motion-book/MediaBrowser.gif",
    "stars": 646,
@@ -2996,7 +3480,13 @@
    "category": "Collection View",
    "summary": "Spreadsheet CollectionViewLayout in Swift. Fully customizable.",
    "url": "https://github.com/stuffrabbit/SwiftSpreadsheet",
-   "tags": [],
+   "tags": [
+    "spreadsheet",
+    "table",
+    "grid",
+    "collection view",
+    "layout"
+   ],
    "featured": false,
    "gif": "motion-book/SwiftSpreadsheet.gif",
    "stars": 637,
@@ -3019,7 +3509,13 @@
    "category": "Alert",
    "summary": "MIBlurPopup lets you create amazing popups with a blurred background",
    "url": "https://github.com/MarioIannotta/MIBlurPopup",
-   "tags": [],
+   "tags": [
+    "popup",
+    "blur",
+    "alert",
+    "modal",
+    "segue"
+   ],
    "featured": false,
    "gif": "motion-book/MIBlurPopup.gif",
    "stars": 598,
@@ -3050,7 +3546,13 @@
    "category": "Alert",
    "summary": "Animated alert library like Swarm app.",
    "url": "https://github.com/takuoka/TKSwarmAlert",
-   "tags": [],
+   "tags": [
+    "alert",
+    "popup",
+    "animation",
+    "swarm app",
+    "spring"
+   ],
    "featured": false,
    "gif": "motion-book/TKSwarmAlert.gif",
    "stars": 573,
@@ -3073,7 +3575,13 @@
    "category": "Collection View",
    "summary": "Custom CollectionView like Wallet App",
    "url": "https://github.com/MillmanY/MMCardView",
-   "tags": [],
+   "tags": [
+    "card",
+    "wallet",
+    "collection view",
+    "stack",
+    "passbook"
+   ],
    "featured": false,
    "gif": "motion-book/MMCardView.gif",
    "stars": 565,
@@ -3099,7 +3607,9 @@
    "tags": [
     "swiftui",
     "tabbar",
-    "animation"
+    "animation",
+    "tab bar",
+    "menu"
    ],
    "featured": false,
    "gif": null,
@@ -3123,7 +3633,13 @@
    "category": "Table View",
    "summary": "✨Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell?",
    "url": "https://github.com/younatics/YNExpandableCell",
-   "tags": [],
+   "tags": [
+    "table view",
+    "expandable",
+    "collapsible",
+    "cell",
+    "accordion"
+   ],
    "featured": false,
    "gif": "motion-book/YNExpandableCell.gif",
    "stars": 451,
@@ -3154,7 +3670,14 @@
    "category": "Animation",
    "summary": "Show the weather effects onto view written in Swift3",
    "url": "https://github.com/Urtaq/URWeatherView",
-   "tags": [],
+   "tags": [
+    "weather",
+    "effects",
+    "rain",
+    "snow",
+    "shader",
+    "particles"
+   ],
    "featured": false,
    "gif": "motion-book/URWeatherView.gif",
    "stars": 447,
@@ -3180,7 +3703,9 @@
    "tags": [
     "swiftui",
     "gradient",
-    "background"
+    "background",
+    "mesh",
+    "animation"
    ],
    "featured": false,
    "gif": "motion-book/FluidGradient.gif",
@@ -3215,7 +3740,10 @@
    "tags": [
     "swiftui",
     "text",
-    "animation"
+    "animation",
+    "text animation",
+    "typing",
+    "typography"
    ],
    "featured": false,
    "gif": "motion-book/AnimateText.gif",
@@ -3247,7 +3775,13 @@
    "category": "Alert",
    "summary": "An Android Wear style confirmation view for iOS",
    "url": "https://github.com/ashrobo/GoogleWearAlert",
-   "tags": [],
+   "tags": [
+    "alert",
+    "confirmation",
+    "android wear",
+    "checkmark",
+    "overlay"
+   ],
    "featured": false,
    "gif": "motion-book/GoogleWearAlert.gif",
    "stars": 417,
@@ -3270,7 +3804,13 @@
    "category": "UI",
    "summary": "This pod provides a view controller for choosing and creating tags in the style of wordpress or tumblr. This tag picker was originally used in the Intrepid Pursuits app, Slate.",
    "url": "https://github.com/paulrolfe/PARTagPicker",
-   "tags": [],
+   "tags": [
+    "tags",
+    "tag picker",
+    "input",
+    "chips",
+    "text field"
+   ],
    "featured": false,
    "gif": "motion-book/PARTagPicker.gif",
    "stars": 365,
@@ -3293,7 +3833,13 @@
    "category": "Indicator",
    "summary": "SpringIndicator is indicator and PullToRefresh. Inspired by Material design components.",
    "url": "https://github.com/KyoheiG3/SpringIndicator",
-   "tags": [],
+   "tags": [
+    "indicator",
+    "pull to refresh",
+    "spinner",
+    "loading",
+    "material design"
+   ],
    "featured": false,
    "gif": "motion-book/SpringIndicator.gif",
    "stars": 271,
@@ -3316,7 +3862,14 @@
    "category": "Animation",
    "summary": "Simply highlight items for your tutorial walkthrough, written in Swift. Gecco means Moonlight in Japanese.",
    "url": "https://github.com/xai3/Gecco",
-   "tags": [],
+   "tags": [
+    "tutorial",
+    "walkthrough",
+    "spotlight",
+    "highlight",
+    "onboarding",
+    "coach mark"
+   ],
    "featured": false,
    "gif": "motion-book/Gecco.gif",
    "stars": 19,

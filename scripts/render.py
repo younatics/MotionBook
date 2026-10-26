@@ -39,7 +39,12 @@ def validate(doc: dict) -> list[str]:
     if not re.match(r"^\d{4}-\d{2}-\d{2}$", str(doc.get("stats_as_of", ""))):
         problems.append("stats_as_of must be YYYY-MM-DD")
     titles: list[str] = []
+    summaries: dict[str, str] = {}
     for entry in doc.get("libraries", []):
+        summary = (entry.get("summary") or "").strip()
+        if summary and summary in summaries:
+            problems.append(f"{entry.get('title')}: summary duplicates {summaries[summary]} (copied description?)")
+        summaries.setdefault(summary, entry.get("title", "<untitled>"))
         name = entry.get("title", "<untitled>")
         titles.append(name)
         for key in schema["properties"]["libraries"]["items"]["required"]:
@@ -54,6 +59,9 @@ def validate(doc: dict) -> list[str]:
             problems.append(f"{name}: gif {gif} is not in the repository")
         if entry.get("live_demo") and not entry.get("verified"):
             problems.append(f"{name}: live_demo entries need a verified stamp")
+        tags = entry.get("tags") or []
+        if len(tags) < 3 or len(set(tags)) != len(tags) or any(t != t.strip().lower() or not t for t in tags):
+            problems.append(f"{name}: needs at least 3 unique lowercase tags (search words), got {tags}")
         install = entry.get("install") or {}
         for flag in ("spm", "cocoapods", "carthage"):
             if not isinstance(install.get(flag), bool):
@@ -181,6 +189,9 @@ def render_readme(doc: dict) -> str:
             lines.append("")
             lines.append(e["summary"].strip() or "_No description._")
             lines.append("")
+            if e.get("tags"):
+                lines.append("<sub>" + " · ".join(e["tags"]) + "</sub>")
+                lines.append("")
             badge_text = " · ".join(f"`{b}`" for b in badges(e))
             extras = []
             if e.get("gif"):
@@ -215,7 +226,8 @@ def render_llms(doc: dict) -> str:
         "Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, "
         "latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with. "
         "Entries with a live demo also carry `usage`: a minimal Swift snippet copied from the demo source, so it compiles against the "
-        "pinned version; the same snippet is shown under the library below.",
+        "pinned version; the same snippet is shown under the library below. Every entry has `tags`: plain search words for what the "
+        "library does (component names, behaviours, look-alikes such as tinder or apple music), listed after the summary.",
         "",
         "## Catalog",
         "",
@@ -247,7 +259,8 @@ def render_llms(doc: dict) -> str:
             elif is_inactive(e):
                 flags.append("inactive")
             summary = (e["summary"].strip() or "no description").replace("\n", " ")
-            lines.append(f"- [{e['title']}]({e['url']}): {summary} ({stars(e)} stars, pushed {e.get('pushed') or 'unknown'}; {', '.join(flags) or 'manual install'})")
+            tag_text = f"; tags: {', '.join(e['tags'])}" if e.get("tags") else ""
+            lines.append(f"- [{e['title']}]({e['url']}): {summary} ({stars(e)} stars, pushed {e.get('pushed') or 'unknown'}; {', '.join(flags) or 'manual install'}{tag_text})")
             if e.get("usage"):
                 if e.get("usage_note"):
                     lines.append(f"  {e['usage_note']}")
@@ -263,6 +276,7 @@ def render_site(doc: dict) -> str:
     for e in sorted(doc["libraries"], key=lambda x: (-(x.get("stars") or 0), x["title"].lower())):
         gif = f'<img loading="lazy" src="{html.escape(doc["gif_base_url"] + e["gif"])}" alt="{html.escape(e["title"])} preview">' if e.get("gif") else '<div class="nogif">no preview</div>'
         tags = " ".join(f'<span class="badge">{html.escape(b)}</span>' for b in badges(e))
+        tags += " " + " ".join(f'<span class="tag">{html.escape(b)}</span>' for b in e.get("tags", []))
         spm = e.get("install", {}).get("spm_package")
         install = f'<code>{html.escape(spm)}</code>' if spm else ""
         if e.get("usage"):
@@ -292,7 +306,7 @@ main{{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap
 .nogif{{display:flex;align-items:center;justify-content:center;color:#6b7280;font-size:13px;aspect-ratio:9/4}}
 .card h3{{margin:6px 0 0;font-size:17px}}.card a{{color:#ee165b;text-decoration:none}}.meta{{color:#5b6674;font-size:13px;margin:0}}
 .card details{{font-size:13px}}.card summary{{cursor:pointer;color:#5b6674}}.card pre{{margin:6px 0 0;padding:8px;background:#f3f4f6;border-radius:8px;font-size:12px;overflow:auto;white-space:pre}}
-.card p{{margin:0;font-size:14px}}.badge{{display:inline-block;background:#fde7ee;color:#ee165b;border-radius:999px;padding:2px 8px;font-size:12px;margin:2px 4px 0 0}}
+.card p{{margin:0;font-size:14px}}.tag{{display:inline-block;background:#f1f5f9;color:#5b6674;border-radius:999px;padding:2px 8px;font-size:12px;margin:2px 4px 0 0}}.badge{{display:inline-block;background:#fde7ee;color:#ee165b;border-radius:999px;padding:2px 8px;font-size:12px;margin:2px 4px 0 0}}
 code{{font-size:12px;background:#f1f5f9;border-radius:8px;padding:6px 8px;overflow-wrap:anywhere;display:block}}
 .hidden{{display:none}}footer{{text-align:center;color:#6b7280;font-size:13px;padding:0 20px 40px}}
 </style></head><body>
@@ -303,7 +317,7 @@ code{{font-size:12px;background:#f1f5f9;border-radius:8px;padding:6px 8px;overfl
 <footer>Generated from catalog.json by scripts/render.py · MIT · younatics</footer>
 <script>
 const q=document.getElementById('q'),cat=document.getElementById('cat'),live=document.getElementById('live'),sw=document.getElementById('swiftui'),act=document.getElementById('active');
-function apply(){{const t=q.value.toLowerCase();document.querySelectorAll('.card').forEach(c=>{{const ok=(!cat.value||c.dataset.category===cat.value)&&(!live.checked||c.dataset.live==='true')&&(!sw.checked||c.dataset.swiftui==='true')&&(!act.checked||c.dataset.inactive==='false')&&(!t||c.textContent.toLowerCase().includes(t));c.classList.toggle('hidden',!ok);}});}}
+const norm=s=>s.toLowerCase().replace(/[\\s_-]+/g,'');function apply(){{const t=norm(q.value);document.querySelectorAll('.card').forEach(c=>{{const ok=(!cat.value||c.dataset.category===cat.value)&&(!live.checked||c.dataset.live==='true')&&(!sw.checked||c.dataset.swiftui==='true')&&(!act.checked||c.dataset.inactive==='false')&&(!t||norm(c.textContent).includes(t));c.classList.toggle('hidden',!ok);}});}}
 [q,cat,live,sw,act].forEach(el=>el.addEventListener('input',apply));apply();
 </script></body></html>
 """
