@@ -1,6 +1,6 @@
 # MotionBook
 
-> Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 64 of them live. Stats as of 2026-10-26.
+> Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 64 of them live. Stats as of 2026-10-27.
 
 Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with. Entries with a live demo also carry `usage`: a minimal Swift snippet copied from the demo source, so it compiles against the pinned version; the same snippet is shown under the library below. Every entry has `tags`: plain search words for what the library does (component names, behaviours, look-alikes such as tinder or apple music), listed after the summary.
 
@@ -268,7 +268,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   Liquid(samples: 8, period: 8).frame(width: 90, height: 90).foregroundColor(.orange)
   Liquid(samples: 12, period: 4).frame(width: 90, height: 90).foregroundColor(.teal)
   ```
-- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (854 stars, pushed 2026-10-24; live demo, SPM; tags: rive, runtime, vector, animation, state machine, interactive)
+- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (853 stars, pushed 2026-10-26; live demo, SPM; tags: rive, runtime, vector, animation, state machine, interactive)
   RiveViewModel loads a .riv file; its view plays the animation and the model controls playback.
   ```swift
   @StateObject private var logo = RiveViewModel(fileName: "rive_animation_logo", in: .module)
@@ -394,7 +394,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 - [PinterestSwift](https://github.com/demonnico/PinterestSwift): This is a Swift based demo project to show how to make the transition Pinterest liked. (1.9K stars, pushed 2020-06-15; inactive; tags: transition, pinterest, collection view, zoom, navigation)
 - [CKWaveCollectionViewTransition](https://github.com/CezaryKopacz/CKWaveCollectionViewTransition): Cool wave like transition between two or more UICollectionView (1.8K stars, pushed 2019-10-13; CocoaPods, inactive; tags: transition, collection view, wave, navigation)
 - [Motion](https://github.com/CosmicMind/Motion): A Material-inspired motion engine for transitions, transforms, and interactive presentation work. (1.8K stars, pushed 2020-01-28; SPM, inactive; tags: material, transition, layout, animation engine, material design)
-- [Transmission](https://github.com/nathantannar4/Transmission): Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more. (1.2K stars, pushed 2026-10-24; live demo, SwiftUI, SPM; tags: swiftui, presentation, transition, modal, uikit bridge, sheet)
+- [Transmission](https://github.com/nathantannar4/Transmission): Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more. (1.2K stars, pushed 2026-10-26; live demo, SwiftUI, SPM; tags: swiftui, presentation, transition, modal, uikit bridge, sheet)
   PresentationLink presents SwiftUI content with UIKit transitions; the destination dismisses through the presentation coordinator.
   ```swift
   PresentationLink(transition: .toast, isPresented: $showToast) {
@@ -696,7 +696,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       self.tabBarItem.badgeValue = nil
   }
   ```
-- [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController): Customisable tab bar controller with a raised centre button, badges and animated tab items. (7.0K stars, pushed 2026-10-23; SPM; tags: tabbar, uikit, badge, tab bar, center button, objective-c)
+- [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController): Customisable tab bar controller with a raised centre button, badges and animated tab items. (7.1K stars, pushed 2026-10-27; SPM; tags: tabbar, uikit, badge, tab bar, center button, objective-c)
 - [SideMenu](https://github.com/jonkykong/SideMenu): Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+. (5.8K stars, pushed 2023-02-09; live demo, SPM, CocoaPods, Carthage; tags: side menu, drawer, navigation, hamburger, menu, storyboard)
   Configure SideMenuManager with the menu navigation controllers, gestures and presentation mode.
   ```swift
@@ -769,7 +769,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   let banner = StatusBarNotificationBanner(title: "Success Status Bar Notification", style: .success)
   banner.show(queuePosition: selectedQueuePosition())
   ```
-- [CRToast](https://github.com/cruffenach/CRToast): CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar. (4.1K stars, pushed 2024-05-02; live demo, CocoaPods, Carthage; tags: toast, notification, status bar, banner, objective-c)
+- [CRToast](https://github.com/cruffenach/CRToast): CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar. (4.1K stars, pushed 2026-10-26; live demo, SPM, CocoaPods, Carthage; tags: toast, notification, status bar, banner, objective-c)
   Build an options dictionary with the kCRToast keys and show it through CRToastManager.
   ```objc
       [CRToastManager showNotificationWithOptions:[self options]
@@ -898,7 +898,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   alert.present()
   ```
 - [CDAlertView](https://github.com/candostdagdeviren/CDAlertView): CDAlertView is highly customizable alert popup written in Swift 3. Usage is similar to UIAlertController. (1.1K stars, pushed 2026-08-20; CocoaPods, Carthage; tags: alert, popup, dialog, uialertcontroller, warning)
-- [MIBlurPopup](https://github.com/MarioIannotta/MIBlurPopup): MIBlurPopup lets you create amazing popups with a blurred background (598 stars, pushed 2020-03-30; live demo, CocoaPods, inactive; tags: popup, blur, alert, modal, segue)
+- [MIBlurPopup](https://github.com/MarioIannotta/MIBlurPopup): MIBlurPopup lets you create amazing popups with a blurred background (598 stars, pushed 2026-10-26; live demo, SPM, CocoaPods; tags: popup, blur, alert, modal, segue)
   The presented controller adopts MIBlurPopupDelegate to supply the popup view, blur style, scale and duration.
   ```swift
   extension PopupViewController: MIBlurPopupDelegate {

@@ -12,7 +12,7 @@
 
 - **People**: browse the list below or the [web catalog](https://younatics.github.io/MotionBook/) with previews.
 - **Agents and tools**: read [`catalog.json`](catalog.json) (schema: [`schema/catalog.schema.json`](schema/catalog.schema.json)) or [`llms.txt`](llms.txt). Everything on this page is generated from that file by `scripts/render.py`.
-- **Freshness**: GitHub numbers refreshed `2026-10-26` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 34 marked inactive (no push since 2021) or archived.
+- **Freshness**: GitHub numbers refreshed `2026-10-27` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 33 marked inactive (no push since 2021) or archived.
 
 ## Use it from an agent
 
@@ -285,7 +285,7 @@ Create a playful backsplash in SwiftUI.
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Liquid.gif) · `.package(url: "https://github.com/maustinstar/liquid", from: "0.0.2")`
 
 #### [rive-ios](https://github.com/rive-app/rive-ios)
-rive-app · ★ 854 · ⟳ 2026-10 · MIT · tag `6.28.1`
+rive-app · ★ 853 · ⟳ 2026-10 · MIT · tag `6.28.1`
 
 iOS runtime for Rive
 
@@ -705,7 +705,7 @@ RAMAnimatedTabBarController is a Swift module for adding animation to tabbar ite
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/animated-tab-bar.gif) · `.package(url: "https://github.com/Ramotion/animated-tab-bar", from: "5.1.0")`
 
 #### [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController)
-ChenYilong · ★ 7.0K · ⟳ 2026-10 · MIT · tag `1.99.55`
+ChenYilong · ★ 7.1K · ⟳ 2026-10 · MIT · tag `1.99.55`
 
 Customisable tab bar controller with a raised centre button, badges and animated tab items.
 
@@ -797,13 +797,13 @@ NotificationBanner is an extremely customizable and lightweight library that mak
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/NotificationBanner.gif) · `.package(url: "https://github.com/Daltron/NotificationBanner", from: "3.2.0")`
 
 #### [CRToast](https://github.com/cruffenach/CRToast)
-cruffenach · ★ 4.1K · ⟳ 2024-05 · MIT · tag `0.0.9`
+cruffenach · ★ 4.1K · ⟳ 2026-10 · MIT · tag `0.0.9`
 
 CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar.
 
 <sub>toast · notification · status bar · banner · objective-c</sub>
 
-`▶ Live demo in the app` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/CRToast.gif)
+`▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/CRToast.gif) · `.package(url: "https://github.com/cruffenach/CRToast", from: "0.0.9")`
 
 #### [PopupView](https://github.com/exyte/PopupView)
 exyte · ★ 4.1K · ⟳ 2026-10 · MIT · tag `5.0.8`
@@ -860,13 +860,13 @@ CDAlertView is highly customizable alert popup written in Swift 3. Usage is simi
 `CocoaPods` · `Carthage` · [preview GIF](motion-book/CDAlertView.gif)
 
 #### [MIBlurPopup](https://github.com/MarioIannotta/MIBlurPopup)
-MarioIannotta · ★ 598 · ⟳ 2020-03 · MIT · tag `1.0.0`
+MarioIannotta · ★ 598 · ⟳ 2026-10 · MIT · tag `1.0.0`
 
 MIBlurPopup lets you create amazing popups with a blurred background
 
 <sub>popup · blur · alert · modal · segue</sub>
 
-`▶ Live demo in the app` · `CocoaPods` · `Inactive since 2020` · [preview GIF](motion-book/MIBlurPopup.gif)
+`▶ Live demo in the app` · `SPM` · `CocoaPods` · [preview GIF](motion-book/MIBlurPopup.gif) · `.package(url: "https://github.com/MarioIannotta/MIBlurPopup", from: "1.0.0")`
 
 #### [TKSwarmAlert](https://github.com/takuoka/TKSwarmAlert)
 entotsu · ★ 573 · ⟳ 2019-03 · MIT · tag `0.1.3`
