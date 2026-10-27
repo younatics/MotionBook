@@ -25,6 +25,6 @@ jobs:
           git config user.name "motionbook-bot"
           git config user.email "motionbook-bot@users.noreply.github.com"
           if git diff --quiet; then echo "no changes"; exit 0; fi
-          git add catalog.json README.md llms.txt docs/index.html
+          git add catalog.json README.md llms.txt docs
           git commit -m "catalog: weekly refresh ($(date -u +%Y-%m-%d))"
           git push
