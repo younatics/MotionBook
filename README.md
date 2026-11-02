@@ -12,7 +12,7 @@
 
 - **People**: browse the list below or the [web catalog](https://younatics.github.io/MotionBook/) with previews.
 - **Agents and tools**: read [`catalog.json`](catalog.json) (schema: [`schema/catalog.schema.json`](schema/catalog.schema.json)) or [`llms.txt`](llms.txt). Everything on this page is generated from that file by `scripts/render.py`.
-- **Freshness**: GitHub numbers refreshed `2026-10-27` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 33 marked inactive (no push since 2021) or archived.
+- **Freshness**: GitHub numbers refreshed `2026-11-02` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 33 marked inactive (no push since 2021) or archived.
 
 ## Use it from an agent
 
@@ -258,7 +258,7 @@ G..lit...c...hing UILa..bel fo..r iO...S
 `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/GlitchLabel.gif) · `.package(url: "https://github.com/kciter/GlitchLabel", from: "2.1.0")`
 
 #### [Windless](https://github.com/ParkGwangBeom/Windless)
-Interactive-Studio · ★ 947 · ⟳ 2022-07 · MIT · tag `0.1.5`
+Interactive-Studio · ★ 946 · ⟳ 2022-07 · MIT · tag `0.1.5`
 
 Windless makes it easy to implement invisible layout loading view.
 
@@ -267,7 +267,7 @@ Windless makes it easy to implement invisible layout loading view.
 `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/Windless.gif) · `.package(url: "https://github.com/ParkGwangBeom/Windless", from: "0.1.5")`
 
 #### [Highlighter](https://github.com/younatics/Highlighter)
-younatics · ★ 921 · ⟳ 2026-10 · MIT · tag `2.1.1`
+younatics · ★ 922 · ⟳ 2026-10 · MIT · tag `2.1.1`
 
 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class.
 
@@ -285,13 +285,13 @@ Create a playful backsplash in SwiftUI.
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Liquid.gif) · `.package(url: "https://github.com/maustinstar/liquid", from: "0.0.2")`
 
 #### [rive-ios](https://github.com/rive-app/rive-ios)
-rive-app · ★ 853 · ⟳ 2026-10 · MIT · tag `6.28.1`
+rive-app · ★ 856 · ⟳ 2026-11 · MIT · tag `6.29.0`
 
 iOS runtime for Rive
 
 <sub>rive · runtime · vector · animation · state machine · interactive</sub>
 
-`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/rive-ios.gif) · `.package(url: "https://github.com/rive-app/rive-ios", from: "6.28.1")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/rive-ios.gif) · `.package(url: "https://github.com/rive-app/rive-ios", from: "6.29.0")`
 
 #### [URWeatherView](https://github.com/Urtaq/URWeatherView)
 jegumhon · ★ 447 · ⟳ 2019-01 · MIT · tag `0.7.0`
@@ -604,13 +604,13 @@ MarkdownView is a WKWebView based UI element, and internally use bootstrap, high
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/MarkdownView.gif) · `.package(url: "https://github.com/keitaoouchi/MarkdownView", from: "2.1.1")`
 
 #### [Glur](https://github.com/joogps/Glur)
-joogps · ★ 2.1K · ⟳ 2026-10 · MIT · tag `2.1`
+joogps · ★ 2.1K · ⟳ 2026-10 · MIT · tag `2.1.2`
 
 A library for progressive blurs in SwiftUI.
 
 <sub>swiftui · blur · progressive · variable blur · effects</sub>
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Glur.gif) · `.package(url: "https://github.com/joogps/Glur", from: "2.1")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Glur.gif) · `.package(url: "https://github.com/joogps/Glur", from: "2.1.2")`
 
 #### [fluid-slider](https://github.com/Ramotion/fluid-slider)
 Ramotion · ★ 2.0K · ⟳ 2022-06 · MIT · tag `1.1.0`
@@ -631,7 +631,7 @@ Shimmer is a super-light modifier that adds a shimmering effect to any SwiftUI V
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/SwiftUI-Shimmer.gif) · `.package(url: "https://github.com/markiv/SwiftUI-Shimmer", from: "1.5.1")`
 
 #### [ScalingHeaderScrollView](https://github.com/exyte/ScalingHeaderScrollView)
-exyte · ★ 1.5K · ⟳ 2026-10 · MIT · tag `3.1.0`
+exyte · ★ 1.6K · ⟳ 2026-10 · MIT · tag `3.1.0`
 
 A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI.
 
@@ -676,7 +676,7 @@ younatics · ★ 646 · ⟳ 2026-10 · MIT · tag `3.1.0`
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/MediaBrowser.gif) · `.package(url: "https://github.com/younatics/MediaBrowser", from: "3.1.0")`
 
 #### [FluidGradient](https://github.com/Cindori/FluidGradient)
-Cindori · ★ 439 · ⟳ 2024-03 · MIT · tag `1.0.0`
+Cindori · ★ 441 · ⟳ 2024-03 · MIT · tag `1.0.0`
 
 A fluid, animated gradient implemented with CoreAnimation and SwiftUI.
 
@@ -705,13 +705,13 @@ RAMAnimatedTabBarController is a Swift module for adding animation to tabbar ite
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/animated-tab-bar.gif) · `.package(url: "https://github.com/Ramotion/animated-tab-bar", from: "5.1.0")`
 
 #### [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController)
-ChenYilong · ★ 7.1K · ⟳ 2026-10 · MIT · tag `1.99.55`
+ChenYilong · ★ 7.1K · ⟳ 2026-11 · MIT · tag `1.99.67`
 
 Customisable tab bar controller with a raised centre button, badges and animated tab items.
 
 <sub>tabbar · uikit · badge · tab bar · center button · objective-c</sub>
 
-`SPM` · `.package(url: "https://github.com/ChenYilong/CYLTabBarController", from: "1.99.55")`
+`SPM` · `.package(url: "https://github.com/ChenYilong/CYLTabBarController", from: "1.99.67")`
 
 #### [SideMenu](https://github.com/jonkykong/SideMenu)
 jonkykong · ★ 5.8K · ⟳ 2023-02 · MIT · tag `6.5.0`
@@ -777,7 +777,7 @@ younatics · ★ 1.3K · ⟳ 2026-10 · MIT · tag `4.1.0`
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/YNDropDownMenu.gif) · `.package(url: "https://github.com/younatics/YNDropDownMenu", from: "4.1.0")`
 
 #### [AnimatedTabBar (exyte)](https://github.com/exyte/AnimatedTabBar)
-exyte · ★ 557 · ⟳ 2026-07 · MIT · tag `1.0.1`
+exyte · ★ 559 · ⟳ 2026-07 · MIT · tag `1.0.1`
 
 A tabbar with a number of preset animations written in pure SwiftUI
 
@@ -869,7 +869,7 @@ MIBlurPopup lets you create amazing popups with a blurred background
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · [preview GIF](motion-book/MIBlurPopup.gif) · `.package(url: "https://github.com/MarioIannotta/MIBlurPopup", from: "1.0.0")`
 
 #### [TKSwarmAlert](https://github.com/takuoka/TKSwarmAlert)
-entotsu · ★ 573 · ⟳ 2019-03 · MIT · tag `0.1.3`
+entotsu · ★ 572 · ⟳ 2019-03 · MIT · tag `0.1.3`
 
 Animated alert library like Swarm app.
 
@@ -1046,7 +1046,7 @@ A rubber animation pagecontrol
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/TKRubberIndicator.gif) · `.package(url: "https://github.com/tbxark/TKRubberIndicator", from: "2.0.0")`
 
 #### [BusyNavigationBar](https://github.com/gmertk/BusyNavigationBar)
-gmertk · ★ 980 · ⟳ 2017-05 · MIT · tag `2.0.0`
+gmertk · ★ 979 · ⟳ 2017-05 · MIT · tag `2.0.0`
 
 A UINavigationBar extension to show loading effects above navigation bar's background.
 
@@ -1055,7 +1055,7 @@ A UINavigationBar extension to show loading effects above navigation bar's backg
 `CocoaPods` · `Carthage` · `Inactive since 2017` · [preview GIF](motion-book/BusyNavigationBar.gif)
 
 #### [SpringIndicator](https://github.com/KyoheiG3/SpringIndicator)
-KyoheiG3 · ★ 271 · ⟳ 2020-09 · MIT · tag `4.0.0`
+KyoheiG3 · ★ 270 · ⟳ 2020-09 · MIT · tag `4.0.0`
 
 SpringIndicator is indicator and PullToRefresh. Inspired by Material design components.
 
