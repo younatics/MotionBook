@@ -12,7 +12,7 @@
 
 - **People**: browse the list below or the [web catalog](https://younatics.github.io/MotionBook/) with previews.
 - **Agents and tools**: read [`catalog.json`](catalog.json) (schema: [`schema/catalog.schema.json`](schema/catalog.schema.json)) or [`llms.txt`](llms.txt). Everything on this page is generated from that file by `scripts/render.py`.
-- **Freshness**: GitHub numbers refreshed `2026-11-02` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 33 marked inactive (no push since 2021) or archived.
+- **Freshness**: GitHub numbers refreshed `2026-11-09` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 33 marked inactive (no push since 2021) or archived.
 
 ## Use it from an agent
 
@@ -258,7 +258,7 @@ G..lit...c...hing UILa..bel fo..r iO...S
 `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/GlitchLabel.gif) · `.package(url: "https://github.com/kciter/GlitchLabel", from: "2.1.0")`
 
 #### [Windless](https://github.com/ParkGwangBeom/Windless)
-Interactive-Studio · ★ 946 · ⟳ 2022-07 · MIT · tag `0.1.5`
+Interactive-Studio · ★ 947 · ⟳ 2022-07 · MIT · tag `0.1.5`
 
 Windless makes it easy to implement invisible layout loading view.
 
@@ -275,6 +275,15 @@ younatics · ★ 922 · ⟳ 2026-10 · MIT · tag `2.1.1`
 
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/Highlighter.gif) · `.package(url: "https://github.com/younatics/Highlighter", from: "2.1.1")`
 
+#### [rive-ios](https://github.com/rive-app/rive-ios)
+rive-app · ★ 860 · ⟳ 2026-11 · MIT · tag `6.29.0`
+
+iOS runtime for Rive
+
+<sub>rive · runtime · vector · animation · state machine · interactive</sub>
+
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/rive-ios.gif) · `.package(url: "https://github.com/rive-app/rive-ios", from: "6.29.0")`
+
 #### [Liquid](https://github.com/maustinstar/liquid)
 maustinstar · ★ 856 · ⟳ 2024-08 · MIT · tag `v0.0.2`
 
@@ -284,17 +293,8 @@ Create a playful backsplash in SwiftUI.
 
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Liquid.gif) · `.package(url: "https://github.com/maustinstar/liquid", from: "0.0.2")`
 
-#### [rive-ios](https://github.com/rive-app/rive-ios)
-rive-app · ★ 856 · ⟳ 2026-11 · MIT · tag `6.29.0`
-
-iOS runtime for Rive
-
-<sub>rive · runtime · vector · animation · state machine · interactive</sub>
-
-`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/rive-ios.gif) · `.package(url: "https://github.com/rive-app/rive-ios", from: "6.29.0")`
-
 #### [URWeatherView](https://github.com/Urtaq/URWeatherView)
-jegumhon · ★ 447 · ⟳ 2019-01 · MIT · tag `0.7.0`
+jegumhon · ★ 446 · ⟳ 2019-01 · MIT · tag `0.7.0`
 
 Show the weather effects onto view written in Swift3
 
@@ -476,16 +476,16 @@ A Material-inspired motion engine for transitions, transforms, and interactive p
 `SPM` · `Inactive since 2020` · `.package(url: "https://github.com/CosmicMind/Motion", from: "3.1.3")`
 
 #### [Transmission](https://github.com/nathantannar4/Transmission)
-nathantannar4 · ★ 1.2K · ⟳ 2026-10 · BSD-2-Clause · tag `3.0.0`
+nathantannar4 · ★ 1.2K · ⟳ 2026-11 · BSD-2-Clause · tag `3.1.0`
 
 Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more.
 
 <sub>swiftui · presentation · transition · modal · uikit bridge · sheet</sub>
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Transmission.gif) · `.package(url: "https://github.com/nathantannar4/Transmission", from: "3.0.0")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Transmission.gif) · `.package(url: "https://github.com/nathantannar4/Transmission", from: "3.1.0")`
 
 #### [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition)
-jonathantribouharet · ★ 949 · ⟳ 2019-01 · MIT · tag `2.0.3`
+jonathantribouharet · ★ 948 · ⟳ 2019-01 · MIT · tag `2.0.3`
 
 An iOS transition for controllers based on material design.
 
@@ -631,7 +631,7 @@ Shimmer is a super-light modifier that adds a shimmering effect to any SwiftUI V
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/SwiftUI-Shimmer.gif) · `.package(url: "https://github.com/markiv/SwiftUI-Shimmer", from: "1.5.1")`
 
 #### [ScalingHeaderScrollView](https://github.com/exyte/ScalingHeaderScrollView)
-exyte · ★ 1.6K · ⟳ 2026-10 · MIT · tag `3.1.0`
+exyte · ★ 1.6K · ⟳ 2026-11 · MIT · tag `3.1.0`
 
 A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI.
 
@@ -777,7 +777,7 @@ younatics · ★ 1.3K · ⟳ 2026-10 · MIT · tag `4.1.0`
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/YNDropDownMenu.gif) · `.package(url: "https://github.com/younatics/YNDropDownMenu", from: "4.1.0")`
 
 #### [AnimatedTabBar (exyte)](https://github.com/exyte/AnimatedTabBar)
-exyte · ★ 559 · ⟳ 2026-07 · MIT · tag `1.0.1`
+exyte · ★ 562 · ⟳ 2026-11 · MIT · tag `1.0.1`
 
 A tabbar with a number of preset animations written in pure SwiftUI
 
@@ -806,13 +806,13 @@ CRToast is a library that allows you to easily create notifications that appear 
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/CRToast.gif) · `.package(url: "https://github.com/cruffenach/CRToast", from: "0.0.9")`
 
 #### [PopupView](https://github.com/exyte/PopupView)
-exyte · ★ 4.1K · ⟳ 2026-10 · MIT · tag `5.0.8`
+exyte · ★ 4.1K · ⟳ 2026-11 · MIT · tag `5.0.9`
 
 Toasts and popups library written with SwiftUI
 
 <sub>swiftui · toast · popup · banner · notification</sub>
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/PopupView.gif) · `.package(url: "https://github.com/exyte/PopupView", from: "5.0.8")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/PopupView.gif) · `.package(url: "https://github.com/exyte/PopupView", from: "5.0.9")`
 
 #### [PopupDialog](https://github.com/Orderella/PopupDialog)
 Orderella · ★ 4.0K · ⟳ 2024-02 · MIT · tag `1.1.1`
@@ -878,7 +878,7 @@ Animated alert library like Swarm app.
 `CocoaPods` · `Carthage` · `Inactive since 2019` · [preview GIF](motion-book/TKSwarmAlert.gif)
 
 #### [GoogleWearAlert](https://github.com/ashrobo/GoogleWearAlert)
-AshRobinson · ★ 417 · ⟳ 2016-10 · MIT
+AshRobinson · ★ 416 · ⟳ 2016-10 · MIT
 
 An Android Wear style confirmation view for iOS
 
@@ -916,7 +916,7 @@ UICollectionView replacement of UITableView. Do even more like Parallax Header, 
 `CocoaPods` · `Carthage` · [preview GIF](motion-book/CSStickyHeaderFlowLayout.gif)
 
 #### [Grid (exyte)](https://github.com/exyte/Grid)
-exyte · ★ 2.1K · ⟳ 2026-09 · MIT · tag `1.5.0`
+exyte · ★ 2.1K · ⟳ 2026-11 · MIT · tag `1.5.0`
 
 The most powerful Grid container missed in SwiftUI
 
@@ -943,7 +943,7 @@ Spreadsheet CollectionViewLayout in Swift. Fully customizable.
 `SPM` · `CocoaPods` · `Inactive since 2019` · [preview GIF](motion-book/SwiftSpreadsheet.gif) · `.package(url: "https://github.com/stuffrabbit/SwiftSpreadsheet", from: "1.2.1")`
 
 #### [MMCardView](https://github.com/MillmanY/MMCardView)
-MillmanY · ★ 565 · ⟳ 2021-10 · MIT · tag `1.1.2`
+MillmanY · ★ 564 · ⟳ 2021-10 · MIT · tag `1.1.2`
 
 Custom CollectionView like Wallet App
 
@@ -1028,7 +1028,7 @@ Lightweight HUD with progress, activity-indicator and symbol animations plus ban
 `▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/ProgressHUD.gif) · `.package(url: "https://github.com/relatedcode/ProgressHUD", from: "15.0.3")`
 
 #### [ActivityIndicatorView](https://github.com/exyte/ActivityIndicatorView)
-exyte · ★ 1.7K · ⟳ 2026-09 · MIT · tag `2.0.2`
+exyte · ★ 1.7K · ⟳ 2026-11 · MIT · tag `2.0.2`
 
 A number of preset loading indicators created with SwiftUI
 

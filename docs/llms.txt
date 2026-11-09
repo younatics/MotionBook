@@ -1,6 +1,6 @@
 # MotionBook
 
-> Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 64 of them live. Stats as of 2026-11-02.
+> Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 64 of them live. Stats as of 2026-11-09.
 
 Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with. Entries with a live demo also carry `usage`: a minimal Swift snippet copied from the demo source, so it compiles against the pinned version; the same snippet is shown under the library below. Every entry has `tags`: plain search words for what the library does (component names, behaviours, look-alikes such as tinder or apple music), listed after the summary.
 
@@ -243,13 +243,29 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   splash.startAnimation()
   ```
 - [GlitchLabel](https://github.com/kciter/GlitchLabel): G..lit...c...hing UILa..bel fo..r iO...S (1.0K stars, pushed 2022-12-23; SPM, CocoaPods, Carthage; tags: label, text, glitch, text animation, uilabel)
-- [Windless](https://github.com/ParkGwangBeom/Windless): Windless makes it easy to implement invisible layout loading view. (946 stars, pushed 2022-07-14; SPM, CocoaPods, Carthage; tags: skeleton, loading, placeholder, shimmer, layout)
+- [Windless](https://github.com/ParkGwangBeom/Windless): Windless makes it easy to implement invisible layout loading view. (947 stars, pushed 2022-07-14; SPM, CocoaPods, Carthage; tags: skeleton, loading, placeholder, shimmer, layout)
 - [Highlighter](https://github.com/younatics/Highlighter): 🖍Highlight whatever you want! Highlighter will magically find UI objects such as UILabel, UITextView, UITexTfield, UIButton in your UITableViewCell or other Class. (922 stars, pushed 2026-10-25; live demo, SPM, CocoaPods, Carthage; tags: highlight, search, text, uilabel, uitextview)
   Call highlight(text:normal:highlight:) on any Highlightable view; a non-matching query resets it (2.1.1).
   ```swift
   for view in highlightables {
       let normal: [NSAttributedString.Key: Any] = [.foregroundColor: view is UIButton ? DemoSupport.title : UIColor.label]
       (view as? Highlightable)?.highlight(text: query, normal: normal, highlight: highlight)
+  }
+  ```
+- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (860 stars, pushed 2026-11-09; live demo, SPM; tags: rive, runtime, vector, animation, state machine, interactive)
+  RiveViewModel loads a .riv file; its view plays the animation and the model controls playback.
+  ```swift
+  @StateObject private var logo = RiveViewModel(fileName: "rive_animation_logo", in: .module)
+  @StateObject private var tree = RiveViewModel(fileName: "windy_tree", in: .module)
+
+  logo.view()
+      .frame(height: 260)
+
+  Button("Replay") {
+      logo.reset()
+      logo.play()
+      tree.reset()
+      tree.play()
   }
   ```
 - [Liquid](https://github.com/maustinstar/liquid): Create a playful backsplash in SwiftUI. (856 stars, pushed 2024-08-19; live demo, SwiftUI, SPM; tags: swiftui, blob, backsplash, shapes, animation, background)
@@ -268,23 +284,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   Liquid(samples: 8, period: 8).frame(width: 90, height: 90).foregroundColor(.orange)
   Liquid(samples: 12, period: 4).frame(width: 90, height: 90).foregroundColor(.teal)
   ```
-- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (856 stars, pushed 2026-11-02; live demo, SPM; tags: rive, runtime, vector, animation, state machine, interactive)
-  RiveViewModel loads a .riv file; its view plays the animation and the model controls playback.
-  ```swift
-  @StateObject private var logo = RiveViewModel(fileName: "rive_animation_logo", in: .module)
-  @StateObject private var tree = RiveViewModel(fileName: "windy_tree", in: .module)
-
-  logo.view()
-      .frame(height: 260)
-
-  Button("Replay") {
-      logo.reset()
-      logo.play()
-      tree.reset()
-      tree.play()
-  }
-  ```
-- [URWeatherView](https://github.com/Urtaq/URWeatherView): Show the weather effects onto view written in Swift3 (447 stars, pushed 2019-01-07; CocoaPods, Carthage, inactive; tags: weather, effects, rain, snow, shader, particles)
+- [URWeatherView](https://github.com/Urtaq/URWeatherView): Show the weather effects onto view written in Swift3 (446 stars, pushed 2019-01-07; CocoaPods, Carthage, inactive; tags: weather, effects, rain, snow, shader, particles)
 - [AnimateText](https://github.com/jasudev/AnimateText): This library for animating text. Developed with SwiftUI. This library supports iOS/macOS. (432 stars, pushed 2024-02-13; live demo, SwiftUI, SPM; tags: swiftui, text, animation, text animation, typing, typography)
   AnimateText<Effect> animates a bound string letter by letter; reset the text to replay.
   ```swift
@@ -394,7 +394,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 - [PinterestSwift](https://github.com/demonnico/PinterestSwift): This is a Swift based demo project to show how to make the transition Pinterest liked. (1.9K stars, pushed 2020-06-15; inactive; tags: transition, pinterest, collection view, zoom, navigation)
 - [CKWaveCollectionViewTransition](https://github.com/CezaryKopacz/CKWaveCollectionViewTransition): Cool wave like transition between two or more UICollectionView (1.8K stars, pushed 2019-10-13; CocoaPods, inactive; tags: transition, collection view, wave, navigation)
 - [Motion](https://github.com/CosmicMind/Motion): A Material-inspired motion engine for transitions, transforms, and interactive presentation work. (1.8K stars, pushed 2020-01-28; SPM, inactive; tags: material, transition, layout, animation engine, material design)
-- [Transmission](https://github.com/nathantannar4/Transmission): Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more. (1.2K stars, pushed 2026-10-31; live demo, SwiftUI, SPM; tags: swiftui, presentation, transition, modal, uikit bridge, sheet)
+- [Transmission](https://github.com/nathantannar4/Transmission): Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more. (1.2K stars, pushed 2026-11-06; live demo, SwiftUI, SPM; tags: swiftui, presentation, transition, modal, uikit bridge, sheet)
   PresentationLink presents SwiftUI content with UIKit transitions; the destination dismisses through the presentation coordinator.
   ```swift
   PresentationLink(transition: .toast, isPresented: $showToast) {
@@ -407,7 +407,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   Button("Dismiss") { coordinator.dismiss() }.buttonStyle(DemoPrimaryButtonStyle())
   ```
-- [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition): An iOS transition for controllers based on material design. (949 stars, pushed 2019-01-17; live demo, SPM, CocoaPods, inactive; tags: transition, material design, circular reveal, present, button)
+- [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition): An iOS transition for controllers based on material design. (948 stars, pushed 2019-01-17; live demo, SPM, CocoaPods, inactive; tags: transition, material design, circular reveal, present, button)
   Create the transition with the button to animate from, set it as transitioningDelegate with a .custom presentation.
   ```swift
   self.transition = JTMaterialTransition(animatedView: self.presentControllerButton!)
@@ -593,7 +593,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   .redacted(reason: .placeholder)
   .shimmering(active: active)
   ```
-- [ScalingHeaderScrollView](https://github.com/exyte/ScalingHeaderScrollView): A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI. (1.6K stars, pushed 2026-10-20; live demo, SwiftUI, SPM; tags: swiftui, header, scroll, sticky header, collapsing header, parallax)
+- [ScalingHeaderScrollView](https://github.com/exyte/ScalingHeaderScrollView): A scroll view with a sticky header which shrinks as you scroll. Written with SwiftUI. (1.6K stars, pushed 2026-11-06; live demo, SwiftUI, SPM; tags: swiftui, header, scroll, sticky header, collapsing header, parallax)
   A scroll view with a header that collapses between minHeight and maxHeight; the closure receives the collapse progress.
   ```swift
   ScalingHeaderScrollView(minHeight: 100, maxHeight: 300) { _, progress in
@@ -696,7 +696,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       self.tabBarItem.badgeValue = nil
   }
   ```
-- [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController): Customisable tab bar controller with a raised centre button, badges and animated tab items. (7.1K stars, pushed 2026-11-02; SPM; tags: tabbar, uikit, badge, tab bar, center button, objective-c)
+- [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController): Customisable tab bar controller with a raised centre button, badges and animated tab items. (7.1K stars, pushed 2026-11-09; SPM; tags: tabbar, uikit, badge, tab bar, center button, objective-c)
 - [SideMenu](https://github.com/jonkykong/SideMenu): Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+. (5.8K stars, pushed 2023-02-09; live demo, SPM, CocoaPods, Carthage; tags: side menu, drawer, navigation, hamburger, menu, storyboard)
   Configure SideMenuManager with the menu navigation controllers, gestures and presentation mode.
   ```swift
@@ -753,7 +753,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   self.view.addSubview(view)
   ```
-- [AnimatedTabBar (exyte)](https://github.com/exyte/AnimatedTabBar): A tabbar with a number of preset animations written in pure SwiftUI (559 stars, pushed 2026-07-08; SwiftUI, SPM; tags: swiftui, tabbar, animation, tab bar, menu)
+- [AnimatedTabBar (exyte)](https://github.com/exyte/AnimatedTabBar): A tabbar with a number of preset animations written in pure SwiftUI (562 stars, pushed 2026-11-06; SwiftUI, SPM; tags: swiftui, tabbar, animation, tab bar, menu)
 
 ### Alert
 
@@ -794,7 +794,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
                                     kCRToastAnimationOutDirectionKey          : @(self.segToDirection.selectedSegmentIndex),
                                     kCRToastNotificationPreferredPaddingKey   : @(self.sliderPadding.value)} mutableCopy];
   ```
-- [PopupView](https://github.com/exyte/PopupView): Toasts and popups library written with SwiftUI (4.1K stars, pushed 2026-10-06; live demo, SwiftUI, SPM; tags: swiftui, toast, popup, banner, notification)
+- [PopupView](https://github.com/exyte/PopupView): Toasts and popups library written with SwiftUI (4.1K stars, pushed 2026-11-06; live demo, SwiftUI, SPM; tags: swiftui, toast, popup, banner, notification)
   Attach .popup to any view; the customize closure picks type, position, animation, auto-hide and display mode.
   ```swift
   .popup(isPresented: $showFloater) {
@@ -919,7 +919,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   }
   ```
 - [TKSwarmAlert](https://github.com/takuoka/TKSwarmAlert): Animated alert library like Swarm app. (572 stars, pushed 2019-03-30; CocoaPods, Carthage, inactive; tags: alert, popup, animation, swarm app, spring)
-- [GoogleWearAlert](https://github.com/ashrobo/GoogleWearAlert): An Android Wear style confirmation view for iOS (417 stars, pushed 2016-10-16; inactive; tags: alert, confirmation, android wear, checkmark, overlay)
+- [GoogleWearAlert](https://github.com/ashrobo/GoogleWearAlert): An Android Wear style confirmation view for iOS (416 stars, pushed 2016-10-16; inactive; tags: alert, confirmation, android wear, checkmark, overlay)
 
 ### Collection View
 
@@ -959,7 +959,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   }
   ```
 - [CSStickyHeaderFlowLayout](https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout): UICollectionView replacement of UITableView. Do even more like Parallax Header, Sticky Section Header. Made for iOS 7. (5.0K stars, pushed 2021-07-17; CocoaPods, Carthage; tags: parallax, sticky header, collection view, layout, header)
-- [Grid (exyte)](https://github.com/exyte/Grid): The most powerful Grid container missed in SwiftUI (2.1K stars, pushed 2026-09-15; live demo, SwiftUI, SPM; tags: swiftui, grid, layout, spans, collection)
+- [Grid (exyte)](https://github.com/exyte/Grid): The most powerful Grid container missed in SwiftUI (2.1K stars, pushed 2026-11-06; live demo, SwiftUI, SPM; tags: swiftui, grid, layout, spans, collection)
   A CSS-style grid: tracks, column spans, flow, dense packing and animated reflow.
   ```swift
   Grid(tracks: [GridTrack](repeating: .fr(1), count: trackCount), spacing: 8) {
@@ -978,7 +978,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   ```
 - [GSKStretchyHeaderView](https://github.com/gskbyte/GSKStretchyHeaderView): GSKStretchyHeaderView is an implementation of the stretchy header paradigm as seen on many apps, like Twitter, Spotify or airbnb. (1.7K stars, pushed 2024-08-06; CocoaPods, Carthage; tags: stretchy header, parallax, header, table view, collection view, scroll)
 - [SwiftSpreadsheet](https://github.com/stuffrabbit/SwiftSpreadsheet): Spreadsheet CollectionViewLayout in Swift. Fully customizable. (637 stars, pushed 2019-10-15; SPM, CocoaPods, inactive; tags: spreadsheet, table, grid, collection view, layout)
-- [MMCardView](https://github.com/MillmanY/MMCardView): Custom CollectionView like Wallet App (565 stars, pushed 2021-10-13; CocoaPods; tags: card, wallet, collection view, stack, passbook)
+- [MMCardView](https://github.com/MillmanY/MMCardView): Custom CollectionView like Wallet App (564 stars, pushed 2021-10-13; CocoaPods; tags: card, wallet, collection view, stack, passbook)
 
 ### Table View
 
@@ -1118,7 +1118,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   after(2.0) { ProgressHUD.progress("Downloading", 0.8) }
   after(2.8) { ProgressHUD.succeed("Done", delay: 1.2) }       // checkmark, then hides itself
   ```
-- [ActivityIndicatorView](https://github.com/exyte/ActivityIndicatorView): A number of preset loading indicators created with SwiftUI (1.7K stars, pushed 2026-09-10; live demo, SwiftUI, SPM; tags: swiftui, loading, indicator, spinner, activity indicator)
+- [ActivityIndicatorView](https://github.com/exyte/ActivityIndicatorView): A number of preset loading indicators created with SwiftUI (1.7K stars, pushed 2026-11-06; live demo, SwiftUI, SPM; tags: swiftui, loading, indicator, spinner, activity indicator)
   Pick an indicator type and give the view a frame and colour.
   ```swift
   ("default", .default(count: 8)),
