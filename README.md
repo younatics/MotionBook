@@ -12,7 +12,7 @@
 
 - **People**: browse the list below or the [web catalog](https://younatics.github.io/MotionBook/) with previews.
 - **Agents and tools**: read [`catalog.json`](catalog.json) (schema: [`schema/catalog.schema.json`](schema/catalog.schema.json)) or [`llms.txt`](llms.txt). Everything on this page is generated from that file by `scripts/render.py`.
-- **Freshness**: GitHub numbers refreshed `2026-11-09` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 33 marked inactive (no push since 2021) or archived.
+- **Freshness**: GitHub numbers refreshed `2026-11-16` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 32 marked inactive (no push since 2021) or archived.
 
 ## Use it from an agent
 
@@ -213,13 +213,13 @@ Nice gradient animated label that enable an easy way to add a shimmering effect
 `CocoaPods` · `Carthage` · [preview GIF](motion-book/AnimatedMaskLabel.gif)
 
 #### [Vortex](https://github.com/twostraws/Vortex)
-twostraws · ★ 1.6K · ⟳ 2026-04 · MIT · tag `1.0.4`
+twostraws · ★ 1.6K · ⟳ 2026-11 · MIT · tag `1.0.5`
 
 High-performance particle effects for SwiftUI.
 
 <sub>swiftui · particles · effects · confetti · snow · fireworks</sub>
 
-`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Vortex.gif) · `.package(url: "https://github.com/twostraws/Vortex", from: "1.0.4")`
+`▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Vortex.gif) · `.package(url: "https://github.com/twostraws/Vortex", from: "1.0.5")`
 
 #### [Motion (b3ll)](https://github.com/b3ll/Motion)
 b3ll · ★ 1.5K · ⟳ 2024-10 · BSD-2-Clause · tag `v0.1.5`
@@ -276,16 +276,16 @@ younatics · ★ 922 · ⟳ 2026-10 · MIT · tag `2.1.1`
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/Highlighter.gif) · `.package(url: "https://github.com/younatics/Highlighter", from: "2.1.1")`
 
 #### [rive-ios](https://github.com/rive-app/rive-ios)
-rive-app · ★ 860 · ⟳ 2026-11 · MIT · tag `6.29.0`
+rive-app · ★ 861 · ⟳ 2026-11 · MIT · tag `6.30.1`
 
 iOS runtime for Rive
 
 <sub>rive · runtime · vector · animation · state machine · interactive</sub>
 
-`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/rive-ios.gif) · `.package(url: "https://github.com/rive-app/rive-ios", from: "6.29.0")`
+`▶ Live demo in the app` · `SPM` · [preview GIF](motion-book/rive-ios.gif) · `.package(url: "https://github.com/rive-app/rive-ios", from: "6.30.1")`
 
 #### [Liquid](https://github.com/maustinstar/liquid)
-maustinstar · ★ 856 · ⟳ 2024-08 · MIT · tag `v0.0.2`
+maustinstar · ★ 855 · ⟳ 2024-08 · MIT · tag `v0.0.2`
 
 Create a playful backsplash in SwiftUI.
 
@@ -303,7 +303,7 @@ Show the weather effects onto view written in Swift3
 `CocoaPods` · `Carthage` · `Inactive since 2019` · [preview GIF](motion-book/URWeatherView.gif)
 
 #### [AnimateText](https://github.com/jasudev/AnimateText)
-jasudev · ★ 432 · ⟳ 2024-02 · MIT · tag `0.5.0`
+jasudev · ★ 433 · ⟳ 2024-02 · MIT · tag `0.5.0`
 
 This library for animating text. Developed with SwiftUI. This library supports iOS/macOS.
 
@@ -422,13 +422,13 @@ Custom transition between viewcontrollers holding tableviews. Each cell is anima
 `CocoaPods` · `Carthage` · `Inactive since 2020` · [preview GIF](motion-book/AMWaveTransition.gif)
 
 #### [TKSubmitTransition](https://github.com/takuoka/TKSubmitTransition)
-entotsu · ★ 2.3K · ⟳ 2019-12 · MIT · tag `3.1.1`
+entotsu · ★ 2.3K · ⟳ 2026-11 · MIT · tag `3.1.1`
 
 Animated UIButton of Loading Animation and Transition Animation.
 
 <sub>button · loading · transition · submit · spinner</sub>
 
-`CocoaPods` · `Inactive since 2019` · [preview GIF](motion-book/TKSubmitTransition.gif)
+`CocoaPods` · [preview GIF](motion-book/TKSubmitTransition.gif)
 
 #### [ElasticTransition](https://github.com/lkzhao/ElasticTransition)
 lkzhao · ★ 2.2K · ⟳ 2020-05 · MIT · tag `3.1.1`
@@ -485,7 +485,7 @@ Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation con
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Transmission.gif) · `.package(url: "https://github.com/nathantannar4/Transmission", from: "3.1.0")`
 
 #### [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition)
-jonathantribouharet · ★ 948 · ⟳ 2019-01 · MIT · tag `2.0.3`
+jonathantribouharet · ★ 947 · ⟳ 2019-01 · MIT · tag `2.0.3`
 
 An iOS transition for controllers based on material design.
 
@@ -505,7 +505,7 @@ Design and prototype customized UI, interaction, navigation, transition and anim
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/IBAnimatable.gif) · `.package(url: "https://github.com/IBAnimatable/IBAnimatable", from: "6.1.0")`
 
 #### [LTMorphingLabel](https://github.com/lexrus/LTMorphingLabel)
-lexrus · ★ 8.1K · ⟳ 2026-03 · MIT · tag `0.9.3`
+lexrus · ★ 8.1K · ⟳ 2026-11 · MIT · tag `0.9.3`
 
 A morphing UILabel subclass written in Swift. The .Scale effect mimicked Apple's QuickType animation of iOS 8 in WWDC 2014. New morphing effects are available as Swift extensions.
 
@@ -667,7 +667,7 @@ A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used 
 `SPM` · `CocoaPods` · [preview GIF](motion-book/AIFlatSwitch.gif) · `.package(url: "https://github.com/cocoatoucher/AIFlatSwitch", from: "1.0.8")`
 
 #### [MediaBrowser](https://github.com/younatics/MediaBrowser)
-younatics · ★ 646 · ⟳ 2026-10 · MIT · tag `3.1.0`
+younatics · ★ 647 · ⟳ 2026-10 · MIT · tag `3.1.0`
 
 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view.
 
@@ -676,7 +676,7 @@ younatics · ★ 646 · ⟳ 2026-10 · MIT · tag `3.1.0`
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/MediaBrowser.gif) · `.package(url: "https://github.com/younatics/MediaBrowser", from: "3.1.0")`
 
 #### [FluidGradient](https://github.com/Cindori/FluidGradient)
-Cindori · ★ 441 · ⟳ 2024-03 · MIT · tag `1.0.0`
+Cindori · ★ 444 · ⟳ 2024-03 · MIT · tag `1.0.0`
 
 A fluid, animated gradient implemented with CoreAnimation and SwiftUI.
 
@@ -981,7 +981,7 @@ This project aims to provide a simple and customizable pull to refresh implement
 `▶ Live demo in the app` · `CocoaPods` · `Inactive since 2018` · [preview GIF](motion-book/Pull-to-Refresh.Rentals-iOS.gif)
 
 #### [elongation-preview](https://github.com/Ramotion/elongation-preview)
-Ramotion · ★ 888 · ⟳ 2020-04 · MIT · tag `1.1.1`
+Ramotion · ★ 889 · ⟳ 2020-04 · MIT · tag `1.1.1`
 
 ElongationPreview is an elegant push-pop style view controller
 
@@ -1046,7 +1046,7 @@ A rubber animation pagecontrol
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/TKRubberIndicator.gif) · `.package(url: "https://github.com/tbxark/TKRubberIndicator", from: "2.0.0")`
 
 #### [BusyNavigationBar](https://github.com/gmertk/BusyNavigationBar)
-gmertk · ★ 979 · ⟳ 2017-05 · MIT · tag `2.0.0`
+gmertk · ★ 978 · ⟳ 2017-05 · MIT · tag `2.0.0`
 
 A UINavigationBar extension to show loading effects above navigation bar's background.
 

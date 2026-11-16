@@ -1,6 +1,6 @@
 # MotionBook
 
-> Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 64 of them live. Stats as of 2026-11-09.
+> Catalog of 112 open-source iOS motion, transition and UI libraries, maintained by younatics. The MotionBook iOS app runs 64 of them live. Stats as of 2026-11-16.
 
 Use catalog.json for structured data (schema in schema/catalog.schema.json). Each entry has stars, last push, license, latest tag, install lines (SPM / CocoaPods / Carthage), a live-demo flag and the Xcode version it was last verified with. Entries with a live demo also carry `usage`: a minimal Swift snippet copied from the demo source, so it compiles against the pinned version; the same snippet is shown under the library below. Every entry has `tags`: plain search words for what the library does (component names, behaviours, look-alikes such as tinder or apple music), listed after the summary.
 
@@ -200,7 +200,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   ```
 - [YLGIFImage](https://github.com/liyong03/YLGIFImage): Asynchronized GIF image class and Image viewer supporting play/stop GIF images. It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory. (1.8K stars, pushed 2020-12-19; CocoaPods, inactive; tags: gif, image, image viewer, animated image, memory, objective-c)
 - [AnimatedMaskLabel](https://github.com/jogendra/LoadingShimmer): Nice gradient animated label that enable an easy way to add a shimmering effect (1.6K stars, pushed 2022-10-22; CocoaPods, Carthage; tags: label, text, gradient, shimmer, slide to unlock)
-- [Vortex](https://github.com/twostraws/Vortex): High-performance particle effects for SwiftUI. (1.6K stars, pushed 2026-04-03; live demo, SwiftUI, SPM; tags: swiftui, particles, effects, confetti, snow, fireworks)
+- [Vortex](https://github.com/twostraws/Vortex): High-performance particle effects for SwiftUI. (1.6K stars, pushed 2026-11-13; live demo, SwiftUI, SPM; tags: swiftui, particles, effects, confetti, snow, fireworks)
   VortexView renders a particle system (built-in presets or custom) from tagged particle views; the reader proxy bursts on demand.
   ```swift
   VortexViewReader { proxy in
@@ -252,7 +252,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       (view as? Highlightable)?.highlight(text: query, normal: normal, highlight: highlight)
   }
   ```
-- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (860 stars, pushed 2026-11-09; live demo, SPM; tags: rive, runtime, vector, animation, state machine, interactive)
+- [rive-ios](https://github.com/rive-app/rive-ios): iOS runtime for Rive (861 stars, pushed 2026-11-16; live demo, SPM; tags: rive, runtime, vector, animation, state machine, interactive)
   RiveViewModel loads a .riv file; its view plays the animation and the model controls playback.
   ```swift
   @StateObject private var logo = RiveViewModel(fileName: "rive_animation_logo", in: .module)
@@ -268,7 +268,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       tree.play()
   }
   ```
-- [Liquid](https://github.com/maustinstar/liquid): Create a playful backsplash in SwiftUI. (856 stars, pushed 2024-08-19; live demo, SwiftUI, SPM; tags: swiftui, blob, backsplash, shapes, animation, background)
+- [Liquid](https://github.com/maustinstar/liquid): Create a playful backsplash in SwiftUI. (855 stars, pushed 2024-08-19; live demo, SwiftUI, SPM; tags: swiftui, blob, backsplash, shapes, animation, background)
   Liquid() is a morphing blob view; samples and period control the shape and speed.
   ```swift
   Liquid()
@@ -285,7 +285,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   Liquid(samples: 12, period: 4).frame(width: 90, height: 90).foregroundColor(.teal)
   ```
 - [URWeatherView](https://github.com/Urtaq/URWeatherView): Show the weather effects onto view written in Swift3 (446 stars, pushed 2019-01-07; CocoaPods, Carthage, inactive; tags: weather, effects, rain, snow, shader, particles)
-- [AnimateText](https://github.com/jasudev/AnimateText): This library for animating text. Developed with SwiftUI. This library supports iOS/macOS. (432 stars, pushed 2024-02-13; live demo, SwiftUI, SPM; tags: swiftui, text, animation, text animation, typing, typography)
+- [AnimateText](https://github.com/jasudev/AnimateText): This library for animating text. Developed with SwiftUI. This library supports iOS/macOS. (433 stars, pushed 2024-02-13; live demo, SwiftUI, SPM; tags: swiftui, text, animation, text animation, typing, typography)
   AnimateText<Effect> animates a bound string letter by letter; reset the text to replay.
   ```swift
   case 0: AnimateText<ATCurtainEffect>($text)
@@ -382,7 +382,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
   present(card, animated: true)
   ```
 - [AMWaveTransition](https://github.com/andreamazz/AMWaveTransition): Custom transition between viewcontrollers holding tableviews. Each cell is animated to simulate a 'wave effect'. (2.3K stars, pushed 2020-06-07; CocoaPods, Carthage, inactive; tags: transition, table view, wave, cells, navigation)
-- [TKSubmitTransition](https://github.com/takuoka/TKSubmitTransition): Animated UIButton of Loading Animation and Transition Animation. (2.3K stars, pushed 2019-12-04; CocoaPods, inactive; tags: button, loading, transition, submit, spinner)
+- [TKSubmitTransition](https://github.com/takuoka/TKSubmitTransition): Animated UIButton of Loading Animation and Transition Animation. (2.3K stars, pushed 2026-11-12; CocoaPods; tags: button, loading, transition, submit, spinner)
 - [ElasticTransition](https://github.com/lkzhao/ElasticTransition): A UIKit custom transition that simulates an elastic drag. Written in Swift. (2.2K stars, pushed 2020-05-10; CocoaPods, inactive; tags: transition, elastic, drag, menu, interactive)
 - [preview-transition](https://github.com/Ramotion/preview-transition): PreviewTransition is a simple preview gallery controller (2.1K stars, pushed 2020-04-06; live demo, SPM, CocoaPods, Carthage, inactive; tags: transition, gallery, preview, table view, parallax)
   Subclass PTTableViewController; pushViewController animates the parallax preview transition.
@@ -407,7 +407,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   Button("Dismiss") { coordinator.dismiss() }.buttonStyle(DemoPrimaryButtonStyle())
   ```
-- [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition): An iOS transition for controllers based on material design. (948 stars, pushed 2019-01-17; live demo, SPM, CocoaPods, inactive; tags: transition, material design, circular reveal, present, button)
+- [JTMaterialTransition](https://github.com/johnvuko/JTMaterialTransition): An iOS transition for controllers based on material design. (947 stars, pushed 2019-01-17; live demo, SPM, CocoaPods, inactive; tags: transition, material design, circular reveal, present, button)
   Create the transition with the button to animate from, set it as transitioningDelegate with a .custom presentation.
   ```swift
   self.transition = JTMaterialTransition(animatedView: self.presentControllerButton!)
@@ -436,7 +436,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       label.animate(.slideFade(way: .in, direction: .left)).then(.swing(repeatCount: 1))
   }
   ```
-- [LTMorphingLabel](https://github.com/lexrus/LTMorphingLabel): A morphing UILabel subclass written in Swift. The .Scale effect mimicked Apple's QuickType animation of iOS 8 in WWDC 2014. New morphing effects are available as Swift extensions. (8.1K stars, pushed 2026-03-08; live demo, SPM, CocoaPods, Carthage; tags: text, label, morph, text animation, uilabel)
+- [LTMorphingLabel](https://github.com/lexrus/LTMorphingLabel): A morphing UILabel subclass written in Swift. The .Scale effect mimicked Apple's QuickType animation of iOS 8 in WWDC 2014. New morphing effects are available as Swift extensions. (8.1K stars, pushed 2026-11-12; live demo, SPM, CocoaPods, Carthage; tags: text, label, morph, text animation, uilabel)
   Set morphingEffect and duration, then assign new text and the label morphs from the old one.
   ```swift
   private let label = LTMorphingLabel()
@@ -646,7 +646,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       .background(RoundedRectangle(cornerRadius: 18).shiny(background))
   ```
 - [AIFlatSwitch](https://github.com/cocoatoucher/AIFlatSwitch): A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used instead of UISwitch. Inspired by Creativedash's Dribbble post (963 stars, pushed 2022-06-06; SPM, CocoaPods; tags: switch, checkbox, checkmark, toggle, flat design, uiswitch)
-- [MediaBrowser](https://github.com/younatics/MediaBrowser): 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view. (646 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage; tags: photo browser, gallery, image viewer, video, media, zoom)
+- [MediaBrowser](https://github.com/younatics/MediaBrowser): 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view. (647 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage; tags: photo browser, gallery, image viewer, video, media, zoom)
   MediaBrowser(delegate:) with Media items; configure the browser and push it, then serve media from the delegate.
   ```swift
   mediaItems = images.enumerated().map { Media(image: $1, caption: "Sample image \($0 + 1) of 6") }
@@ -670,7 +670,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       mediaItems[min(index, mediaItems.count - 1)]
   }
   ```
-- [FluidGradient](https://github.com/Cindori/FluidGradient): A fluid, animated gradient implemented with CoreAnimation and SwiftUI. (441 stars, pushed 2024-03-14; live demo, SwiftUI, SPM; tags: swiftui, gradient, background, mesh, animation)
+- [FluidGradient](https://github.com/Cindori/FluidGradient): A fluid, animated gradient implemented with CoreAnimation and SwiftUI. (444 stars, pushed 2024-03-14; live demo, SwiftUI, SPM; tags: swiftui, gradient, background, mesh, animation)
   FluidGradient animates blurred colour blobs; tune blobs, highlights, speed and blur.
   ```swift
   FluidGradient(
@@ -696,7 +696,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
       self.tabBarItem.badgeValue = nil
   }
   ```
-- [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController): Customisable tab bar controller with a raised centre button, badges and animated tab items. (7.1K stars, pushed 2026-11-09; SPM; tags: tabbar, uikit, badge, tab bar, center button, objective-c)
+- [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController): Customisable tab bar controller with a raised centre button, badges and animated tab items. (7.1K stars, pushed 2026-11-16; SPM; tags: tabbar, uikit, badge, tab bar, center button, objective-c)
 - [SideMenu](https://github.com/jonkykong/SideMenu): Simple side menu control for iOS in Swift inspired by Facebook. Right and Left sides. No coding required. iOS 8+. (5.8K stars, pushed 2023-02-09; live demo, SPM, CocoaPods, Carthage; tags: side menu, drawer, navigation, hamburger, menu, storyboard)
   Configure SideMenuManager with the menu navigation controllers, gestures and presentation mode.
   ```swift
@@ -1045,7 +1045,7 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   [self.sunnyRefreshControl endRefreshing];
   ```
-- [elongation-preview](https://github.com/Ramotion/elongation-preview): ElongationPreview is an elegant push-pop style view controller (888 stars, pushed 2020-04-06; SPM, CocoaPods, Carthage, inactive; tags: preview, table view, expand, push, detail)
+- [elongation-preview](https://github.com/Ramotion/elongation-preview): ElongationPreview is an elegant push-pop style view controller (889 stars, pushed 2020-04-06; SPM, CocoaPods, Carthage, inactive; tags: preview, table view, expand, push, detail)
 - [YNExpandableCell](https://github.com/younatics/YNExpandableCell): ✨Easiest usage of expandable & collapsible cell for iOS, written in Swift 3. You can customize expandable UITableViewCell whatever you like. YNExpandableCell is made because insertRows and deleteRows is hard to use. You can just inheirt YNTableViewDelegate and add one more method func tableView(_ tableView: YNTableView, expandCellAt indexPath) -> UITableViewCell? (451 stars, pushed 2026-10-24; live demo, SPM, CocoaPods, Carthage; tags: table view, expandable, collapsible, cell, accordion)
   YNTableView with YNTableViewDelegate: return the expanded cell and height per index path.
   ```swift
@@ -1149,5 +1149,5 @@ Use catalog.json for structured data (schema in schema/catalog.schema.json). Eac
 
   page.numberOfPage = sender.selectedSegmentIndex + 3
   ```
-- [BusyNavigationBar](https://github.com/gmertk/BusyNavigationBar): A UINavigationBar extension to show loading effects above navigation bar's background. (979 stars, pushed 2017-05-01; CocoaPods, Carthage, inactive; tags: navigation bar, loading, indicator, activity, busy)
+- [BusyNavigationBar](https://github.com/gmertk/BusyNavigationBar): A UINavigationBar extension to show loading effects above navigation bar's background. (978 stars, pushed 2017-05-01; CocoaPods, Carthage, inactive; tags: navigation bar, loading, indicator, activity, busy)
 - [SpringIndicator](https://github.com/KyoheiG3/SpringIndicator): SpringIndicator is indicator and PullToRefresh. Inspired by Material design components. (270 stars, pushed 2020-09-21; SPM, CocoaPods, Carthage, inactive; tags: indicator, pull to refresh, spinner, loading, material design)
