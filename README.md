@@ -12,7 +12,7 @@
 
 - **People**: browse the list below or the [web catalog](https://younatics.github.io/MotionBook/) with previews.
 - **Agents and tools**: read [`catalog.json`](catalog.json) (schema: [`schema/catalog.schema.json`](schema/catalog.schema.json)) or [`llms.txt`](llms.txt). Everything on this page is generated from that file by `scripts/render.py`.
-- **Freshness**: GitHub numbers refreshed `2026-11-16` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 32 marked inactive (no push since 2021) or archived.
+- **Freshness**: GitHub numbers refreshed `2026-11-23` by the weekly [refresh workflow](.github/workflows/refresh.yml); 17 SwiftUI-era libraries, 32 marked inactive (no push since 2021) or archived.
 
 ## Use it from an agent
 
@@ -276,7 +276,7 @@ younatics · ★ 922 · ⟳ 2026-10 · MIT · tag `2.1.1`
 `▶ Live demo in the app` · `SPM` · `CocoaPods` · `Carthage` · [preview GIF](motion-book/Highlighter.gif) · `.package(url: "https://github.com/younatics/Highlighter", from: "2.1.1")`
 
 #### [rive-ios](https://github.com/rive-app/rive-ios)
-rive-app · ★ 861 · ⟳ 2026-11 · MIT · tag `6.30.1`
+rive-app · ★ 863 · ⟳ 2026-11 · MIT · tag `6.30.1`
 
 iOS runtime for Rive
 
@@ -294,7 +294,7 @@ Create a playful backsplash in SwiftUI.
 `▶ Live demo in the app` · `SwiftUI` · `SPM` · [preview GIF](motion-book/Liquid.gif) · `.package(url: "https://github.com/maustinstar/liquid", from: "0.0.2")`
 
 #### [URWeatherView](https://github.com/Urtaq/URWeatherView)
-jegumhon · ★ 446 · ⟳ 2019-01 · MIT · tag `0.7.0`
+jegumhon · ★ 445 · ⟳ 2019-01 · MIT · tag `0.7.0`
 
 Show the weather effects onto view written in Swift3
 
@@ -667,7 +667,7 @@ A smooth, nice looking and IBDesignable flat design switch for iOS. Can be used 
 `SPM` · `CocoaPods` · [preview GIF](motion-book/AIFlatSwitch.gif) · `.package(url: "https://github.com/cocoatoucher/AIFlatSwitch", from: "1.0.8")`
 
 #### [MediaBrowser](https://github.com/younatics/MediaBrowser)
-younatics · ★ 647 · ⟳ 2026-10 · MIT · tag `3.1.0`
+younatics · ★ 645 · ⟳ 2026-10 · MIT · tag `3.1.0`
 
 🏞 MediaBrowser can display one or more images or videos by providing either UIImage objects, PHAsset objects, or URLs to library assets, web images/videos or local files. MediaBrowser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. This can also be used to allow the user to select one or more photos using either the grid or main image view.
 
